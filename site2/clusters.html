@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Clusters y anomalías - Colombia</title>
+<link rel="stylesheet" href="styles.css?v=5"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"/>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="i18n.js?v=3"></script>
+<script defer src="nav.js?v=10"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/d3-geo@3/dist/d3-geo.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar"></div>
+  <h1 data-en="Clusters and <em>anomalies</em>">Clusters y <em>anomalías</em></h1>
+  <p class="byline" data-en="Finds the general rule linking vote and consumption: more useful still, the
+    municipalities that break it.">Encuentra la regla general que conecta voto y consumo: más útil aún,
+    los municipios que la rompen.</p>
+  <p class="intro" data-en="Complexity doesn't scatter randomly across the map: it clusters. Big cities cluster with
+    other big cities' sophisticated baskets; small towns cluster with other small towns' bare ones. This analysis
+    finds those clusters and then asks a sharper question: <b>does that clustering match the vote?</b> If a
+    municipality's political color usually goes with its neighborhood's market sophistication, which places don't
+    follow that rule? Those are the <b>anomalies</b>: municipalities that vote one way while sitting inside a
+    consumption neighborhood that looks like the other side.">La complejidad no se reparte al azar por el mapa: se
+    agrupa. Las ciudades grandes se agrupan con las canastas sofisticadas de otras ciudades grandes; los pueblos
+    chicos se agrupan con las canastas simples de otros pueblos chicos. Este análisis encuentra esos grupos y luego
+    hace una pregunta más afilada: <b>¿ese agrupamiento coincide con el voto?</b> Si el color político de un
+    municipio suele ir de la mano con la sofisticación del mercado de su entorno, ¿qué lugares no siguen esa regla?
+    Esas son las <b>anomalías</b>: municipios que votan de un lado mientras están rodeados de un entorno de consumo
+    que parece del otro.</p>
+  <p class="intro" data-en="<b>Why it matters:</b> the anomalies are where the site's general story
+    (&quot;De La Espriella territory has simpler baskets, Cepeda territory has more complex ones&quot;) stops
+    holding. For marketing, they are structurally atypical markets: places where political geography and commercial
+    sophistication point in different directions, worth a second look before assuming a region behaves like its
+    vote suggests."><b>Por qué importa:</b> las anomalías son donde la historia general del sitio
+    (&quot;el territorio De La Espriella tiene canastas más simples, el territorio Cepeda las tiene más
+    complejas&quot;) deja de cumplirse. Para marketing, son mercados estructuralmente atípicos: lugares donde
+    la geografía política y la sofisticación comercial apuntan en direcciones distintas, y valen una segunda mirada
+    antes de asumir que una región se comporta como sugiere su voto.</p>
+  <div class="caveat" style="max-width:none" data-en="<b>Association, not explanation.</b> A municipality in an
+    &quot;anomaly&quot; quadrant is not inconsistent: it means its vote and the consumption complexity of its
+    surroundings point in opposite directions. Analysis over the 521 municipalities with consumption data;
+    neighborhoods are the 6 nearest (by centroid), so sparse areas have wide neighborhoods.">
+    <b>Asociación, no explicación.</b> Un municipio en cuadrante de "anomalía" no es incoherente: significa que su
+    voto y la complejidad de consumo de su entorno apuntan en direcciones opuestas. Análisis sobre los 521 municipios
+    con datos de consumo; los vecindarios son los 6 más cercanos (por centroide), así que en zonas ralas los
+    vecindarios son amplios.
+  </div>
+  <details class="methodbox">
+    <summary data-en="How are clusters detected? See method and formula">¿Cómo se detectan los clusters? Ver método y fórmula</summary>
+    <div class="mb-body">
+      <p class="src" data-en="Source: <b>Anselin (1995)</b>, &quot;Local Indicators of Spatial Association - LISA&quot;,
+        <i>Geographical Analysis, 27(2)</i>; bivariate extension per <b>Anselin, Syabri &amp; Smirnov (2002)</b>.
+        Implemented in numpy with kNN(6) weights and conditional permutation.">Origen: <b>Anselin (1995)</b>, "Local
+        Indicators of Spatial Association - LISA", <i>Geographical Analysis, 27(2)</i>; extensión bivariada según
+        <b>Anselin, Syabri &amp; Smirnov (2002)</b>. Implementado en numpy con pesos kNN(6) y permutación condicional.</p>
+      <p class="mb-tech" data-en="Technique: local Moran (univariate and bivariate) + conditional permutation (199)">Técnica: Moran local (univariado y bivariado) + permutación condicional (199)</p>
+      <div class="ktx" data-tex="\begin{gathered} I_i^{ECI}=z_{ECI,i}\sum_j w_{ij}\,z_{ECI,j} \qquad I_i^{biv}=z_{voto,i}\sum_j w_{ij}\,z_{ECI,j} \\[4pt] \text{HH/LL}=\text{co-cluster}\qquad \text{HL/LH}=\text{anomalia}\qquad p_{perm}<0.05 \end{gathered}">Moran local: propio x rezago espacial del vecindario; cuadrantes significativos por permutacion.</div>
+      <p style="margin:0;font-size:13px;color:var(--muted)" data-en="w = row-standardized kNN(6) over centroids.
+        Implementation: <i>scripts/14_clusters.py</i>.">w = kNN(6) fila-estandarizado sobre centroides.
+        Implementación: <i>scripts/14_clusters.py</i>.</p>
+    </div>
+  </details>
+  <div class="stats" id="clstats" style="margin-bottom:18px"></div>
+  <div class="maptop">
+    <label class="toggle"><span data-en="View:">Vista:</span>
+      <select id="viewsel" style="font-family:var(--mono);font-size:12.5px;padding:8px 10px;border:1px solid var(--line);border-radius:3px;background:#fff">
+        <option value="qb" data-en="Vote x consumption environment (bivariate)">Voto x entorno de consumo (bivariado)</option>
+        <option value="qe" data-en="Complexity clusters (ECI)">Clusters de complejidad (ECI)</option>
+      </select>
+    </label>
+    <span class="legend" id="leg" style="margin-left:auto;display:inline-flex;gap:10px;flex-wrap:wrap"></span>
+  </div>
+  <div class="geo-grid">
+    <div class="mapwrap"><div id="map"></div></div>
+    <div>
+      <div class="bucket"><h4 id="clt1"></h4><ul class="blist" id="an1"></ul></div>
+      <div class="bucket esp" style="margin-top:16px"><h4 id="clt2"></h4><ul class="blist" id="an2"></ul></div>
+      <div class="bpanel" style="margin-top:16px">
+        <h4 data-en="How to read it">Cómo leerlo</h4>
+        <p class="sub" style="margin:0" data-en="In the bivariate view, dark colors are co-clusters (vote and
+        consumption environment aligned); the two anomaly types are highlighted in the lists. Gray = not
+        statistically distinguishable from chance.">En la vista bivariada, los colores oscuros son co-clusters (voto
+        y entorno de consumo alineados); los dos tipos de anomalía van resaltados en las listas. Gris = no
+        distinguible del azar.</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot" data-en="Local Moran (LISA) over the municipality x brand matrix (OpenStreetMap). Vote:
+    Registraduría 2026. Site 2 - consumption structure.">Moran local (LISA) sobre la matriz municipio x marca
+    (OpenStreetMap). Voto: Registraduría 2026. Sitio 2 - estructura del consumo.</div>
+</div>
+<div id="tip"></div>
+<script defer src="clusters.js"></script>
+<script defer src="geo.js"></script>
+<script defer src="app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+const CL=window.CL, geo=window.GEO_MUNI;
+const rec=new Map(CL.munis.map(m=>[m.id,m]));
+const fmt=v=>(v>0?'+':'')+v.toFixed(0);
+let view='qb';
+
+const COL={HH:'#9c1f2e', LL:'#1a4a82', HL:'#e8a598', LH:'#8fb8dd', ns:'#e6e5e1'};
+function labels(){
+  return view==='qb' ? {
+    HH:I18N.t('Vota DLE + entorno complejo','Votes DLE + complex environment'),
+    LL:I18N.t('Vota Cepeda + entorno simple','Votes Cepeda + simple environment'),
+    HL:I18N.t('ANOMALÍA: vota DLE, entorno simple','ANOMALY: votes DLE, simple environment'),
+    LH:I18N.t('ANOMALÍA: vota Cepeda, entorno complejo','ANOMALY: votes Cepeda, complex environment'),
+    ns:I18N.t('no significativo','not significant')
+  } : {
+    HH:I18N.t('Hotspot de complejidad','Complexity hotspot'),
+    LL:I18N.t('Coldspot (entorno simple)','Coldspot (simple environment)'),
+    HL:I18N.t('Complejo entre simples','Complex among simple'),
+    LH:I18N.t('Simple entre complejos','Simple among complex'),
+    ns:I18N.t('no significativo','not significant')
+  };
+}
+function render(){
+  const st=[[CL.meta.I_lean.toFixed(2),I18N.t('Moran global del voto','global Moran of the vote')],
+            [CL.meta.I_eci.toFixed(2),I18N.t('Moran global del ECI','global Moran of ECI')],
+            [CL.meta.I_biv.toFixed(2),I18N.t('Moran bivariado voto x ECI','bivariate Moran vote x ECI')],
+            [''+CL.munis.filter(m=>m.qb==='HL'||m.qb==='LH').length,I18N.t('anomalías significativas','significant anomalies')]];
+  d3.select('#clstats').selectAll('.stat').data(st).join('div').attr('class','stat')
+    .html(d=>`<b>${d[0]}</b><span>${d[1]}</span>`);
+  // legend
+  const L=labels();
+  d3.select('#leg').html(Object.keys(COL).map(k=>
+    `<span style="display:inline-flex;align-items:center;gap:5px;font-size:10px;color:var(--muted)">
+     <span style="width:11px;height:11px;background:${COL[k]};display:inline-block"></span>${L[k]}</span>`).join(''));
+  paths.attr('fill',d=>{const m=rec.get(d.properties.dv); return m?COL[m[view]]:'#f3f2ee';});
+  // anomaly lists (bivariate always)
+  document.getElementById('clt1').textContent=I18N.t('Votan Cepeda, entorno de consumo complejo','Vote Cepeda, complex consumption environment');
+  document.getElementById('clt2').textContent=I18N.t('Votan De La Espriella, entorno simple','Vote De La Espriella, simple environment');
+  const row=m=>{const c=m.lean>0?'#bd2740':'#2c5fb3';
+    return `<li class="brow"><span class="nm">${m.name}</span>
+      <span class="pts" style="color:var(--accent)">ECI ${m.eci.toFixed(1)}</span>
+      <span class="vol" style="color:${c}">${fmt(m.lean*100)}</span></li>`;};
+  const byVot=(a,b)=>b.votval-a.votval;
+  document.getElementById('an1').innerHTML=CL.munis.filter(m=>m.qb==='LH').sort(byVot).slice(0,8).map(row).join('');
+  document.getElementById('an2').innerHTML=CL.munis.filter(m=>m.qb==='HL').sort(byVot).slice(0,8).map(row).join('');
+}
+
+const W=720,H=820;
+const svg=d3.select('#map').append('svg').attr('viewBox',`0 0 ${W} ${H}`);
+const proj=d3.geoMercator().fitSize([W,H],geo),path=d3.geoPath(proj);
+const tip=d3.select('#tip');
+const paths=svg.append('g').selectAll('path').data(geo.features).join('path').attr('d',path)
+  .attr('stroke','#fff').attr('stroke-width',0.25).style('cursor','pointer')
+  .on('mousemove',(e,d)=>{const m=rec.get(d.properties.dv);const L=labels();
+    tip.style('opacity',1).style('left',(e.clientX+14)+'px').style('top',(e.clientY+12)+'px')
+      .html(`<div class="b">${d.properties.name}</div><div class="m">${d.properties.dept||''}</div>
+        ${m?`<div style="margin-top:3px">${L[m[view]]}</div>
+             <div class="m">ECI ${m.eci.toFixed(2)} &middot; <span style="color:${m.lean>0?'#bd2740':'#2c5fb3'}">${fmt(m.lean*100)} pts</span> &middot; p=${(view==='qb'?m.pb:m.pe).toFixed(2)}</div>`
+           :`<div class="m">${I18N.t('sin datos de consumo','no consumption data')}</div>`}`);
+    d3.select(e.currentTarget).attr('stroke','#222').attr('stroke-width',1).raise();})
+  .on('mouseleave',(e)=>{tip.style('opacity',0);d3.select(e.currentTarget).attr('stroke','#fff').attr('stroke-width',0.25);});
+
+d3.select('#viewsel').on('change',function(){view=this.value;render();});
+render();
+document.addEventListener('langchange',render);
+});
+</script>
+</body>
+</html>

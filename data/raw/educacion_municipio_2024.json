@@ -1,0 +1,1122 @@
+[{"c_digo_municipio":"05004","municipio":"Abriaquí","cobertura_neta_media":"26.51","cobertura_neta":"56.11","deserci_n":"0"}
+,{"c_digo_municipio":"05501","municipio":"Olaya","cobertura_neta_media":"50.56","cobertura_neta":"76.42","deserci_n":"2.49"}
+,{"c_digo_municipio":"15204","municipio":"Cómbita","cobertura_neta_media":"62.1","cobertura_neta":"95.33","deserci_n":"3.24"}
+,{"c_digo_municipio":"15212","municipio":"Coper","cobertura_neta_media":"28.83","cobertura_neta":"62.78","deserci_n":"1.86"}
+,{"c_digo_municipio":"15215","municipio":"Corrales","cobertura_neta_media":"48.65","cobertura_neta":"94.47","deserci_n":"2.72"}
+,{"c_digo_municipio":"15218","municipio":"Covarachía","cobertura_neta_media":"53.01","cobertura_neta":"76.84","deserci_n":"1.39"}
+,{"c_digo_municipio":"15425","municipio":"Macanal","cobertura_neta_media":"55","cobertura_neta":"64.55","deserci_n":"2.51"}
+,{"c_digo_municipio":"15600","municipio":"Ráquira","cobertura_neta_media":"37.11","cobertura_neta":"78.3","deserci_n":"3.18"}
+,{"c_digo_municipio":"15764","municipio":"Soracá","cobertura_neta_media":"99.55","cobertura_neta":"121.21","deserci_n":"2.53"}
+,{"c_digo_municipio":"15774","municipio":"Susacón","cobertura_neta_media":"57.69","cobertura_neta":"59.34","deserci_n":"4.64"}
+,{"c_digo_municipio":"19212","municipio":"Corinto","cobertura_neta_media":"44.67","cobertura_neta":"88.32","deserci_n":"3.2"}
+,{"c_digo_municipio":"05001","municipio":"Medellín","cobertura_neta_media":"56.7","cobertura_neta":"93.58","deserci_n":"3.18"}
+,{"c_digo_municipio":"05002","municipio":"Abejorral","cobertura_neta_media":"40.16","cobertura_neta":"71.09","deserci_n":"2.9"}
+,{"c_digo_municipio":"05021","municipio":"Alejandría","cobertura_neta_media":"64.62","cobertura_neta":"78.07","deserci_n":"1.42"}
+,{"c_digo_municipio":"05030","municipio":"Amagá","cobertura_neta_media":"39.24","cobertura_neta":"77.33","deserci_n":"5.04"}
+,{"c_digo_municipio":"05031","municipio":"Amalfi","cobertura_neta_media":"30.49","cobertura_neta":"68.17","deserci_n":"6.03"}
+,{"c_digo_municipio":"05034","municipio":"Andes","cobertura_neta_media":"39.61","cobertura_neta":"77.3","deserci_n":"4.33"}
+,{"c_digo_municipio":"05036","municipio":"Angelópolis","cobertura_neta_media":"39.31","cobertura_neta":"81.25","deserci_n":"0.98"}
+,{"c_digo_municipio":"05038","municipio":"Angostura","cobertura_neta_media":"39.8","cobertura_neta":"66.49","deserci_n":"2.96"}
+,{"c_digo_municipio":"05040","municipio":"Anorí","cobertura_neta_media":"38.13","cobertura_neta":"69.63","deserci_n":"5.94"}
+,{"c_digo_municipio":"05042","municipio":"Santafé de Antioquia","cobertura_neta_media":"50.66","cobertura_neta":"89.19","deserci_n":"3.67"}
+,{"c_digo_municipio":"05044","municipio":"Anza","cobertura_neta_media":"37.5","cobertura_neta":"75.23","deserci_n":"2.19"}
+,{"c_digo_municipio":"05045","municipio":"Apartadó","cobertura_neta_media":"57.34","cobertura_neta":"88.46","deserci_n":"4.8"}
+,{"c_digo_municipio":"05051","municipio":"Arboletes","cobertura_neta_media":"45.84","cobertura_neta":"86.63","deserci_n":"4.11"}
+,{"c_digo_municipio":"05055","municipio":"Argelia","cobertura_neta_media":"47.58","cobertura_neta":"70.28","deserci_n":"3.13"}
+,{"c_digo_municipio":"05059","municipio":"Armenia","cobertura_neta_media":"25.58","cobertura_neta":"47.65","deserci_n":"3.64"}
+,{"c_digo_municipio":"05079","municipio":"Barbosa","cobertura_neta_media":"46.96","cobertura_neta":"77.63","deserci_n":"4.42"}
+,{"c_digo_municipio":"05086","municipio":"Belmira","cobertura_neta_media":"49.33","cobertura_neta":"81.58","deserci_n":"3.88"}
+,{"c_digo_municipio":"05088","municipio":"Bello","cobertura_neta_media":"49.19","cobertura_neta":"89.08","deserci_n":"3.92"}
+,{"c_digo_municipio":"05091","municipio":"Betania","cobertura_neta_media":"29.49","cobertura_neta":"57.96","deserci_n":"2.21"}
+,{"c_digo_municipio":"05093","municipio":"Betulia","cobertura_neta_media":"41.1","cobertura_neta":"76.63","deserci_n":"2.72"}
+,{"c_digo_municipio":"05101","municipio":"Ciudad Bolívar","cobertura_neta_media":"38.21","cobertura_neta":"73.42","deserci_n":"7.45"}
+,{"c_digo_municipio":"05107","municipio":"Briceño","cobertura_neta_media":"22.8","cobertura_neta":"61.07","deserci_n":"2.8"}
+,{"c_digo_municipio":"05113","municipio":"Buriticá","cobertura_neta_media":"31.48","cobertura_neta":"80.07","deserci_n":"8.01"}
+,{"c_digo_municipio":"05120","municipio":"Cáceres","cobertura_neta_media":"35.5","cobertura_neta":"80.33","deserci_n":"5.8"}
+,{"c_digo_municipio":"05125","municipio":"Caicedo","cobertura_neta_media":"45.26","cobertura_neta":"76.76","deserci_n":"1.86"}
+,{"c_digo_municipio":"05129","municipio":"Caldas","cobertura_neta_media":"56.46","cobertura_neta":"92.95","deserci_n":"4.97"}
+,{"c_digo_municipio":"05134","municipio":"Campamento","cobertura_neta_media":"32.31","cobertura_neta":"63.71","deserci_n":"3.74"}
+,{"c_digo_municipio":"05138","municipio":"Cañasgordas","cobertura_neta_media":"46.81","cobertura_neta":"79.59","deserci_n":"2.98"}
+,{"c_digo_municipio":"05142","municipio":"Caracolí","cobertura_neta_media":"60.5","cobertura_neta":"82.39","deserci_n":"3.27"}
+,{"c_digo_municipio":"05145","municipio":"Caramanta","cobertura_neta_media":"55.81","cobertura_neta":"78.94","deserci_n":"2.24"}
+,{"c_digo_municipio":"05147","municipio":"Carepa","cobertura_neta_media":"50.15","cobertura_neta":"87.32","deserci_n":"3.07"}
+,{"c_digo_municipio":"05148","municipio":"El Carmen de Viboral","cobertura_neta_media":"51.24","cobertura_neta":"92.85","deserci_n":"3.55"}
+,{"c_digo_municipio":"05150","municipio":"Carolina","cobertura_neta_media":"34.58","cobertura_neta":"84.33","deserci_n":"2.4"}
+,{"c_digo_municipio":"05154","municipio":"Caucasia","cobertura_neta_media":"48.92","cobertura_neta":"87.32","deserci_n":"3.96"}
+,{"c_digo_municipio":"05172","municipio":"Chigorodó","cobertura_neta_media":"52.86","cobertura_neta":"86.78","deserci_n":"5.48"}
+,{"c_digo_municipio":"05190","municipio":"Cisneros","cobertura_neta_media":"52.86","cobertura_neta":"79.02","deserci_n":"2.35"}
+,{"c_digo_municipio":"05197","municipio":"Cocorná","cobertura_neta_media":"54.68","cobertura_neta":"99.8","deserci_n":"3.28"}
+,{"c_digo_municipio":"05206","municipio":"Concepción","cobertura_neta_media":"59.09","cobertura_neta":"77.43","deserci_n":"1.76"}
+,{"c_digo_municipio":"05209","municipio":"Concordia","cobertura_neta_media":"27.25","cobertura_neta":"58.53","deserci_n":"3.9"}
+,{"c_digo_municipio":"05212","municipio":"Copacabana","cobertura_neta_media":"58.72","cobertura_neta":"101.11","deserci_n":"3.81"}
+,{"c_digo_municipio":"05234","municipio":"Dabeiba","cobertura_neta_media":"29.55","cobertura_neta":"80.71","deserci_n":"5.84"}
+,{"c_digo_municipio":"05237","municipio":"Don Matías","cobertura_neta_media":"49.52","cobertura_neta":"92.78","deserci_n":"6.31"}
+,{"c_digo_municipio":"05240","municipio":"Ebéjico","cobertura_neta_media":"40.74","cobertura_neta":"69.89","deserci_n":"3.2"}
+,{"c_digo_municipio":"05250","municipio":"El Bagre","cobertura_neta_media":"47.85","cobertura_neta":"87.51","deserci_n":"4.61"}
+,{"c_digo_municipio":"05264","municipio":"Entrerrios","cobertura_neta_media":"46.87","cobertura_neta":"81.45","deserci_n":"1.48"}
+,{"c_digo_municipio":"05266","municipio":"Envigado","cobertura_neta_media":"67.4","cobertura_neta":"98.45","deserci_n":"3.93"}
+,{"c_digo_municipio":"05282","municipio":"Fredonia","cobertura_neta_media":"36.68","cobertura_neta":"58.66","deserci_n":"1.89"}
+,{"c_digo_municipio":"05284","municipio":"Frontino","cobertura_neta_media":"38.69","cobertura_neta":"87.53","deserci_n":"3.37"}
+,{"c_digo_municipio":"05306","municipio":"Giraldo","cobertura_neta_media":"45","cobertura_neta":"99.33","deserci_n":"3.99"}
+,{"c_digo_municipio":"05308","municipio":"Girardota","cobertura_neta_media":"54.36","cobertura_neta":"90.97","deserci_n":"4.38"}
+,{"c_digo_municipio":"05310","municipio":"Gómez Plata","cobertura_neta_media":"35.21","cobertura_neta":"63.24","deserci_n":"4.96"}
+,{"c_digo_municipio":"05313","municipio":"Granada","cobertura_neta_media":"44.89","cobertura_neta":"79.51","deserci_n":"2.99"}
+,{"c_digo_municipio":"05315","municipio":"Guadalupe","cobertura_neta_media":"36.99","cobertura_neta":"69.59","deserci_n":"2.03"}
+,{"c_digo_municipio":"05318","municipio":"Guarne","cobertura_neta_media":"46.07","cobertura_neta":"86.13","deserci_n":"3.99"}
+,{"c_digo_municipio":"05321","municipio":"Guatape","cobertura_neta_media":"70","cobertura_neta":"108.78","deserci_n":"4.28"}
+,{"c_digo_municipio":"05347","municipio":"Heliconia","cobertura_neta_media":"38","cobertura_neta":"78.56","deserci_n":"4.93"}
+,{"c_digo_municipio":"05353","municipio":"Hispania","cobertura_neta_media":"34.78","cobertura_neta":"73.53","deserci_n":"4.11"}
+,{"c_digo_municipio":"05360","municipio":"Itagüí","cobertura_neta_media":"60.18","cobertura_neta":"88.26","deserci_n":"4.58"}
+,{"c_digo_municipio":"05361","municipio":"Ituango","cobertura_neta_media":"35.91","cobertura_neta":"64.18","deserci_n":"3.85"}
+,{"c_digo_municipio":"05364","municipio":"Jardín","cobertura_neta_media":"64.66","cobertura_neta":"83.36","deserci_n":"3.67"}
+,{"c_digo_municipio":"05368","municipio":"Jericó","cobertura_neta_media":"51.52","cobertura_neta":"70.91","deserci_n":"2.37"}
+,{"c_digo_municipio":"05376","municipio":"La Ceja","cobertura_neta_media":"55.34","cobertura_neta":"88.85","deserci_n":"2.71"}
+,{"c_digo_municipio":"05380","municipio":"La Estrella","cobertura_neta_media":"78.06","cobertura_neta":"122.55","deserci_n":"2.8"}
+,{"c_digo_municipio":"05390","municipio":"La Pintada","cobertura_neta_media":"42.65","cobertura_neta":"79.68","deserci_n":"3.66"}
+,{"c_digo_municipio":"05400","municipio":"La Unión","cobertura_neta_media":"65.85","cobertura_neta":"96.26","deserci_n":"4.27"}
+,{"c_digo_municipio":"05411","municipio":"Liborina","cobertura_neta_media":"49.04","cobertura_neta":"70.4","deserci_n":"1.06"}
+,{"c_digo_municipio":"05425","municipio":"Maceo","cobertura_neta_media":"49.4","cobertura_neta":"96.07","deserci_n":"3.05"}
+,{"c_digo_municipio":"05440","municipio":"Marinilla","cobertura_neta_media":"58.48","cobertura_neta":"99.17","deserci_n":"3.86"}
+,{"c_digo_municipio":"05467","municipio":"Montebello","cobertura_neta_media":"48.37","cobertura_neta":"75.22","deserci_n":"3.37"}
+,{"c_digo_municipio":"05475","municipio":"Murindó","cobertura_neta_media":"18.63","cobertura_neta":"73.89","deserci_n":"1.19"}
+,{"c_digo_municipio":"05480","municipio":"Mutatá","cobertura_neta_media":"37.16","cobertura_neta":"96.85","deserci_n":"7.37"}
+,{"c_digo_municipio":"05483","municipio":"Nariño","cobertura_neta_media":"36.08","cobertura_neta":"61.76","deserci_n":"5.19"}
+,{"c_digo_municipio":"05490","municipio":"Necoclí","cobertura_neta_media":"60.78","cobertura_neta":"105.67","deserci_n":"5.23"}
+,{"c_digo_municipio":"05495","municipio":"Nechí","cobertura_neta_media":"36.94","cobertura_neta":"85.93","deserci_n":"6.44"}
+,{"c_digo_municipio":"05541","municipio":"Peñol","cobertura_neta_media":"56.86","cobertura_neta":"99.17","deserci_n":"2.58"}
+,{"c_digo_municipio":"05543","municipio":"Peque","cobertura_neta_media":"25.5","cobertura_neta":"70.19","deserci_n":"1.74"}
+,{"c_digo_municipio":"05576","municipio":"Pueblorrico","cobertura_neta_media":"42.65","cobertura_neta":"65.7","deserci_n":"3.16"}
+,{"c_digo_municipio":"05579","municipio":"Puerto Berrío","cobertura_neta_media":"46.19","cobertura_neta":"72.47","deserci_n":"2.85"}
+,{"c_digo_municipio":"05585","municipio":"Puerto Nare","cobertura_neta_media":"35.59","cobertura_neta":"67.7","deserci_n":"3.37"}
+,{"c_digo_municipio":"05591","municipio":"Puerto Triunfo","cobertura_neta_media":"42.14","cobertura_neta":"97.95","deserci_n":"2.57"}
+,{"c_digo_municipio":"05604","municipio":"Remedios","cobertura_neta_media":"50.72","cobertura_neta":"112.33","deserci_n":"6.53"}
+,{"c_digo_municipio":"05607","municipio":"Retiro","cobertura_neta_media":"54.13","cobertura_neta":"120.84","deserci_n":"3.41"}
+,{"c_digo_municipio":"05615","municipio":"Rionegro","cobertura_neta_media":"52.97","cobertura_neta":"106.36","deserci_n":"4.1"}
+,{"c_digo_municipio":"05628","municipio":"Sabanalarga","cobertura_neta_media":"36.77","cobertura_neta":"74.39","deserci_n":"0.64"}
+,{"c_digo_municipio":"05631","municipio":"Sabaneta","cobertura_neta_media":"77.37","cobertura_neta":"107.76","deserci_n":"3.53"}
+,{"c_digo_municipio":"05642","municipio":"Salgar","cobertura_neta_media":"26.22","cobertura_neta":"66.08","deserci_n":"4.21"}
+,{"c_digo_municipio":"05647","municipio":"San Andrés","cobertura_neta_media":"35.41","cobertura_neta":"70.08","deserci_n":"3.9"}
+,{"c_digo_municipio":"05649","municipio":"San Carlos","cobertura_neta_media":"51.29","cobertura_neta":"85.71","deserci_n":"2.92"}
+,{"c_digo_municipio":"05652","municipio":"San Francisco","cobertura_neta_media":"45.5","cobertura_neta":"78.65","deserci_n":"7.46"}
+,{"c_digo_municipio":"05656","municipio":"San Jerónimo","cobertura_neta_media":"44.02","cobertura_neta":"85.07","deserci_n":"7.41"}
+,{"c_digo_municipio":"05658","municipio":"San José de la Montaña","cobertura_neta_media":"43.36","cobertura_neta":"57.16","deserci_n":"0.99"}
+,{"c_digo_municipio":"05659","municipio":"San Juan de Urabá","cobertura_neta_media":"36.36","cobertura_neta":"93.69","deserci_n":"2.03"}
+,{"c_digo_municipio":"05660","municipio":"San Luis","cobertura_neta_media":"53.44","cobertura_neta":"92.05","deserci_n":"3.37"}
+,{"c_digo_municipio":"05664","municipio":"San Pedro","cobertura_neta_media":"79.69","cobertura_neta":"112.17","deserci_n":"3.39"}
+,{"c_digo_municipio":"05665","municipio":"San Pedro de Uraba","cobertura_neta_media":"60.18","cobertura_neta":"88.5","deserci_n":"3.19"}
+,{"c_digo_municipio":"05667","municipio":"San Rafael","cobertura_neta_media":"48.31","cobertura_neta":"77.3","deserci_n":"2.95"}
+,{"c_digo_municipio":"05670","municipio":"San Roque","cobertura_neta_media":"50.43","cobertura_neta":"80.01","deserci_n":"3.31"}
+,{"c_digo_municipio":"05674","municipio":"San Vicente","cobertura_neta_media":"45.11","cobertura_neta":"78.66","deserci_n":"2.84"}
+,{"c_digo_municipio":"05679","municipio":"Santa Bárbara","cobertura_neta_media":"44.16","cobertura_neta":"65.38","deserci_n":"3.09"}
+,{"c_digo_municipio":"05686","municipio":"Santa Rosa de Osos","cobertura_neta_media":"61.87","cobertura_neta":"89.3","deserci_n":"2.92"}
+,{"c_digo_municipio":"05690","municipio":"Santo Domingo","cobertura_neta_media":"65.4","cobertura_neta":"96.05","deserci_n":"2.52"}
+,{"c_digo_municipio":"05697","municipio":"El Santuario","cobertura_neta_media":"63.85","cobertura_neta":"95.06","deserci_n":"3.55"}
+,{"c_digo_municipio":"05736","municipio":"Segovia","cobertura_neta_media":"36.24","cobertura_neta":"86.64","deserci_n":"7.66"}
+,{"c_digo_municipio":"05756","municipio":"Sonson","cobertura_neta_media":"41.74","cobertura_neta":"77.13","deserci_n":"3.27"}
+,{"c_digo_municipio":"05761","municipio":"Sopetrán","cobertura_neta_media":"45.67","cobertura_neta":"95.06","deserci_n":"3.44"}
+,{"c_digo_municipio":"05789","municipio":"Támesis","cobertura_neta_media":"45.69","cobertura_neta":"75.57","deserci_n":"1.41"}
+,{"c_digo_municipio":"05790","municipio":"Tarazá","cobertura_neta_media":"32.04","cobertura_neta":"73.64","deserci_n":"6.57"}
+,{"c_digo_municipio":"05792","municipio":"Tarso","cobertura_neta_media":"29.8","cobertura_neta":"62.59","deserci_n":"1.62"}
+,{"c_digo_municipio":"05809","municipio":"Titiribí","cobertura_neta_media":"31.53","cobertura_neta":"65.79","deserci_n":"2.69"}
+,{"c_digo_municipio":"05819","municipio":"Toledo","cobertura_neta_media":"43.79","cobertura_neta":"87.33","deserci_n":"3.25"}
+,{"c_digo_municipio":"05837","municipio":"Turbo","cobertura_neta_media":"63.54","cobertura_neta":"99.27","deserci_n":"4.47"}
+,{"c_digo_municipio":"05842","municipio":"Uramita","cobertura_neta_media":"35.93","cobertura_neta":"72.72","deserci_n":"6.73"}
+,{"c_digo_municipio":"05847","municipio":"Urrao","cobertura_neta_media":"38.01","cobertura_neta":"83.06","deserci_n":"3.76"}
+,{"c_digo_municipio":"05854","municipio":"Valdivia","cobertura_neta_media":"29.66","cobertura_neta":"71.22","deserci_n":"3.59"}
+,{"c_digo_municipio":"05856","municipio":"Valparaíso","cobertura_neta_media":"33.33","cobertura_neta":"63.63","deserci_n":"1.73"}
+,{"c_digo_municipio":"05858","municipio":"Vegachí","cobertura_neta_media":"56.35","cobertura_neta":"99.77","deserci_n":"4.44"}
+,{"c_digo_municipio":"05861","municipio":"Venecia","cobertura_neta_media":"41.61","cobertura_neta":"75.28","deserci_n":"4.24"}
+,{"c_digo_municipio":"05873","municipio":"Vigía del Fuerte","cobertura_neta_media":"24.87","cobertura_neta":"74.86","deserci_n":"1.65"}
+,{"c_digo_municipio":"05885","municipio":"Yalí","cobertura_neta_media":"36.29","cobertura_neta":"68.79","deserci_n":"3.55"}
+,{"c_digo_municipio":"05887","municipio":"Yarumal","cobertura_neta_media":"49.74","cobertura_neta":"77.25","deserci_n":"2.26"}
+,{"c_digo_municipio":"05890","municipio":"Yolombó","cobertura_neta_media":"43.78","cobertura_neta":"70.3","deserci_n":"2.86"}
+,{"c_digo_municipio":"05893","municipio":"Yondó","cobertura_neta_media":"31.44","cobertura_neta":"84.96","deserci_n":"3.07"}
+,{"c_digo_municipio":"05895","municipio":"Zaragoza","cobertura_neta_media":"45.46","cobertura_neta":"102.35","deserci_n":"3.38"}
+,{"c_digo_municipio":"08001","municipio":"Barranquilla","cobertura_neta_media":"60.26","cobertura_neta":"96.45","deserci_n":"1.65"}
+,{"c_digo_municipio":"08078","municipio":"Baranoa","cobertura_neta_media":"59.53","cobertura_neta":"88.05","deserci_n":"2.36"}
+,{"c_digo_municipio":"08137","municipio":"Campo de la Cruz","cobertura_neta_media":"43.09","cobertura_neta":"87.91","deserci_n":"3.32"}
+,{"c_digo_municipio":"08141","municipio":"Candelaria","cobertura_neta_media":"44.57","cobertura_neta":"82.57","deserci_n":"4.92"}
+,{"c_digo_municipio":"08296","municipio":"Galapa","cobertura_neta_media":"44.37","cobertura_neta":"73.64","deserci_n":"3.26"}
+,{"c_digo_municipio":"08372","municipio":"Juan de Acosta","cobertura_neta_media":"45.73","cobertura_neta":"81.8","deserci_n":"3.78"}
+,{"c_digo_municipio":"08421","municipio":"Luruaco","cobertura_neta_media":"40.46","cobertura_neta":"78.54","deserci_n":"3.28"}
+,{"c_digo_municipio":"08433","municipio":"Malambo","cobertura_neta_media":"58.25","cobertura_neta":"87.28","deserci_n":"1.97"}
+,{"c_digo_municipio":"08436","municipio":"Manatí","cobertura_neta_media":"38.5","cobertura_neta":"76.51","deserci_n":"1.86"}
+,{"c_digo_municipio":"08520","municipio":"Palmar de Varela","cobertura_neta_media":"54.85","cobertura_neta":"89.78","deserci_n":"2.58"}
+,{"c_digo_municipio":"08549","municipio":"Piojó","cobertura_neta_media":"29.82","cobertura_neta":"61.56","deserci_n":"2.35"}
+,{"c_digo_municipio":"08558","municipio":"Polonuevo","cobertura_neta_media":"41.35","cobertura_neta":"65.55","deserci_n":"3.87"}
+,{"c_digo_municipio":"08560","municipio":"Ponedera","cobertura_neta_media":"35.46","cobertura_neta":"77.28","deserci_n":"3.97"}
+,{"c_digo_municipio":"08573","municipio":"Puerto Colombia","cobertura_neta_media":"86.43","cobertura_neta":"147.84","deserci_n":"3.03"}
+,{"c_digo_municipio":"08606","municipio":"Repelón","cobertura_neta_media":"41.07","cobertura_neta":"82.54","deserci_n":"0.69"}
+,{"c_digo_municipio":"08634","municipio":"Sabanagrande","cobertura_neta_media":"56.65","cobertura_neta":"92.42","deserci_n":"3.03"}
+,{"c_digo_municipio":"08638","municipio":"Sabanalarga","cobertura_neta_media":"58.33","cobertura_neta":"92.44","deserci_n":"2.33"}
+,{"c_digo_municipio":"08675","municipio":"Santa Lucía","cobertura_neta_media":"20.23","cobertura_neta":"57.86","deserci_n":"1.83"}
+,{"c_digo_municipio":"08685","municipio":"Santo Tomás","cobertura_neta_media":"35.53","cobertura_neta":"66.19","deserci_n":"1.06"}
+,{"c_digo_municipio":"08758","municipio":"Soledad","cobertura_neta_media":"60.13","cobertura_neta":"92.93","deserci_n":"2.69"}
+,{"c_digo_municipio":"08770","municipio":"Suan","cobertura_neta_media":"42.36","cobertura_neta":"80.48","deserci_n":"0.62"}
+,{"c_digo_municipio":"08832","municipio":"Tubará","cobertura_neta_media":"30.18","cobertura_neta":"58.13","deserci_n":"2.28"}
+,{"c_digo_municipio":"25293","municipio":"Gachala","cobertura_neta_media":"52.11","cobertura_neta":"78.67","deserci_n":"1.32"}
+,{"c_digo_municipio":"08849","municipio":"Usiacurí","cobertura_neta_media":"34.88","cobertura_neta":"58.26","deserci_n":"1.82"}
+,{"c_digo_municipio":"11001","municipio":"Bogotá, D.C.","cobertura_neta_media":"65.32","cobertura_neta":"90.6","deserci_n":"2.49"}
+,{"c_digo_municipio":"13001","municipio":"Cartagena","cobertura_neta_media":"63.3","cobertura_neta":"108.95","deserci_n":"3.33"}
+,{"c_digo_municipio":"13006","municipio":"Achí","cobertura_neta_media":"45.81","cobertura_neta":"94.67","deserci_n":"3.94"}
+,{"c_digo_municipio":"13030","municipio":"Altos del Rosario","cobertura_neta_media":"26.05","cobertura_neta":"72.59","deserci_n":"3.91"}
+,{"c_digo_municipio":"13042","municipio":"Arenal","cobertura_neta_media":"40.51","cobertura_neta":"97.36","deserci_n":"2.43"}
+,{"c_digo_municipio":"13052","municipio":"Arjona","cobertura_neta_media":"56.75","cobertura_neta":"93.15","deserci_n":"2.84"}
+,{"c_digo_municipio":"13062","municipio":"Arroyohondo","cobertura_neta_media":"33.89","cobertura_neta":"88.26","deserci_n":"4.87"}
+,{"c_digo_municipio":"13074","municipio":"Barranco de Loba","cobertura_neta_media":"33.23","cobertura_neta":"100.15","deserci_n":"5.76"}
+,{"c_digo_municipio":"13140","municipio":"Calamar","cobertura_neta_media":"47.72","cobertura_neta":"96.84","deserci_n":"2.11"}
+,{"c_digo_municipio":"13160","municipio":"Cantagallo","cobertura_neta_media":"38.3","cobertura_neta":"95.51","deserci_n":"4.09"}
+,{"c_digo_municipio":"13188","municipio":"Cicuco","cobertura_neta_media":"39.12","cobertura_neta":"83.39","deserci_n":"5.17"}
+,{"c_digo_municipio":"13212","municipio":"Córdoba","cobertura_neta_media":"47.85","cobertura_neta":"93.97","deserci_n":"1.47"}
+,{"c_digo_municipio":"13222","municipio":"Clemencia","cobertura_neta_media":"36.66","cobertura_neta":"81.52","deserci_n":"3.13"}
+,{"c_digo_municipio":"13244","municipio":"El Carmen de Bolívar","cobertura_neta_media":"54.46","cobertura_neta":"98.87","deserci_n":"3.55"}
+,{"c_digo_municipio":"13248","municipio":"El Guamo","cobertura_neta_media":"38.97","cobertura_neta":"78.85","deserci_n":"3.19"}
+,{"c_digo_municipio":"13268","municipio":"El Peñón","cobertura_neta_media":"31.65","cobertura_neta":"81.02","deserci_n":"3.96"}
+,{"c_digo_municipio":"13300","municipio":"Hatillo de Loba","cobertura_neta_media":"33.27","cobertura_neta":"90.66","deserci_n":"4.12"}
+,{"c_digo_municipio":"13430","municipio":"Magangué","cobertura_neta_media":"42.34","cobertura_neta":"82.69","deserci_n":"3.94"}
+,{"c_digo_municipio":"13433","municipio":"Mahates","cobertura_neta_media":"50.14","cobertura_neta":"89.98","deserci_n":"2.82"}
+,{"c_digo_municipio":"13440","municipio":"Margarita","cobertura_neta_media":"47.62","cobertura_neta":"83.9","deserci_n":"3.97"}
+,{"c_digo_municipio":"13442","municipio":"María la Baja","cobertura_neta_media":"40.86","cobertura_neta":"90.15","deserci_n":"3.39"}
+,{"c_digo_municipio":"13458","municipio":"Montecristo","cobertura_neta_media":"13.42","cobertura_neta":"73.56","deserci_n":"5.83"}
+,{"c_digo_municipio":"13468","municipio":"Mompós","cobertura_neta_media":"44.85","cobertura_neta":"96.05","deserci_n":"3.95"}
+,{"c_digo_municipio":"13473","municipio":"Morales","cobertura_neta_media":"28.34","cobertura_neta":"75.98","deserci_n":"3.49"}
+,{"c_digo_municipio":"13490","municipio":"Norosi","cobertura_neta_media":"16.71","cobertura_neta":"92.53","deserci_n":"1.63"}
+,{"c_digo_municipio":"13549","municipio":"Pinillos","cobertura_neta_media":"37.52","cobertura_neta":"79.14","deserci_n":"4.43"}
+,{"c_digo_municipio":"13580","municipio":"Regidor","cobertura_neta_media":"28.52","cobertura_neta":"70.39","deserci_n":"6.29"}
+,{"c_digo_municipio":"13600","municipio":"Río Viejo","cobertura_neta_media":"22.16","cobertura_neta":"71.24","deserci_n":"3.85"}
+,{"c_digo_municipio":"13620","municipio":"San Cristóbal","cobertura_neta_media":"38.54","cobertura_neta":"83.96","deserci_n":"3.18"}
+,{"c_digo_municipio":"13647","municipio":"San Estanislao","cobertura_neta_media":"52.43","cobertura_neta":"83.12","deserci_n":"3.41"}
+,{"c_digo_municipio":"13650","municipio":"San Fernando","cobertura_neta_media":"21.13","cobertura_neta":"60.03","deserci_n":"5.41"}
+,{"c_digo_municipio":"13654","municipio":"San Jacinto","cobertura_neta_media":"49.38","cobertura_neta":"88.72","deserci_n":"3.12"}
+,{"c_digo_municipio":"13655","municipio":"San Jacinto del Cauca","cobertura_neta_media":"37.88","cobertura_neta":"75","deserci_n":"4.47"}
+,{"c_digo_municipio":"13657","municipio":"San Juan Nepomuceno","cobertura_neta_media":"57.64","cobertura_neta":"88.29","deserci_n":"3.73"}
+,{"c_digo_municipio":"13667","municipio":"San Martín de Loba","cobertura_neta_media":"52.76","cobertura_neta":"105.63","deserci_n":"5.1"}
+,{"c_digo_municipio":"13670","municipio":"San Pablo","cobertura_neta_media":"36.14","cobertura_neta":"89.05","deserci_n":"2.39"}
+,{"c_digo_municipio":"13673","municipio":"Santa Catalina","cobertura_neta_media":"49.65","cobertura_neta":"91.23","deserci_n":"2.73"}
+,{"c_digo_municipio":"13683","municipio":"Santa Rosa","cobertura_neta_media":"38.27","cobertura_neta":"75.58","deserci_n":"1.76"}
+,{"c_digo_municipio":"13688","municipio":"Santa Rosa del Sur","cobertura_neta_media":"39.01","cobertura_neta":"114.31","deserci_n":"3.95"}
+,{"c_digo_municipio":"13744","municipio":"Simití","cobertura_neta_media":"32.01","cobertura_neta":"79.09","deserci_n":"3.6"}
+,{"c_digo_municipio":"13760","municipio":"Soplaviento","cobertura_neta_media":"41","cobertura_neta":"71.94","deserci_n":"1.08"}
+,{"c_digo_municipio":"13780","municipio":"Talaigua Nuevo","cobertura_neta_media":"49.22","cobertura_neta":"87.22","deserci_n":"2.15"}
+,{"c_digo_municipio":"13810","municipio":"Tiquisio","cobertura_neta_media":"33.98","cobertura_neta":"99.7","deserci_n":"3.16"}
+,{"c_digo_municipio":"13836","municipio":"Turbaco","cobertura_neta_media":"61.66","cobertura_neta":"99.65","deserci_n":"2.84"}
+,{"c_digo_municipio":"13838","municipio":"Turbaná","cobertura_neta_media":"45.93","cobertura_neta":"91.59","deserci_n":"3.1"}
+,{"c_digo_municipio":"13873","municipio":"Villanueva","cobertura_neta_media":"38.95","cobertura_neta":"76.77","deserci_n":"1.11"}
+,{"c_digo_municipio":"13894","municipio":"Zambrano","cobertura_neta_media":"55.12","cobertura_neta":"90.48","deserci_n":"2.32"}
+,{"c_digo_municipio":"15001","municipio":"Tunja","cobertura_neta_media":"56.56","cobertura_neta":"98.93","deserci_n":"2.82"}
+,{"c_digo_municipio":"15022","municipio":"Almeida","cobertura_neta_media":"31.91","cobertura_neta":"67.68","deserci_n":"2.05"}
+,{"c_digo_municipio":"15047","municipio":"Aquitania","cobertura_neta_media":"48.2","cobertura_neta":"78.18","deserci_n":"3.86"}
+,{"c_digo_municipio":"15051","municipio":"Arcabuco","cobertura_neta_media":"48.04","cobertura_neta":"79.72","deserci_n":"1.28"}
+,{"c_digo_municipio":"15087","municipio":"Belén","cobertura_neta_media":"73.81","cobertura_neta":"96.94","deserci_n":"2.8"}
+,{"c_digo_municipio":"15090","municipio":"Berbeo","cobertura_neta_media":"50","cobertura_neta":"69.52","deserci_n":"1.49"}
+,{"c_digo_municipio":"15092","municipio":"Betéitiva","cobertura_neta_media":"39.22","cobertura_neta":"63.91","deserci_n":"2.4"}
+,{"c_digo_municipio":"15097","municipio":"Boavita","cobertura_neta_media":"43.48","cobertura_neta":"85.96","deserci_n":"1.64"}
+,{"c_digo_municipio":"15104","municipio":"Boyacá","cobertura_neta_media":"62.79","cobertura_neta":"66.73","deserci_n":"2.01"}
+,{"c_digo_municipio":"15106","municipio":"Briceño","cobertura_neta_media":"48.61","cobertura_neta":"82.69","deserci_n":"0.82"}
+,{"c_digo_municipio":"15109","municipio":"Buenavista","cobertura_neta_media":"68.35","cobertura_neta":"78.56","deserci_n":"2.94"}
+,{"c_digo_municipio":"15114","municipio":"Busbanzá","cobertura_neta_media":"26.92","cobertura_neta":"65.76","deserci_n":"2.27"}
+,{"c_digo_municipio":"15131","municipio":"Caldas","cobertura_neta_media":"50","cobertura_neta":"65.97","deserci_n":"2.68"}
+,{"c_digo_municipio":"15135","municipio":"Campohermoso","cobertura_neta_media":"38.78","cobertura_neta":"66.61","deserci_n":"0.69"}
+,{"c_digo_municipio":"15162","municipio":"Cerinza","cobertura_neta_media":"55.17","cobertura_neta":"77.61","deserci_n":"0.6"}
+,{"c_digo_municipio":"15172","municipio":"Chinavita","cobertura_neta_media":"65.48","cobertura_neta":"79.64","deserci_n":"1.9"}
+,{"c_digo_municipio":"15176","municipio":"Chiquinquirá","cobertura_neta_media":"62.3","cobertura_neta":"90.42","deserci_n":"1.94"}
+,{"c_digo_municipio":"15180","municipio":"Chiscas","cobertura_neta_media":"59.06","cobertura_neta":"76.48","deserci_n":"1.06"}
+,{"c_digo_municipio":"15183","municipio":"Chita","cobertura_neta_media":"56.31","cobertura_neta":"77.74","deserci_n":"2.83"}
+,{"c_digo_municipio":"15185","municipio":"Chitaraque","cobertura_neta_media":"41.67","cobertura_neta":"70.42","deserci_n":"5.17"}
+,{"c_digo_municipio":"15187","municipio":"Chivatá","cobertura_neta_media":"34.83","cobertura_neta":"71.54","deserci_n":"2.16"}
+,{"c_digo_municipio":"15189","municipio":"Ciénega","cobertura_neta_media":"63.76","cobertura_neta":"81.3","deserci_n":"1.63"}
+,{"c_digo_municipio":"15223","municipio":"Cubará","cobertura_neta_media":"18.05","cobertura_neta":"43.86","deserci_n":"4.97"}
+,{"c_digo_municipio":"15224","municipio":"Cucaita","cobertura_neta_media":"58.27","cobertura_neta":"79.95","deserci_n":"1.4"}
+,{"c_digo_municipio":"15226","municipio":"Cuítiva","cobertura_neta_media":"70.91","cobertura_neta":"77.96","deserci_n":"1.31"}
+,{"c_digo_municipio":"15232","municipio":"Chíquiza","cobertura_neta_media":"43.31","cobertura_neta":"62.94","deserci_n":"1.41"}
+,{"c_digo_municipio":"15236","municipio":"Chivor","cobertura_neta_media":"41.56","cobertura_neta":"60.65","deserci_n":"3"}
+,{"c_digo_municipio":"15238","municipio":"Duitama","cobertura_neta_media":"67.19","cobertura_neta":"95.18","deserci_n":"2.22"}
+,{"c_digo_municipio":"15244","municipio":"El Cocuy","cobertura_neta_media":"51.37","cobertura_neta":"74.35","deserci_n":"1.21"}
+,{"c_digo_municipio":"15248","municipio":"El Espino","cobertura_neta_media":"69.66","cobertura_neta":"81.47","deserci_n":"0.69"}
+,{"c_digo_municipio":"15272","municipio":"Firavitoba","cobertura_neta_media":"63.08","cobertura_neta":"60.26","deserci_n":"1.78"}
+,{"c_digo_municipio":"15276","municipio":"Floresta","cobertura_neta_media":"67.71","cobertura_neta":"83.83","deserci_n":"3.35"}
+,{"c_digo_municipio":"15293","municipio":"Gachantivá","cobertura_neta_media":"83.13","cobertura_neta":"94.17","deserci_n":"4.33"}
+,{"c_digo_municipio":"15296","municipio":"Gameza","cobertura_neta_media":"68.18","cobertura_neta":"79.68","deserci_n":"1.8"}
+,{"c_digo_municipio":"15299","municipio":"Garagoa","cobertura_neta_media":"65.71","cobertura_neta":"81.07","deserci_n":"1.66"}
+,{"c_digo_municipio":"15317","municipio":"Guacamayas","cobertura_neta_media":"37.04","cobertura_neta":"59.71","deserci_n":"0.97"}
+,{"c_digo_municipio":"15322","municipio":"Guateque","cobertura_neta_media":"62.42","cobertura_neta":"91.72","deserci_n":"1.87"}
+,{"c_digo_municipio":"15325","municipio":"Guayatá","cobertura_neta_media":"62.2","cobertura_neta":"79.5","deserci_n":"2.52"}
+,{"c_digo_municipio":"15332","municipio":"Güicán","cobertura_neta_media":"44.67","cobertura_neta":"62.15","deserci_n":"0.46"}
+,{"c_digo_municipio":"15362","municipio":"Iza","cobertura_neta_media":"36.21","cobertura_neta":"89.61","deserci_n":"3.59"}
+,{"c_digo_municipio":"15367","municipio":"Jenesano","cobertura_neta_media":"58.26","cobertura_neta":"70.2","deserci_n":"0.86"}
+,{"c_digo_municipio":"15368","municipio":"Jericó","cobertura_neta_media":"56.67","cobertura_neta":"88.82","deserci_n":"2.1"}
+,{"c_digo_municipio":"15377","municipio":"Labranzagrande","cobertura_neta_media":"41.38","cobertura_neta":"93.41","deserci_n":"2.49"}
+,{"c_digo_municipio":"15380","municipio":"La Capilla","cobertura_neta_media":"53.42","cobertura_neta":"71.59","deserci_n":"0.89"}
+,{"c_digo_municipio":"15401","municipio":"La Victoria","cobertura_neta_media":"51.28","cobertura_neta":"75.66","deserci_n":"0.65"}
+,{"c_digo_municipio":"15403","municipio":"La Uvita","cobertura_neta_media":"44.05","cobertura_neta":"77.43","deserci_n":"0.51"}
+,{"c_digo_municipio":"15407","municipio":"Villa de Leyva","cobertura_neta_media":"64.94","cobertura_neta":"108.09","deserci_n":"2.1"}
+,{"c_digo_municipio":"15442","municipio":"Maripí","cobertura_neta_media":"40.8","cobertura_neta":"66.34","deserci_n":"2.04"}
+,{"c_digo_municipio":"15455","municipio":"Miraflores","cobertura_neta_media":"56.93","cobertura_neta":"85.16","deserci_n":"2.59"}
+,{"c_digo_municipio":"15464","municipio":"Mongua","cobertura_neta_media":"56.77","cobertura_neta":"74.71","deserci_n":"2.02"}
+,{"c_digo_municipio":"15466","municipio":"Monguí","cobertura_neta_media":"57.82","cobertura_neta":"93.56","deserci_n":"0.93"}
+,{"c_digo_municipio":"15469","municipio":"Moniquirá","cobertura_neta_media":"57.4","cobertura_neta":"88.15","deserci_n":"3.67"}
+,{"c_digo_municipio":"15476","municipio":"Motavita","cobertura_neta_media":"40.31","cobertura_neta":"63.9","deserci_n":"1.64"}
+,{"c_digo_municipio":"15480","municipio":"Muzo","cobertura_neta_media":"48.63","cobertura_neta":"77.35","deserci_n":"1.56"}
+,{"c_digo_municipio":"15491","municipio":"Nobsa","cobertura_neta_media":"60.8","cobertura_neta":"108.13","deserci_n":"2.84"}
+,{"c_digo_municipio":"15494","municipio":"Nuevo Colón","cobertura_neta_media":"66.86","cobertura_neta":"81.97","deserci_n":"0.84"}
+,{"c_digo_municipio":"15500","municipio":"Oicatá","cobertura_neta_media":"47.92","cobertura_neta":"80.67","deserci_n":"3.69"}
+,{"c_digo_municipio":"15507","municipio":"Otanche","cobertura_neta_media":"52.01","cobertura_neta":"74.97","deserci_n":"2.51"}
+,{"c_digo_municipio":"15511","municipio":"Pachavita","cobertura_neta_media":"40","cobertura_neta":"68.88","deserci_n":"1.82"}
+,{"c_digo_municipio":"15514","municipio":"Páez","cobertura_neta_media":"65.98","cobertura_neta":"82.04","deserci_n":"2.13"}
+,{"c_digo_municipio":"15516","municipio":"Paipa","cobertura_neta_media":"54.09","cobertura_neta":"96.83","deserci_n":"2.94"}
+,{"c_digo_municipio":"15518","municipio":"Pajarito","cobertura_neta_media":"58.11","cobertura_neta":"70.28","deserci_n":"1.54"}
+,{"c_digo_municipio":"15522","municipio":"Panqueba","cobertura_neta_media":"96.23","cobertura_neta":"88.58","deserci_n":"2"}
+,{"c_digo_municipio":"15531","municipio":"Pauna","cobertura_neta_media":"50.61","cobertura_neta":"82.32","deserci_n":"2.86"}
+,{"c_digo_municipio":"15533","municipio":"Paya","cobertura_neta_media":"33.65","cobertura_neta":"64.98","deserci_n":"0.47"}
+,{"c_digo_municipio":"15537","municipio":"Paz de Río","cobertura_neta_media":"60","cobertura_neta":"82.69","deserci_n":"1.86"}
+,{"c_digo_municipio":"15542","municipio":"Pesca","cobertura_neta_media":"47.83","cobertura_neta":"75.92","deserci_n":"0.79"}
+,{"c_digo_municipio":"15550","municipio":"Pisba","cobertura_neta_media":"40.91","cobertura_neta":"66.18","deserci_n":"3.2"}
+,{"c_digo_municipio":"15572","municipio":"Puerto Boyacá","cobertura_neta_media":"56.77","cobertura_neta":"91.87","deserci_n":"3.39"}
+,{"c_digo_municipio":"15580","municipio":"Quípama","cobertura_neta_media":"37.65","cobertura_neta":"71.82","deserci_n":"1.59"}
+,{"c_digo_municipio":"15599","municipio":"Ramiriquí","cobertura_neta_media":"59.18","cobertura_neta":"87.72","deserci_n":"4.34"}
+,{"c_digo_municipio":"15621","municipio":"Rondón","cobertura_neta_media":"39.24","cobertura_neta":"60.92","deserci_n":"2.52"}
+,{"c_digo_municipio":"15632","municipio":"Saboyá","cobertura_neta_media":"49.89","cobertura_neta":"70.48","deserci_n":"1.39"}
+,{"c_digo_municipio":"15638","municipio":"Sáchica","cobertura_neta_media":"40.4","cobertura_neta":"83.14","deserci_n":"3.81"}
+,{"c_digo_municipio":"15646","municipio":"Samacá","cobertura_neta_media":"58.08","cobertura_neta":"112.3","deserci_n":"1.89"}
+,{"c_digo_municipio":"15660","municipio":"San Eduardo","cobertura_neta_media":"58.7","cobertura_neta":"85.61","deserci_n":"0.84"}
+,{"c_digo_municipio":"15664","municipio":"San José de Pare","cobertura_neta_media":"34.35","cobertura_neta":"75.18","deserci_n":"3.21"}
+,{"c_digo_municipio":"15667","municipio":"San Luis de Gaceno","cobertura_neta_media":"51.14","cobertura_neta":"72.86","deserci_n":"6"}
+,{"c_digo_municipio":"15673","municipio":"San Mateo","cobertura_neta_media":"57.73","cobertura_neta":"89.75","deserci_n":"1.05"}
+,{"c_digo_municipio":"15676","municipio":"San Miguel de Sema","cobertura_neta_media":"92.78","cobertura_neta":"102.25","deserci_n":"1.36"}
+,{"c_digo_municipio":"15681","municipio":"San Pablo de Borbur","cobertura_neta_media":"44.44","cobertura_neta":"78.26","deserci_n":"1.76"}
+,{"c_digo_municipio":"15686","municipio":"Santana","cobertura_neta_media":"42.52","cobertura_neta":"78.77","deserci_n":"4.19"}
+,{"c_digo_municipio":"15690","municipio":"Santa María","cobertura_neta_media":"55.56","cobertura_neta":"85.85","deserci_n":"1.52"}
+,{"c_digo_municipio":"15693","municipio":"Santa Rosa de Viterbo","cobertura_neta_media":"43.12","cobertura_neta":"74.63","deserci_n":"2.39"}
+,{"c_digo_municipio":"15696","municipio":"Santa Sofía","cobertura_neta_media":"52.27","cobertura_neta":"94.01","deserci_n":"3.35"}
+,{"c_digo_municipio":"15720","municipio":"Sativanorte","cobertura_neta_media":"32.79","cobertura_neta":"70.17","deserci_n":"3.97"}
+,{"c_digo_municipio":"15723","municipio":"Sativasur","cobertura_neta_media":"75.76","cobertura_neta":"95.26","deserci_n":"0"}
+,{"c_digo_municipio":"15740","municipio":"Siachoque","cobertura_neta_media":"66.67","cobertura_neta":"92.21","deserci_n":"1.76"}
+,{"c_digo_municipio":"15753","municipio":"Soatá","cobertura_neta_media":"68.28","cobertura_neta":"91.08","deserci_n":"0.89"}
+,{"c_digo_municipio":"15755","municipio":"Socotá","cobertura_neta_media":"62.45","cobertura_neta":"99.08","deserci_n":"1.47"}
+,{"c_digo_municipio":"15757","municipio":"Socha","cobertura_neta_media":"78.24","cobertura_neta":"112.64","deserci_n":"2.76"}
+,{"c_digo_municipio":"15759","municipio":"Sogamoso","cobertura_neta_media":"72.82","cobertura_neta":"108.91","deserci_n":"1.99"}
+,{"c_digo_municipio":"15761","municipio":"Somondoco","cobertura_neta_media":"70.77","cobertura_neta":"86.09","deserci_n":"2.54"}
+,{"c_digo_municipio":"15762","municipio":"Sora","cobertura_neta_media":"51.96","cobertura_neta":"80.75","deserci_n":"0.74"}
+,{"c_digo_municipio":"15763","municipio":"Sotaquirá","cobertura_neta_media":"32.85","cobertura_neta":"73.26","deserci_n":"1.71"}
+,{"c_digo_municipio":"15776","municipio":"Sutamarchán","cobertura_neta_media":"47.03","cobertura_neta":"74.13","deserci_n":"2.09"}
+,{"c_digo_municipio":"15778","municipio":"Sutatenza","cobertura_neta_media":"40.87","cobertura_neta":"52.1","deserci_n":"0.84"}
+,{"c_digo_municipio":"15790","municipio":"Tasco","cobertura_neta_media":"52.08","cobertura_neta":"77.56","deserci_n":"1.24"}
+,{"c_digo_municipio":"15798","municipio":"Tenza","cobertura_neta_media":"55.77","cobertura_neta":"74.87","deserci_n":"2.05"}
+,{"c_digo_municipio":"15804","municipio":"Tibaná","cobertura_neta_media":"49.81","cobertura_neta":"74.55","deserci_n":"1.51"}
+,{"c_digo_municipio":"15806","municipio":"Tibasosa","cobertura_neta_media":"42.68","cobertura_neta":"75.18","deserci_n":"3.88"}
+,{"c_digo_municipio":"15808","municipio":"Tinjacá","cobertura_neta_media":"50","cobertura_neta":"86.39","deserci_n":"4.45"}
+,{"c_digo_municipio":"15810","municipio":"Tipacoque","cobertura_neta_media":"60","cobertura_neta":"82.74","deserci_n":"1.1"}
+,{"c_digo_municipio":"15814","municipio":"Toca","cobertura_neta_media":"67.21","cobertura_neta":"103.1","deserci_n":"2.2"}
+,{"c_digo_municipio":"15816","municipio":"Togüí","cobertura_neta_media":"60.43","cobertura_neta":"81.3","deserci_n":"6.25"}
+,{"c_digo_municipio":"15820","municipio":"Tópaga","cobertura_neta_media":"36","cobertura_neta":"82.19","deserci_n":"2.01"}
+,{"c_digo_municipio":"15822","municipio":"Tota","cobertura_neta_media":"53.76","cobertura_neta":"79.12","deserci_n":"1.86"}
+,{"c_digo_municipio":"15832","municipio":"Tununguá","cobertura_neta_media":"70.45","cobertura_neta":"89.12","deserci_n":"0.73"}
+,{"c_digo_municipio":"15835","municipio":"Turmequé","cobertura_neta_media":"108.51","cobertura_neta":"106.06","deserci_n":"0.93"}
+,{"c_digo_municipio":"15837","municipio":"Tuta","cobertura_neta_media":"73.13","cobertura_neta":"109.86","deserci_n":"2.51"}
+,{"c_digo_municipio":"15839","municipio":"Tutazá","cobertura_neta_media":"44.26","cobertura_neta":"76.88","deserci_n":"1.91"}
+,{"c_digo_municipio":"15842","municipio":"Umbita","cobertura_neta_media":"60.49","cobertura_neta":"70.92","deserci_n":"1.17"}
+,{"c_digo_municipio":"15861","municipio":"Ventaquemada","cobertura_neta_media":"57.22","cobertura_neta":"79.62","deserci_n":"2.83"}
+,{"c_digo_municipio":"15879","municipio":"Viracachá","cobertura_neta_media":"27","cobertura_neta":"55.27","deserci_n":"1.86"}
+,{"c_digo_municipio":"15897","municipio":"Zetaquira","cobertura_neta_media":"63.82","cobertura_neta":"85.35","deserci_n":"1"}
+,{"c_digo_municipio":"17001","municipio":"Manizales","cobertura_neta_media":"47.14","cobertura_neta":"73.26","deserci_n":"3.06"}
+,{"c_digo_municipio":"17013","municipio":"Aguadas","cobertura_neta_media":"53.41","cobertura_neta":"79.97","deserci_n":"3.24"}
+,{"c_digo_municipio":"17042","municipio":"Anserma","cobertura_neta_media":"43.67","cobertura_neta":"74.19","deserci_n":"3.81"}
+,{"c_digo_municipio":"17050","municipio":"Aranzazu","cobertura_neta_media":"62.58","cobertura_neta":"87.94","deserci_n":"3.3"}
+,{"c_digo_municipio":"17088","municipio":"Belalcázar","cobertura_neta_media":"39.94","cobertura_neta":"80.01","deserci_n":"5.08"}
+,{"c_digo_municipio":"17174","municipio":"Chinchiná","cobertura_neta_media":"51.58","cobertura_neta":"85.01","deserci_n":"5.53"}
+,{"c_digo_municipio":"17272","municipio":"Filadelfia","cobertura_neta_media":"33.33","cobertura_neta":"57.68","deserci_n":"4.64"}
+,{"c_digo_municipio":"17380","municipio":"La Dorada","cobertura_neta_media":"45.39","cobertura_neta":"77.93","deserci_n":"4.41"}
+,{"c_digo_municipio":"17388","municipio":"La Merced","cobertura_neta_media":"48.45","cobertura_neta":"80.13","deserci_n":"3.91"}
+,{"c_digo_municipio":"17433","municipio":"Manzanares","cobertura_neta_media":"52.12","cobertura_neta":"72.96","deserci_n":"2.27"}
+,{"c_digo_municipio":"17442","municipio":"Marmato","cobertura_neta_media":"43.02","cobertura_neta":"102.77","deserci_n":"3.05"}
+,{"c_digo_municipio":"17444","municipio":"Marquetalia","cobertura_neta_media":"67.44","cobertura_neta":"86.22","deserci_n":"3.37"}
+,{"c_digo_municipio":"17446","municipio":"Marulanda","cobertura_neta_media":"40","cobertura_neta":"62.36","deserci_n":"2.97"}
+,{"c_digo_municipio":"17486","municipio":"Neira","cobertura_neta_media":"52.3","cobertura_neta":"83.13","deserci_n":"3.8"}
+,{"c_digo_municipio":"17495","municipio":"Norcasia","cobertura_neta_media":"65.69","cobertura_neta":"88.98","deserci_n":"2.37"}
+,{"c_digo_municipio":"17513","municipio":"Pácora","cobertura_neta_media":"49.33","cobertura_neta":"76.78","deserci_n":"3.89"}
+,{"c_digo_municipio":"17524","municipio":"Palestina","cobertura_neta_media":"51.08","cobertura_neta":"87.7","deserci_n":"3.87"}
+,{"c_digo_municipio":"17541","municipio":"Pensilvania","cobertura_neta_media":"54.71","cobertura_neta":"77.26","deserci_n":"3.55"}
+,{"c_digo_municipio":"17614","municipio":"Riosucio","cobertura_neta_media":"69.55","cobertura_neta":"86.75","deserci_n":"2.04"}
+,{"c_digo_municipio":"17616","municipio":"Risaralda","cobertura_neta_media":"45.18","cobertura_neta":"79.68","deserci_n":"6.41"}
+,{"c_digo_municipio":"17653","municipio":"Salamina","cobertura_neta_media":"46.26","cobertura_neta":"61.78","deserci_n":"2.25"}
+,{"c_digo_municipio":"17662","municipio":"Samaná","cobertura_neta_media":"59.52","cobertura_neta":"79.73","deserci_n":"2.45"}
+,{"c_digo_municipio":"17665","municipio":"San José","cobertura_neta_media":"60.5","cobertura_neta":"92.63","deserci_n":"1.95"}
+,{"c_digo_municipio":"17777","municipio":"Supía","cobertura_neta_media":"57.02","cobertura_neta":"84.71","deserci_n":"3.15"}
+,{"c_digo_municipio":"17867","municipio":"Victoria","cobertura_neta_media":"49.66","cobertura_neta":"71.98","deserci_n":"4.82"}
+,{"c_digo_municipio":"17873","municipio":"Villamaría","cobertura_neta_media":"50.3","cobertura_neta":"81.8","deserci_n":"3.27"}
+,{"c_digo_municipio":"17877","municipio":"Viterbo","cobertura_neta_media":"43.7","cobertura_neta":"86.76","deserci_n":"3.27"}
+,{"c_digo_municipio":"18001","municipio":"Florencia","cobertura_neta_media":"40.86","cobertura_neta":"90.69","deserci_n":"5.93"}
+,{"c_digo_municipio":"18029","municipio":"Albania","cobertura_neta_media":"28.19","cobertura_neta":"74.18","deserci_n":"6.66"}
+,{"c_digo_municipio":"18094","municipio":"Belén de los Andaquies","cobertura_neta_media":"25.4","cobertura_neta":"68.51","deserci_n":"6.12"}
+,{"c_digo_municipio":"18150","municipio":"Cartagena del Chairá","cobertura_neta_media":"24.81","cobertura_neta":"85.25","deserci_n":"8.76"}
+,{"c_digo_municipio":"18205","municipio":"Curillo","cobertura_neta_media":"33.13","cobertura_neta":"80.24","deserci_n":"7.83"}
+,{"c_digo_municipio":"18247","municipio":"El Doncello","cobertura_neta_media":"41.59","cobertura_neta":"74.51","deserci_n":"5.42"}
+,{"c_digo_municipio":"18256","municipio":"El Paujil","cobertura_neta_media":"19.75","cobertura_neta":"54.81","deserci_n":"7.8"}
+,{"c_digo_municipio":"18410","municipio":"La Montañita","cobertura_neta_media":"22.42","cobertura_neta":"66.42","deserci_n":"6.83"}
+,{"c_digo_municipio":"18460","municipio":"Milán","cobertura_neta_media":"19.13","cobertura_neta":"63.37","deserci_n":"4.75"}
+,{"c_digo_municipio":"18479","municipio":"Morelia","cobertura_neta_media":"14.49","cobertura_neta":"68.64","deserci_n":"10.28"}
+,{"c_digo_municipio":"18592","municipio":"Puerto Rico","cobertura_neta_media":"28.21","cobertura_neta":"71.86","deserci_n":"5.57"}
+,{"c_digo_municipio":"18610","municipio":"San José del Fragua","cobertura_neta_media":"33.61","cobertura_neta":"80.62","deserci_n":"6.91"}
+,{"c_digo_municipio":"18753","municipio":"San Vicente del Caguán","cobertura_neta_media":"35.68","cobertura_neta":"93.91","deserci_n":"7.8"}
+,{"c_digo_municipio":"18756","municipio":"Solano","cobertura_neta_media":"12.38","cobertura_neta":"72.61","deserci_n":"6.66"}
+,{"c_digo_municipio":"18785","municipio":"Solita","cobertura_neta_media":"29.1","cobertura_neta":"77.97","deserci_n":"5.41"}
+,{"c_digo_municipio":"18860","municipio":"Valparaíso","cobertura_neta_media":"19.76","cobertura_neta":"62.79","deserci_n":"5"}
+,{"c_digo_municipio":"19001","municipio":"Popayán","cobertura_neta_media":"67.28","cobertura_neta":"106.67","deserci_n":"3.38"}
+,{"c_digo_municipio":"19022","municipio":"Almaguer","cobertura_neta_media":"30.27","cobertura_neta":"57.33","deserci_n":"2.24"}
+,{"c_digo_municipio":"19050","municipio":"Argelia","cobertura_neta_media":"25.95","cobertura_neta":"92.6","deserci_n":"4.77"}
+,{"c_digo_municipio":"19075","municipio":"Balboa","cobertura_neta_media":"26.6","cobertura_neta":"76.73","deserci_n":"5.29"}
+,{"c_digo_municipio":"19100","municipio":"Bolívar","cobertura_neta_media":"42.7","cobertura_neta":"74.46","deserci_n":"2.35"}
+,{"c_digo_municipio":"19110","municipio":"Buenos Aires","cobertura_neta_media":"26.88","cobertura_neta":"65.35","deserci_n":"1.88"}
+,{"c_digo_municipio":"19130","municipio":"Cajibío","cobertura_neta_media":"30.94","cobertura_neta":"71.61","deserci_n":"3"}
+,{"c_digo_municipio":"19137","municipio":"Caldono","cobertura_neta_media":"37.16","cobertura_neta":"91.52","deserci_n":"2.18"}
+,{"c_digo_municipio":"19142","municipio":"Caloto","cobertura_neta_media":"50.89","cobertura_neta":"87.66","deserci_n":"2.74"}
+,{"c_digo_municipio":"19256","municipio":"El Tambo","cobertura_neta_media":"36.78","cobertura_neta":"77.89","deserci_n":"4.76"}
+,{"c_digo_municipio":"19290","municipio":"Florencia","cobertura_neta_media":"45.03","cobertura_neta":"87.38","deserci_n":"5.67"}
+,{"c_digo_municipio":"19300","municipio":"Guachene","cobertura_neta_media":"35.26","cobertura_neta":"73.04","deserci_n":"1.7"}
+,{"c_digo_municipio":"19318","municipio":"Guapi","cobertura_neta_media":"19.29","cobertura_neta":"74.37","deserci_n":"1.93"}
+,{"c_digo_municipio":"19355","municipio":"Inzá","cobertura_neta_media":"40.65","cobertura_neta":"86.86","deserci_n":"2.27"}
+,{"c_digo_municipio":"19364","municipio":"Jambaló","cobertura_neta_media":"42","cobertura_neta":"73.25","deserci_n":"2.4"}
+,{"c_digo_municipio":"19392","municipio":"La Sierra","cobertura_neta_media":"43.49","cobertura_neta":"80.87","deserci_n":"1.77"}
+,{"c_digo_municipio":"19397","municipio":"La Vega","cobertura_neta_media":"24.78","cobertura_neta":"49.67","deserci_n":"4.14"}
+,{"c_digo_municipio":"19418","municipio":"López","cobertura_neta_media":"22.26","cobertura_neta":"83.18","deserci_n":"3.45"}
+,{"c_digo_municipio":"19450","municipio":"Mercaderes","cobertura_neta_media":"31.22","cobertura_neta":"52.24","deserci_n":"3.85"}
+,{"c_digo_municipio":"19455","municipio":"Miranda","cobertura_neta_media":"51.96","cobertura_neta":"88.41","deserci_n":"2.63"}
+,{"c_digo_municipio":"19473","municipio":"Morales","cobertura_neta_media":"30.32","cobertura_neta":"73.38","deserci_n":"3.33"}
+,{"c_digo_municipio":"19513","municipio":"Padilla","cobertura_neta_media":"36.66","cobertura_neta":"70.59","deserci_n":"1.98"}
+,{"c_digo_municipio":"19517","municipio":"Paez","cobertura_neta_media":"23.75","cobertura_neta":"70.32","deserci_n":"4.05"}
+,{"c_digo_municipio":"19532","municipio":"Patía","cobertura_neta_media":"34.76","cobertura_neta":"75.62","deserci_n":"3.09"}
+,{"c_digo_municipio":"19533","municipio":"Piamonte","cobertura_neta_media":"18.88","cobertura_neta":"73.24","deserci_n":"3.47"}
+,{"c_digo_municipio":"19548","municipio":"Piendamó","cobertura_neta_media":"42.71","cobertura_neta":"88.76","deserci_n":"2.77"}
+,{"c_digo_municipio":"19573","municipio":"Puerto Tejada","cobertura_neta_media":"59.39","cobertura_neta":"103.18","deserci_n":"2.29"}
+,{"c_digo_municipio":"19585","municipio":"Puracé","cobertura_neta_media":"32.73","cobertura_neta":"70.2","deserci_n":"3.44"}
+,{"c_digo_municipio":"19622","municipio":"Rosas","cobertura_neta_media":"41.82","cobertura_neta":"69.71","deserci_n":"2.6"}
+,{"c_digo_municipio":"19693","municipio":"San Sebastián","cobertura_neta_media":"31.59","cobertura_neta":"51.96","deserci_n":"2.25"}
+,{"c_digo_municipio":"19698","municipio":"Santander de Quilichao","cobertura_neta_media":"54.94","cobertura_neta":"96.82","deserci_n":"3.48"}
+,{"c_digo_municipio":"19701","municipio":"Santa Rosa","cobertura_neta_media":"35.23","cobertura_neta":"77.14","deserci_n":"5.86"}
+,{"c_digo_municipio":"19743","municipio":"Silvia","cobertura_neta_media":"31.59","cobertura_neta":"69.99","deserci_n":"2.42"}
+,{"c_digo_municipio":"19760","municipio":"Sotara","cobertura_neta_media":"26.44","cobertura_neta":"48.91","deserci_n":"2.08"}
+,{"c_digo_municipio":"19780","municipio":"Suárez","cobertura_neta_media":"24.92","cobertura_neta":"64.01","deserci_n":"3.82"}
+,{"c_digo_municipio":"19785","municipio":"Sucre","cobertura_neta_media":"22.87","cobertura_neta":"43.78","deserci_n":"3.47"}
+,{"c_digo_municipio":"19807","municipio":"Timbío","cobertura_neta_media":"43.29","cobertura_neta":"82.35","deserci_n":"3.69"}
+,{"c_digo_municipio":"19809","municipio":"Timbiquí","cobertura_neta_media":"15.39","cobertura_neta":"69.87","deserci_n":"2.03"}
+,{"c_digo_municipio":"19821","municipio":"Toribio","cobertura_neta_media":"35.45","cobertura_neta":"72.27","deserci_n":"4.64"}
+,{"c_digo_municipio":"19824","municipio":"Totoró","cobertura_neta_media":"27.62","cobertura_neta":"63.86","deserci_n":"3.49"}
+,{"c_digo_municipio":"19845","municipio":"Villa Rica","cobertura_neta_media":"37.46","cobertura_neta":"75.6","deserci_n":"3.67"}
+,{"c_digo_municipio":"20001","municipio":"Valledupar","cobertura_neta_media":"44.51","cobertura_neta":"84.95","deserci_n":"4.03"}
+,{"c_digo_municipio":"20011","municipio":"Aguachica","cobertura_neta_media":"40.51","cobertura_neta":"80.23","deserci_n":"4.08"}
+,{"c_digo_municipio":"20013","municipio":"Agustín Codazzi","cobertura_neta_media":"37.98","cobertura_neta":"100.09","deserci_n":"5.71"}
+,{"c_digo_municipio":"20032","municipio":"Astrea","cobertura_neta_media":"37.03","cobertura_neta":"84.26","deserci_n":"6.63"}
+,{"c_digo_municipio":"20045","municipio":"Becerril","cobertura_neta_media":"34.22","cobertura_neta":"93.37","deserci_n":"5.42"}
+,{"c_digo_municipio":"20060","municipio":"Bosconia","cobertura_neta_media":"34.66","cobertura_neta":"83.46","deserci_n":"7.3"}
+,{"c_digo_municipio":"20175","municipio":"Chimichagua","cobertura_neta_media":"37.76","cobertura_neta":"83.68","deserci_n":"4.32"}
+,{"c_digo_municipio":"20178","municipio":"Chiriguaná","cobertura_neta_media":"41.35","cobertura_neta":"90.69","deserci_n":"5.63"}
+,{"c_digo_municipio":"20228","municipio":"Curumaní","cobertura_neta_media":"38.6","cobertura_neta":"84.12","deserci_n":"5.67"}
+,{"c_digo_municipio":"20238","municipio":"El Copey","cobertura_neta_media":"36.01","cobertura_neta":"88.77","deserci_n":"6.98"}
+,{"c_digo_municipio":"20250","municipio":"El Paso","cobertura_neta_media":"44.78","cobertura_neta":"95.27","deserci_n":"6.65"}
+,{"c_digo_municipio":"20295","municipio":"Gamarra","cobertura_neta_media":"27.2","cobertura_neta":"61.59","deserci_n":"4.53"}
+,{"c_digo_municipio":"20310","municipio":"González","cobertura_neta_media":"26.47","cobertura_neta":"73.71","deserci_n":"5.75"}
+,{"c_digo_municipio":"20383","municipio":"La Gloria","cobertura_neta_media":"38.57","cobertura_neta":"73.48","deserci_n":"5.75"}
+,{"c_digo_municipio":"20400","municipio":"La Jagua de Ibirico","cobertura_neta_media":"33.05","cobertura_neta":"78.39","deserci_n":"4.88"}
+,{"c_digo_municipio":"20443","municipio":"Manaure","cobertura_neta_media":"47.36","cobertura_neta":"93.42","deserci_n":"3.84"}
+,{"c_digo_municipio":"20517","municipio":"Pailitas","cobertura_neta_media":"40.31","cobertura_neta":"75.16","deserci_n":"3.47"}
+,{"c_digo_municipio":"20550","municipio":"Pelaya","cobertura_neta_media":"42.33","cobertura_neta":"84.06","deserci_n":"5.41"}
+,{"c_digo_municipio":"20570","municipio":"Pueblo Bello","cobertura_neta_media":"18.22","cobertura_neta":"75.31","deserci_n":"4.34"}
+,{"c_digo_municipio":"20614","municipio":"Río de Oro","cobertura_neta_media":"35.06","cobertura_neta":"81.21","deserci_n":"7.73"}
+,{"c_digo_municipio":"20621","municipio":"La Paz","cobertura_neta_media":"40.77","cobertura_neta":"87.46","deserci_n":"6.3"}
+,{"c_digo_municipio":"20710","municipio":"San Alberto","cobertura_neta_media":"32.64","cobertura_neta":"78.44","deserci_n":"5.95"}
+,{"c_digo_municipio":"20750","municipio":"San Diego","cobertura_neta_media":"31.4","cobertura_neta":"88.11","deserci_n":"6.53"}
+,{"c_digo_municipio":"20770","municipio":"San Martín","cobertura_neta_media":"30.12","cobertura_neta":"78.8","deserci_n":"3.38"}
+,{"c_digo_municipio":"20787","municipio":"Tamalameque","cobertura_neta_media":"38.32","cobertura_neta":"88.18","deserci_n":"4.25"}
+,{"c_digo_municipio":"23001","municipio":"Montería","cobertura_neta_media":"50.83","cobertura_neta":"91.35","deserci_n":"2.98"}
+,{"c_digo_municipio":"23068","municipio":"Ayapel","cobertura_neta_media":"41.35","cobertura_neta":"86.01","deserci_n":"3.3"}
+,{"c_digo_municipio":"23079","municipio":"Buenavista","cobertura_neta_media":"45.06","cobertura_neta":"80.87","deserci_n":"3.81"}
+,{"c_digo_municipio":"23090","municipio":"Canalete","cobertura_neta_media":"41.21","cobertura_neta":"96.46","deserci_n":"3.41"}
+,{"c_digo_municipio":"23162","municipio":"Cereté","cobertura_neta_media":"55.05","cobertura_neta":"87.91","deserci_n":"3.17"}
+,{"c_digo_municipio":"23168","municipio":"Chimá","cobertura_neta_media":"37.88","cobertura_neta":"66.6","deserci_n":"2.87"}
+,{"c_digo_municipio":"23182","municipio":"Chinú","cobertura_neta_media":"55.8","cobertura_neta":"96.18","deserci_n":"3.15"}
+,{"c_digo_municipio":"23189","municipio":"Ciénaga de Oro","cobertura_neta_media":"51.23","cobertura_neta":"88.98","deserci_n":"4.28"}
+,{"c_digo_municipio":"23300","municipio":"Cotorra","cobertura_neta_media":"37.15","cobertura_neta":"72.68","deserci_n":"2.53"}
+,{"c_digo_municipio":"23350","municipio":"La Apartada","cobertura_neta_media":"43.62","cobertura_neta":"81.48","deserci_n":"4.61"}
+,{"c_digo_municipio":"23417","municipio":"Lorica","cobertura_neta_media":"61.29","cobertura_neta":"96.25","deserci_n":"4.03"}
+,{"c_digo_municipio":"23419","municipio":"Los Córdobas","cobertura_neta_media":"33.2","cobertura_neta":"75.33","deserci_n":"4.87"}
+,{"c_digo_municipio":"23464","municipio":"Momil","cobertura_neta_media":"38.09","cobertura_neta":"68.85","deserci_n":"1.33"}
+,{"c_digo_municipio":"23466","municipio":"Montelíbano","cobertura_neta_media":"50.64","cobertura_neta":"89.56","deserci_n":"3.43"}
+,{"c_digo_municipio":"23500","municipio":"Moñitos","cobertura_neta_media":"41.71","cobertura_neta":"75.54","deserci_n":"2.95"}
+,{"c_digo_municipio":"23555","municipio":"Planeta Rica","cobertura_neta_media":"60.2","cobertura_neta":"91.18","deserci_n":"1.67"}
+,{"c_digo_municipio":"23570","municipio":"Pueblo Nuevo","cobertura_neta_media":"38.17","cobertura_neta":"69.14","deserci_n":"3.52"}
+,{"c_digo_municipio":"23574","municipio":"Puerto Escondido","cobertura_neta_media":"34.38","cobertura_neta":"77.1","deserci_n":"3.53"}
+,{"c_digo_municipio":"23580","municipio":"Puerto Libertador","cobertura_neta_media":"38.48","cobertura_neta":"83.61","deserci_n":"5.34"}
+,{"c_digo_municipio":"23586","municipio":"Purísima","cobertura_neta_media":"50.49","cobertura_neta":"83.71","deserci_n":"4.05"}
+,{"c_digo_municipio":"23660","municipio":"Sahagún","cobertura_neta_media":"53.77","cobertura_neta":"85.08","deserci_n":"2.81"}
+,{"c_digo_municipio":"23670","municipio":"San Andrés Sotavento","cobertura_neta_media":"51.22","cobertura_neta":"78.04","deserci_n":"3.44"}
+,{"c_digo_municipio":"23672","municipio":"San Antero","cobertura_neta_media":"39.92","cobertura_neta":"82.96","deserci_n":"2.93"}
+,{"c_digo_municipio":"23675","municipio":"San Bernardo del Viento","cobertura_neta_media":"40.07","cobertura_neta":"77.09","deserci_n":"2.33"}
+,{"c_digo_municipio":"23678","municipio":"San Carlos","cobertura_neta_media":"40.31","cobertura_neta":"75.09","deserci_n":"4.04"}
+,{"c_digo_municipio":"23682","municipio":"San José de Uré","cobertura_neta_media":"33.06","cobertura_neta":"67.79","deserci_n":"8.54"}
+,{"c_digo_municipio":"23686","municipio":"San Pelayo","cobertura_neta_media":"40.73","cobertura_neta":"69.55","deserci_n":"3.18"}
+,{"c_digo_municipio":"23807","municipio":"Tierralta","cobertura_neta_media":"50.74","cobertura_neta":"95.24","deserci_n":"5.78"}
+,{"c_digo_municipio":"23815","municipio":"Tuchín","cobertura_neta_media":"32.32","cobertura_neta":"61.03","deserci_n":"3.07"}
+,{"c_digo_municipio":"23855","municipio":"Valencia","cobertura_neta_media":"50.94","cobertura_neta":"83.16","deserci_n":"4.51"}
+,{"c_digo_municipio":"25001","municipio":"Agua de Dios","cobertura_neta_media":"42.82","cobertura_neta":"73.73","deserci_n":"3.67"}
+,{"c_digo_municipio":"25019","municipio":"Albán","cobertura_neta_media":"32.88","cobertura_neta":"72.3","deserci_n":"7.29"}
+,{"c_digo_municipio":"25035","municipio":"Anapoima","cobertura_neta_media":"48.53","cobertura_neta":"91.44","deserci_n":"2.82"}
+,{"c_digo_municipio":"25040","municipio":"Anolaima","cobertura_neta_media":"46.87","cobertura_neta":"91.59","deserci_n":"4.05"}
+,{"c_digo_municipio":"25053","municipio":"Arbeláez","cobertura_neta_media":"48.65","cobertura_neta":"81.16","deserci_n":"3.14"}
+,{"c_digo_municipio":"25086","municipio":"Beltrán","cobertura_neta_media":"41.67","cobertura_neta":"85.24","deserci_n":"4.39"}
+,{"c_digo_municipio":"25095","municipio":"Bituima","cobertura_neta_media":"76.19","cobertura_neta":"102.76","deserci_n":"2.1"}
+,{"c_digo_municipio":"25099","municipio":"Bojacá","cobertura_neta_media":"44.99","cobertura_neta":"77.52","deserci_n":"2.36"}
+,{"c_digo_municipio":"25120","municipio":"Cabrera","cobertura_neta_media":"54.34","cobertura_neta":"66.13","deserci_n":"1.38"}
+,{"c_digo_municipio":"25123","municipio":"Cachipay","cobertura_neta_media":"37.22","cobertura_neta":"67.48","deserci_n":"5.27"}
+,{"c_digo_municipio":"25126","municipio":"Cajicá","cobertura_neta_media":"55.01","cobertura_neta":"84.77","deserci_n":"3.29"}
+,{"c_digo_municipio":"25148","municipio":"Caparrapí","cobertura_neta_media":"50.38","cobertura_neta":"71.42","deserci_n":"3.42"}
+,{"c_digo_municipio":"25151","municipio":"Caqueza","cobertura_neta_media":"46.37","cobertura_neta":"80.12","deserci_n":"2.4"}
+,{"c_digo_municipio":"25154","municipio":"Carmen de Carupa","cobertura_neta_media":"43.64","cobertura_neta":"65.93","deserci_n":"2.04"}
+,{"c_digo_municipio":"25168","municipio":"Chaguaní","cobertura_neta_media":"42.28","cobertura_neta":"61.55","deserci_n":"5.38"}
+,{"c_digo_municipio":"25175","municipio":"Chía","cobertura_neta_media":"67.96","cobertura_neta":"107.03","deserci_n":"3.36"}
+,{"c_digo_municipio":"25178","municipio":"Chipaque","cobertura_neta_media":"40.68","cobertura_neta":"75.9","deserci_n":"1.94"}
+,{"c_digo_municipio":"25181","municipio":"Choachí","cobertura_neta_media":"65.5","cobertura_neta":"81.25","deserci_n":"1.75"}
+,{"c_digo_municipio":"25183","municipio":"Chocontá","cobertura_neta_media":"35.5","cobertura_neta":"75.07","deserci_n":"1.8"}
+,{"c_digo_municipio":"25200","municipio":"Cogua","cobertura_neta_media":"51.65","cobertura_neta":"88.96","deserci_n":"2.74"}
+,{"c_digo_municipio":"25214","municipio":"Cota","cobertura_neta_media":"143.71","cobertura_neta":"177.43","deserci_n":"2.95"}
+,{"c_digo_municipio":"25224","municipio":"Cucunubá","cobertura_neta_media":"57.03","cobertura_neta":"80.12","deserci_n":"3.82"}
+,{"c_digo_municipio":"25245","municipio":"El Colegio","cobertura_neta_media":"50.47","cobertura_neta":"84.76","deserci_n":"4.63"}
+,{"c_digo_municipio":"25258","municipio":"El Peñón","cobertura_neta_media":"46.15","cobertura_neta":"62.72","deserci_n":"2.12"}
+,{"c_digo_municipio":"25260","municipio":"El Rosal","cobertura_neta_media":"45.96","cobertura_neta":"98.08","deserci_n":"4.33"}
+,{"c_digo_municipio":"25269","municipio":"Facatativá","cobertura_neta_media":"47.36","cobertura_neta":"77.7","deserci_n":"2.83"}
+,{"c_digo_municipio":"25279","municipio":"Fomeque","cobertura_neta_media":"47.3","cobertura_neta":"79.16","deserci_n":"3.93"}
+,{"c_digo_municipio":"25281","municipio":"Fosca","cobertura_neta_media":"55.35","cobertura_neta":"81.72","deserci_n":"2.12"}
+,{"c_digo_municipio":"25286","municipio":"Funza","cobertura_neta_media":"67.32","cobertura_neta":"91.46","deserci_n":"1.78"}
+,{"c_digo_municipio":"25288","municipio":"Fúquene","cobertura_neta_media":"107.45","cobertura_neta":"155.9","deserci_n":"1.22"}
+,{"c_digo_municipio":"25290","municipio":"Fusagasugá","cobertura_neta_media":"56.73","cobertura_neta":"90.79","deserci_n":"3.77"}
+,{"c_digo_municipio":"25295","municipio":"Gachancipá","cobertura_neta_media":"48.49","cobertura_neta":"101.55","deserci_n":"4.48"}
+,{"c_digo_municipio":"25297","municipio":"Gachetá","cobertura_neta_media":"63.08","cobertura_neta":"85.26","deserci_n":"2.57"}
+,{"c_digo_municipio":"25299","municipio":"Gama","cobertura_neta_media":"52.78","cobertura_neta":"67.91","deserci_n":"0.88"}
+,{"c_digo_municipio":"25307","municipio":"Girardot","cobertura_neta_media":"62.78","cobertura_neta":"93.49","deserci_n":"4.05"}
+,{"c_digo_municipio":"25312","municipio":"Granada","cobertura_neta_media":"37.97","cobertura_neta":"84.97","deserci_n":"3.16"}
+,{"c_digo_municipio":"25317","municipio":"Guachetá","cobertura_neta_media":"39.96","cobertura_neta":"80.7","deserci_n":"1.62"}
+,{"c_digo_municipio":"25320","municipio":"Guaduas","cobertura_neta_media":"53.8","cobertura_neta":"80.99","deserci_n":"2.85"}
+,{"c_digo_municipio":"25322","municipio":"Guasca","cobertura_neta_media":"52.17","cobertura_neta":"89.43","deserci_n":"3.12"}
+,{"c_digo_municipio":"25324","municipio":"Guataquí","cobertura_neta_media":"49.44","cobertura_neta":"72.46","deserci_n":"2.01"}
+,{"c_digo_municipio":"25326","municipio":"Guatavita","cobertura_neta_media":"52.83","cobertura_neta":"73.36","deserci_n":"2.74"}
+,{"c_digo_municipio":"25328","municipio":"Guayabal de Siquima","cobertura_neta_media":"51.85","cobertura_neta":"79.76","deserci_n":"3.49"}
+,{"c_digo_municipio":"25335","municipio":"Guayabetal","cobertura_neta_media":"41.43","cobertura_neta":"76.63","deserci_n":"2.27"}
+,{"c_digo_municipio":"25339","municipio":"Gutiérrez","cobertura_neta_media":"41.46","cobertura_neta":"81.68","deserci_n":"0.78"}
+,{"c_digo_municipio":"25368","municipio":"Jerusalén","cobertura_neta_media":"52.46","cobertura_neta":"93.03","deserci_n":"3.32"}
+,{"c_digo_municipio":"25372","municipio":"Junín","cobertura_neta_media":"43.48","cobertura_neta":"63.5","deserci_n":"2.11"}
+,{"c_digo_municipio":"25377","municipio":"La Calera","cobertura_neta_media":"94.79","cobertura_neta":"147.11","deserci_n":"3.85"}
+,{"c_digo_municipio":"25386","municipio":"La Mesa","cobertura_neta_media":"56.62","cobertura_neta":"89.95","deserci_n":"3.58"}
+,{"c_digo_municipio":"25394","municipio":"La Palma","cobertura_neta_media":"57.14","cobertura_neta":"68.8","deserci_n":"2.09"}
+,{"c_digo_municipio":"25398","municipio":"La Peña","cobertura_neta_media":"42.86","cobertura_neta":"71.57","deserci_n":"4.46"}
+,{"c_digo_municipio":"25402","municipio":"La Vega","cobertura_neta_media":"46.35","cobertura_neta":"86.3","deserci_n":"1.95"}
+,{"c_digo_municipio":"25407","municipio":"Lenguazaque","cobertura_neta_media":"56","cobertura_neta":"84.78","deserci_n":"2.64"}
+,{"c_digo_municipio":"25426","municipio":"Macheta","cobertura_neta_media":"45.41","cobertura_neta":"80.42","deserci_n":"1.82"}
+,{"c_digo_municipio":"25430","municipio":"Madrid","cobertura_neta_media":"57.61","cobertura_neta":"99.73","deserci_n":"5.4"}
+,{"c_digo_municipio":"25436","municipio":"Manta","cobertura_neta_media":"38.14","cobertura_neta":"74.41","deserci_n":"1.14"}
+,{"c_digo_municipio":"25438","municipio":"Medina","cobertura_neta_media":"52.01","cobertura_neta":"72.55","deserci_n":"4.86"}
+,{"c_digo_municipio":"25473","municipio":"Mosquera","cobertura_neta_media":"61.13","cobertura_neta":"98.51","deserci_n":"2.5"}
+,{"c_digo_municipio":"25483","municipio":"Nariño","cobertura_neta_media":"40.54","cobertura_neta":"64.08","deserci_n":"2.14"}
+,{"c_digo_municipio":"25486","municipio":"Nemocón","cobertura_neta_media":"50.4","cobertura_neta":"98.02","deserci_n":"4.17"}
+,{"c_digo_municipio":"25488","municipio":"Nilo","cobertura_neta_media":"49.18","cobertura_neta":"83.49","deserci_n":"3.69"}
+,{"c_digo_municipio":"25489","municipio":"Nimaima","cobertura_neta_media":"41.58","cobertura_neta":"68.33","deserci_n":"2.61"}
+,{"c_digo_municipio":"25491","municipio":"Nocaima","cobertura_neta_media":"44.05","cobertura_neta":"75.24","deserci_n":"2.27"}
+,{"c_digo_municipio":"25506","municipio":"Venecia","cobertura_neta_media":"41.01","cobertura_neta":"81.99","deserci_n":"2.11"}
+,{"c_digo_municipio":"25513","municipio":"Pacho","cobertura_neta_media":"49.82","cobertura_neta":"80.28","deserci_n":"2.61"}
+,{"c_digo_municipio":"25518","municipio":"Paime","cobertura_neta_media":"36.77","cobertura_neta":"56.74","deserci_n":"3.9"}
+,{"c_digo_municipio":"25524","municipio":"Pandi","cobertura_neta_media":"48.08","cobertura_neta":"77.79","deserci_n":"2.4"}
+,{"c_digo_municipio":"25530","municipio":"Paratebueno","cobertura_neta_media":"41.14","cobertura_neta":"86.77","deserci_n":"5"}
+,{"c_digo_municipio":"25535","municipio":"Pasca","cobertura_neta_media":"64.94","cobertura_neta":"100.15","deserci_n":"2.1"}
+,{"c_digo_municipio":"25572","municipio":"Puerto Salgar","cobertura_neta_media":"63.76","cobertura_neta":"91.71","deserci_n":"2.63"}
+,{"c_digo_municipio":"25580","municipio":"Pulí","cobertura_neta_media":"39.81","cobertura_neta":"52.04","deserci_n":"4.1"}
+,{"c_digo_municipio":"25592","municipio":"Quebradanegra","cobertura_neta_media":"71.76","cobertura_neta":"89.71","deserci_n":"4.03"}
+,{"c_digo_municipio":"25594","municipio":"Quetame","cobertura_neta_media":"87.15","cobertura_neta":"102.8","deserci_n":"1.21"}
+,{"c_digo_municipio":"25596","municipio":"Quipile","cobertura_neta_media":"45.61","cobertura_neta":"82.53","deserci_n":"5.19"}
+,{"c_digo_municipio":"25599","municipio":"Apulo","cobertura_neta_media":"29.96","cobertura_neta":"72.66","deserci_n":"3.07"}
+,{"c_digo_municipio":"25612","municipio":"Ricaurte","cobertura_neta_media":"28.01","cobertura_neta":"63.65","deserci_n":"6.32"}
+,{"c_digo_municipio":"25645","municipio":"San Antonio del Tequendama","cobertura_neta_media":"41.53","cobertura_neta":"74.07","deserci_n":"3.06"}
+,{"c_digo_municipio":"25649","municipio":"San Bernardo","cobertura_neta_media":"57.8","cobertura_neta":"77.4","deserci_n":"2.92"}
+,{"c_digo_municipio":"25653","municipio":"San Cayetano","cobertura_neta_media":"41.38","cobertura_neta":"63.22","deserci_n":"5.97"}
+,{"c_digo_municipio":"25658","municipio":"San Francisco","cobertura_neta_media":"41.92","cobertura_neta":"69.88","deserci_n":"2.83"}
+,{"c_digo_municipio":"25662","municipio":"San Juan de Río Seco","cobertura_neta_media":"61.45","cobertura_neta":"86.06","deserci_n":"1.9"}
+,{"c_digo_municipio":"25718","municipio":"Sasaima","cobertura_neta_media":"56.43","cobertura_neta":"93.08","deserci_n":"6.42"}
+,{"c_digo_municipio":"25736","municipio":"Sesquilé","cobertura_neta_media":"53.15","cobertura_neta":"99.21","deserci_n":"3.38"}
+,{"c_digo_municipio":"25740","municipio":"Sibaté","cobertura_neta_media":"53.79","cobertura_neta":"90.61","deserci_n":"3.53"}
+,{"c_digo_municipio":"25743","municipio":"Silvania","cobertura_neta_media":"49.23","cobertura_neta":"80.22","deserci_n":"5.48"}
+,{"c_digo_municipio":"25745","municipio":"Simijaca","cobertura_neta_media":"50.48","cobertura_neta":"70.64","deserci_n":"2.92"}
+,{"c_digo_municipio":"25754","municipio":"Soacha","cobertura_neta_media":"54.22","cobertura_neta":"83.28","deserci_n":"4.04"}
+,{"c_digo_municipio":"25758","municipio":"Sopó","cobertura_neta_media":"58.82","cobertura_neta":"93.38","deserci_n":"2.78"}
+,{"c_digo_municipio":"25769","municipio":"Subachoque","cobertura_neta_media":"86.21","cobertura_neta":"119.39","deserci_n":"2.1"}
+,{"c_digo_municipio":"25772","municipio":"Suesca","cobertura_neta_media":"33.93","cobertura_neta":"69.37","deserci_n":"4.32"}
+,{"c_digo_municipio":"25777","municipio":"Supatá","cobertura_neta_media":"57.4","cobertura_neta":"81.08","deserci_n":"3.05"}
+,{"c_digo_municipio":"25779","municipio":"Susa","cobertura_neta_media":"45.23","cobertura_neta":"58.01","deserci_n":"1.71"}
+,{"c_digo_municipio":"25781","municipio":"Sutatausa","cobertura_neta_media":"37.56","cobertura_neta":"78.21","deserci_n":"2.79"}
+,{"c_digo_municipio":"25785","municipio":"Tabio","cobertura_neta_media":"72.02","cobertura_neta":"107.01","deserci_n":"2.37"}
+,{"c_digo_municipio":"25793","municipio":"Tausa","cobertura_neta_media":"56.21","cobertura_neta":"91.63","deserci_n":"2.31"}
+,{"c_digo_municipio":"25797","municipio":"Tena","cobertura_neta_media":"37.5","cobertura_neta":"78.74","deserci_n":"4.55"}
+,{"c_digo_municipio":"25799","municipio":"Tenjo","cobertura_neta_media":"97.01","cobertura_neta":"131.4","deserci_n":"2.79"}
+,{"c_digo_municipio":"25805","municipio":"Tibacuy","cobertura_neta_media":"36.43","cobertura_neta":"75.11","deserci_n":"4.34"}
+,{"c_digo_municipio":"25807","municipio":"Tibirita","cobertura_neta_media":"58.54","cobertura_neta":"68.84","deserci_n":"1.41"}
+,{"c_digo_municipio":"25815","municipio":"Tocaima","cobertura_neta_media":"28.68","cobertura_neta":"67.53","deserci_n":"6.44"}
+,{"c_digo_municipio":"25817","municipio":"Tocancipá","cobertura_neta_media":"66.04","cobertura_neta":"111.33","deserci_n":"3.45"}
+,{"c_digo_municipio":"25823","municipio":"Topaipí","cobertura_neta_media":"43.9","cobertura_neta":"67.65","deserci_n":"5.04"}
+,{"c_digo_municipio":"27160","municipio":"Cértegui","cobertura_neta_media":"42.34","cobertura_neta":"82.68","deserci_n":"3.13"}
+,{"c_digo_municipio":"25839","municipio":"Ubalá","cobertura_neta_media":"64.06","cobertura_neta":"89.55","deserci_n":"1.07"}
+,{"c_digo_municipio":"25841","municipio":"Ubaque","cobertura_neta_media":"47.44","cobertura_neta":"75.36","deserci_n":"2.03"}
+,{"c_digo_municipio":"25843","municipio":"Villa de San Diego de Ubate","cobertura_neta_media":"65.62","cobertura_neta":"93.7","deserci_n":"2.58"}
+,{"c_digo_municipio":"25845","municipio":"Une","cobertura_neta_media":"49.6","cobertura_neta":"72.82","deserci_n":"1.22"}
+,{"c_digo_municipio":"25851","municipio":"Útica","cobertura_neta_media":"45.08","cobertura_neta":"66.39","deserci_n":"0.8"}
+,{"c_digo_municipio":"25862","municipio":"Vergara","cobertura_neta_media":"50.53","cobertura_neta":"73.83","deserci_n":"1.45"}
+,{"c_digo_municipio":"25867","municipio":"Vianí","cobertura_neta_media":"39.55","cobertura_neta":"67.53","deserci_n":"2.56"}
+,{"c_digo_municipio":"25871","municipio":"Villagómez","cobertura_neta_media":"43.1","cobertura_neta":"64.96","deserci_n":"2.51"}
+,{"c_digo_municipio":"25873","municipio":"Villapinzón","cobertura_neta_media":"64.46","cobertura_neta":"90.32","deserci_n":"1.67"}
+,{"c_digo_municipio":"25875","municipio":"Villeta","cobertura_neta_media":"52.13","cobertura_neta":"91.67","deserci_n":"4.68"}
+,{"c_digo_municipio":"25878","municipio":"Viotá","cobertura_neta_media":"54.9","cobertura_neta":"86.44","deserci_n":"4.19"}
+,{"c_digo_municipio":"25885","municipio":"Yacopí","cobertura_neta_media":"41.92","cobertura_neta":"72.82","deserci_n":"3.12"}
+,{"c_digo_municipio":"25898","municipio":"Zipacón","cobertura_neta_media":"43.48","cobertura_neta":"76.6","deserci_n":"3.85"}
+,{"c_digo_municipio":"25899","municipio":"Zipaquirá","cobertura_neta_media":"54.61","cobertura_neta":"94.51","deserci_n":"4.51"}
+,{"c_digo_municipio":"27001","municipio":"Quibdó","cobertura_neta_media":"45.12","cobertura_neta":"99","deserci_n":"1.38"}
+,{"c_digo_municipio":"27006","municipio":"Acandí","cobertura_neta_media":"25.45","cobertura_neta":"92.82","deserci_n":"5.56"}
+,{"c_digo_municipio":"27025","municipio":"Alto Baudo","cobertura_neta_media":"18","cobertura_neta":"89.97","deserci_n":"1.57"}
+,{"c_digo_municipio":"27050","municipio":"Atrato","cobertura_neta_media":"32.5","cobertura_neta":"81.76","deserci_n":"2.24"}
+,{"c_digo_municipio":"27073","municipio":"Bagadó","cobertura_neta_media":"37.34","cobertura_neta":"132.32","deserci_n":"0.82"}
+,{"c_digo_municipio":"27075","municipio":"Bahía Solano","cobertura_neta_media":"42.89","cobertura_neta":"104.99","deserci_n":"6.92"}
+,{"c_digo_municipio":"27077","municipio":"Bajo Baudó","cobertura_neta_media":"9.42","cobertura_neta":"48.61","deserci_n":"0.51"}
+,{"c_digo_municipio":"27099","municipio":"Bojaya","cobertura_neta_media":"24.1","cobertura_neta":"105.77","deserci_n":"0.48"}
+,{"c_digo_municipio":"27135","municipio":"El Cantón del San Pablo","cobertura_neta_media":"33.72","cobertura_neta":"82.16","deserci_n":"2.51"}
+,{"c_digo_municipio":"27150","municipio":"Carmen del Darien","cobertura_neta_media":"17.48","cobertura_neta":"65.02","deserci_n":"2.78"}
+,{"c_digo_municipio":"27205","municipio":"Condoto","cobertura_neta_media":"48.31","cobertura_neta":"86.64","deserci_n":"3.72"}
+,{"c_digo_municipio":"27245","municipio":"El Carmen de Atrato","cobertura_neta_media":"38.55","cobertura_neta":"129.82","deserci_n":"1.74"}
+,{"c_digo_municipio":"27250","municipio":"El Litoral del San Juan","cobertura_neta_media":"8.99","cobertura_neta":"46.85","deserci_n":"1.49"}
+,{"c_digo_municipio":"27361","municipio":"Istmina","cobertura_neta_media":"53.42","cobertura_neta":"110.68","deserci_n":"3.36"}
+,{"c_digo_municipio":"27372","municipio":"Juradó","cobertura_neta_media":"16.06","cobertura_neta":"56.27","deserci_n":"0.89"}
+,{"c_digo_municipio":"27413","municipio":"Lloró","cobertura_neta_media":"36.44","cobertura_neta":"111.91","deserci_n":"0.37"}
+,{"c_digo_municipio":"27425","municipio":"Medio Atrato","cobertura_neta_media":"8.01","cobertura_neta":"60.93","deserci_n":"0.47"}
+,{"c_digo_municipio":"27430","municipio":"Medio Baudó","cobertura_neta_media":"15.27","cobertura_neta":"68.27","deserci_n":"0.68"}
+,{"c_digo_municipio":"27450","municipio":"Medio San Juan","cobertura_neta_media":"32.51","cobertura_neta":"80.16","deserci_n":"1.68"}
+,{"c_digo_municipio":"27491","municipio":"Nóvita","cobertura_neta_media":"25.67","cobertura_neta":"71.68","deserci_n":"4.06"}
+,{"c_digo_municipio":"27493","municipio":"Nuevo Belén de Bajirá","cobertura_neta_media":"30.16","cobertura_neta":"78.66","deserci_n":"7.61"}
+,{"c_digo_municipio":"27495","municipio":"Nuquí","cobertura_neta_media":"7.74","cobertura_neta":"40.5","deserci_n":"3.54"}
+,{"c_digo_municipio":"27580","municipio":"Río Iro","cobertura_neta_media":"41.1","cobertura_neta":"96","deserci_n":"2.43"}
+,{"c_digo_municipio":"27600","municipio":"Río Quito","cobertura_neta_media":"31.65","cobertura_neta":"90.17","deserci_n":"2.72"}
+,{"c_digo_municipio":"27615","municipio":"Riosucio","cobertura_neta_media":"22.05","cobertura_neta":"95.06","deserci_n":"1.49"}
+,{"c_digo_municipio":"27660","municipio":"San José del Palmar","cobertura_neta_media":"21.72","cobertura_neta":"68.4","deserci_n":"5.86"}
+,{"c_digo_municipio":"27745","municipio":"Sipí","cobertura_neta_media":"13.17","cobertura_neta":"67.34","deserci_n":"1.48"}
+,{"c_digo_municipio":"27787","municipio":"Tadó","cobertura_neta_media":"53.33","cobertura_neta":"107.51","deserci_n":"1.81"}
+,{"c_digo_municipio":"27800","municipio":"Unguía","cobertura_neta_media":"28.64","cobertura_neta":"90.98","deserci_n":"7.45"}
+,{"c_digo_municipio":"27810","municipio":"Unión Panamericana","cobertura_neta_media":"39.93","cobertura_neta":"92.69","deserci_n":"5.93"}
+,{"c_digo_municipio":"41001","municipio":"Neiva","cobertura_neta_media":"50.81","cobertura_neta":"90.07","deserci_n":"5.75"}
+,{"c_digo_municipio":"41006","municipio":"Acevedo","cobertura_neta_media":"52.91","cobertura_neta":"103.83","deserci_n":"4.64"}
+,{"c_digo_municipio":"41013","municipio":"Agrado","cobertura_neta_media":"38.66","cobertura_neta":"82.08","deserci_n":"2.2"}
+,{"c_digo_municipio":"41016","municipio":"Aipe","cobertura_neta_media":"46.28","cobertura_neta":"81.41","deserci_n":"5.32"}
+,{"c_digo_municipio":"41020","municipio":"Algeciras","cobertura_neta_media":"39.52","cobertura_neta":"76.73","deserci_n":"3.17"}
+,{"c_digo_municipio":"41026","municipio":"Altamira","cobertura_neta_media":"37.75","cobertura_neta":"66.97","deserci_n":"4.13"}
+,{"c_digo_municipio":"41078","municipio":"Baraya","cobertura_neta_media":"21.9","cobertura_neta":"56.25","deserci_n":"4.19"}
+,{"c_digo_municipio":"41132","municipio":"Campoalegre","cobertura_neta_media":"36.02","cobertura_neta":"79.07","deserci_n":"3.88"}
+,{"c_digo_municipio":"41206","municipio":"Colombia","cobertura_neta_media":"33.6","cobertura_neta":"81.49","deserci_n":"4.21"}
+,{"c_digo_municipio":"41244","municipio":"Elías","cobertura_neta_media":"36.59","cobertura_neta":"74.37","deserci_n":"1.89"}
+,{"c_digo_municipio":"41298","municipio":"Garzón","cobertura_neta_media":"50.91","cobertura_neta":"86.33","deserci_n":"3.96"}
+,{"c_digo_municipio":"41306","municipio":"Gigante","cobertura_neta_media":"53.17","cobertura_neta":"86.4","deserci_n":"4.44"}
+,{"c_digo_municipio":"41319","municipio":"Guadalupe","cobertura_neta_media":"41.45","cobertura_neta":"80.76","deserci_n":"3.08"}
+,{"c_digo_municipio":"41349","municipio":"Hobo","cobertura_neta_media":"30.69","cobertura_neta":"80.53","deserci_n":"3.91"}
+,{"c_digo_municipio":"41357","municipio":"Iquira","cobertura_neta_media":"36.16","cobertura_neta":"90.2","deserci_n":"5.2"}
+,{"c_digo_municipio":"41359","municipio":"Isnos","cobertura_neta_media":"42.9","cobertura_neta":"87.38","deserci_n":"4.4"}
+,{"c_digo_municipio":"41378","municipio":"La Argentina","cobertura_neta_media":"40.19","cobertura_neta":"83.06","deserci_n":"4.78"}
+,{"c_digo_municipio":"41396","municipio":"La Plata","cobertura_neta_media":"46.26","cobertura_neta":"84.79","deserci_n":"3.21"}
+,{"c_digo_municipio":"41483","municipio":"Nátaga","cobertura_neta_media":"41.96","cobertura_neta":"86.11","deserci_n":"3.18"}
+,{"c_digo_municipio":"41503","municipio":"Oporapa","cobertura_neta_media":"48.53","cobertura_neta":"73.39","deserci_n":"3.27"}
+,{"c_digo_municipio":"41518","municipio":"Paicol","cobertura_neta_media":"51.12","cobertura_neta":"72.32","deserci_n":"4.07"}
+,{"c_digo_municipio":"41524","municipio":"Palermo","cobertura_neta_media":"53.85","cobertura_neta":"103.35","deserci_n":"4.57"}
+,{"c_digo_municipio":"41530","municipio":"Palestina","cobertura_neta_media":"41.11","cobertura_neta":"82.21","deserci_n":"3.93"}
+,{"c_digo_municipio":"41548","municipio":"Pital","cobertura_neta_media":"48.79","cobertura_neta":"90.11","deserci_n":"3.07"}
+,{"c_digo_municipio":"41551","municipio":"Pitalito","cobertura_neta_media":"43.77","cobertura_neta":"98.2","deserci_n":"4.64"}
+,{"c_digo_municipio":"41615","municipio":"Rivera","cobertura_neta_media":"53.42","cobertura_neta":"102.33","deserci_n":"4.85"}
+,{"c_digo_municipio":"41660","municipio":"Saladoblanco","cobertura_neta_media":"36.14","cobertura_neta":"86.18","deserci_n":"5.21"}
+,{"c_digo_municipio":"41668","municipio":"San Agustín","cobertura_neta_media":"47.29","cobertura_neta":"84.65","deserci_n":"3.7"}
+,{"c_digo_municipio":"41676","municipio":"Santa María","cobertura_neta_media":"48.33","cobertura_neta":"82.26","deserci_n":"3.97"}
+,{"c_digo_municipio":"41770","municipio":"Suaza","cobertura_neta_media":"39.98","cobertura_neta":"95.11","deserci_n":"4.96"}
+,{"c_digo_municipio":"41791","municipio":"Tarqui","cobertura_neta_media":"41.91","cobertura_neta":"74.65","deserci_n":"4.5"}
+,{"c_digo_municipio":"41797","municipio":"Tesalia","cobertura_neta_media":"52.39","cobertura_neta":"74.78","deserci_n":"3.75"}
+,{"c_digo_municipio":"41799","municipio":"Tello","cobertura_neta_media":"40.65","cobertura_neta":"76.78","deserci_n":"5.48"}
+,{"c_digo_municipio":"41801","municipio":"Teruel","cobertura_neta_media":"31.72","cobertura_neta":"70.27","deserci_n":"5.4"}
+,{"c_digo_municipio":"41807","municipio":"Timaná","cobertura_neta_media":"40.17","cobertura_neta":"76.87","deserci_n":"4.26"}
+,{"c_digo_municipio":"41872","municipio":"Villavieja","cobertura_neta_media":"47.47","cobertura_neta":"83.96","deserci_n":"3.63"}
+,{"c_digo_municipio":"41885","municipio":"Yaguará","cobertura_neta_media":"48.02","cobertura_neta":"83.2","deserci_n":"2.2"}
+,{"c_digo_municipio":"44001","municipio":"Riohacha","cobertura_neta_media":"44.79","cobertura_neta":"108.49","deserci_n":"3.65"}
+,{"c_digo_municipio":"44035","municipio":"Albania","cobertura_neta_media":"28.81","cobertura_neta":"79.91","deserci_n":"2.58"}
+,{"c_digo_municipio":"44078","municipio":"Barrancas","cobertura_neta_media":"27.68","cobertura_neta":"72.86","deserci_n":"3.52"}
+,{"c_digo_municipio":"44090","municipio":"Dibulla","cobertura_neta_media":"15.54","cobertura_neta":"61.7","deserci_n":"4.32"}
+,{"c_digo_municipio":"44098","municipio":"Distracción","cobertura_neta_media":"27.81","cobertura_neta":"74.59","deserci_n":"4.78"}
+,{"c_digo_municipio":"44110","municipio":"El Molino","cobertura_neta_media":"29.54","cobertura_neta":"85.51","deserci_n":"4.05"}
+,{"c_digo_municipio":"44279","municipio":"Fonseca","cobertura_neta_media":"39.09","cobertura_neta":"90.83","deserci_n":"4.57"}
+,{"c_digo_municipio":"44378","municipio":"Hatonuevo","cobertura_neta_media":"42.37","cobertura_neta":"78.13","deserci_n":"3.08"}
+,{"c_digo_municipio":"44420","municipio":"La Jagua del Pilar","cobertura_neta_media":"28.49","cobertura_neta":"60.75","deserci_n":"3.03"}
+,{"c_digo_municipio":"44430","municipio":"Maicao","cobertura_neta_media":"36.33","cobertura_neta":"101.88","deserci_n":"2.83"}
+,{"c_digo_municipio":"44560","municipio":"Manaure","cobertura_neta_media":"15.09","cobertura_neta":"98.88","deserci_n":"2.34"}
+,{"c_digo_municipio":"44650","municipio":"San Juan del Cesar","cobertura_neta_media":"36.7","cobertura_neta":"86.28","deserci_n":"3.4"}
+,{"c_digo_municipio":"44847","municipio":"Uribia","cobertura_neta_media":"16.62","cobertura_neta":"125.08","deserci_n":"1.62"}
+,{"c_digo_municipio":"44855","municipio":"Urumita","cobertura_neta_media":"34.98","cobertura_neta":"69.76","deserci_n":"1.56"}
+,{"c_digo_municipio":"44874","municipio":"Villanueva","cobertura_neta_media":"40.63","cobertura_neta":"73.96","deserci_n":"4.08"}
+,{"c_digo_municipio":"47001","municipio":"Santa Marta","cobertura_neta_media":"53.71","cobertura_neta":"102.7","deserci_n":"4.66"}
+,{"c_digo_municipio":"47030","municipio":"Algarrobo","cobertura_neta_media":"46.82","cobertura_neta":"80.67","deserci_n":"2.85"}
+,{"c_digo_municipio":"47053","municipio":"Aracataca","cobertura_neta_media":"33.08","cobertura_neta":"79.96","deserci_n":"3.15"}
+,{"c_digo_municipio":"47058","municipio":"Ariguaní","cobertura_neta_media":"38.49","cobertura_neta":"89.75","deserci_n":"1.78"}
+,{"c_digo_municipio":"47161","municipio":"Cerro San Antonio","cobertura_neta_media":"31.48","cobertura_neta":"74.73","deserci_n":"6.28"}
+,{"c_digo_municipio":"47170","municipio":"Chibolo","cobertura_neta_media":"34.26","cobertura_neta":"79.73","deserci_n":"3.18"}
+,{"c_digo_municipio":"47189","municipio":"Ciénaga","cobertura_neta_media":"37.64","cobertura_neta":"91","deserci_n":"5.29"}
+,{"c_digo_municipio":"47205","municipio":"Concordia","cobertura_neta_media":"47.07","cobertura_neta":"87.32","deserci_n":"3.97"}
+,{"c_digo_municipio":"47245","municipio":"El Banco","cobertura_neta_media":"47.28","cobertura_neta":"95.72","deserci_n":"2.81"}
+,{"c_digo_municipio":"47258","municipio":"El Piñon","cobertura_neta_media":"39.5","cobertura_neta":"69.28","deserci_n":"3.3"}
+,{"c_digo_municipio":"47268","municipio":"El Retén","cobertura_neta_media":"42.75","cobertura_neta":"94.42","deserci_n":"2.15"}
+,{"c_digo_municipio":"47288","municipio":"Fundación","cobertura_neta_media":"44.32","cobertura_neta":"94.22","deserci_n":"1.57"}
+,{"c_digo_municipio":"47318","municipio":"Guamal","cobertura_neta_media":"49.82","cobertura_neta":"89.11","deserci_n":"3.19"}
+,{"c_digo_municipio":"47460","municipio":"Nueva Granada","cobertura_neta_media":"31.91","cobertura_neta":"92.42","deserci_n":"1.5"}
+,{"c_digo_municipio":"47541","municipio":"Pedraza","cobertura_neta_media":"32.7","cobertura_neta":"79.06","deserci_n":"1.9"}
+,{"c_digo_municipio":"47545","municipio":"Pijiño del Carmen","cobertura_neta_media":"49.25","cobertura_neta":"106.4","deserci_n":"4.73"}
+,{"c_digo_municipio":"47551","municipio":"Pivijay","cobertura_neta_media":"41.09","cobertura_neta":"90.54","deserci_n":"5.81"}
+,{"c_digo_municipio":"47555","municipio":"Plato","cobertura_neta_media":"33.69","cobertura_neta":"81.34","deserci_n":"1.39"}
+,{"c_digo_municipio":"47570","municipio":"Puebloviejo","cobertura_neta_media":"28.02","cobertura_neta":"72.61","deserci_n":"2.6"}
+,{"c_digo_municipio":"47605","municipio":"Remolino","cobertura_neta_media":"25.64","cobertura_neta":"59.74","deserci_n":"3.59"}
+,{"c_digo_municipio":"47660","municipio":"Sabanas de San Angel","cobertura_neta_media":"28.7","cobertura_neta":"92.69","deserci_n":"2.92"}
+,{"c_digo_municipio":"47675","municipio":"Salamina","cobertura_neta_media":"38.21","cobertura_neta":"76.41","deserci_n":"2.17"}
+,{"c_digo_municipio":"47692","municipio":"San Sebastián de Buenavista","cobertura_neta_media":"52.57","cobertura_neta":"98.53","deserci_n":"1.62"}
+,{"c_digo_municipio":"47703","municipio":"San Zenón","cobertura_neta_media":"36.11","cobertura_neta":"83.42","deserci_n":"2.98"}
+,{"c_digo_municipio":"47707","municipio":"Santa Ana","cobertura_neta_media":"39.41","cobertura_neta":"86.62","deserci_n":"2.02"}
+,{"c_digo_municipio":"47720","municipio":"Santa Bárbara de Pinto","cobertura_neta_media":"37.98","cobertura_neta":"94.3","deserci_n":"1.7"}
+,{"c_digo_municipio":"47745","municipio":"Sitionuevo","cobertura_neta_media":"28.58","cobertura_neta":"78.13","deserci_n":"3.83"}
+,{"c_digo_municipio":"47798","municipio":"Tenerife","cobertura_neta_media":"50.7","cobertura_neta":"94.3","deserci_n":"1.3"}
+,{"c_digo_municipio":"47960","municipio":"Zapayán","cobertura_neta_media":"36.98","cobertura_neta":"80.97","deserci_n":"3.4"}
+,{"c_digo_municipio":"47980","municipio":"Zona Bananera","cobertura_neta_media":"38.24","cobertura_neta":"100.18","deserci_n":"2.44"}
+,{"c_digo_municipio":"50001","municipio":"Villavicencio","cobertura_neta_media":"52.43","cobertura_neta":"87.63","deserci_n":"4.11"}
+,{"c_digo_municipio":"50006","municipio":"Acacías","cobertura_neta_media":"54.76","cobertura_neta":"100.17","deserci_n":"4.53"}
+,{"c_digo_municipio":"50110","municipio":"Barranca de Upía","cobertura_neta_media":"50.35","cobertura_neta":"88.53","deserci_n":"6.95"}
+,{"c_digo_municipio":"50124","municipio":"Cabuyaro","cobertura_neta_media":"54.21","cobertura_neta":"109","deserci_n":"4.47"}
+,{"c_digo_municipio":"50150","municipio":"Castilla la Nueva","cobertura_neta_media":"45.07","cobertura_neta":"85.8","deserci_n":"4.57"}
+,{"c_digo_municipio":"50223","municipio":"Cubarral","cobertura_neta_media":"39.26","cobertura_neta":"79.54","deserci_n":"4.82"}
+,{"c_digo_municipio":"50226","municipio":"Cumaral","cobertura_neta_media":"55.45","cobertura_neta":"101.21","deserci_n":"4.44"}
+,{"c_digo_municipio":"50245","municipio":"El Calvario","cobertura_neta_media":"36.27","cobertura_neta":"74.03","deserci_n":"5.7"}
+,{"c_digo_municipio":"50251","municipio":"El Castillo","cobertura_neta_media":"46.08","cobertura_neta":"80.9","deserci_n":"3.64"}
+,{"c_digo_municipio":"50270","municipio":"El Dorado","cobertura_neta_media":"48.82","cobertura_neta":"76.47","deserci_n":"1.82"}
+,{"c_digo_municipio":"50287","municipio":"Fuente de Oro","cobertura_neta_media":"37.66","cobertura_neta":"80.48","deserci_n":"3.77"}
+,{"c_digo_municipio":"50313","municipio":"Granada","cobertura_neta_media":"51.41","cobertura_neta":"95.36","deserci_n":"2.94"}
+,{"c_digo_municipio":"50318","municipio":"Guamal","cobertura_neta_media":"64.86","cobertura_neta":"114.14","deserci_n":"5.9"}
+,{"c_digo_municipio":"50325","municipio":"Mapiripán","cobertura_neta_media":"19.08","cobertura_neta":"89.02","deserci_n":"12.29"}
+,{"c_digo_municipio":"50330","municipio":"Mesetas","cobertura_neta_media":"32.55","cobertura_neta":"80.84","deserci_n":"4.01"}
+,{"c_digo_municipio":"50350","municipio":"La Macarena","cobertura_neta_media":"17.05","cobertura_neta":"54.3","deserci_n":"8.03"}
+,{"c_digo_municipio":"50370","municipio":"Uribe","cobertura_neta_media":"39.74","cobertura_neta":"95.93","deserci_n":"4.18"}
+,{"c_digo_municipio":"50400","municipio":"Lejanías","cobertura_neta_media":"49.3","cobertura_neta":"84.49","deserci_n":"3.83"}
+,{"c_digo_municipio":"50450","municipio":"Puerto Concordia","cobertura_neta_media":"34.87","cobertura_neta":"95.81","deserci_n":"8.87"}
+,{"c_digo_municipio":"50568","municipio":"Puerto Gaitán","cobertura_neta_media":"37.14","cobertura_neta":"126.73","deserci_n":"3.95"}
+,{"c_digo_municipio":"50573","municipio":"Puerto López","cobertura_neta_media":"48.78","cobertura_neta":"101.72","deserci_n":"3.76"}
+,{"c_digo_municipio":"50577","municipio":"Puerto Lleras","cobertura_neta_media":"23.67","cobertura_neta":"61.74","deserci_n":"5.77"}
+,{"c_digo_municipio":"50590","municipio":"Puerto Rico","cobertura_neta_media":"30.04","cobertura_neta":"79.19","deserci_n":"6.53"}
+,{"c_digo_municipio":"50606","municipio":"Restrepo","cobertura_neta_media":"68.74","cobertura_neta":"109.29","deserci_n":"2.36"}
+,{"c_digo_municipio":"50680","municipio":"San Carlos de Guaroa","cobertura_neta_media":"38.61","cobertura_neta":"83.33","deserci_n":"8.11"}
+,{"c_digo_municipio":"50683","municipio":"San Juan de Arama","cobertura_neta_media":"26.72","cobertura_neta":"63.9","deserci_n":"5.46"}
+,{"c_digo_municipio":"50686","municipio":"San Juanito","cobertura_neta_media":"45.61","cobertura_neta":"96.87","deserci_n":"3.06"}
+,{"c_digo_municipio":"50689","municipio":"San Martín","cobertura_neta_media":"40.23","cobertura_neta":"74.37","deserci_n":"6.95"}
+,{"c_digo_municipio":"50711","municipio":"Vistahermosa","cobertura_neta_media":"33.76","cobertura_neta":"79.74","deserci_n":"6.8"}
+,{"c_digo_municipio":"52001","municipio":"Pasto","cobertura_neta_media":"65.91","cobertura_neta":"96.42","deserci_n":"2.1"}
+,{"c_digo_municipio":"52019","municipio":"Albán","cobertura_neta_media":"54.61","cobertura_neta":"73.15","deserci_n":"1.72"}
+,{"c_digo_municipio":"52022","municipio":"Aldana","cobertura_neta_media":"69.95","cobertura_neta":"102.21","deserci_n":"1.32"}
+,{"c_digo_municipio":"52036","municipio":"Ancuyá","cobertura_neta_media":"54.63","cobertura_neta":"71.38","deserci_n":"1.05"}
+,{"c_digo_municipio":"52051","municipio":"Arboleda","cobertura_neta_media":"52.14","cobertura_neta":"64.81","deserci_n":"1.27"}
+,{"c_digo_municipio":"52079","municipio":"Barbacoas","cobertura_neta_media":"15.15","cobertura_neta":"54.56","deserci_n":"4.81"}
+,{"c_digo_municipio":"52083","municipio":"Belén","cobertura_neta_media":"49.07","cobertura_neta":"82.44","deserci_n":"1.75"}
+,{"c_digo_municipio":"52110","municipio":"Buesaco","cobertura_neta_media":"43.54","cobertura_neta":"75.12","deserci_n":"2.16"}
+,{"c_digo_municipio":"52203","municipio":"Colón","cobertura_neta_media":"52.89","cobertura_neta":"75.6","deserci_n":"3.38"}
+,{"c_digo_municipio":"52207","municipio":"Consaca","cobertura_neta_media":"36.29","cobertura_neta":"54.32","deserci_n":"3.29"}
+,{"c_digo_municipio":"52210","municipio":"Contadero","cobertura_neta_media":"32.99","cobertura_neta":"52.89","deserci_n":"1.49"}
+,{"c_digo_municipio":"52215","municipio":"Córdoba","cobertura_neta_media":"45.95","cobertura_neta":"75.04","deserci_n":"1.48"}
+,{"c_digo_municipio":"52224","municipio":"Cuaspud","cobertura_neta_media":"34.72","cobertura_neta":"58.1","deserci_n":"1.48"}
+,{"c_digo_municipio":"52227","municipio":"Cumbal","cobertura_neta_media":"61.02","cobertura_neta":"79.46","deserci_n":"0.86"}
+,{"c_digo_municipio":"52233","municipio":"Cumbitara","cobertura_neta_media":"47.18","cobertura_neta":"112.33","deserci_n":"4.72"}
+,{"c_digo_municipio":"52240","municipio":"Chachagüí","cobertura_neta_media":"40.85","cobertura_neta":"80.04","deserci_n":"2.55"}
+,{"c_digo_municipio":"52250","municipio":"El Charco","cobertura_neta_media":"16.65","cobertura_neta":"80.46","deserci_n":"2.09"}
+,{"c_digo_municipio":"52254","municipio":"El Peñol","cobertura_neta_media":"43.48","cobertura_neta":"62.33","deserci_n":"0.41"}
+,{"c_digo_municipio":"52256","municipio":"El Rosario","cobertura_neta_media":"14.06","cobertura_neta":"42.21","deserci_n":"2.43"}
+,{"c_digo_municipio":"52258","municipio":"El Tablón de Gómez","cobertura_neta_media":"52.06","cobertura_neta":"74.15","deserci_n":"1.52"}
+,{"c_digo_municipio":"52260","municipio":"El Tambo","cobertura_neta_media":"43.69","cobertura_neta":"73.22","deserci_n":"1.69"}
+,{"c_digo_municipio":"52287","municipio":"Funes","cobertura_neta_media":"41.89","cobertura_neta":"64.04","deserci_n":"0.73"}
+,{"c_digo_municipio":"52317","municipio":"Guachucal","cobertura_neta_media":"61.55","cobertura_neta":"81.05","deserci_n":"0.71"}
+,{"c_digo_municipio":"52320","municipio":"Guaitarilla","cobertura_neta_media":"43.96","cobertura_neta":"69.81","deserci_n":"0.15"}
+,{"c_digo_municipio":"52323","municipio":"Gualmatán","cobertura_neta_media":"68.78","cobertura_neta":"90.59","deserci_n":"1.73"}
+,{"c_digo_municipio":"52352","municipio":"Iles","cobertura_neta_media":"51.6","cobertura_neta":"75.62","deserci_n":"1.9"}
+,{"c_digo_municipio":"52354","municipio":"Imués","cobertura_neta_media":"47.34","cobertura_neta":"77.94","deserci_n":"0.44"}
+,{"c_digo_municipio":"52356","municipio":"Ipiales","cobertura_neta_media":"57.46","cobertura_neta":"99.77","deserci_n":"2.48"}
+,{"c_digo_municipio":"52378","municipio":"La Cruz","cobertura_neta_media":"52.67","cobertura_neta":"76.95","deserci_n":"1.52"}
+,{"c_digo_municipio":"52381","municipio":"La Florida","cobertura_neta_media":"56.18","cobertura_neta":"78.12","deserci_n":"1.71"}
+,{"c_digo_municipio":"52385","municipio":"La Llanada","cobertura_neta_media":"43.24","cobertura_neta":"72.77","deserci_n":"2.58"}
+,{"c_digo_municipio":"52390","municipio":"La Tola","cobertura_neta_media":"27.27","cobertura_neta":"68.98","deserci_n":"3.6"}
+,{"c_digo_municipio":"52399","municipio":"La Unión","cobertura_neta_media":"55.92","cobertura_neta":"86.66","deserci_n":"1.59"}
+,{"c_digo_municipio":"52405","municipio":"Leiva","cobertura_neta_media":"34.57","cobertura_neta":"72.58","deserci_n":"3.73"}
+,{"c_digo_municipio":"52411","municipio":"Linares","cobertura_neta_media":"45.93","cobertura_neta":"68.59","deserci_n":"2.37"}
+,{"c_digo_municipio":"52418","municipio":"Los Andes","cobertura_neta_media":"48.26","cobertura_neta":"80.31","deserci_n":"2.61"}
+,{"c_digo_municipio":"52427","municipio":"Magüi","cobertura_neta_media":"4.81","cobertura_neta":"29.41","deserci_n":"3.61"}
+,{"c_digo_municipio":"52435","municipio":"Mallama","cobertura_neta_media":"40.74","cobertura_neta":"74.77","deserci_n":"2.88"}
+,{"c_digo_municipio":"52473","municipio":"Mosquera","cobertura_neta_media":"14.48","cobertura_neta":"51.47","deserci_n":"1.23"}
+,{"c_digo_municipio":"52480","municipio":"Nariño","cobertura_neta_media":"45.69","cobertura_neta":"63.03","deserci_n":"0.65"}
+,{"c_digo_municipio":"52490","municipio":"Olaya Herrera","cobertura_neta_media":"12.31","cobertura_neta":"66.77","deserci_n":"1.44"}
+,{"c_digo_municipio":"52506","municipio":"Ospina","cobertura_neta_media":"42.27","cobertura_neta":"71.42","deserci_n":"0.73"}
+,{"c_digo_municipio":"52520","municipio":"Francisco Pizarro","cobertura_neta_media":"8.45","cobertura_neta":"42.36","deserci_n":"1.72"}
+,{"c_digo_municipio":"52540","municipio":"Policarpa","cobertura_neta_media":"37.11","cobertura_neta":"114.06","deserci_n":"3.66"}
+,{"c_digo_municipio":"52560","municipio":"Potosí","cobertura_neta_media":"70.94","cobertura_neta":"100.64","deserci_n":"1.32"}
+,{"c_digo_municipio":"52565","municipio":"Providencia","cobertura_neta_media":"43.71","cobertura_neta":"63.24","deserci_n":"3.52"}
+,{"c_digo_municipio":"52573","municipio":"Puerres","cobertura_neta_media":"51.74","cobertura_neta":"80.97","deserci_n":"2.06"}
+,{"c_digo_municipio":"52585","municipio":"Pupiales","cobertura_neta_media":"64.82","cobertura_neta":"93.34","deserci_n":"1.55"}
+,{"c_digo_municipio":"52612","municipio":"Ricaurte","cobertura_neta_media":"25","cobertura_neta":"66.06","deserci_n":"2.55"}
+,{"c_digo_municipio":"52621","municipio":"Roberto Payán","cobertura_neta_media":"9.76","cobertura_neta":"70.75","deserci_n":"1.07"}
+,{"c_digo_municipio":"52678","municipio":"Samaniego","cobertura_neta_media":"37.71","cobertura_neta":"78.93","deserci_n":"2.43"}
+,{"c_digo_municipio":"52683","municipio":"Sandoná","cobertura_neta_media":"46.57","cobertura_neta":"81.19","deserci_n":"2.15"}
+,{"c_digo_municipio":"52685","municipio":"San Bernardo","cobertura_neta_media":"44.18","cobertura_neta":"68.9","deserci_n":"2.19"}
+,{"c_digo_municipio":"52687","municipio":"San Lorenzo","cobertura_neta_media":"47.01","cobertura_neta":"72.91","deserci_n":"2.33"}
+,{"c_digo_municipio":"52693","municipio":"San Pablo","cobertura_neta_media":"48.16","cobertura_neta":"76.93","deserci_n":"1.4"}
+,{"c_digo_municipio":"52694","municipio":"San Pedro de Cartago","cobertura_neta_media":"42.51","cobertura_neta":"65.69","deserci_n":"3.4"}
+,{"c_digo_municipio":"52696","municipio":"Santa Bárbara","cobertura_neta_media":"8.15","cobertura_neta":"55.22","deserci_n":"1.71"}
+,{"c_digo_municipio":"52699","municipio":"Santacruz","cobertura_neta_media":"29.02","cobertura_neta":"61.55","deserci_n":"2.79"}
+,{"c_digo_municipio":"52720","municipio":"Sapuyes","cobertura_neta_media":"36.79","cobertura_neta":"66.35","deserci_n":"0.6"}
+,{"c_digo_municipio":"52786","municipio":"Taminango","cobertura_neta_media":"62.27","cobertura_neta":"85.59","deserci_n":"1.8"}
+,{"c_digo_municipio":"52788","municipio":"Tangua","cobertura_neta_media":"33.33","cobertura_neta":"57.17","deserci_n":"0.81"}
+,{"c_digo_municipio":"52835","municipio":"San Andres de Tumaco","cobertura_neta_media":"25.56","cobertura_neta":"66.1","deserci_n":"3.83"}
+,{"c_digo_municipio":"52838","municipio":"Túquerres","cobertura_neta_media":"36.69","cobertura_neta":"79.57","deserci_n":"1.59"}
+,{"c_digo_municipio":"52885","municipio":"Yacuanquer","cobertura_neta_media":"43.17","cobertura_neta":"74.07","deserci_n":"1.29"}
+,{"c_digo_municipio":"54001","municipio":"Cúcuta","cobertura_neta_media":"56.67","cobertura_neta":"92.26","deserci_n":"4.28"}
+,{"c_digo_municipio":"54003","municipio":"Abrego","cobertura_neta_media":"33.2","cobertura_neta":"84.98","deserci_n":"5.12"}
+,{"c_digo_municipio":"54051","municipio":"Arboledas","cobertura_neta_media":"43.51","cobertura_neta":"71.14","deserci_n":"3.01"}
+,{"c_digo_municipio":"54099","municipio":"Bochalema","cobertura_neta_media":"46.15","cobertura_neta":"74.08","deserci_n":"3.61"}
+,{"c_digo_municipio":"54109","municipio":"Bucarasica","cobertura_neta_media":"29.62","cobertura_neta":"60.15","deserci_n":"2.88"}
+,{"c_digo_municipio":"54125","municipio":"Cácota","cobertura_neta_media":"29.35","cobertura_neta":"78.95","deserci_n":"1.02"}
+,{"c_digo_municipio":"54128","municipio":"Cachirá","cobertura_neta_media":"30.66","cobertura_neta":"59.46","deserci_n":"3.47"}
+,{"c_digo_municipio":"54172","municipio":"Chinácota","cobertura_neta_media":"50.83","cobertura_neta":"87.36","deserci_n":"3.52"}
+,{"c_digo_municipio":"54174","municipio":"Chitagá","cobertura_neta_media":"36.67","cobertura_neta":"70.05","deserci_n":"2.04"}
+,{"c_digo_municipio":"54206","municipio":"Convención","cobertura_neta_media":"34.31","cobertura_neta":"84.81","deserci_n":"3.97"}
+,{"c_digo_municipio":"54223","municipio":"Cucutilla","cobertura_neta_media":"37.1","cobertura_neta":"64.54","deserci_n":"1.07"}
+,{"c_digo_municipio":"54239","municipio":"Durania","cobertura_neta_media":"45.64","cobertura_neta":"89.71","deserci_n":"4.95"}
+,{"c_digo_municipio":"54245","municipio":"El Carmen","cobertura_neta_media":"22.96","cobertura_neta":"78.53","deserci_n":"4.63"}
+,{"c_digo_municipio":"54250","municipio":"El Tarra","cobertura_neta_media":"37.1","cobertura_neta":"101.48","deserci_n":"5.16"}
+,{"c_digo_municipio":"54261","municipio":"El Zulia","cobertura_neta_media":"45.41","cobertura_neta":"91.74","deserci_n":"5.79"}
+,{"c_digo_municipio":"54313","municipio":"Gramalote","cobertura_neta_media":"51.57","cobertura_neta":"72.96","deserci_n":"2.08"}
+,{"c_digo_municipio":"54344","municipio":"Hacarí","cobertura_neta_media":"24.56","cobertura_neta":"79.82","deserci_n":"2.94"}
+,{"c_digo_municipio":"54347","municipio":"Herrán","cobertura_neta_media":"28.79","cobertura_neta":"42.76","deserci_n":"2.6"}
+,{"c_digo_municipio":"54377","municipio":"Labateca","cobertura_neta_media":"44.3","cobertura_neta":"63.39","deserci_n":"0.76"}
+,{"c_digo_municipio":"54385","municipio":"La Esperanza","cobertura_neta_media":"36.86","cobertura_neta":"80.72","deserci_n":"5.49"}
+,{"c_digo_municipio":"54398","municipio":"La Playa","cobertura_neta_media":"34.75","cobertura_neta":"78.4","deserci_n":"1.74"}
+,{"c_digo_municipio":"54405","municipio":"Los Patios","cobertura_neta_media":"48.74","cobertura_neta":"76.53","deserci_n":"3.63"}
+,{"c_digo_municipio":"54418","municipio":"Lourdes","cobertura_neta_media":"34.23","cobertura_neta":"63.46","deserci_n":"1.94"}
+,{"c_digo_municipio":"54480","municipio":"Mutiscua","cobertura_neta_media":"32.03","cobertura_neta":"72.81","deserci_n":"1.42"}
+,{"c_digo_municipio":"54498","municipio":"Ocaña","cobertura_neta_media":"44.77","cobertura_neta":"84.06","deserci_n":"4.22"}
+,{"c_digo_municipio":"54518","municipio":"Pamplona","cobertura_neta_media":"43.02","cobertura_neta":"80.99","deserci_n":"4.94"}
+,{"c_digo_municipio":"54520","municipio":"Pamplonita","cobertura_neta_media":"54.5","cobertura_neta":"77.98","deserci_n":"1.94"}
+,{"c_digo_municipio":"54553","municipio":"Puerto Santander","cobertura_neta_media":"33.52","cobertura_neta":"86.17","deserci_n":"5.43"}
+,{"c_digo_municipio":"54599","municipio":"Ragonvalia","cobertura_neta_media":"35.35","cobertura_neta":"84.17","deserci_n":"2.27"}
+,{"c_digo_municipio":"54660","municipio":"Salazar","cobertura_neta_media":"42.48","cobertura_neta":"73.56","deserci_n":"3.71"}
+,{"c_digo_municipio":"54670","municipio":"San Calixto","cobertura_neta_media":"15.19","cobertura_neta":"64.86","deserci_n":"4.23"}
+,{"c_digo_municipio":"54673","municipio":"San Cayetano","cobertura_neta_media":"42.58","cobertura_neta":"90.55","deserci_n":"5.18"}
+,{"c_digo_municipio":"54680","municipio":"Santiago","cobertura_neta_media":"47.33","cobertura_neta":"65.16","deserci_n":"4.73"}
+,{"c_digo_municipio":"54720","municipio":"Sardinata","cobertura_neta_media":"28.86","cobertura_neta":"85.5","deserci_n":"5.27"}
+,{"c_digo_municipio":"54743","municipio":"Silos","cobertura_neta_media":"34.48","cobertura_neta":"79.25","deserci_n":"2.67"}
+,{"c_digo_municipio":"54800","municipio":"Teorama","cobertura_neta_media":"35.71","cobertura_neta":"93.03","deserci_n":"2.34"}
+,{"c_digo_municipio":"54810","municipio":"Tibú","cobertura_neta_media":"43.77","cobertura_neta":"117.58","deserci_n":"6.15"}
+,{"c_digo_municipio":"54820","municipio":"Toledo","cobertura_neta_media":"50.86","cobertura_neta":"90.28","deserci_n":"1.92"}
+,{"c_digo_municipio":"54871","municipio":"Villa Caro","cobertura_neta_media":"35.47","cobertura_neta":"66.06","deserci_n":"1.63"}
+,{"c_digo_municipio":"54874","municipio":"Villa del Rosario","cobertura_neta_media":"42.34","cobertura_neta":"83.21","deserci_n":"5.68"}
+,{"c_digo_municipio":"63001","municipio":"Armenia","cobertura_neta_media":"55.99","cobertura_neta":"90.62","deserci_n":"5.02"}
+,{"c_digo_municipio":"63111","municipio":"Buenavista","cobertura_neta_media":"50","cobertura_neta":"72.3","deserci_n":"3.04"}
+,{"c_digo_municipio":"63130","municipio":"Calarca","cobertura_neta_media":"53.37","cobertura_neta":"88.97","deserci_n":"4.54"}
+,{"c_digo_municipio":"63190","municipio":"Circasia","cobertura_neta_media":"48.83","cobertura_neta":"81.63","deserci_n":"3.45"}
+,{"c_digo_municipio":"63212","municipio":"Córdoba","cobertura_neta_media":"49.36","cobertura_neta":"83.13","deserci_n":"3.47"}
+,{"c_digo_municipio":"63272","municipio":"Filandia","cobertura_neta_media":"66.35","cobertura_neta":"86.72","deserci_n":"3.95"}
+,{"c_digo_municipio":"63302","municipio":"Génova","cobertura_neta_media":"42.71","cobertura_neta":"83.07","deserci_n":"5.14"}
+,{"c_digo_municipio":"63401","municipio":"La Tebaida","cobertura_neta_media":"49.41","cobertura_neta":"83.68","deserci_n":"5.03"}
+,{"c_digo_municipio":"63470","municipio":"Montenegro","cobertura_neta_media":"45.25","cobertura_neta":"86.18","deserci_n":"5.4"}
+,{"c_digo_municipio":"63548","municipio":"Pijao","cobertura_neta_media":"95","cobertura_neta":"113.22","deserci_n":"4.53"}
+,{"c_digo_municipio":"63594","municipio":"Quimbaya","cobertura_neta_media":"58.15","cobertura_neta":"95","deserci_n":"4.74"}
+,{"c_digo_municipio":"63690","municipio":"Salento","cobertura_neta_media":"71.12","cobertura_neta":"141.48","deserci_n":"1.95"}
+,{"c_digo_municipio":"66001","municipio":"Pereira","cobertura_neta_media":"62.04","cobertura_neta":"102.45","deserci_n":"5.49"}
+,{"c_digo_municipio":"66045","municipio":"Apía","cobertura_neta_media":"45.48","cobertura_neta":"72.56","deserci_n":"4.58"}
+,{"c_digo_municipio":"66075","municipio":"Balboa","cobertura_neta_media":"38.67","cobertura_neta":"78.55","deserci_n":"6.48"}
+,{"c_digo_municipio":"66088","municipio":"Belén de Umbría","cobertura_neta_media":"51.08","cobertura_neta":"81.57","deserci_n":"5.06"}
+,{"c_digo_municipio":"66170","municipio":"Dosquebradas","cobertura_neta_media":"48.81","cobertura_neta":"84.46","deserci_n":"5.83"}
+,{"c_digo_municipio":"66318","municipio":"Guática","cobertura_neta_media":"60.98","cobertura_neta":"80.52","deserci_n":"3.48"}
+,{"c_digo_municipio":"66383","municipio":"La Celia","cobertura_neta_media":"57.58","cobertura_neta":"88.81","deserci_n":"3.52"}
+,{"c_digo_municipio":"66400","municipio":"La Virginia","cobertura_neta_media":"74.59","cobertura_neta":"94.33","deserci_n":"6.15"}
+,{"c_digo_municipio":"66440","municipio":"Marsella","cobertura_neta_media":"36.99","cobertura_neta":"76.63","deserci_n":"5.28"}
+,{"c_digo_municipio":"66456","municipio":"Mistrató","cobertura_neta_media":"28.1","cobertura_neta":"72.21","deserci_n":"7.86"}
+,{"c_digo_municipio":"66572","municipio":"Pueblo Rico","cobertura_neta_media":"35.51","cobertura_neta":"102.6","deserci_n":"3.42"}
+,{"c_digo_municipio":"66594","municipio":"Quinchía","cobertura_neta_media":"64.02","cobertura_neta":"90.06","deserci_n":"3.78"}
+,{"c_digo_municipio":"66682","municipio":"Santa Rosa de Cabal","cobertura_neta_media":"53.01","cobertura_neta":"88.86","deserci_n":"5.57"}
+,{"c_digo_municipio":"66687","municipio":"Santuario","cobertura_neta_media":"37.53","cobertura_neta":"72.75","deserci_n":"7.8"}
+,{"c_digo_municipio":"68001","municipio":"Bucaramanga","cobertura_neta_media":"60.69","cobertura_neta":"98.54","deserci_n":"4.48"}
+,{"c_digo_municipio":"68013","municipio":"Aguada","cobertura_neta_media":"68.09","cobertura_neta":"77.82","deserci_n":"0.44"}
+,{"c_digo_municipio":"68020","municipio":"Albania","cobertura_neta_media":"57.39","cobertura_neta":"73.1","deserci_n":"1.3"}
+,{"c_digo_municipio":"68051","municipio":"Aratoca","cobertura_neta_media":"57.61","cobertura_neta":"87.59","deserci_n":"1.39"}
+,{"c_digo_municipio":"68077","municipio":"Barbosa","cobertura_neta_media":"44.89","cobertura_neta":"94.86","deserci_n":"4.26"}
+,{"c_digo_municipio":"68079","municipio":"Barichara","cobertura_neta_media":"68.37","cobertura_neta":"76.2","deserci_n":"1.67"}
+,{"c_digo_municipio":"68081","municipio":"Barrancabermeja","cobertura_neta_media":"64.84","cobertura_neta":"113.42","deserci_n":"3.48"}
+,{"c_digo_municipio":"68092","municipio":"Betulia","cobertura_neta_media":"32","cobertura_neta":"79.59","deserci_n":"3.53"}
+,{"c_digo_municipio":"68101","municipio":"Bolívar","cobertura_neta_media":"51.92","cobertura_neta":"72.41","deserci_n":"2.4"}
+,{"c_digo_municipio":"68121","municipio":"Cabrera","cobertura_neta_media":"44.64","cobertura_neta":"65.24","deserci_n":"0.42"}
+,{"c_digo_municipio":"68132","municipio":"California","cobertura_neta_media":"64.15","cobertura_neta":"94.89","deserci_n":"1.46"}
+,{"c_digo_municipio":"68147","municipio":"Capitanejo","cobertura_neta_media":"52.69","cobertura_neta":"87.74","deserci_n":"1.23"}
+,{"c_digo_municipio":"68152","municipio":"Carcasí","cobertura_neta_media":"44.22","cobertura_neta":"75.53","deserci_n":"2.25"}
+,{"c_digo_municipio":"68160","municipio":"Cepitá","cobertura_neta_media":"45.59","cobertura_neta":"74.49","deserci_n":"5.59"}
+,{"c_digo_municipio":"68162","municipio":"Cerrito","cobertura_neta_media":"55.81","cobertura_neta":"96.1","deserci_n":"3.19"}
+,{"c_digo_municipio":"68167","municipio":"Charalá","cobertura_neta_media":"64.13","cobertura_neta":"94.97","deserci_n":"2.41"}
+,{"c_digo_municipio":"68169","municipio":"Charta","cobertura_neta_media":"46.67","cobertura_neta":"91.96","deserci_n":"3.79"}
+,{"c_digo_municipio":"68176","municipio":"Chima","cobertura_neta_media":"43.82","cobertura_neta":"75.18","deserci_n":"1.18"}
+,{"c_digo_municipio":"68179","municipio":"Chipatá","cobertura_neta_media":"37.5","cobertura_neta":"57.76","deserci_n":"0.4"}
+,{"c_digo_municipio":"68190","municipio":"Cimitarra","cobertura_neta_media":"46.31","cobertura_neta":"82.29","deserci_n":"4.13"}
+,{"c_digo_municipio":"68207","municipio":"Concepción","cobertura_neta_media":"35","cobertura_neta":"80.07","deserci_n":"2.42"}
+,{"c_digo_municipio":"68209","municipio":"Confines","cobertura_neta_media":"58.43","cobertura_neta":"86.02","deserci_n":"2.21"}
+,{"c_digo_municipio":"68211","municipio":"Contratación","cobertura_neta_media":"61.54","cobertura_neta":"86.51","deserci_n":"0.18"}
+,{"c_digo_municipio":"68217","municipio":"Coromoro","cobertura_neta_media":"44.87","cobertura_neta":"85.04","deserci_n":"1.71"}
+,{"c_digo_municipio":"68229","municipio":"Curití","cobertura_neta_media":"53.55","cobertura_neta":"80.01","deserci_n":"3.31"}
+,{"c_digo_municipio":"68235","municipio":"El Carmen de Chucurí","cobertura_neta_media":"28.57","cobertura_neta":"62.17","deserci_n":"4.06"}
+,{"c_digo_municipio":"68245","municipio":"El Guacamayo","cobertura_neta_media":"34.72","cobertura_neta":"61.7","deserci_n":"1.08"}
+,{"c_digo_municipio":"68250","municipio":"El Peñón","cobertura_neta_media":"34.29","cobertura_neta":"58.73","deserci_n":"2.84"}
+,{"c_digo_municipio":"68255","municipio":"El Playón","cobertura_neta_media":"46.15","cobertura_neta":"85.14","deserci_n":"3.18"}
+,{"c_digo_municipio":"68264","municipio":"Encino","cobertura_neta_media":"22.47","cobertura_neta":"54.28","deserci_n":"1.53"}
+,{"c_digo_municipio":"68266","municipio":"Enciso","cobertura_neta_media":"69.44","cobertura_neta":"90.94","deserci_n":"1.54"}
+,{"c_digo_municipio":"68271","municipio":"Florián","cobertura_neta_media":"34.12","cobertura_neta":"59.56","deserci_n":"2.38"}
+,{"c_digo_municipio":"68276","municipio":"Floridablanca","cobertura_neta_media":"47.54","cobertura_neta":"81.69","deserci_n":"4.82"}
+,{"c_digo_municipio":"68296","municipio":"Galán","cobertura_neta_media":"54.88","cobertura_neta":"96.57","deserci_n":"1.69"}
+,{"c_digo_municipio":"68298","municipio":"Gambita","cobertura_neta_media":"35.88","cobertura_neta":"71.9","deserci_n":"2.18"}
+,{"c_digo_municipio":"68307","municipio":"Girón","cobertura_neta_media":"51.17","cobertura_neta":"94.89","deserci_n":"4.43"}
+,{"c_digo_municipio":"68318","municipio":"Guaca","cobertura_neta_media":"40","cobertura_neta":"77.64","deserci_n":"3.04"}
+,{"c_digo_municipio":"68320","municipio":"Guadalupe","cobertura_neta_media":"63.27","cobertura_neta":"87.47","deserci_n":"1.95"}
+,{"c_digo_municipio":"68322","municipio":"Guapotá","cobertura_neta_media":"39.73","cobertura_neta":"73.48","deserci_n":"3.53"}
+,{"c_digo_municipio":"68324","municipio":"Guavatá","cobertura_neta_media":"31.97","cobertura_neta":"55.38","deserci_n":"5.14"}
+,{"c_digo_municipio":"68327","municipio":"Güepsa","cobertura_neta_media":"38.89","cobertura_neta":"79.85","deserci_n":"4.66"}
+,{"c_digo_municipio":"68344","municipio":"Hato","cobertura_neta_media":"49.33","cobertura_neta":"75","deserci_n":"2.31"}
+,{"c_digo_municipio":"68368","municipio":"Jesús María","cobertura_neta_media":"51.92","cobertura_neta":"70.32","deserci_n":"1.94"}
+,{"c_digo_municipio":"68370","municipio":"Jordán","cobertura_neta_media":"85.71","cobertura_neta":"102.61","deserci_n":"2.58"}
+,{"c_digo_municipio":"68377","municipio":"La Belleza","cobertura_neta_media":"32.27","cobertura_neta":"74.35","deserci_n":"3.65"}
+,{"c_digo_municipio":"68385","municipio":"Landázuri","cobertura_neta_media":"49.57","cobertura_neta":"91","deserci_n":"3.72"}
+,{"c_digo_municipio":"68397","municipio":"La Paz","cobertura_neta_media":"47.4","cobertura_neta":"57","deserci_n":"1.92"}
+,{"c_digo_municipio":"68406","municipio":"Lebríja","cobertura_neta_media":"50.14","cobertura_neta":"86.77","deserci_n":"4.82"}
+,{"c_digo_municipio":"68418","municipio":"Los Santos","cobertura_neta_media":"50.61","cobertura_neta":"79.67","deserci_n":"2.2"}
+,{"c_digo_municipio":"68425","municipio":"Macaravita","cobertura_neta_media":"63.89","cobertura_neta":"74.88","deserci_n":"1.2"}
+,{"c_digo_municipio":"68432","municipio":"Málaga","cobertura_neta_media":"62.48","cobertura_neta":"101.15","deserci_n":"1.28"}
+,{"c_digo_municipio":"68444","municipio":"Matanza","cobertura_neta_media":"77.4","cobertura_neta":"118.37","deserci_n":"2.6"}
+,{"c_digo_municipio":"68464","municipio":"Mogotes","cobertura_neta_media":"62.86","cobertura_neta":"89.37","deserci_n":"3.57"}
+,{"c_digo_municipio":"68468","municipio":"Molagavita","cobertura_neta_media":"40.54","cobertura_neta":"60.1","deserci_n":"0.63"}
+,{"c_digo_municipio":"68498","municipio":"Ocamonte","cobertura_neta_media":"39.79","cobertura_neta":"58.78","deserci_n":"2.09"}
+,{"c_digo_municipio":"68500","municipio":"Oiba","cobertura_neta_media":"67.36","cobertura_neta":"92.52","deserci_n":"1.54"}
+,{"c_digo_municipio":"68502","municipio":"Onzaga","cobertura_neta_media":"50","cobertura_neta":"79.26","deserci_n":"3.56"}
+,{"c_digo_municipio":"68522","municipio":"Palmar","cobertura_neta_media":"58.33","cobertura_neta":"79.85","deserci_n":"1.3"}
+,{"c_digo_municipio":"68524","municipio":"Palmas del Socorro","cobertura_neta_media":"57.69","cobertura_neta":"86.71","deserci_n":"3.15"}
+,{"c_digo_municipio":"68533","municipio":"Páramo","cobertura_neta_media":"54.3","cobertura_neta":"84.94","deserci_n":"3.22"}
+,{"c_digo_municipio":"68547","municipio":"Piedecuesta","cobertura_neta_media":"59.61","cobertura_neta":"96.62","deserci_n":"6.08"}
+,{"c_digo_municipio":"68549","municipio":"Pinchote","cobertura_neta_media":"46.84","cobertura_neta":"70.21","deserci_n":"1.47"}
+,{"c_digo_municipio":"68572","municipio":"Puente Nacional","cobertura_neta_media":"81.18","cobertura_neta":"114.35","deserci_n":"1.74"}
+,{"c_digo_municipio":"68573","municipio":"Puerto Parra","cobertura_neta_media":"45.1","cobertura_neta":"92.48","deserci_n":"6.24"}
+,{"c_digo_municipio":"68575","municipio":"Puerto Wilches","cobertura_neta_media":"42.41","cobertura_neta":"94.89","deserci_n":"4.79"}
+,{"c_digo_municipio":"68615","municipio":"Rionegro","cobertura_neta_media":"58.85","cobertura_neta":"101.76","deserci_n":"4.75"}
+,{"c_digo_municipio":"68655","municipio":"Sabana de Torres","cobertura_neta_media":"52.12","cobertura_neta":"103.4","deserci_n":"5.3"}
+,{"c_digo_municipio":"68669","municipio":"San Andrés","cobertura_neta_media":"73.33","cobertura_neta":"86.05","deserci_n":"1.15"}
+,{"c_digo_municipio":"68673","municipio":"San Benito","cobertura_neta_media":"33.33","cobertura_neta":"60.5","deserci_n":"2.27"}
+,{"c_digo_municipio":"68679","municipio":"San Gil","cobertura_neta_media":"74.15","cobertura_neta":"106.48","deserci_n":"3.45"}
+,{"c_digo_municipio":"68682","municipio":"San Joaquín","cobertura_neta_media":"49.3","cobertura_neta":"75.29","deserci_n":"0.56"}
+,{"c_digo_municipio":"68684","municipio":"San José de Miranda","cobertura_neta_media":"44.06","cobertura_neta":"63.47","deserci_n":"2.49"}
+,{"c_digo_municipio":"68686","municipio":"San Miguel","cobertura_neta_media":"40.96","cobertura_neta":"70.66","deserci_n":"2.48"}
+,{"c_digo_municipio":"68689","municipio":"San Vicente de Chucurí","cobertura_neta_media":"38.9","cobertura_neta":"77.93","deserci_n":"5.38"}
+,{"c_digo_municipio":"68705","municipio":"Santa Bárbara","cobertura_neta_media":"35.62","cobertura_neta":"85.94","deserci_n":"1.3"}
+,{"c_digo_municipio":"68720","municipio":"Santa Helena del Opón","cobertura_neta_media":"39.68","cobertura_neta":"71.58","deserci_n":"2.64"}
+,{"c_digo_municipio":"68745","municipio":"Simacota","cobertura_neta_media":"34.32","cobertura_neta":"74.79","deserci_n":"3.36"}
+,{"c_digo_municipio":"68755","municipio":"Socorro","cobertura_neta_media":"66.76","cobertura_neta":"101.52","deserci_n":"2.62"}
+,{"c_digo_municipio":"68770","municipio":"Suaita","cobertura_neta_media":"66.22","cobertura_neta":"89.26","deserci_n":"2.63"}
+,{"c_digo_municipio":"68773","municipio":"Sucre","cobertura_neta_media":"35.86","cobertura_neta":"64.36","deserci_n":"2.31"}
+,{"c_digo_municipio":"68780","municipio":"Suratá","cobertura_neta_media":"33.33","cobertura_neta":"87.62","deserci_n":"0.91"}
+,{"c_digo_municipio":"68820","municipio":"Tona","cobertura_neta_media":"36.86","cobertura_neta":"90.28","deserci_n":"4.8"}
+,{"c_digo_municipio":"68855","municipio":"Valle de San José","cobertura_neta_media":"56.57","cobertura_neta":"81.44","deserci_n":"2.62"}
+,{"c_digo_municipio":"68861","municipio":"Vélez","cobertura_neta_media":"40.08","cobertura_neta":"74.82","deserci_n":"3.81"}
+,{"c_digo_municipio":"68867","municipio":"Vetas","cobertura_neta_media":"39.44","cobertura_neta":"58.39","deserci_n":"4.06"}
+,{"c_digo_municipio":"68872","municipio":"Villanueva","cobertura_neta_media":"40.63","cobertura_neta":"76.1","deserci_n":"3.27"}
+,{"c_digo_municipio":"68895","municipio":"Zapatoca","cobertura_neta_media":"54.01","cobertura_neta":"94.73","deserci_n":"2.31"}
+,{"c_digo_municipio":"70001","municipio":"Sincelejo","cobertura_neta_media":"57.01","cobertura_neta":"96.65","deserci_n":"3.02"}
+,{"c_digo_municipio":"70110","municipio":"Buenavista","cobertura_neta_media":"39.95","cobertura_neta":"84.94","deserci_n":"5.05"}
+,{"c_digo_municipio":"70124","municipio":"Caimito","cobertura_neta_media":"30","cobertura_neta":"69.33","deserci_n":"3.98"}
+,{"c_digo_municipio":"70204","municipio":"Colosó","cobertura_neta_media":"40.76","cobertura_neta":"90.28","deserci_n":"2.26"}
+,{"c_digo_municipio":"70215","municipio":"Corozal","cobertura_neta_media":"61.08","cobertura_neta":"100.44","deserci_n":"2.23"}
+,{"c_digo_municipio":"70221","municipio":"Coveñas","cobertura_neta_media":"54.59","cobertura_neta":"103.78","deserci_n":"3.23"}
+,{"c_digo_municipio":"70230","municipio":"Chalán","cobertura_neta_media":"28.42","cobertura_neta":"81.84","deserci_n":"2.66"}
+,{"c_digo_municipio":"70233","municipio":"El Roble","cobertura_neta_media":"51.54","cobertura_neta":"94.64","deserci_n":"3.42"}
+,{"c_digo_municipio":"70235","municipio":"Galeras","cobertura_neta_media":"42.46","cobertura_neta":"83.79","deserci_n":"3.34"}
+,{"c_digo_municipio":"70265","municipio":"Guaranda","cobertura_neta_media":"32.54","cobertura_neta":"86.52","deserci_n":"5.01"}
+,{"c_digo_municipio":"70400","municipio":"La Unión","cobertura_neta_media":"42.47","cobertura_neta":"86.62","deserci_n":"1.46"}
+,{"c_digo_municipio":"70418","municipio":"Los Palmitos","cobertura_neta_media":"51.39","cobertura_neta":"95.25","deserci_n":"3"}
+,{"c_digo_municipio":"70429","municipio":"Majagual","cobertura_neta_media":"56.22","cobertura_neta":"94.91","deserci_n":"3.6"}
+,{"c_digo_municipio":"70473","municipio":"Morroa","cobertura_neta_media":"24.81","cobertura_neta":"79.23","deserci_n":"1.65"}
+,{"c_digo_municipio":"70508","municipio":"Ovejas","cobertura_neta_media":"57.87","cobertura_neta":"108.28","deserci_n":"3.57"}
+,{"c_digo_municipio":"70523","municipio":"Palmito","cobertura_neta_media":"44.97","cobertura_neta":"83.42","deserci_n":"3.08"}
+,{"c_digo_municipio":"70670","municipio":"Sampués","cobertura_neta_media":"50.27","cobertura_neta":"88.46","deserci_n":"3.04"}
+,{"c_digo_municipio":"70678","municipio":"San Benito Abad","cobertura_neta_media":"28.74","cobertura_neta":"75.06","deserci_n":"3.18"}
+,{"c_digo_municipio":"70702","municipio":"San Juan de Betulia","cobertura_neta_media":"46.82","cobertura_neta":"88.12","deserci_n":"1.99"}
+,{"c_digo_municipio":"70708","municipio":"San Marcos","cobertura_neta_media":"44.73","cobertura_neta":"87.31","deserci_n":"5.03"}
+,{"c_digo_municipio":"70713","municipio":"San Onofre","cobertura_neta_media":"33.2","cobertura_neta":"83.02","deserci_n":"3.13"}
+,{"c_digo_municipio":"70717","municipio":"San Pedro","cobertura_neta_media":"42.96","cobertura_neta":"87.46","deserci_n":"2.78"}
+,{"c_digo_municipio":"70742","municipio":"Sincé","cobertura_neta_media":"39.75","cobertura_neta":"84.29","deserci_n":"2.83"}
+,{"c_digo_municipio":"70771","municipio":"Sucre","cobertura_neta_media":"21.64","cobertura_neta":"68.78","deserci_n":"2.48"}
+,{"c_digo_municipio":"70820","municipio":"Santiago de Tolú","cobertura_neta_media":"39.95","cobertura_neta":"91.69","deserci_n":"2.67"}
+,{"c_digo_municipio":"70823","municipio":"Toluviejo","cobertura_neta_media":"47.25","cobertura_neta":"92.79","deserci_n":"3.2"}
+,{"c_digo_municipio":"73001","municipio":"Ibagué","cobertura_neta_media":"61.7","cobertura_neta":"108.71","deserci_n":"4.18"}
+,{"c_digo_municipio":"73024","municipio":"Alpujarra","cobertura_neta_media":"43.75","cobertura_neta":"76.97","deserci_n":"2.73"}
+,{"c_digo_municipio":"73026","municipio":"Alvarado","cobertura_neta_media":"33.45","cobertura_neta":"76.44","deserci_n":"3.6"}
+,{"c_digo_municipio":"73030","municipio":"Ambalema","cobertura_neta_media":"35.24","cobertura_neta":"66.67","deserci_n":"3.18"}
+,{"c_digo_municipio":"73043","municipio":"Anzoátegui","cobertura_neta_media":"34.31","cobertura_neta":"74.17","deserci_n":"3.28"}
+,{"c_digo_municipio":"73055","municipio":"Armero","cobertura_neta_media":"47.7","cobertura_neta":"88.42","deserci_n":"2.69"}
+,{"c_digo_municipio":"73067","municipio":"Ataco","cobertura_neta_media":"40.56","cobertura_neta":"96.81","deserci_n":"3.66"}
+,{"c_digo_municipio":"73124","municipio":"Cajamarca","cobertura_neta_media":"47.78","cobertura_neta":"88.7","deserci_n":"3.71"}
+,{"c_digo_municipio":"73148","municipio":"Carmen de Apicalá","cobertura_neta_media":"63.24","cobertura_neta":"104.44","deserci_n":"2.26"}
+,{"c_digo_municipio":"73152","municipio":"Casabianca","cobertura_neta_media":"43.28","cobertura_neta":"81.42","deserci_n":"3.36"}
+,{"c_digo_municipio":"73168","municipio":"Chaparral","cobertura_neta_media":"43.65","cobertura_neta":"85.75","deserci_n":"2.86"}
+,{"c_digo_municipio":"73200","municipio":"Coello","cobertura_neta_media":"44.63","cobertura_neta":"79.21","deserci_n":"1.81"}
+,{"c_digo_municipio":"73217","municipio":"Coyaima","cobertura_neta_media":"65.94","cobertura_neta":"97.62","deserci_n":"3.82"}
+,{"c_digo_municipio":"73226","municipio":"Cunday","cobertura_neta_media":"51.94","cobertura_neta":"87.13","deserci_n":"3.37"}
+,{"c_digo_municipio":"73236","municipio":"Dolores","cobertura_neta_media":"55.78","cobertura_neta":"92.69","deserci_n":"2.5"}
+,{"c_digo_municipio":"73268","municipio":"Espinal","cobertura_neta_media":"58.45","cobertura_neta":"107.5","deserci_n":"3.81"}
+,{"c_digo_municipio":"73270","municipio":"Falan","cobertura_neta_media":"72.41","cobertura_neta":"96.55","deserci_n":"3.26"}
+,{"c_digo_municipio":"73275","municipio":"Flandes","cobertura_neta_media":"43.35","cobertura_neta":"87.26","deserci_n":"5.13"}
+,{"c_digo_municipio":"73283","municipio":"Fresno","cobertura_neta_media":"48.41","cobertura_neta":"88.67","deserci_n":"3.41"}
+,{"c_digo_municipio":"73319","municipio":"Guamo","cobertura_neta_media":"52.48","cobertura_neta":"85.93","deserci_n":"4.75"}
+,{"c_digo_municipio":"73347","municipio":"Herveo","cobertura_neta_media":"43.04","cobertura_neta":"75.11","deserci_n":"2.57"}
+,{"c_digo_municipio":"73349","municipio":"Honda","cobertura_neta_media":"40.03","cobertura_neta":"81.96","deserci_n":"3.41"}
+,{"c_digo_municipio":"73352","municipio":"Icononzo","cobertura_neta_media":"55.96","cobertura_neta":"93.37","deserci_n":"2.46"}
+,{"c_digo_municipio":"73408","municipio":"Lérida","cobertura_neta_media":"58.29","cobertura_neta":"91.86","deserci_n":"2.27"}
+,{"c_digo_municipio":"73411","municipio":"Líbano","cobertura_neta_media":"56.77","cobertura_neta":"96.33","deserci_n":"3.23"}
+,{"c_digo_municipio":"73443","municipio":"Mariquita","cobertura_neta_media":"47.07","cobertura_neta":"90.2","deserci_n":"2.68"}
+,{"c_digo_municipio":"73449","municipio":"Melgar","cobertura_neta_media":"72.48","cobertura_neta":"117.7","deserci_n":"2.72"}
+,{"c_digo_municipio":"73461","municipio":"Murillo","cobertura_neta_media":"14.56","cobertura_neta":"57.23","deserci_n":"2.96"}
+,{"c_digo_municipio":"73483","municipio":"Natagaima","cobertura_neta_media":"59.14","cobertura_neta":"99.43","deserci_n":"2.53"}
+,{"c_digo_municipio":"73504","municipio":"Ortega","cobertura_neta_media":"45.82","cobertura_neta":"75.84","deserci_n":"3.25"}
+,{"c_digo_municipio":"73520","municipio":"Palocabildo","cobertura_neta_media":"34.74","cobertura_neta":"78.25","deserci_n":"2.94"}
+,{"c_digo_municipio":"73547","municipio":"Piedras","cobertura_neta_media":"29.09","cobertura_neta":"69.24","deserci_n":"2.1"}
+,{"c_digo_municipio":"73555","municipio":"Planadas","cobertura_neta_media":"39.92","cobertura_neta":"98.58","deserci_n":"5.21"}
+,{"c_digo_municipio":"73563","municipio":"Prado","cobertura_neta_media":"59.85","cobertura_neta":"94.08","deserci_n":"3.22"}
+,{"c_digo_municipio":"73585","municipio":"Purificación","cobertura_neta_media":"67.27","cobertura_neta":"95.72","deserci_n":"2.73"}
+,{"c_digo_municipio":"73616","municipio":"Rioblanco","cobertura_neta_media":"36.6","cobertura_neta":"80.05","deserci_n":"5.59"}
+,{"c_digo_municipio":"73622","municipio":"Roncesvalles","cobertura_neta_media":"36.76","cobertura_neta":"75.95","deserci_n":"1.87"}
+,{"c_digo_municipio":"73624","municipio":"Rovira","cobertura_neta_media":"50.06","cobertura_neta":"92.95","deserci_n":"4.22"}
+,{"c_digo_municipio":"73671","municipio":"Saldaña","cobertura_neta_media":"47.73","cobertura_neta":"84.16","deserci_n":"1.51"}
+,{"c_digo_municipio":"73675","municipio":"San Antonio","cobertura_neta_media":"52.64","cobertura_neta":"87.35","deserci_n":"1.56"}
+,{"c_digo_municipio":"73678","municipio":"San Luis","cobertura_neta_media":"50.13","cobertura_neta":"93.44","deserci_n":"3.95"}
+,{"c_digo_municipio":"73686","municipio":"Santa Isabel","cobertura_neta_media":"41.03","cobertura_neta":"83.98","deserci_n":"3.19"}
+,{"c_digo_municipio":"73770","municipio":"Suárez","cobertura_neta_media":"46.94","cobertura_neta":"89.54","deserci_n":"3.8"}
+,{"c_digo_municipio":"73854","municipio":"Valle de San Juan","cobertura_neta_media":"50.87","cobertura_neta":"83.89","deserci_n":"1.03"}
+,{"c_digo_municipio":"73861","municipio":"Venadillo","cobertura_neta_media":"65.75","cobertura_neta":"87.24","deserci_n":"1.99"}
+,{"c_digo_municipio":"73870","municipio":"Villahermosa","cobertura_neta_media":"39.8","cobertura_neta":"79.48","deserci_n":"3.75"}
+,{"c_digo_municipio":"73873","municipio":"Villarrica","cobertura_neta_media":"37.41","cobertura_neta":"90.54","deserci_n":"4.4"}
+,{"c_digo_municipio":"76001","municipio":"Cali","cobertura_neta_media":"48.83","cobertura_neta":"78.77","deserci_n":"4.41"}
+,{"c_digo_municipio":"76020","municipio":"Alcalá","cobertura_neta_media":"29.49","cobertura_neta":"62.42","deserci_n":"7.36"}
+,{"c_digo_municipio":"76036","municipio":"Andalucía","cobertura_neta_media":"38.71","cobertura_neta":"63.28","deserci_n":"6.42"}
+,{"c_digo_municipio":"76041","municipio":"Ansermanuevo","cobertura_neta_media":"29.98","cobertura_neta":"67.57","deserci_n":"7.18"}
+,{"c_digo_municipio":"76054","municipio":"Argelia","cobertura_neta_media":"43.28","cobertura_neta":"68.89","deserci_n":"6.35"}
+,{"c_digo_municipio":"76100","municipio":"Bolívar","cobertura_neta_media":"31.93","cobertura_neta":"67.73","deserci_n":"8.07"}
+,{"c_digo_municipio":"76109","municipio":"Buenaventura","cobertura_neta_media":"32.34","cobertura_neta":"62.94","deserci_n":"3.31"}
+,{"c_digo_municipio":"76111","municipio":"Guadalajara de Buga","cobertura_neta_media":"46.09","cobertura_neta":"74.06","deserci_n":"4.91"}
+,{"c_digo_municipio":"76113","municipio":"Bugalagrande","cobertura_neta_media":"42.46","cobertura_neta":"67.28","deserci_n":"5.56"}
+,{"c_digo_municipio":"76122","municipio":"Caicedonia","cobertura_neta_media":"33.91","cobertura_neta":"62.45","deserci_n":"7.48"}
+,{"c_digo_municipio":"76126","municipio":"Calima El Darien","cobertura_neta_media":"45.19","cobertura_neta":"73.42","deserci_n":"4.76"}
+,{"c_digo_municipio":"76130","municipio":"Candelaria","cobertura_neta_media":"57.82","cobertura_neta":"102.37","deserci_n":"5.09"}
+,{"c_digo_municipio":"76147","municipio":"Cartago","cobertura_neta_media":"42.79","cobertura_neta":"69.62","deserci_n":"5.18"}
+,{"c_digo_municipio":"76233","municipio":"Dagua","cobertura_neta_media":"39.31","cobertura_neta":"67.41","deserci_n":"4.11"}
+,{"c_digo_municipio":"76243","municipio":"El Águila","cobertura_neta_media":"44.48","cobertura_neta":"60.78","deserci_n":"6.29"}
+,{"c_digo_municipio":"76246","municipio":"El Cairo","cobertura_neta_media":"37.17","cobertura_neta":"67.02","deserci_n":"7.09"}
+,{"c_digo_municipio":"76248","municipio":"El Cerrito","cobertura_neta_media":"51.05","cobertura_neta":"82.96","deserci_n":"4.22"}
+,{"c_digo_municipio":"76250","municipio":"El Dovio","cobertura_neta_media":"29.1","cobertura_neta":"87.17","deserci_n":"6.59"}
+,{"c_digo_municipio":"76275","municipio":"Florida","cobertura_neta_media":"46.22","cobertura_neta":"77.19","deserci_n":"6.23"}
+,{"c_digo_municipio":"76306","municipio":"Ginebra","cobertura_neta_media":"55.22","cobertura_neta":"76.32","deserci_n":"5.05"}
+,{"c_digo_municipio":"76318","municipio":"Guacarí","cobertura_neta_media":"43.57","cobertura_neta":"76.8","deserci_n":"4.99"}
+,{"c_digo_municipio":"76364","municipio":"Jamundí","cobertura_neta_media":"41.97","cobertura_neta":"78.35","deserci_n":"5.89"}
+,{"c_digo_municipio":"76377","municipio":"La Cumbre","cobertura_neta_media":"40.77","cobertura_neta":"69.8","deserci_n":"6.42"}
+,{"c_digo_municipio":"76400","municipio":"La Unión","cobertura_neta_media":"45.54","cobertura_neta":"72.07","deserci_n":"6.49"}
+,{"c_digo_municipio":"76403","municipio":"La Victoria","cobertura_neta_media":"47.11","cobertura_neta":"76.58","deserci_n":"7.13"}
+,{"c_digo_municipio":"76497","municipio":"Obando","cobertura_neta_media":"30.73","cobertura_neta":"52.15","deserci_n":"3.84"}
+,{"c_digo_municipio":"76520","municipio":"Palmira","cobertura_neta_media":"46.49","cobertura_neta":"79.03","deserci_n":"5.14"}
+,{"c_digo_municipio":"76563","municipio":"Pradera","cobertura_neta_media":"33.43","cobertura_neta":"67.97","deserci_n":"7.5"}
+,{"c_digo_municipio":"76606","municipio":"Restrepo","cobertura_neta_media":"51.12","cobertura_neta":"85.58","deserci_n":"4.18"}
+,{"c_digo_municipio":"76616","municipio":"Riofrío","cobertura_neta_media":"39.88","cobertura_neta":"72.74","deserci_n":"5.63"}
+,{"c_digo_municipio":"76622","municipio":"Roldanillo","cobertura_neta_media":"56.97","cobertura_neta":"75.84","deserci_n":"3.63"}
+,{"c_digo_municipio":"76670","municipio":"San Pedro","cobertura_neta_media":"46.67","cobertura_neta":"71.83","deserci_n":"5.61"}
+,{"c_digo_municipio":"76736","municipio":"Sevilla","cobertura_neta_media":"35.96","cobertura_neta":"62.92","deserci_n":"7.38"}
+,{"c_digo_municipio":"76823","municipio":"Toro","cobertura_neta_media":"37.38","cobertura_neta":"59.55","deserci_n":"6.11"}
+,{"c_digo_municipio":"76828","municipio":"Trujillo","cobertura_neta_media":"46.86","cobertura_neta":"64.63","deserci_n":"4.58"}
+,{"c_digo_municipio":"76834","municipio":"Tuluá","cobertura_neta_media":"43.7","cobertura_neta":"65.44","deserci_n":"5.68"}
+,{"c_digo_municipio":"76845","municipio":"Ulloa","cobertura_neta_media":"38.95","cobertura_neta":"62.22","deserci_n":"7.58"}
+,{"c_digo_municipio":"76863","municipio":"Versalles","cobertura_neta_media":"42.48","cobertura_neta":"65.34","deserci_n":"4.66"}
+,{"c_digo_municipio":"76869","municipio":"Vijes","cobertura_neta_media":"44.72","cobertura_neta":"67.4","deserci_n":"7.09"}
+,{"c_digo_municipio":"76890","municipio":"Yotoco","cobertura_neta_media":"47.8","cobertura_neta":"78.01","deserci_n":"4.09"}
+,{"c_digo_municipio":"76892","municipio":"Yumbo","cobertura_neta_media":"58.87","cobertura_neta":"103.19","deserci_n":"5.49"}
+,{"c_digo_municipio":"76895","municipio":"Zarzal","cobertura_neta_media":"50.07","cobertura_neta":"72.29","deserci_n":"4.1"}
+,{"c_digo_municipio":"81001","municipio":"Arauca","cobertura_neta_media":"45.66","cobertura_neta":"96.94","deserci_n":"6.76"}
+,{"c_digo_municipio":"81065","municipio":"Arauquita","cobertura_neta_media":"25.42","cobertura_neta":"65.5","deserci_n":"5.35"}
+,{"c_digo_municipio":"81220","municipio":"Cravo Norte","cobertura_neta_media":"45.93","cobertura_neta":"86.67","deserci_n":"3.62"}
+,{"c_digo_municipio":"81300","municipio":"Fortul","cobertura_neta_media":"40.39","cobertura_neta":"82.3","deserci_n":"4.74"}
+,{"c_digo_municipio":"81591","municipio":"Puerto Rondón","cobertura_neta_media":"30.18","cobertura_neta":"71.69","deserci_n":"5.6"}
+,{"c_digo_municipio":"81736","municipio":"Saravena","cobertura_neta_media":"44.47","cobertura_neta":"86.65","deserci_n":"4.43"}
+,{"c_digo_municipio":"81794","municipio":"Tame","cobertura_neta_media":"47.06","cobertura_neta":"109.78","deserci_n":"4.25"}
+,{"c_digo_municipio":"85001","municipio":"Yopal","cobertura_neta_media":"55.95","cobertura_neta":"97.77","deserci_n":"3.28"}
+,{"c_digo_municipio":"85010","municipio":"Aguazul","cobertura_neta_media":"53.08","cobertura_neta":"89.82","deserci_n":"3.62"}
+,{"c_digo_municipio":"85015","municipio":"Chameza","cobertura_neta_media":"50.6","cobertura_neta":"69.29","deserci_n":"3.19"}
+,{"c_digo_municipio":"85125","municipio":"Hato Corozal","cobertura_neta_media":"34.74","cobertura_neta":"87.43","deserci_n":"4.49"}
+,{"c_digo_municipio":"85136","municipio":"La Salina","cobertura_neta_media":"33.78","cobertura_neta":"55.61","deserci_n":"3.14"}
+,{"c_digo_municipio":"85139","municipio":"Maní","cobertura_neta_media":"34.7","cobertura_neta":"89.19","deserci_n":"6.9"}
+,{"c_digo_municipio":"85162","municipio":"Monterrey","cobertura_neta_media":"52.12","cobertura_neta":"84.08","deserci_n":"3.07"}
+,{"c_digo_municipio":"85225","municipio":"Nunchía","cobertura_neta_media":"46.77","cobertura_neta":"76.68","deserci_n":"2.59"}
+,{"c_digo_municipio":"85230","municipio":"Orocué","cobertura_neta_media":"35.06","cobertura_neta":"70.13","deserci_n":"5.48"}
+,{"c_digo_municipio":"85250","municipio":"Paz de Ariporo","cobertura_neta_media":"48.28","cobertura_neta":"91.22","deserci_n":"3.24"}
+,{"c_digo_municipio":"85263","municipio":"Pore","cobertura_neta_media":"53.28","cobertura_neta":"78.92","deserci_n":"4.63"}
+,{"c_digo_municipio":"85279","municipio":"Recetor","cobertura_neta_media":"29.55","cobertura_neta":"58.46","deserci_n":"5"}
+,{"c_digo_municipio":"85300","municipio":"Sabanalarga","cobertura_neta_media":"45.74","cobertura_neta":"75","deserci_n":"4.24"}
+,{"c_digo_municipio":"85315","municipio":"Sácama","cobertura_neta_media":"27.59","cobertura_neta":"54.77","deserci_n":"6.25"}
+,{"c_digo_municipio":"85325","municipio":"San Luis de Palenque","cobertura_neta_media":"35.17","cobertura_neta":"79.7","deserci_n":"4.84"}
+,{"c_digo_municipio":"85400","municipio":"Támara","cobertura_neta_media":"36.23","cobertura_neta":"82.36","deserci_n":"5.46"}
+,{"c_digo_municipio":"85410","municipio":"Tauramena","cobertura_neta_media":"53.31","cobertura_neta":"92.61","deserci_n":"3.19"}
+,{"c_digo_municipio":"85430","municipio":"Trinidad","cobertura_neta_media":"47.3","cobertura_neta":"88.42","deserci_n":"4.73"}
+,{"c_digo_municipio":"85440","municipio":"Villanueva","cobertura_neta_media":"56.94","cobertura_neta":"95.81","deserci_n":"3.79"}
+,{"c_digo_municipio":"86001","municipio":"Mocoa","cobertura_neta_media":"44.81","cobertura_neta":"84.76","deserci_n":"5.3"}
+,{"c_digo_municipio":"86219","municipio":"Colón","cobertura_neta_media":"42.07","cobertura_neta":"73.61","deserci_n":"3.56"}
+,{"c_digo_municipio":"86320","municipio":"Orito","cobertura_neta_media":"42.87","cobertura_neta":"91.05","deserci_n":"6.64"}
+,{"c_digo_municipio":"86568","municipio":"Puerto Asís","cobertura_neta_media":"40.09","cobertura_neta":"88.48","deserci_n":"6.08"}
+,{"c_digo_municipio":"86569","municipio":"Puerto Caicedo","cobertura_neta_media":"27.99","cobertura_neta":"67.24","deserci_n":"4.79"}
+,{"c_digo_municipio":"86571","municipio":"Puerto Guzmán","cobertura_neta_media":"15.36","cobertura_neta":"47.56","deserci_n":"11.5"}
+,{"c_digo_municipio":"86573","municipio":"Leguízamo","cobertura_neta_media":"22.46","cobertura_neta":"57.38","deserci_n":"8.81"}
+,{"c_digo_municipio":"86749","municipio":"Sibundoy","cobertura_neta_media":"76.12","cobertura_neta":"95.16","deserci_n":"2.52"}
+,{"c_digo_municipio":"86755","municipio":"San Francisco","cobertura_neta_media":"36.36","cobertura_neta":"63.66","deserci_n":"2.92"}
+,{"c_digo_municipio":"86757","municipio":"San Miguel","cobertura_neta_media":"39.38","cobertura_neta":"87.64","deserci_n":"6.56"}
+,{"c_digo_municipio":"86760","municipio":"Santiago","cobertura_neta_media":"35.68","cobertura_neta":"76.37","deserci_n":"5.35"}
+,{"c_digo_municipio":"86865","municipio":"Valle del Guamuez","cobertura_neta_media":"45.84","cobertura_neta":"95.67","deserci_n":"7.33"}
+,{"c_digo_municipio":"86885","municipio":"Villagarzón","cobertura_neta_media":"41.63","cobertura_neta":"95.99","deserci_n":"5.65"}
+,{"c_digo_municipio":"88001","municipio":"San Andrés","cobertura_neta_media":"53.92","cobertura_neta":"95.81","deserci_n":"2.01"}
+,{"c_digo_municipio":"88564","municipio":"Providencia","cobertura_neta_media":"57.54","cobertura_neta":"78.46","deserci_n":"1.41"}
+,{"c_digo_municipio":"91001","municipio":"Leticia","cobertura_neta_media":"36.45","cobertura_neta":"88.17","deserci_n":"5.61"}
+,{"c_digo_municipio":"91263","municipio":"El Encanto","cobertura_neta_media":"10.62","cobertura_neta":"51.37","deserci_n":"3.09"}
+,{"c_digo_municipio":"91405","municipio":"La Chorrera","cobertura_neta_media":"9.79","cobertura_neta":"50.38","deserci_n":"14.81"}
+,{"c_digo_municipio":"91407","municipio":"La Pedrera","cobertura_neta_media":"18.37","cobertura_neta":"67.05","deserci_n":"1.79"}
+,{"c_digo_municipio":"91430","municipio":"La Victoria","cobertura_neta_media":"0","cobertura_neta":"13.17","deserci_n":"0"}
+,{"c_digo_municipio":"91460","municipio":"Miriti - Paraná","cobertura_neta_media":"11.61","cobertura_neta":"46.07","deserci_n":"3.27"}
+,{"c_digo_municipio":"91530","municipio":"Puerto Alegría","cobertura_neta_media":"0","cobertura_neta":"72.17","deserci_n":"5.23"}
+,{"c_digo_municipio":"91536","municipio":"Puerto Arica","cobertura_neta_media":"23.68","cobertura_neta":"83.46","deserci_n":"0"}
+,{"c_digo_municipio":"91540","municipio":"Puerto Nariño","cobertura_neta_media":"15.07","cobertura_neta":"54.35","deserci_n":"3.62"}
+,{"c_digo_municipio":"91669","municipio":"Puerto Santander","cobertura_neta_media":"8.25","cobertura_neta":"60.06","deserci_n":"0.75"}
+,{"c_digo_municipio":"91798","municipio":"Tarapacá","cobertura_neta_media":"2.62","cobertura_neta":"52.55","deserci_n":"2.2"}
+,{"c_digo_municipio":"94001","municipio":"Inírida","cobertura_neta_media":"14.85","cobertura_neta":"77.41","deserci_n":"5.19"}
+,{"c_digo_municipio":"94343","municipio":"Barranco Minas","cobertura_neta_media":"8.87","cobertura_neta":"65.87","deserci_n":"4.4"}
+,{"c_digo_municipio":"94883","municipio":"San Felipe","cobertura_neta_media":"4.21","cobertura_neta":"61.13","deserci_n":"5.46"}
+,{"c_digo_municipio":"94884","municipio":"Puerto Colombia","cobertura_neta_media":"1.79","cobertura_neta":"83.97","deserci_n":"2.83"}
+,{"c_digo_municipio":"94885","municipio":"La Guadalupe","cobertura_neta_media":"0","cobertura_neta":"78.26","deserci_n":"1.09"}
+,{"c_digo_municipio":"94886","municipio":"Cacahual","cobertura_neta_media":"0","cobertura_neta":"83.85","deserci_n":"2.03"}
+,{"c_digo_municipio":"94887","municipio":"Pana Pana","cobertura_neta_media":"0.86","cobertura_neta":"35.9","deserci_n":"0.32"}
+,{"c_digo_municipio":"94888","municipio":"Morichal","cobertura_neta_media":"0","cobertura_neta":"45.82","deserci_n":"10"}
+,{"c_digo_municipio":"95001","municipio":"San José del Guaviare","cobertura_neta_media":"39.21","cobertura_neta":"87.43","deserci_n":"5.02"}
+,{"c_digo_municipio":"95015","municipio":"Calamar","cobertura_neta_media":"30.35","cobertura_neta":"78.69","deserci_n":"2.67"}
+,{"c_digo_municipio":"95025","municipio":"El Retorno","cobertura_neta_media":"18.64","cobertura_neta":"50.71","deserci_n":"5.32"}
+,{"c_digo_municipio":"95200","municipio":"Miraflores","cobertura_neta_media":"10.25","cobertura_neta":"27.87","deserci_n":"5.74"}
+,{"c_digo_municipio":"97001","municipio":"Mitú","cobertura_neta_media":"17.26","cobertura_neta":"57.78","deserci_n":"5.06"}
+,{"c_digo_municipio":"97161","municipio":"Caruru","cobertura_neta_media":"12.75","cobertura_neta":"47.47","deserci_n":"3.54"}
+,{"c_digo_municipio":"97511","municipio":"Pacoa","cobertura_neta_media":"5.25","cobertura_neta":"54.8","deserci_n":"7.83"}
+,{"c_digo_municipio":"97666","municipio":"Taraira","cobertura_neta_media":"0","cobertura_neta":"19.95","deserci_n":"0"}
+,{"c_digo_municipio":"97777","municipio":"Papunaua","cobertura_neta_media":"0","cobertura_neta":"0","deserci_n":"0"}
+,{"c_digo_municipio":"97889","municipio":"Yavaraté","cobertura_neta_media":"15.96","cobertura_neta":"46.26","deserci_n":"8.39"}
+,{"c_digo_municipio":"99001","municipio":"Puerto Carreño","cobertura_neta_media":"29.1","cobertura_neta":"148.17","deserci_n":"8.45"}
+,{"c_digo_municipio":"99524","municipio":"La Primavera","cobertura_neta_media":"31.33","cobertura_neta":"90.96","deserci_n":"5.16"}
+,{"c_digo_municipio":"99624","municipio":"Santa Rosalía","cobertura_neta_media":"22.45","cobertura_neta":"81.42","deserci_n":"6.3"}
+,{"c_digo_municipio":"99773","municipio":"Cumaribo","cobertura_neta_media":"3.85","cobertura_neta":"50.7","deserci_n":"5.5"}]

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Acceso y desiertos de consumo - Colombia</title>
+<link rel="stylesheet" href="styles.css?v=5"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"/>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="i18n.js?v=3"></script>
+<script defer src="nav.js?v=10"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/d3-geo@3/dist/d3-geo.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar"></div>
+  <h1 data-en="Access and consumption <em>deserts</em>">Acceso y <em>desiertos</em> de consumo</h1>
+  <p class="byline" data-en="Crosses the chain-outlet footprint with <b>municipal population 2025 (DANE)</b>:
+    how much formal supply there is per inhabitant, and where it's missing. Politics enters as a cross-cutting layer.">Cruza la huella de locales de cadena con la <b>población municipal 2025 (DANE)</b>:
+    cuánta oferta formal hay por habitante, y dónde falta. La política entra como capa transversal.</p>
+  <p class="intro" data-en="<b>Access</b> is the number of chain outlets per <b>10,000 inhabitants</b>. High =
+    dense formal supply; low = large cities with little chain retail (a formal-consumption <b>desert</b>). It combines
+    the outlet footprint with municipal population to move from absolute counts to per-capita supply.
+    <b>Link with the elections:</b> the panel crosses access with the municipality's vote to see whether supply is
+    politically sorted.">El <b>acceso</b> es el número de locales de cadena por cada <b>10.000 habitantes</b>. Alto =
+    oferta formal densa; bajo = ciudades grandes con poca cadena (un <b>desierto</b> de consumo formal). Combina la
+    huella de locales con la población municipal para pasar de conteos absolutos a oferta per cápita.
+    <b>Vínculo con las elecciones:</b> el panel cruza el acceso con el voto del municipio para ver si el
+    abastecimiento está políticamente sorteado.</p>
+  <div class="caveat" style="max-width:none">
+    <span data-en="<b>Coverage bias.</b> OpenStreetMap only records chains in "><b>Sesgo de cobertura.</b> OpenStreetMap solo registra cadenas en </span><b id="covtxt">parte</b><span data-en=" of the municipalities (mostly urban). Municipalities with no recorded outlet appear in gray (not necessarily &quot;zero commerce&quot;, just no OSM data). Per-capita access is defensible <b>among covered municipalities</b>, not as a census count."> de los municipios (sobre todo urbanos). Los municipios sin local registrado salen en gris (no necesariamente "cero comercio", sino sin dato OSM). El acceso per cápita es defendible <b>entre municipios cubiertos</b>, no como conteo censal.</span>
+  </div>
+  <details class="methodbox">
+    <summary data-en="How is access computed? See method and formula">¿Cómo se calcula el acceso? Ver método y fórmula</summary>
+    <div class="mb-body">
+      <p class="src" data-en="Source: supply/demand access measures (2SFCA family, <b>Luo &amp; Wang, 2003</b>,
+        <i>Environment and Planning B</i>); here in its 1-step form (per-capita supply density). Population:
+        <b>DANE</b>, CNPV 2018 projections, year 2025. Outlets: OpenStreetMap.">Origen: medidas de acceso por oferta/demanda (familia 2SFCA, <b>Luo &amp; Wang, 2003</b>,
+        <i>Environment and Planning B</i>); aquí en su forma de 1 paso (densidad de oferta per cápita). Población:
+        <b>DANE</b>, proyecciones CNPV 2018, año 2025. Locales: OpenStreetMap.</p>
+      <p class="mb-tech" data-en="Technique: per-capita supply density + deficit vs the median of covered municipalities">Técnica: densidad de oferta per cápita + déficit vs la mediana de municipios cubiertos</p>
+      <div class="ktx" data-tex="\begin{gathered} \text{acceso}(m)=\dfrac{\text{locales}(m)}{\text{población}(m)}\times 10000 \\[4pt] \text{deficit}(m)=\max\{0,\ \tilde a-\text{acceso}(m)\}\times \dfrac{\text{población}(m)}{10000} \end{gathered}">acceso = locales por 10.000 hab; deficit = locales faltantes vs la mediana.</div>
+      <p style="margin:0;font-size:13px;color:var(--muted)" data-en="a&#771; = median access among covered municipalities.
+        A full 2SFCA needs travel times (OSRM) and is not yet incorporated. Implementation:
+        <i>scripts/10_acceso.py</i>.">a&#771; = mediana de acceso entre municipios con cobertura.
+        Un 2SFCA completo requiere tiempos de viaje (OSRM) y aún no se incorpora. Implementación:
+        <i>scripts/10_acceso.py</i>.</p>
+    </div>
+  </details>
+  <div class="maptop">
+    <label class="toggle"><span data-en="View:">Vista:</span>
+      <select id="viewsel" style="font-family:var(--mono);font-size:12.5px;padding:8px 10px;border:1px solid var(--line);border-radius:3px;background:#fff">
+        <option value="acc" data-en="Access (outlets / 10k inhab.)">Acceso (locales / 10k hab)</option>
+        <option value="bi" data-en="Access x vote (bivariate)">Acceso x voto (bivariado)</option>
+      </select>
+    </label>
+    <span class="legend" id="leg" style="margin-left:auto"></span>
+  </div>
+  <div class="geo-grid">
+    <div class="mapwrap"><div id="map"></div></div>
+    <div>
+      <div class="bpanel" style="margin-bottom:16px">
+        <h4 data-en="Coverage and politics">Cobertura y política</h4>
+        <p class="sub" id="covsum" style="margin:0 0 8px"></p>
+        <p class="sub" id="corrsum" style="margin:0"></p>
+      </div>
+      <div class="bucket esp"><h4 id="ranktitle" data-en="Most underserved cities">Ciudades más desabastecidas</h4><ul class="blist" id="rank"></ul></div>
+      <div class="bpanel" style="margin-top:16px">
+        <h4 data-en="How to read it">Cómo leerlo</h4>
+        <p class="sub" style="margin:0" data-en="The list is <b>populated</b> municipalities with little chain retail per inhabitant
+          (largest deficit vs the median). The number on the right is the municipality's political color: it crosses
+          supply with the vote.">La lista son municipios <b>poblados</b> con poca cadena por habitante
+          (mayor déficit vs la mediana). El número de la derecha es el color político del municipio: cruza
+          abastecimiento con voto.</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot" data-en="Access = chain outlets (OpenStreetMap) per 10,000 inhab.; population DANE CNPV 2018, year 2025.
+    Vote: Registraduría 2026. Site 2 - consumption structure.">Acceso = locales de cadena (OpenStreetMap) por 10.000 hab; población DANE CNPV 2018, año 2025.
+    Voto: Registraduría 2026. Sitio 2 - estructura del consumo.</div>
+</div>
+<div id="tip"></div>
+<script defer src="acceso.js"></script>
+<script defer src="geo.js"></script>
+<script defer src="app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+const ACC=window.ACC, geo=window.GEO_MUNI;
+const rec=new Map(ACC.munis.map(m=>[m.id,m]));
+const covered=ACC.munis.filter(m=>m.loc>0);
+const p90=d3.quantile(covered.map(m=>m.acc).sort((a,b)=>a-b),0.9)||1;
+const accScale=d3.scaleSequential(d3.interpolate('#eef6f5','#0f8a8a')).domain([0,p90]).clamp(true);
+// bivariate 3x3 palette: rows=acceso (bajo->alto), cols=voto (Cepeda/50-50/DLE)
+const BI=['#e8e8e8','#e7d3cf','#e0b3ac', '#cfe0db','#c9c4bd','#cf9b94', '#9fd0c6','#a7b59a','#bd7d72'];
+const fmt=v=>(v>0?'+':'')+v.toFixed(0);
+
+const W=720,H=820;
+const svg=d3.select('#map').append('svg').attr('viewBox',`0 0 ${W} ${H}`);
+const proj=d3.geoMercator().fitSize([W,H],geo),path=d3.geoPath(proj);
+const tip=d3.select('#tip');
+let view='acc';
+
+const paths=svg.append('g').selectAll('path').data(geo.features).join('path').attr('d',path)
+  .attr('stroke','#fff').attr('stroke-width',0.25).style('cursor','pointer')
+  .on('mousemove',(e,d)=>{const m=rec.get(d.properties.dv);
+    tip.style('opacity',1).style('left',(e.clientX+14)+'px').style('top',(e.clientY+12)+'px')
+      .html(!m?`<div class="b">${d.properties.name}</div><div class="m">${I18N.t('sin datos','no data')}</div>`:
+        `<div class="b">${m.name}</div><div class="m">${m.dept} &middot; ${(m.pop/1000).toFixed(0)}k ${I18N.t('hab','inhab.')}</div>
+         ${m.loc>0?`<div style="margin-top:3px">${m.loc} ${I18N.t('locales','outlets')} &middot; ${m.acc.toFixed(2)} / 10k</div>`
+                  :`<div class="m" style="margin-top:3px">${I18N.t('sin cadena registrada (OSM)','no chain recorded (OSM)')}</div>`}
+         <div class="m" style="color:${m.lean>0?'#bd2740':'#2c5fb3'}">${fmt(m.lean*100)} pts</div>`);
+    d3.select(e.currentTarget).attr('stroke','#222').attr('stroke-width',1).raise();})
+  .on('mouseleave',(e)=>{tip.style('opacity',0);d3.select(e.currentTarget).attr('stroke','#fff').attr('stroke-width',0.25);});
+
+function fillOf(d){
+  const m=rec.get(d.properties.dv);
+  if(!m) return '#efeeea';
+  if(m.loc===0) return '#dedcd6';                 // sin cobertura OSM
+  return view==='acc' ? accScale(m.acc) : BI[m.bi];
+}
+function render(){ paths.attr('fill',fillOf); legend(); }
+
+function legend(){
+  const L=d3.select('#leg').html('');
+  if(view==='acc'){
+    L.append('span').text(I18N.t('bajo','low'));
+    L.append('span').attr('class','bar').style('width','150px')
+      .style('background','linear-gradient(90deg,#eef6f5,#0f8a8a)');
+    L.append('span').text(I18N.t('alto acceso','high access'));
+  }else{
+    L.style('display','inline-flex').style('gap','8px').style('align-items','center');
+    L.append('span').style('font-size','10px').style('color','var(--muted)').text('Cepeda');
+    const grid=L.append('span').style('display','grid').style('grid-template-columns','repeat(3,12px)').style('gap','1px');
+    [6,7,8,3,4,5,0,1,2].forEach(i=>grid.append('span').style('width','12px').style('height','12px').style('background',BI[i]));
+    L.append('span').style('font-size','10px').style('color','var(--muted)').text('De La Espriella');
+    L.append('span').style('font-size','10px').style('color','var(--muted)').style('margin-left','4px').text(I18N.t('(arriba = más acceso)','(top = more access)'));
+  }
+}
+
+// ranking de desiertos
+const desiertos=covered.slice().sort((a,b)=>b.deficit-a.deficit).slice(0,12);
+d3.select('#rank').html(desiertos.map(m=>{const c=m.lean>0?'#bd2740':'#2c5fb3';
+  return `<li class="brow"><span class="nm">${m.name}</span>
+    <span class="pts" style="color:var(--accent)">${m.acc.toFixed(2)}</span>
+    <span class="vol" style="color:${c}">${fmt(m.lean*100)}</span></li>`;}).join(''));
+
+// cobertura + correlaciones
+const cov=ACC.meta.coverage, pctPob=Math.round(100*cov.pob_cubierta/cov.pob_total);
+const cl=ACC.corr.acc_lean, cu=ACC.corr.acc_urb;
+function buildPanels(){
+  document.getElementById('covtxt').textContent=`${cov.munis_cubiertos} ${I18N.t('de','of')} ${cov.munis_total}`;
+  document.getElementById('covsum').innerHTML= I18N.t(
+    `OSM cubre <b>${cov.munis_cubiertos}/${cov.munis_total}</b> municipios, pero <b>${pctPob}%</b> de la población `+
+    `(la brecha es rural). Mediana de acceso: <b>${ACC.meta.median_acc} locales/10k</b>.`,
+    `OSM covers <b>${cov.munis_cubiertos}/${cov.munis_total}</b> municipalities, but <b>${pctPob}%</b> of the population `+
+    `(the gap is rural). Median access: <b>${ACC.meta.median_acc} outlets/10k</b>.`);
+  const dir=Math.abs(cl)<0.1?I18N.t('prácticamente nulo','virtually nil')
+            :(cl>0?I18N.t('mayor acceso en territorio De La Espriella','more access in De La Espriella territory')
+                  :I18N.t('mayor acceso en territorio Cepeda','more access in Cepeda territory'));
+  document.getElementById('corrsum').innerHTML= I18N.t(
+    `Acceso vs voto (Spearman): <b>${cl>0?'+':''}${cl}</b> (${dir}). Acceso vs urbanizacion: <b>${cu>0?'+':''}${cu}</b> (más urbano, más oferta).`,
+    `Access vs vote (Spearman): <b>${cl>0?'+':''}${cl}</b> (${dir}). Access vs urbanization: <b>${cu>0?'+':''}${cu}</b> (more urban, more supply).`);
+}
+buildPanels();
+
+d3.select('#viewsel').on('change',function(){view=this.value;render();});
+render();
+document.addEventListener('langchange',()=>{render();buildPanels();});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>¿Y si tu marca toma partido? - Colombia</title>
+<link rel="stylesheet" href="styles.css?v=5"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"/>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="i18n.js?v=3"></script>
+<script defer src="nav.js?v=10"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar"></div>
+  <h1 data-en="What if your brand <em>takes a side</em>?">¿Y si tu marca <em>toma partido</em>?</h1>
+  <p class="byline" data-en="Simulator: pick a brand and a stance; its territorial footprint says how much of its
+    network sits in hostile territory, and whether its size suggests net gain or loss.">Simulador: elige una marca y
+    una postura; su huella territorial dice cuánto de su red queda en territorio hostil, y si su tamaño sugiere
+    ganancia o pérdida neta.</p>
+  <p class="intro" data-en="Brand activism moves consumers along party lines: after CEO activism, store visits fell
+    ~5% in the most opposed counties and did not move in aligned ones (Hou &amp; Poliquin, 2022). And the net effect
+    depends on <b>market share</b>: small brands have customers to gain, large brands mostly have them to lose
+    (Hydock, Paharia &amp; Blair, 2020). This page combines both mechanisms with each brand's <b>political
+    footprint</b> in Colombia.">El activismo de marca mueve consumidores por líneas partidistas: tras activismo de
+    CEO, las visitas cayeron ~5% en los condados más opuestos y no se movieron en los alineados (Hou &amp; Poliquin,
+    2022). Y el efecto neto depende del <b>market share</b>: las marcas chicas tienen clientes por ganar, las grandes
+    sobre todo por perder (Hydock, Paharia &amp; Blair, 2020). Esta página combina ambos mecanismos con la
+    <b>huella política</b> de cada marca en Colombia.</p>
+  <div class="caveat" style="max-width:none" data-en="<b>Illustration, not forecast.</b> Effect sizes come from U.S.
+    experiments and mobile-location studies; the mechanism (partisan sorting of consumers) travels, the numbers may
+    not. Share is proxied by outlet counts (not sales), and the footprint is infrastructure, not actual customers.">
+    <b>Ilustración, no pronóstico.</b> Los tamaños de efecto vienen de experimentos y datos de movilidad de EE. UU.;
+    el mecanismo (ordenamiento partidista del consumo) viaja, los números pueden no viajar. El share se aproxima por
+    nº de locales (no ventas), y la huella es infraestructura, no clientes reales.
+  </div>
+  <details class="methodbox">
+    <summary data-en="How is the risk computed? See method and formula">¿Cómo se calcula el riesgo? Ver método y fórmula</summary>
+    <div class="mb-body">
+      <p class="src" data-en="Sources: <b>Hydock, Paharia &amp; Blair (2020)</b>, &quot;Should Your Brand Pick a
+        Side?&quot;, <i>J. of Marketing Research</i> (net effect sorted by market share); <b>Hou &amp; Poliquin
+        (2022)</b>, <i>Strategic Management Journal</i> (visits -5% in most-opposed counties, dissipates ~10 weeks);
+        <b>Neureiter &amp; Bhattacharya (2021)</b>, <i>Business Horizons</i> (sign depends on the customer base);
+        <b>Panagopoulos et al. (2020)</b>, <i>J. of Politics</i> (partisan consumerism).">Origen: <b>Hydock, Paharia
+        &amp; Blair (2020)</b>, "Should Your Brand Pick a Side?", <i>J. of Marketing Research</i> (efecto neto ordenado
+        por market share); <b>Hou &amp; Poliquin (2022)</b>, <i>Strategic Management Journal</i> (visitas -5% en los
+        condados más opuestos, se disipa ~10 semanas); <b>Neureiter &amp; Bhattacharya (2021)</b>, <i>Business
+        Horizons</i> (el signo depende de la base de clientes); <b>Panagopoulos et al. (2020)</b>, <i>J. of
+        Politics</i> (consumo partidista).</p>
+      <p class="mb-tech" data-en="Technique: footprint decomposition + benchmark effect sizes">Técnica: descomposición de la huella + tamaños de efecto de referencia</p>
+      <div class="ktx" data-tex="\begin{gathered} \text{exp}_{hostil}(b,s)=\text{share de locales en territorio del campo opuesto a }s \\[4pt] \text{impacto}_{max}\approx -5\%\times \text{exp}_{extremo}(b,s)\qquad(\text{Hou-Poliquin, ilustrativo}) \\[4pt] \text{signo neto}\sim f(\text{share}_b)\ \ (\text{Hydock: bajo}\Rightarrow\text{posible ganancia; alto}\Rightarrow\text{perdida}) \end{gathered}">exposicion hostil por postura + impacto ilustrativo + signo por share.</div>
+      <p style="margin:0;font-size:13px;color:var(--muted)" data-en="Extreme territory: |lean|&gt;30 pts. Share =
+        brand outlets / domain outlets. Implementation: <i>scripts/13_riesgo.py</i>.">Territorio extremo: |lean|&gt;30
+        pts. Share = locales de la marca / locales del dominio. Implementación: <i>scripts/13_riesgo.py</i>.</p>
+    </div>
+  </details>
+  <div class="maptop">
+    <label class="toggle"><span data-en="Category:">Categoría:</span>
+      <select id="catsel" style="font-family:var(--mono);font-size:13px;padding:8px 10px;border:1px solid var(--ink);border-radius:3px;background:#fff"></select>
+    </label>
+    <label class="toggle"><span data-en="Brand:">Marca:</span>
+      <select id="sel" style="font-family:var(--mono);font-size:13px;padding:8px 10px;border:1px solid var(--ink);border-radius:3px;background:#fff"></select>
+    </label>
+    <label class="toggle"><span data-en="Stance:">Postura:</span>
+      <span id="stance" style="display:inline-flex;border:1px solid var(--line);border-radius:3px;overflow:hidden">
+        <button data-s="cep" style="font-family:var(--mono);font-size:12px;padding:8px 12px;border:0;background:#fff;color:#2c5fb3;cursor:pointer">Cepeda</button>
+        <button data-s="dle" style="font-family:var(--mono);font-size:12px;padding:8px 12px;border:0;border-left:1px solid var(--line);background:#fff;color:#bd2740;cursor:pointer">De La Espriella</button>
+      </span>
+    </label>
+  </div>
+  <div class="geo-grid">
+    <div class="card" style="padding:18px">
+      <h4 style="margin:0 0 2px;font-size:14px" id="sct"></h4>
+      <p class="sub" id="scsub" style="margin:0 0 10px"></p>
+      <div id="scatter"></div>
+    </div>
+    <div>
+      <div class="bpanel">
+        <h4 id="vt"></h4>
+        <p class="sub" id="verdict" style="margin:0 0 10px"></p>
+        <div id="compbar"></div>
+      </div>
+      <div class="bpanel" style="margin-top:16px">
+        <h4 id="et"></h4>
+        <ul class="blist" id="expo"></ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot" data-en="Political footprint per brand over OpenStreetMap outlets; vote: Registraduría 2026.
+    Site 2 - consumption structure.">Huella política por marca sobre locales de OpenStreetMap; voto: Registraduría
+    2026. Sitio 2 - estructura del consumo.</div>
+</div>
+<div id="tip"></div>
+<script defer src="riesgo.js"></script>
+<script defer src="app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+const RK=window.RK, B=RK.brands;
+const byName=new Map(B.map(b=>[b.brand,b]));
+const cats=[...new Set(B.map(b=>b.domain))].sort();
+let cur=byName.has('Exito')?'Exito':B[0].brand, catCur='', st='cep';
+const fmt=v=>(v>0?'+':'')+v.toFixed(0);
+
+// selectors
+const catsel=d3.select('#catsel'), sel=d3.select('#sel');
+function fillCat(){catsel.selectAll('option').data(['' ].concat(cats)).join('option')
+  .attr('value',d=>d).text(d=>d||I18N.t('Todas','All'));}
+function brandsFor(){return B.filter(b=>!catCur||b.domain===catCur).map(b=>b.brand);}
+function fillBrands(){sel.selectAll('option').data(brandsFor(),d=>d).join('option').attr('value',d=>d).text(d=>d);}
+fillCat(); fillBrands();
+catsel.property('value',catCur).on('change',function(){catCur=this.value;fillBrands();
+  if(catCur&&byName.get(cur).domain!==catCur)cur=brandsFor()[0];
+  sel.property('value',cur);render();});
+sel.property('value',cur).on('change',function(){cur=this.value;render();});
+d3.selectAll('#stance button').on('click',function(){st=this.getAttribute('data-s');render();});
+
+// scatter: x=lean pts, y=share
+const M={t:14,r:16,b:42,l:50},W=560,H=340,iw=W-M.l-M.r,ih=H-M.t-M.b;
+const svg=d3.select('#scatter').append('svg').attr('viewBox',`0 0 ${W} ${H}`).attr('width','100%');
+const g=svg.append('g').attr('transform',`translate(${M.l},${M.t})`);
+const xmax=Math.max(15,Math.ceil(d3.max(B,b=>Math.abs(b.lean*100))/5)*5);
+const x=d3.scaleLinear().domain([-xmax,xmax]).range([0,iw]);
+const y=d3.scaleLog().domain([0.001,Math.max(0.3,d3.max(B,b=>b.share)*1.3)]).range([ih,0]).clamp(true);
+g.append('rect').attr('width',iw/2).attr('height',ih).attr('fill','#f1f4f9');
+g.append('rect').attr('x',iw/2).attr('width',iw/2).attr('height',ih).attr('fill','#faf2f3');
+g.append('g').attr('class','axis').attr('transform',`translate(0,${ih})`).call(d3.axisBottom(x).ticks(7).tickFormat(fmt).tickSize(-ih));
+g.append('g').attr('class','axis').call(d3.axisLeft(y).ticks(4,'.0%').tickSize(-iw));
+g.append('line').attr('class','zero').attr('x1',x(0)).attr('x2',x(0)).attr('y1',0).attr('y2',ih);
+const xl=g.append('text').attr('class','axis-label').attr('x',iw/2).attr('y',ih+34).attr('text-anchor','middle');
+const yl=g.append('text').attr('class','axis-label').attr('transform','rotate(-90)').attr('x',-ih/2).attr('y',-38).attr('text-anchor','middle');
+const tip=d3.select('#tip');
+const dots=g.append('g').selectAll('circle').data(B).join('circle')
+  .attr('class','dot-c').attr('r',5).attr('cx',b=>x(b.lean*100)).attr('cy',b=>y(Math.max(b.share,0.001)))
+  .attr('fill',b=>leanColor(b.lean*100)).attr('fill-opacity',.75).style('cursor','pointer')
+  .on('click',(e,b)=>{cur=b.brand;catCur='';catsel.property('value','');fillBrands();sel.property('value',cur);render();})
+  .on('mousemove',(e,b)=>{tip.style('opacity',1).style('left',(e.clientX+14)+'px').style('top',(e.clientY+12)+'px')
+    .html(`<div class="b">${b.brand}</div><div class="m">${b.domain} &middot; ${b.n} ${I18N.t('locales','outlets')} &middot; share ${(b.share*100).toFixed(0)}%</div>`);})
+  .on('mouseleave',()=>tip.style('opacity',0));
+const hiLabel=g.append('text').attr('font-size',11).attr('text-anchor','middle')
+  .style('font-family',"'Inter',sans-serif").style('font-weight','600')
+  .style('paint-order','stroke').style('stroke','#fff').style('stroke-width','3px').attr('fill','#141414');
+
+function render(){
+  const b=byName.get(cur);
+  // stance buttons
+  d3.selectAll('#stance button').style('background',function(){return this.getAttribute('data-s')===st?'#141414':'#fff';})
+    .style('color',function(){const s=this.getAttribute('data-s');return this.getAttribute('data-s')===st?'#fff':(s==='cep'?'#2c5fb3':'#bd2740');});
+  // labels
+  document.getElementById('sct').textContent=I18N.t('El mapa del riesgo: base política vs tamaño','The risk map: political base vs size');
+  document.getElementById('scsub').textContent=I18N.t(
+    'Cada punto es una marca: X = lean de su huella; Y = share de su dominio (log). Clic para seleccionar.',
+    'Each dot is a brand: X = footprint lean; Y = domain share (log). Click to select.');
+  xl.text(I18N.t('Lean de la huella (pts)','Footprint lean (pts)'));
+  yl.text(I18N.t('Share del dominio (locales, log)','Domain share (outlets, log)'));
+  dots.classed('hi',d=>d.brand===cur).attr('r',d=>d.brand===cur?8:5).attr('fill-opacity',d=>d.brand===cur?1:.55);
+  const bsel=byName.get(cur);
+  hiLabel.attr('x',x(bsel.lean*100)).attr('y',y(Math.max(bsel.share,0.001))-12).text(cur);
+  // verdict
+  const hostShare=(st==='cep')?bsel.dle:bsel.cep;         // territorio del campo opuesto a la postura
+  const hostExt=(st==='cep')?bsel.dle_ext:bsel.cep_ext;   // extremo opuesto
+  const alignShare=(st==='cep')?bsel.cep:bsel.dle;
+  const impact=-5*hostExt;                                 // ilustrativo Hou-Poliquin
+  const big=bsel.share>0.10;
+  const stName=(st==='cep')?'Cepeda':'De La Espriella';
+  document.getElementById('vt').textContent=I18N.t('Veredicto para ','Verdict for ')+cur;
+  document.getElementById('verdict').innerHTML=I18N.t(
+    `Si <b>${cur}</b> tomara una postura pro-<b>${stName}</b>: el <b>${(hostShare*100).toFixed(0)}%</b> de su red queda
+     en territorio del campo opuesto (<b>${(hostExt*100).toFixed(0)}%</b> en territorio extremo). Escenario ilustrativo
+     estilo Hou-Poliquin: <b>${impact.toFixed(1)}%</b> de visitas en el pico sobre la red expuesta extrema (se disipa
+     en ~10 semanas). Con share de <b>${(bsel.share*100).toFixed(0)}%</b> en ${bsel.domain}, la lógica de Hydock sugiere
+     <b>${big?'más por perder que por ganar (share alto)':'margen para ganar clientela del campo afín (share bajo)'}</b>.`,
+    `If <b>${cur}</b> took a pro-<b>${stName}</b> stance: <b>${(hostShare*100).toFixed(0)}%</b> of its network sits in
+     the opposing camp's territory (<b>${(hostExt*100).toFixed(0)}%</b> in extreme territory). Hou-Poliquin-style
+     illustrative scenario: <b>${impact.toFixed(1)}%</b> peak visits over the extreme exposed network (dissipating in
+     ~10 weeks). With a <b>${(bsel.share*100).toFixed(0)}%</b> share of ${bsel.domain}, Hydock's logic suggests
+     <b>${big?'more to lose than to gain (high share)':'room to gain aligned customers (low share)'}</b>.`);
+  // composition bar
+  const seg=[['Cepeda',bsel.cep,'#2c5fb3'],['50/50',bsel.mix,'#7c7c78'],['De La Espriella',bsel.dle,'#bd2740']];
+  document.getElementById('compbar').innerHTML=
+    `<div style="display:flex;height:14px;border-radius:2px;overflow:hidden;margin-bottom:5px">`+
+    seg.map(s=>`<div title="${s[0]} ${(s[1]*100).toFixed(0)}%" style="width:${s[1]*100}%;background:${s[2]}"></div>`).join('')+`</div>`+
+    `<div style="display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;color:var(--muted)">`+
+    seg.map(s=>`<span style="color:${s[2]}">${s[0]} ${(s[1]*100).toFixed(0)}%</span>`).join('')+`</div>`;
+  // exposure detail
+  document.getElementById('et').textContent=I18N.t('Detalle de exposición','Exposure detail');
+  const li=(k,v)=>`<li class="brow"><span class="nm">${k}</span><span class="pts" style="color:var(--accent)">${v}</span></li>`;
+  document.getElementById('expo').innerHTML=
+    li(I18N.t('Locales','Outlets'), bsel.n)+
+    li(I18N.t('Share del dominio','Domain share'), (bsel.share*100).toFixed(0)+'%')+
+    li(I18N.t('Territorio alineado con la postura','Territory aligned with stance'), (alignShare*100).toFixed(0)+'%')+
+    li(I18N.t('Territorio 50/50','50/50 territory'), (bsel.mix*100).toFixed(0)+'%')+
+    li(I18N.t('Territorio opuesto','Opposing territory'), (hostShare*100).toFixed(0)+'%')+
+    li(I18N.t('Opuesto extremo (>30 pts)','Extreme opposing (>30 pts)'), (hostExt*100).toFixed(0)+'%');
+}
+render();
+document.addEventListener('langchange',()=>{fillCat();catsel.property('value',catCur);render();});
+});
+</script>
+</body>
+</html>

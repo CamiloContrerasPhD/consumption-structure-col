@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>El espacio de marcas - Colombia</title>
+<link rel="stylesheet" href="styles.css?v=5"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"/>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="i18n.js?v=3"></script>
+<script defer src="nav.js?v=10"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="crumb" href="complejidad.html">← Complejidad del consumo</a>
+    <a class="crumb" href="oportunidad.html">Oportunidad de mercado →</a>
+  </div>
+  <h1 data-en="The brand <em>space</em>">El <em>espacio</em> de marcas</h1>
+  <p class="byline" data-en="Each point is a brand. Color = vote of its footprint (blue Cepeda, red De La Espriella).
+    Method: ubiquity and PCI (product complexity).">Cada punto es una marca. Color = voto de su huella (azul Cepeda, rojo De La Espriella).
+    Método: ubicuidad y PCI (complejidad de producto).</p>
+  <p class="intro" data-en="The <b>horizontal</b> position is <b>ubiquity</b> (in how many municipalities the brand is
+    specialized): on the left, <b>rare/exclusive</b> brands; on the right, <b>ubiquitous</b> ones. The
+    <b>vertical</b> axis is <b>PCI</b> (structural sophistication): at the top, brands appearing alongside complex
+    baskets. Filter by domain.">La posición <b>horizontal</b> es la <b>ubicuidad</b> (en cuántos municipios la marca esta
+    especializada): a la izquierda, marcas <b>raras/exclusivas</b>; a la derecha, <b>ubicuas</b>. La
+    <b>vertical</b> es el <b>PCI</b> (sofisticación estructural): arriba, marcas que aparecen junto a canastas
+    complejas. Filtra por dominio.</p>
+  <details class="methodbox">
+    <summary data-en="How is the PCI computed? See method and formula">¿Cómo se calcula el PCI? Ver método y fórmula</summary>
+    <div class="mb-body">
+      <p class="src" data-en="Source: <b>Hidalgo &amp; Hausmann (2009)</b>, <i>PNAS</i> (PCI via eigenvector);
+        product space from <b>Hidalgo, Klinger, Barabasi &amp; Hausmann (2007)</b>, <i>Science 317</i>.">Origen: <b>Hidalgo &amp; Hausmann (2009)</b>, <i>PNAS</i> (PCI por eigenvector);
+        espacio de producto de <b>Hidalgo, Klinger, Barabasi &amp; Hausmann (2007)</b>, <i>Science 317</i>.</p>
+      <p class="mb-tech" data-en="Technique: product complexity (PCI) via the eigenvector method">Técnica: complejidad de producto (PCI) por método de autovector</p>
+      <div class="ktx" data-tex="\begin{gathered} M(m,b)=\mathbf{1}[RCA(m,b)\ge 1]\qquad k(b)=\sum_m M(m,b) \\[4pt] \tilde M(b,b')=\sum_m \dfrac{M(m,b)\,M(m,b')}{k(b)\,k(m)} \\[4pt] \mathrm{PCI}=\text{2do autovector de }\tilde M(b,b')\;(z) \end{gathered}">PCI por método de autovector sobre la matriz de marcas.</div>
+      <p style="margin:0;font-size:13px;color:var(--muted)" data-en="High PCI = brand that coexists with complex baskets
+        (rare and sophisticated). Implementation: <i>scripts/06_complejidad.py</i>.">PCI alto = marca que coexiste con canastas complejas
+        (rara y sofisticada). Implementación: <i>scripts/06_complejidad.py</i>.</p>
+    </div>
+  </details>
+  <div class="card">
+    <div class="controls">
+      <input id="q" type="search" placeholder="Buscar una marca..." data-en-ph="Search a brand..." autocomplete="off"/>
+      <button class="btn" id="reset" data-en="Reset">Reiniciar</button>
+      <span class="legend" style="margin-left:auto"><span style="color:#2c5fb3;font-weight:600">Cepeda</span>
+        <span class="bar" style="width:120px"></span><span style="color:#bd2740;font-weight:600">De La Espriella</span></span>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="chiphint" data-en="Click a domain to highlight it">Haz clic en un dominio para resaltarlo</div>
+    <div class="poles"><span class="l" data-en="◀ RARE / EXCLUSIVE">◀ RARA / EXCLUSIVA</span><span class="r" data-en="UBIQUITOUS ▶">UBICUA ▶</span></div>
+    <div id="chart"></div>
+  </div>
+  <div class="panels">
+    <div class="panel"><h4 data-en="How to read it">Cómo leerlo</h4>
+      <p data-en="Brands with <b>high PCI</b> (top) and <b>low ubiquity</b> (left) are the &quot;sophisticated&quot; ones:
+      premium stores, niche banking, specialized retail. Those with <b>low PCI</b> and high ubiquity
+      (Banco Agrario, Terpel) are everywhere.">Marcas de <b>PCI alto</b> (arriba) y <b>baja ubicuidad</b> (izquierda) son las "sofisticadas":
+      almacenes premium, banca de nicho, retail especializado. Las de <b>PCI bajo</b> y alta ubicuidad
+      (Banco Agrario, Terpel) están en todas partes.</p></div>
+    <div class="panel"><h4 data-en="What to look for">Qué mirar</h4>
+      <p data-en="If the color (vote) sorts with PCI or ubiquity, the <b>brand structure</b> is
+      politically sorted: the exclusive and the mass-market live in different political geographies.">Si el color (voto) se ordena con el PCI o la ubicuidad, la <b>estructura</b> de marca esta
+      políticamente sorteada: lo exclusivo y lo masivo viven en geografías políticas distintas.</p></div>
+  </div>
+  <div class="foot" data-en="PCI/ubiquity via economic complexity over municipality x brand matrix (OpenStreetMap).
+    Vote: Registraduría 2026. Site 2 - consumption structure.">PCI/ubicuidad por complejidad económica sobre matriz municipio x marca (OpenStreetMap).
+    Voto: Registraduría 2026. Sitio 2 - estructura del consumo.</div>
+</div>
+<div id="tip"></div>
+<script defer src="complex.js"></script>
+<script defer src="app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+const DOMCOL={'tiendas':'#1f7a5a','comida':'#d9962f','servicios':'#7a5ea8','moda':'#c8453a','automotriz':'#3a6ea5'};
+const D=window.CX.brands.filter(b=>b.pci!=null);
+const cats=[...new Set(D.map(d=>d.domain))].sort();
+const M={t:16,r:24,b:52,l:64},W=900,H=520,iw=W-M.l-M.r,ih=H-M.t-M.b;
+const x=d3.scaleLog().domain([0.8,d3.max(D,d=>d.ubiq)*1.2]).range([0,iw]);
+const y=d3.scaleLinear().domain(d3.extent(D,d=>d.pci)).nice().range([ih,0]);
+const svg=d3.select('#chart').append('svg').attr('viewBox',`0 0 ${W} ${H}`);
+const g=svg.append('g').attr('transform',`translate(${M.l},${M.t})`);
+g.append('g').attr('class','axis').attr('transform',`translate(0,${ih})`).call(d3.axisBottom(x).ticks(6,'~s').tickSize(-ih));
+g.append('g').attr('class','axis').call(d3.axisLeft(y).ticks(6).tickSize(-iw));
+const xlab=g.append('text').attr('class','axis-label').attr('x',iw/2).attr('y',ih+42).attr('text-anchor','middle');
+const ylab=g.append('text').attr('class','axis-label').attr('transform','rotate(-90)').attr('x',-ih/2).attr('y',-48)
+  .attr('text-anchor','middle');
+function relabel(){
+  xlab.text(I18N.t('Ubicuidad (nº de municipios donde está especializada, log)','Ubiquity (nº of municipalities where specialized, log)'));
+  ylab.text(I18N.t('PCI (sofisticación estructural de la marca)','PCI (structural sophistication of the brand)'));
+}
+relabel(); document.addEventListener('langchange',relabel);
+const dots=g.append('g').selectAll('circle').data(D).join('circle')
+  .attr('class','dot-c').attr('r',6).attr('cx',d=>x(d.ubiq)).attr('cy',d=>y(d.pci))
+  .attr('fill',d=>leanColor(d.lean*100)).attr('fill-opacity',.78);
+const labels=g.append('g').selectAll('text').data(D).join('text')
+  .attr('font-size',10.5).attr('text-anchor','middle').attr('opacity',0).style('font-family',"'Inter',sans-serif")
+  .style('font-weight','600').style('paint-order','stroke').style('stroke','#fff').style('stroke-width','3px')
+  .attr('fill','#222').attr('x',d=>x(d.ubiq)).attr('y',d=>y(d.pci)-9).text(d=>d.brand);
+const tip=d3.select('#tip');const fmt=v=>(v>0?'+':'')+(v).toFixed(1);
+dots.on('mousemove',(e,d)=>{const pts=d.lean*100;
+  tip.style('opacity',1).style('left',(e.clientX+14)+'px').style('top',(e.clientY+12)+'px')
+    .html(`<div class="b">${d.brand}</div><div class="m">${d.domain} &middot; ${d.n} ${I18N.t('locales','outlets')}</div>
+      <div style="margin-top:3px">PCI ${d.pci.toFixed(2)} &middot; ${I18N.t('ubicuidad','ubiquity')} ${d.ubiq}</div>
+      <div class="m" style="color:${pts>0?'#bd2740':'#2c5fb3'}">${fmt(pts)} pts</div>`);
+  d3.select(e.currentTarget).classed('hi',true).attr('r',8);})
+  .on('mouseleave',(e)=>{tip.style('opacity',0);d3.select(e.currentTarget).classed('hi',false).attr('r',6);});
+let active='',q='';
+function apply(){dots.classed('dim',d=>{const okC=!active||d.domain===active,okQ=!q||d.brand.toLowerCase().includes(q);return !(okC&&okQ);});
+  labels.attr('opacity',d=>{const mq=q&&d.brand.toLowerCase().includes(q),mc=active&&d.domain===active&&!q;return(mq||mc)?1:0;});}
+const cb=d3.select('#chips');
+cb.selectAll('.chip').data(cats).join('button').attr('class','chip')
+  .html(d=>`<span class="dot" style="background:${DOMCOL[d]||'#888'}"></span>${d}`)
+  .on('click',function(e,c){active=active===c?'':c;cb.selectAll('.chip').classed('active',d=>d===active);apply();});
+d3.select('#q').on('input',function(){q=this.value.trim().toLowerCase();apply();});
+d3.select('#reset').on('click',()=>{active='';q='';d3.select('#q').property('value','');cb.selectAll('.chip').classed('active',false);apply();});
+});
+</script>
+</body>
+</html>

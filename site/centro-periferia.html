@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Centro y periferia - Polarizacion del consumo Colombia</title>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"/>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-geo@3/dist/d3-geo.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="crumb" href="index.html">← La polarizacion politica del consumo cotidiano</a>
+    <a href="mapa-consumo.html" class="crumb">El consumo en el mapa →</a>
+  </div>
+
+  <h1>Centro y periferia: <em>voto, comercio y conexion</em></h1>
+  <p class="intro">El hallazgo de que las marcas siguen al voto sugiere algo mas profundo: un eje
+    <b>centro-periferia</b>. Aqui se cruza, por municipio, la <b>inclinacion politica</b> con un <b>indice
+    compuesto de acceso</b> que combina tres pilares: <b>comercio de cadena</b>, <b>internet fijo</b> (ambos
+    por cada 1.000 votantes) y <b>cobertura en educacion media</b> (MEN). La pregunta: ¿las zonas
+    desabastecidas de comercio son tambien las menos conectadas y formadas, y votan distinto?</p>
+
+  <div class="caveat" style="max-width:none">
+    <b>Correlacion, no causa.</b> El comercio y el internet se concentran donde hay mas poblacion urbana y
+    formal. Lo que el grafico muestra es que ese mismo "centro" tiende a votar por De La Espriella, y la
+    periferia desconectada por Cepeda, <b>pero la relacion es moderada</b>: hay excepciones regionales (los
+    Llanos votan derecha con poco comercio; el Caribe vota izquierda con internet decente).
+  </div>
+
+  <details class="methodbox">
+    <summary>Metodo y formula</summary>
+    <div class="mb-body">
+      <p class="src">Origen: clivaje <b>centro-periferia</b> de <b>Lipset &amp; Rokkan (1967)</b> y brecha digital de
+        <b>Norris (2001)</b>; eje politico segun <b>Liaukonyte, Tuchman &amp; Zhu (2023)</b>. z = puntaje
+        estandarizado entre municipios.</p>
+      <p class="mb-tech">Tecnica: indice compuesto por z-scores + correlacion de rangos de Spearman</p>
+      <div class="ktx" data-tex="\begin{gathered} z(x)=\dfrac{x-\bar x}{\sigma_x} \\[4pt] \text{Acceso}(m)=\tfrac{1}{3}\left[\,z(\text{comercio})+z(\text{internet})+z(\text{educacion})\,\right] \\[4pt] \rho=\text{Spearman}\!\left(\mathrm{margen}(m),\ \text{Acceso}(m)\right) \end{gathered}">Acceso(m) = promedio de z-scores; rho = correlacion de rangos de Spearman.</div>
+      <p style="margin:0;font-size:13px;color:var(--muted)">Mapa bivariado = margen x Acceso en rejilla 3x3.
+        Implementacion: <i>scripts/04_centro_periferia.py</i>.</p>
+    </div>
+  </details>
+
+  <h3 style="font-size:21px;margin:6px 0 2px">Mapa bivariado: <em style="color:var(--accent);font-style:italic">quien gano</em> x <em style="color:var(--accent);font-style:italic">indice de acceso</em></h3>
+  <p class="src" style="margin:0 0 12px">El tono dice quien gano (azul Cepeda / gris parejo / rojo De La Espriella);
+    la intensidad dice cuanto acceso hay (comercio + internet + educacion). Palido = periferia desconectada.</p>
+  <div class="geo-grid">
+    <div class="mapwrap"><div id="bimap"></div></div>
+    <div>
+      <div class="bpanel">
+        <h4>Como leer el 3x3</h4>
+        <div id="bilegend"></div>
+        <p class="sub" style="margin:10px 0 0">La diagonal (azul-palido y rojo-intenso) es la regla: la periferia
+        vota Cepeda, el centro vota De La Espriella. Las celdas fuera de la diagonal son las excepciones
+        interesantes: <b>rojo-palido</b> = vota derecha pero desconectado (Llanos rural); <b>azul-intenso</b> =
+        vota izquierda pero con acceso (capitales del Pacifico/Caribe).</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-size:21px;margin:30px 0 2px">El cruce, municipio a municipio</h3>
+  <p class="src" style="margin:0 0 12px">Cada municipio: internet (x) vs comercio (y), color = voto, tamano = votos.</p>
+  <div class="geo-grid">
+    <div class="mapwrap" style="position:static"><div id="sc"></div></div>
+    <div>
+      <div class="bpanel">
+        <h4>Correlaciones (Spearman, municipios &ge; 15k votos)</h4>
+        <div id="corr" style="font-size:13.5px"></div>
+      </div>
+      <div class="bpanel" style="margin-top:16px">
+        <h4>Scorecard regional</h4>
+        <p class="sub">Voto, comercio/1k e internet/1k, ponderado por votos.</p>
+        <div id="score"></div>
+      </div>
+      <div class="bpanel" style="margin-top:16px">
+        <h4>Sobre el acceso a IA</h4>
+        <p class="sub" style="margin:0">No existe un dato de "acceso a IA" por municipio en Colombia. Pero el
+        <b>internet fijo es su precondicion</b>: una region en el cuadrante inferior-izquierdo (sin comercio y
+        sin conexion) queda, de entrada, fuera de la economia digital y de la IA. La brecha de consumo y la
+        brecha digital son la misma frontera.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    Internet: MinTIC, Internet Fijo Accesos 2023-T3 (datos.gov.co, n48w-gutb), por codigo DANE.
+    Comercio: locales de cadena en OpenStreetMap. Voto: Registraduria 2026 (preconteo).
+    Ambos accesos normalizados por 1.000 votos validos. Sigue la metodologia de Liaukonyte, Tuchman & Zhu
+    (2023). <a href="metodologia.html">Metodologia y referencias →</a>
+  </div>
+</div>
+<div id="tip"></div>
+
+<script src="cp.js"></script>
+<script src="geo.js"></script>
+<script>
+const leanColor = d3.scaleLinear().domain([-30,-15,-4,0,4,15,30])
+  .range(['#1a4a82','#4393c3','#c9dcea','#f3f1ec','#f4c2b6','#d6604d','#9c1f2e']).clamp(true);
+const D=CP.muni.filter(d=>d.votval>=8000);
+const W=760,H=560,M={t:18,r:20,b:54,l:62},iw=W-M.l-M.r,ih=H-M.t-M.b;
+const x=d3.scaleSymlog().constant(20).domain([0,d3.max(D,d=>d.inet)*1.1]).range([0,iw]);
+const y=d3.scaleSymlog().constant(0.05).domain([0,d3.max(D,d=>d.cons)*1.1]).range([ih,0]);
+const r=d3.scaleSqrt().domain([0,d3.max(D,d=>d.votval)]).range([2,22]);
+const svg=d3.select('#sc').append('svg').attr('viewBox',`0 0 ${W} ${H}`);
+const g=svg.append('g').attr('transform',`translate(${M.t&&M.l},${M.t})`);
+g.append('g').attr('class','axis').attr('transform',`translate(0,${ih})`)
+  .call(d3.axisBottom(x).tickValues([0,50,150,400,1000]).tickFormat(d3.format('~s')).tickSize(-ih));
+g.append('g').attr('class','axis').call(d3.axisLeft(y).tickValues([0,0.1,0.3,1,3]).tickFormat(d3.format('~g')).tickSize(-iw));
+g.append('text').attr('class','axis-label').attr('x',iw/2).attr('y',ih+42).attr('text-anchor','middle')
+  .text('Internet fijo por 1.000 votantes  (mas conectado →)');
+g.append('text').attr('class','axis-label').attr('transform','rotate(-90)').attr('x',-ih/2).attr('y',-46)
+  .attr('text-anchor','middle').text('Locales de cadena por 1.000 votantes  (mas comercio →)');
+const tip=d3.select('#tip');
+g.append('g').selectAll('circle').data(D.sort((a,b)=>b.votval-a.votval)).join('circle')
+  .attr('cx',d=>x(d.inet)).attr('cy',d=>y(d.cons)).attr('r',d=>r(d.votval))
+  .attr('fill',d=>leanColor(d.lean*100)).attr('fill-opacity',.72).attr('stroke','#fff').attr('stroke-width',.5)
+  .style('cursor','pointer')
+  .on('mousemove',(e,d)=>{const pts=d.lean*100;
+    tip.style('opacity',1).style('left',(e.clientX+14)+'px').style('top',(e.clientY+12)+'px')
+      .html(`<div class="b">${d.muni}</div><div class="m">${d.region} &middot; ${(d.votval/1000).toFixed(0)}k votos</div>
+        <div style="margin-top:3px;color:${pts>0?'#b2182b':'#2166ac'}">${(pts>0?'+':'')+pts.toFixed(1)} pts</div>
+        <div class="m">comercio ${d.cons.toFixed(2)} &middot; internet ${d.inet.toFixed(0)} /1k</div>`);})
+  .on('mouseleave',()=>tip.style('opacity',0));
+// labels for notable municipios
+const named={'11001':'Bogota','05001':'Medellin','76001':'Cali','08001':'Barranquilla','27001':'Quibdo','76109':'Buenaventura','05266':'Envigado'};
+g.append('g').selectAll('text').data(D.filter(d=>named[d.id])).join('text')
+  .attr('x',d=>x(d.inet)).attr('y',d=>y(d.cons)-r(d.votval)-3).attr('text-anchor','middle')
+  .attr('font-size',11).style('font-family',"'Inter',sans-serif").style('font-weight','600').attr('fill','#333')
+  .style('paint-order','stroke').style('stroke','#fff').style('stroke-width','3px').text(d=>named[d.id]||d.muni);
+
+// correlations
+const c=CP.corr; const sg=v=>(v>0?'+':'')+v.toFixed(2);
+document.getElementById('corr').innerHTML=
+  `<div>voto vs comercio/1k: <b>${sg(c.lean_cons)}</b></div>
+   <div>voto vs internet/1k: <b>${sg(c.lean_inet)}</b></div>
+   <div>voto vs cobertura media: <b>${sg(c.lean_edu)}</b></div>
+   <div style="margin-top:5px;padding-top:5px;border-top:1px solid #eee">voto vs <b>INDICE de acceso</b>: <b style="color:var(--accent)">${sg(c.lean_idx)}</b></div>`;
+// scorecard (comercio / internet / educacion + INDICE compuesto)
+const mxC=Math.max(...CP.score.map(s=>s.cons)), mxI=Math.max(...CP.score.map(s=>s.inet)), mxE=Math.max(...CP.score.map(s=>s.edu));
+const bar=(lbl,w,col,val)=>`<div class="bbar" style="grid-template-columns:60px 1fr 38px;margin:3px 0">
+  <span style="font-size:11px;color:#888">${lbl}</span>
+  <span class="track"><span class="fill" style="width:${w}%;background:${col}"></span></span>
+  <span style="font-size:11px;text-align:right">${val}</span></div>`;
+document.getElementById('score').innerHTML=CP.score.slice().sort((a,b)=>a.idx-b.idx).map(s=>{
+  const col=leanColor(s.lean*100);
+  return `<div style="margin:10px 0">
+    <div style="display:flex;justify-content:space-between;font-size:13px;font-weight:600">
+      <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${col};margin-right:6px"></span>${s.region}
+        <span style="font-weight:400;color:${s.lean>0?'#b2182b':'#2166ac'}">${(s.lean>0?'+':'')+(s.lean*100).toFixed(0)} pts</span></span>
+      <span title="Indice compuesto de acceso">acceso <b style="color:var(--accent)">${(s.idx>0?'+':'')+s.idx.toFixed(2)}</b></span></div>
+    ${bar('comercio',s.cons/mxC*100,'#857a64',s.cons.toFixed(2))}
+    ${bar('internet',s.inet/mxI*100,'#3a7ca5',s.inet.toFixed(0))}
+    ${bar('educacion',s.edu/mxE*100,'#6a8f3a',s.edu.toFixed(0)+'%')}
+  </div>`;}).join('');
+
+// ---- BIVARIATE MAP: voto x indice de acceso (3x3) ----
+const idxById=new Map(CP.muni.map(m=>[m.id,m]));
+const vals=CP.muni.map(m=>m.idx).sort(d3.ascending);
+const q1=d3.quantile(vals,1/3), q2=d3.quantile(vals,2/3);
+function accClass(v){ return v==null?-1 : v<q1?0 : v<q2?1 : 2; }   // 0 bajo,1 medio,2 alto
+function voteClass(l){ return l<-0.05?0 : l>0.05?2 : 1; }           // 0 izq,1 50/50,2 der
+const BI=[ // [voteClass][accClass]
+  ['#d2e3f0','#6ea2cd','#1a5a8f'],   // IZQ: palido->intenso azul
+  ['#e6e2da','#b3ac9c','#6e6757'],   // 50/50: gris
+  ['#f1d3cd','#d68a78','#9c2f1e'],   // DER: palido->intenso rojo
+];
+function biColor(l,idx){ const a=accClass(idx); if(a<0) return '#efefe9'; return BI[voteClass(l)][a]; }
+(function(){
+  const geo=window.GEO_MUNI, W=720,H=820;
+  const svg=d3.select('#bimap').append('svg').attr('viewBox',`0 0 ${W} ${H}`);
+  const proj=d3.geoMercator().fitSize([W,H],geo), path=d3.geoPath(proj);
+  const tip=d3.select('#tip');
+  svg.append('g').selectAll('path').data(geo.features).join('path').attr('d',path)
+    .attr('fill',d=>{const m=idxById.get(d.properties.dv); return biColor(d.properties.lean, m?m.idx:null);})
+    .attr('stroke','#fff').attr('stroke-width',0.25).style('cursor','pointer')
+    .on('mousemove',(e,d)=>{const p=d.properties,m=idxById.get(p.dv),pts=p.lean*100;
+      tip.style('opacity',1).style('left',(e.clientX+14)+'px').style('top',(e.clientY+12)+'px')
+        .html(`<div class="b">${p.name}</div><div class="m">${p.dept}</div>
+          <div style="margin-top:3px;color:${pts>0?'#b2182b':'#2166ac'}">${(pts>0?'+':'')+pts.toFixed(1)} pts</div>
+          ${m?`<div class="m">acceso ${(m.idx>0?'+':'')+m.idx.toFixed(2)} (com ${m.cons.toFixed(2)}, int ${m.inet.toFixed(0)}, edu ${m.edu.toFixed(0)}%)</div>`:''}`);
+      d3.select(e.currentTarget).attr('stroke','#222').attr('stroke-width',1).raise();})
+    .on('mouseleave',(e)=>{tip.style('opacity',0);d3.select(e.currentTarget).attr('stroke','#fff').attr('stroke-width',0.25);});
+  // 3x3 legend
+  const L=d3.select('#bilegend').append('svg').attr('viewBox','0 0 180 150').style('width','190px');
+  const cell=40, ox=44, oy=8;
+  for(let v=0;v<3;v++)for(let a=0;a<3;a++){
+    L.append('rect').attr('x',ox+a*cell).attr('y',oy+v*cell).attr('width',cell-2).attr('height',cell-2)
+      .attr('fill',BI[v][a]);
+  }
+  ['Cepeda','50/50','De La E.'].forEach((t,v)=>L.append('text').attr('x',ox-4).attr('y',oy+v*cell+cell/2)
+    .attr('text-anchor','end').attr('font-size',9).attr('fill','#555').text(t));
+  ['bajo','medio','alto'].forEach((t,a)=>L.append('text').attr('x',ox+a*cell+cell/2).attr('y',oy+3*cell+12)
+    .attr('text-anchor','middle').attr('font-size',9).attr('fill','#555').text(t));
+  L.append('text').attr('x',ox+1.5*cell).attr('y',oy+3*cell+26).attr('text-anchor','middle').attr('font-size',9)
+    .attr('fill','#888').attr('font-style','italic').text('indice de acceso →');
+})();
+</script>
+</body>
+</html>

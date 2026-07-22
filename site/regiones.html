@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>El mapa de la polarizacion del consumo - Colombia</title>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"/>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-geo@3/dist/d3-geo.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="crumb" href="index.html">← La polarizacion politica del consumo cotidiano</a>
+    <a href="https://liaukonyte.dyson.cornell.edu/polarization/" target="_blank">ADAPTACION COLOMBIA &#8599;</a>
+  </div>
+
+  <h1>El mapa de la <em>polarizacion del consumo</em></h1>
+  <p class="intro">Antes de mirar las marcas, mira el territorio. Cada municipio esta coloreado por su
+    margen <b>De La Espriella - Cepeda</b> en la primera vuelta de 2026. Lo interesante no son solo los
+    <b>bastiones</b> (extremos de cada lado), sino los <b>territorios 50/50</b>: los mercados donde el voto
+    estuvo parejo y donde las marcas compiten por publicos politicamente mezclados.</p>
+
+  <div class="caveat" style="max-width:none">
+    <b>El color es del lugar, no de la marca.</b> Pasa el cursor sobre un municipio para ver su margen y las
+    cadenas presentes alli. Las listas de la derecha cambian entre <b>region</b>, <b>departamento</b> y
+    <b>ciudad</b>.
+  </div>
+
+  <details class="methodbox">
+    <summary>Metodo y formula</summary>
+    <div class="mb-body">
+      <p class="src">Origen: <b>Liaukonyte, Tuchman &amp; Zhu (2023)</b>, <i>Marketing Science</i>. Agregacion del
+        margen municipal a la region R (region / departamento / ciudad), ponderada por votos validos.</p>
+      <p class="mb-tech">Tecnica: agregacion ponderada por tamano electoral</p>
+      <div class="ktx" data-tex="\begin{gathered} \mathrm{margen}(m)=\dfrac{\text{voto}_{DLE}(m)-\text{voto}_{Cep}(m)}{\mathrm{votval}(m)} \\[4pt] \mathrm{lean}(R)=\dfrac{\sum_{m\in R}\mathrm{votval}(m)\,\mathrm{margen}(m)}{\sum_{m\in R}\mathrm{votval}(m)} \end{gathered}">lean(R) = media del margen ponderada por votos validos de la region.</div>
+      <p style="margin:0;font-size:13px;color:var(--muted)">Bastion = |lean| alto; 50/50 = lean cerca de 0.
+        Implementacion: <i>scripts/03_regions.py</i>.</p>
+    </div>
+  </details>
+
+  <div class="maptop">
+    <div class="legend"><span style="color:#1a4a82;font-weight:700">Cepeda</span>
+      <span class="bar"></span><span style="color:#9c1f2e;font-weight:700">De La Espriella</span></div>
+    <div class="legend">&minus;30 pts &nbsp;&middot;&nbsp; 0 (50/50) &nbsp;&middot;&nbsp; +30 pts</div>
+  </div>
+
+  <div class="geo-grid">
+    <div class="mapwrap"><div id="map"></div></div>
+    <div>
+      <div class="seg" id="seg">
+        <button data-k="region" class="on">Region</button>
+        <button data-k="dept">Departamento</button>
+        <button data-k="city">Ciudad</button>
+      </div>
+      <div id="buckets" style="margin-top:14px"></div>
+    </div>
+  </div>
+
+  <div class="bpanels">
+    <div class="bpanel">
+      <h4>Marcas en territorios 50/50 (swing)</h4>
+      <p class="sub">% de locales en municipios competidos (margen &lt; 5 pts). Marcas que viven donde el voto esta parejo.</p>
+      <div id="swing"></div>
+    </div>
+    <div class="bpanel">
+      <h4>Marcas en bastiones (extremos)</h4>
+      <p class="sub">% de locales en municipios con margen &gt; 20 pts (de cualquier lado). Marcas de base territorial definida.</p>
+      <div id="base"></div>
+    </div>
+  </div>
+
+  <div class="foot">
+    Margen por municipio = (voto De La Espriella - voto Cepeda) / votos validos (Registraduria 2026, preconteo).
+    Lean por region/depto/ciudad ponderado por votos validos. Locales de OpenStreetMap. Replica metodologica del
+    <a href="https://liaukonyte.dyson.cornell.edu/polarization/" target="_blank">proyecto de Cornell</a>,
+    siguiendo a Liaukonyte, Tuchman & Zhu (2023). <a href="metodologia.html">Metodologia y referencias →</a>
+  </div>
+</div>
+<div id="tip"></div>
+
+<script src="geo.js"></script>
+<script src="app.js"></script>
+<script>
+drawMap('#map');
+const A=window.GEO_AGG;
+function fmt(v){return (v>0?'+':'')+(v).toFixed(1);}
+function rows(arr){ return arr.map(r=>{
+  const pts=r.lean*100, c=leanColor(pts);
+  return `<li class="brow"><span class="nm">${r.name}</span>
+    <span class="pts" style="color:${pts>0?'#b2182b':pts<0?'#2166ac':'#857a64'}">${fmt(pts)}</span>
+    <span class="vol">${(r.votval/1000).toFixed(0)}k</span></li>`;}).join(''); }
+function renderBuckets(k){
+  const b=A.agg[k].buckets;
+  document.getElementById('buckets').innerHTML=`
+    <div class="bucket cep"><h4>Bastiones de Cepeda <span>(mas a la izquierda)</span></h4><ul class="blist">${rows(b.cepeda)}</ul></div>
+    <div class="bucket fifty"><h4>Territorios 50/50 <span>(voto mas parejo)</span></h4><ul class="blist">${rows(b.competido)}</ul></div>
+    <div class="bucket esp"><h4>Bastiones de De La Espriella <span>(mas a la derecha)</span></h4><ul class="blist">${rows(b.espriella)}</ul></div>`;
+}
+renderBuckets('region');
+d3.selectAll('#seg button').on('click',function(){
+  d3.selectAll('#seg button').classed('on',false); d3.select(this).classed('on',true);
+  renderBuckets(this.dataset.k);
+});
+function bbars(arr,field,color){ const mx=Math.max(...arr.map(d=>d[field]));
+  return arr.map(d=>`<div class="bbar"><span class="nm" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${d.brand}</span>
+    <span class="track"><span class="fill" style="width:${(d[field]/mx*100).toFixed(0)}%;background:${color}"></span></span>
+    <span style="text-align:right;font-variant-numeric:tabular-nums">${(d[field]*100).toFixed(0)}%</span></div>`).join(''); }
+document.getElementById('swing').innerHTML=bbars(A.swing.slice(0,10),'competido','#857a64');
+document.getElementById('base').innerHTML=bbars(A.base.slice(0,10),'extremo','#9c1f2e');
+</script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Complejidad del consumo - Colombia</title>
+<link rel="stylesheet" href="styles.css?v=5"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"/>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="i18n.js?v=3"></script>
+<script defer src="nav.js?v=10"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="crumb" href="index.html">← La estructura del consumo</a>
+    <a class="crumb" href="marcas.html">El espacio de marcas →</a>
+  </div>
+  <h1 data-en="Consumption <em>complexity</em> by municipality">La <em>complejidad</em> del consumo por municipio</h1>
+  <p class="byline" data-en="Each point is a municipality. Color = vote (blue Cepeda, red De La Espriella).
+    Method: ECI (economic complexity) over the municipality x brand matrix.">Cada punto es un municipio. Color = voto (azul Cepeda, rojo De La Espriella).
+    Método: ECI (complejidad económica) sobre la matriz municipio x marca.</p>
+  <p class="intro" data-en="The <b>horizontal</b> position is the <b>Consumption Complexity Index (ECI)</b>: on the
+    right, municipalities with more <b>diverse and sophisticated</b> baskets (rare brands mixed with common ones);
+    on the left, simple baskets dominated by ubiquitous brands. The <b>vertical</b> axis is electoral size
+    (log scale). The question: does the most complex basket align with a certain vote?">La posición <b>horizontal</b> es el <b>Índice de Complejidad del Consumo (ECI)</b>: a la
+    derecha, municipios con canastas más <b>diversas y sofisticadas</b> (marcas raras combinadas con comunes);
+    a la izquierda, canastas simples dominadas por marcas ubicuas. La <b>vertical</b> es el tamaño electoral
+    (escala log). La pregunta: ¿la canasta más compleja coincide con cierto voto?</p>
+  <div class="caveat" data-en="<b>Structural reading.</b> ECI describes the rarity/diversity of the supply present
+    (OpenStreetMap), not wealth or preferences. Small municipalities with few brands can yield noisy ECI: focus
+    mostly on those with greater electoral weight (top).">
+    <b>Lectura estructural.</b> ECI describe la rareza/diversidad de la oferta presente (OpenStreetMap), no la
+    riqueza ni las preferencias. Municipios pequeños con pocas marcas pueden dar ECI ruidoso: mira sobre todo
+    los de mayor peso electoral (arriba).
+  </div>
+  <details class="methodbox">
+    <summary data-en="How is the ECI computed? See method and formula">¿Cómo se calcula el ECI? Ver método y fórmula</summary>
+    <div class="mb-body">
+      <p class="src" data-en="Source: <b>Hidalgo &amp; Hausmann (2009)</b>, &quot;The building blocks of economic complexity&quot;,
+        <i>PNAS 106(26)</i>; revealed advantage from <b>Balassa (1965)</b>. Here x(m,b) = number of outlets of brand
+        b in municipality m.">Origen: <b>Hidalgo &amp; Hausmann (2009)</b>, "The building blocks of economic complexity",
+        <i>PNAS 106(26)</i>; ventaja revelada de <b>Balassa (1965)</b>. Aquí x(m,b) = nº de locales de la marca
+        b en el municipio m.</p>
+      <p class="mb-tech" data-en="Technique: economic complexity via the eigenvector method">Técnica: complejidad económica por método de autovector (eigenvector)</p>
+      <div class="ktx" data-tex="\begin{gathered} RCA(m,b)=\dfrac{x(m,b)\,/\,\sum_b x(m,b)}{\sum_m x(m,b)\,/\,\sum x}\qquad M(m,b)=\mathbf{1}[RCA\ge 1] \\[4pt] k(m)=\sum_b M(m,b)\qquad k(b)=\sum_m M(m,b) \\[4pt] \tilde M(m,m')=\sum_b \dfrac{M(m,b)\,M(m',b)}{k(m)\,k(b)} \\[4pt] \mathrm{ECI}=\text{2do autovector de }\tilde M\;(z) \end{gathered}">ECI por método de autovector sobre la matriz de especialización M (RCA de Balassa).</div>
+      <p style="margin:0;font-size:13px;color:var(--muted)" data-en="Sign fixed so ECI correlates positively with
+        diversity. Implementation: <i>scripts/06_complejidad.py</i>.">Signo fijado para que ECI correlacione positivo con
+        la diversidad. Implementación: <i>scripts/06_complejidad.py</i>.</p>
+    </div>
+  </details>
+  <div class="card">
+    <div class="controls">
+      <select id="depsel" style="font-family:var(--mono);font-size:12.5px;padding:8px 10px;border:1px solid var(--line);border-radius:3px;background:#fff;max-width:210px"></select>
+      <select id="munsel" style="font-family:var(--mono);font-size:12.5px;padding:8px 10px;border:1px solid var(--line);border-radius:3px;background:#fff;max-width:210px"></select>
+      <input id="q" type="search" placeholder="Buscar municipio..." data-en-ph="Search municipality..." autocomplete="off" style="max-width:170px"/>
+      <label class="toggle"><input type="checkbox" id="logy" checked/> <span data-en="Log scale">Escala log</span></label>
+      <button class="btn" id="reset" data-en="Reset">Reiniciar</button>
+      <span class="legend" style="margin-left:auto"><span style="color:#2c5fb3;font-weight:600">Cepeda</span>
+        <span class="bar" style="width:120px"></span><span style="color:#bd2740;font-weight:600">De La Espriella</span></span>
+    </div>
+    <div class="poles"><span class="l" data-en="◀ SIMPLE BASKET">◀ CANASTA SIMPLE</span><span class="r" data-en="COMPLEX BASKET ▶">CANASTA COMPLEJA ▶</span></div>
+    <div id="chart"></div>
+  </div>
+  <div class="panels">
+    <div class="panel"><h4 data-en="How to read it">Cómo leerlo</h4>
+      <p data-en="ECI rewards municipalities that combine <b>low-ubiquity</b> brands (present in few places)
+      with high diversity. It is the same method as the Economic Complexity Atlas, applied to the consumption
+      footprint instead of exports.">El ECI premia a los municipios que combinan marcas <b>poco ubicuas</b> (presentes en pocos lugares)
+      con diversidad alta. Es el mismo método del Atlas de Complejidad Económica, aplicado a la huella de
+      consumo en vez de a exportaciones.</p></div>
+    <div class="panel"><h4 data-en="What to look for">Qué mirar</h4>
+      <p data-en="If high-ECI municipalities cluster in one color, the <b>structure</b> of the supply is
+      politically sorted (not just the individual brand). The color of each point (the municipality's vote) lets you
+      read that crossing directly on the chart.">Si los municipios de ECI alto se concentran en un color, la <b>estructura</b> de la oferta está
+      políticamente ordenada (no solo la marca individual). El color de cada punto (el voto del municipio) permite
+      leer ese cruce directamente sobre el gráfico.</p></div>
+  </div>
+  <div class="foot" data-en="Economic complexity (ECI) over municipality x brand matrix (OpenStreetMap). Vote:
+    Registraduría 2026 (preliminary count). Part of the consumption-structure project (Site 2).">Complejidad económica (ECI) sobre matriz municipio x marca (OpenStreetMap). Voto:
+    Registraduría 2026 (preconteo). Parte del proyecto de estructura del consumo (Sitio 2).</div>
+</div>
+<div id="tip"></div>
+<script defer src="complex.js"></script>
+<script defer src="app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+const D=window.CX.munis.filter(m=>m.eci!=null);
+const M={t:16,r:24,b:52,l:64},W=900,H=520,iw=W-M.l-M.r,ih=H-M.t-M.b;
+const xext=d3.extent(D,d=>d.eci),xpad=0.2;
+const x=d3.scaleLinear().domain([xext[0]-xpad,xext[1]+xpad]).range([0,iw]);
+const ext=d3.extent(D,d=>d.votval);let logy=true;
+const yS=()=>(logy?d3.scaleLog():d3.scaleLinear()).domain([Math.max(1,ext[0]*0.8),ext[1]*1.2]).range([ih,0]).clamp(true);
+let y=yS();
+const svg=d3.select('#chart').append('svg').attr('viewBox',`0 0 ${W} ${H}`);
+const g=svg.append('g').attr('transform',`translate(${M.l},${M.t})`);
+g.append('line').attr('class','zero').attr('x1',x(0)).attr('x2',x(0)).attr('y1',0).attr('y2',ih);
+const gx=g.append('g').attr('class','axis').attr('transform',`translate(0,${ih})`);
+const gy=g.append('g').attr('class','axis');
+const xlab=g.append('text').attr('class','axis-label').attr('x',iw/2).attr('y',ih+42).attr('text-anchor','middle');
+const ylab=g.append('text').attr('class','axis-label').attr('transform','rotate(-90)').attr('x',-ih/2).attr('y',-48)
+  .attr('text-anchor','middle');
+function relabel(){
+  xlab.text(I18N.t('Índice de complejidad del consumo (ECI)','Consumption complexity index (ECI)'));
+  ylab.text(I18N.t('Peso electoral (votos válidos, escala log)','Electoral weight (valid votes, log scale)'));
+}
+relabel();
+const r=d3.scaleSqrt().domain(ext).range([2.5,11]);
+const dots=g.append('g').selectAll('circle').data(D.sort((a,b)=>b.votval-a.votval)).join('circle')
+  .attr('class','dot-c').attr('cx',d=>x(d.eci)).attr('r',d=>r(d.votval))
+  .attr('fill',d=>leanColor(d.lean*100)).attr('fill-opacity',.72);
+const labels=g.append('g').style('pointer-events','none').selectAll('text').data(D).join('text')
+  .attr('font-size',11).attr('text-anchor','middle').style('font-family',"'Inter',sans-serif")
+  .style('font-weight','600').style('paint-order','stroke').style('stroke','#fff').style('stroke-width','3px')
+  .attr('fill','#222').attr('opacity',0).attr('x',d=>x(d.eci)).text(d=>d.name);
+function place(){y=yS();
+  gx.call(d3.axisBottom(x).ticks(8).tickSize(-ih));
+  gy.call(d3.axisLeft(y).ticks(6,'~s').tickSize(-iw));
+  dots.attr('cy',d=>y(d.votval));
+  labels.attr('y',d=>y(d.votval)-r(d.votval)-4);}
+place();
+const tip=d3.select('#tip');const fmt=v=>(v>0?'+':'')+(v).toFixed(1);
+dots.on('mousemove',(e,d)=>{const pts=d.lean*100;
+  tip.style('opacity',1).style('left',(e.clientX+14)+'px').style('top',(e.clientY+12)+'px')
+    .html(`<div class="b">${d.name}</div><div class="m">${d.dept} &middot; ${(d.votval/1000).toFixed(0)}k ${I18N.t('votos','votes')}</div>
+      <div style="margin-top:3px">ECI ${d.eci.toFixed(2)} &middot; ${d.div} ${I18N.t('marcas especializadas','specialized brands')}</div>
+      <div class="m" style="color:${pts>0?'#bd2740':'#2c5fb3'}">${fmt(pts)} pts</div>`);
+  d3.select(e.currentTarget).classed('hi',true);})
+  .on('mouseleave',(e)=>{tip.style('opacity',0);d3.select(e.currentTarget).classed('hi',false);});
+// ---- filtros departamento / municipio ----
+let q='', dep='', mun='';
+const depSel=d3.select('#depsel'), munSel=d3.select('#munsel');
+const muniById=new Map(D.map(d=>[d.id,d]));
+const deps=[...new Set(D.map(d=>d.dept))].filter(Boolean).sort((a,b)=>a.localeCompare(b));
+function fillDep(){depSel.selectAll('option').data([''].concat(deps)).join('option').attr('value',d=>d)
+  .text(d=>d||I18N.t('Todos los departamentos','All departments'));}
+fillDep();
+function fillMun(){
+  const list=D.filter(d=>!dep||d.dept===dep).sort((a,b)=>a.name.localeCompare(b.name));
+  munSel.selectAll('option').data([''].concat(list.map(d=>d.id)),d=>d).join('option')
+    .attr('value',d=>d).text(d=>d?muniById.get(d).name:I18N.t('Todos los municipios','All municipalities'));
+}
+fillMun();
+document.addEventListener('langchange',()=>{relabel();fillDep();depSel.property('value',dep);fillMun();munSel.property('value',mun);});
+function active(d){
+  if(dep && d.dept!==dep) return false;
+  if(mun && d.id!==mun) return false;
+  if(q && !d.name.toLowerCase().includes(q)) return false;
+  return true;
+}
+function apply(){
+  dots.classed('dim',d=>!active(d));
+  labels.attr('opacity',d=>{
+    if(mun) return d.id===mun?1:0;
+    if(q && d.name.toLowerCase().includes(q)) return 1;
+    return 0;
+  });
+  if(mun){const n=dots.filter(d=>d.id===mun); if(!n.empty()) n.raise().classed('hi',true);}
+  else dots.classed('hi',false);
+}
+depSel.on('change',function(){dep=this.value;mun='';fillMun();munSel.property('value','');apply();});
+munSel.on('change',function(){mun=this.value;apply();});
+d3.select('#q').on('input',function(){q=this.value.trim().toLowerCase();apply();});
+d3.select('#logy').on('change',function(){logy=this.checked;place();apply();});
+d3.select('#reset').on('click',()=>{q='';dep='';mun='';d3.select('#q').property('value','');
+  depSel.property('value','');fillMun();munSel.property('value','');apply();});
+});
+</script>
+</body>
+</html>

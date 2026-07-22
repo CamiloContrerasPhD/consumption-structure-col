@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>El consumo en el mapa - Colombia</title>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"/>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-geo@3/dist/d3-geo.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="crumb" href="index.html">← La polarizacion politica del consumo cotidiano</a>
+    <a href="regiones.html" class="crumb">Mapa de bastiones y 50/50 →</a>
+  </div>
+
+  <h1>El consumo en el <em>mapa</em></h1>
+  <p class="intro">Los mismos analisis de marcas, pero sobre el territorio. Cada punto es un local de cadena,
+    coloreado por categoria, sobre el mapa politico (tono palido = quien gano el municipio). Filtra por dominio
+    para ver donde se concentra cada tipo de consumo y como coincide (o no) con el voto.</p>
+
+  <details class="methodbox">
+    <summary>Metodo y formula</summary>
+    <div class="mb-body">
+      <p class="src">Origen: <b>Liaukonyte, Tuchman &amp; Zhu (2023)</b>, <i>Marketing Science</i>. Es el mismo
+        Indice de Polarizacion del scatter, llevado al territorio: cada local se geolocaliza a su municipio.</p>
+      <p class="mb-tech">Tecnica: indice de exposicion ponderada, llevado al territorio</p>
+      <div class="ktx" data-tex="\begin{gathered} \mathrm{margen}(m)=\dfrac{\text{voto}_{DLE}(m)-\text{voto}_{Cep}(m)}{\mathrm{votval}(m)} \\[4pt] \mathrm{Indice}(b)=\dfrac{\sum_m n(b,m)\,\mathrm{margen}(m)}{\sum_m n(b,m)} \end{gathered}">Indice(b) = media del margen municipal ponderada por nº de locales.</div>
+      <p style="margin:0;font-size:13px;color:var(--muted)">Base politica = color del municipio (margen);
+        puntos = locales. Implementacion: <i>scripts/02b_brands_v2.py</i> + <i>03_regions.py</i>.</p>
+    </div>
+  </details>
+
+  <div class="chips" id="chips" style="justify-content:flex-start"></div>
+  <div class="legend" id="legend" style="margin:4px 0 10px"></div>
+
+  <div class="geo-grid">
+    <div class="mapwrap"><div id="map"></div></div>
+    <div>
+      <div class="bpanel">
+        <h4 id="rtitle">Densidad de consumo por region</h4>
+        <p class="sub">Locales por cada 1.000 votantes. El punto indica el voto de la region.</p>
+        <div id="regbars"></div>
+      </div>
+      <div class="bpanel" style="margin-top:16px">
+        <h4>Lo que muestra</h4>
+        <p class="sub" style="margin:0">El comercio de cadena se agolpa en el corredor Andino (Bogota, Medellin,
+        eje cafetero, Santanderes) y en las capitales del Caribe. El Pacifico y los Llanos -donde Cepeda fue
+        fuerte- aparecen casi vacios de puntos: no es preferencia de cliente, es ausencia de oferta formal
+        (y, en parte, subregistro de OpenStreetMap).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    Puntos: locales de cadena en OpenStreetMap (2026). Base: margen De La Espriella - Cepeda por municipio
+    (Registraduria 2026, preconteo). Replica metodologica del
+    <a href="https://liaukonyte.dyson.cornell.edu/polarization/" target="_blank">proyecto de Cornell</a>,
+    siguiendo a Liaukonyte, Tuchman & Zhu (2023). <a href="metodologia.html">Metodologia y referencias →</a>
+  </div>
+</div>
+<div id="tip"></div>
+
+<script src="geo.js"></script>
+<script src="app.js"></script>
+<script>
+const map=drawStoreMap('#map');
+const meta=GEO_AGG.meta, regRows=GEO_AGG.agg.region.rows;
+const DOMS=[{i:null,label:'Todos'},{i:0,label:meta.domain_label['tiendas']},
+            {i:1,label:meta.domain_label['comida']},{i:2,label:meta.domain_label['servicios']}];
+let cur=null;
+// chips
+const chipBox=d3.select('#chips');
+chipBox.selectAll('.chip').data(DOMS).join('button').attr('class','chip')
+  .classed('active',d=>d.i===cur).text(d=>d.label)
+  .on('click',(e,d)=>{cur=d.i;chipBox.selectAll('.chip').classed('active',x=>x.i===cur);update();});
+function update(){ map.setDomain(cur); renderLegend(); renderBars(); }
+function renderLegend(){
+  const L=d3.select('#legend').html('');
+  if(cur===null){
+    [['Tiendas y Compras',DOM_COLOR[0]],['Comida y Bebida',DOM_COLOR[1]],['Servicios',DOM_COLOR[2]]]
+      .forEach(([t,c])=>L.append('span').style('margin-right','14px').html(`<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${c};margin-right:5px"></span>${t}`));
+  } else {
+    const key=meta.domains[cur], subs=meta.subcats[key];
+    subs.forEach((s,i)=>L.append('span').style('margin-right','14px').html(`<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${SUBCAT_COLORS[i%SUBCAT_COLORS.length]};margin-right:5px"></span>${s}`));
+  }
+}
+function densOf(reg){
+  const rd=meta.region_domain[reg]||{};
+  if(cur===null) return Object.values(rd).reduce((a,b)=>a+(b.dens||0),0);
+  const lbl=meta.domain_label[meta.domains[cur]];
+  return (rd[lbl]||{}).dens||0;
+}
+function renderBars(){
+  const regs=regRows.map(r=>({name:r.name,lean:r.lean,dens:densOf(r.name)}))
+    .sort((a,b)=>b.dens-a.dens);
+  const mx=Math.max(...regs.map(r=>r.dens),0.01);
+  d3.select('#regbars').html(regs.map(r=>{
+    const c=leanColor(r.lean*100);
+    return `<div class="bbar" style="grid-template-columns:96px 1fr 46px">
+      <span class="nm"><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${c};margin-right:6px"></span>${r.name}</span>
+      <span class="track"><span class="fill" style="width:${(r.dens/mx*100).toFixed(0)}%;background:${c}"></span></span>
+      <span style="text-align:right;font-variant-numeric:tabular-nums">${r.dens.toFixed(2)}</span></div>`;
+  }).join(''));
+}
+update();
+</script>
+</body>
+</html>

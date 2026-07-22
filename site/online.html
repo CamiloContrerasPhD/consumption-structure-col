@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Que se busca online - Polarizacion del consumo Colombia</title>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"/>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="crumb" href="index.html">← La polarizacion politica del consumo cotidiano</a>
+    <a href="https://liaukonyte.dyson.cornell.edu/polarization/" target="_blank">ADAPTACION COLOMBIA &#8599;</a>
+  </div>
+
+  <h1>La polarizacion politica de lo que se <em>busca online</em></h1>
+  <p class="byline">Sustituto del pilar de musica del original. Fuente: <b>Google Trends</b> &middot; interes de
+     busqueda por departamento (12 meses) &middot; <span id="counts"></span></p>
+
+  <p class="intro">Cada punto es un artista, una plataforma o una herramienta de IA. La posicion
+    <b>horizontal</b> ubica su audiencia online en el eje politico: hacia la izquierda si se busca mas en
+    departamentos donde gano <b>Cepeda</b>, hacia la derecha donde gano <b>De La Espriella</b>. La posicion
+    <b>vertical</b> es el interes de busqueda total (escala log). Pasa el cursor o busca un nombre.</p>
+
+  <div class="caveat">
+    <b>Esto no mide la ideologia de quien busca, ni la de los artistas.</b> El eje refleja la inclinacion
+    politica de los departamentos donde cada termino se busca mas. El interes de Trends es un indice
+    <em>relativo</em> (0-100) y la resolucion es departamental: es una senal de tendencia, no un conteo exacto.
+  </div>
+
+  <details class="methodbox">
+    <summary>Metodo y formula</summary>
+    <div class="mb-body">
+      <p class="src">Origen: eje politico segun <b>Liaukonyte, Tuchman &amp; Zhu (2023)</b>; busqueda como proxy de
+        atencion segun <b>Choi &amp; Varian (2012)</b> y <b>Mellon (2014)</b>. t = termino; d = departamento;
+        interes(d,t) = Google Trends (0-100).</p>
+      <p class="mb-tech">Tecnica: media ponderada (proxy de atencion por busqueda)</p>
+      <div class="ktx" data-tex="\begin{gathered} \mathrm{margen}(d)=\dfrac{\text{voto}_{DLE}(d)-\text{voto}_{Cep}(d)}{\mathrm{votval}(d)} \\[4pt] \mathrm{lean}(t)=\dfrac{\sum_d \text{interes}(d,t)\,\mathrm{votval}(d)\,\mathrm{margen}(d)}{\sum_d \text{interes}(d,t)\,\mathrm{votval}(d)} \end{gathered}">lean(t) = margen departamental ponderado por interes de busqueda y tamano electoral.</div>
+      <p style="margin:0;font-size:13px;color:var(--muted)">Eje X = lean(t); eje Y = interes total del termino
+        (log). Implementacion: <i>scripts/05_online.py</i>.</p>
+    </div>
+  </details>
+
+  <div class="card">
+    <div class="controls">
+      <input id="q" type="search" placeholder="Buscar..." autocomplete="off"/>
+      <label class="toggle"><input type="checkbox" id="logy" checked/> Escala log</label>
+      <button class="btn" id="reset">Reiniciar</button>
+      <button class="btn primary" id="full">Pantalla completa</button>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="chiphint">Haz clic en una categoria para resaltarla &middot; clic de nuevo (o Reiniciar) para limpiar</div>
+    <div class="poles"><span class="l">◀ MAS CEPEDA (izquierda)</span><span class="r">MAS DE LA ESPRIELLA (derecha) ▶</span></div>
+    <div id="chart"></div>
+  </div>
+
+  <div class="panels">
+    <div class="panel"><h4>Como leerlo</h4>
+      <p>El eje horizontal es el <b>lean de audiencia</b>: el voto del departamento (margen De La Espriella -
+      Cepeda) ponderado por el interes de busqueda del termino y por el tamano electoral del departamento.
+      La <b>champeta</b> y el <b>Afro/currulao del Pacifico</b> (Kevin Florez, Herencia de Timbiqui,
+      ChocQuibTown, Joe Arroyo) son los mas a la izquierda: audiencia concentrada en bastiones de Cepeda.
+      La musica popular andina cae a la derecha. <b>Plataformas e IA</b> caen al centro: se buscan proporcional
+      al electorado. Ojo: izquierda <em>ideologica</em> con publico nacional (Aterciopelados) cae al centro,
+      no a la izquierda: el eje mide geografia de audiencia, no ideologia.</p></div>
+    <div class="panel"><h4>Metodologia</h4>
+      <p>Google Trends, interes por subregion (departamento), en lotes comparados anclados en un termino comun
+      ("Karol G") para hacer los tamanos comparables. El interes es relativo (0-100) y normalizado por Google.
+      Snapshot de los ultimos 12 meses; no reproducible identico en el tiempo.</p></div>
+  </div>
+
+  <div class="foot">
+    Sustituto metodologico del pilar de streaming musical del proyecto
+    <a href="https://liaukonyte.dyson.cornell.edu/polarization/" target="_blank">de Cornell</a>
+    (los charts de Spotify por ciudad estan descontinuados), siguiendo la metodologia de Liaukonyte, Tuchman
+    & Zhu (2023). Eje politico: Registraduria 2026 (preconteo).
+    <a href="metodologia.html">Metodologia y referencias →</a>
+  </div>
+</div>
+<div id="tip"></div>
+
+<script src="online.js"></script>
+<script>
+const O=window.ONLINE;
+const leanColor=d3.scaleLinear().domain([-30,-15,-4,0,4,15,30])
+  .range(['#1a4a82','#4393c3','#c9dcea','#f3f1ec','#f4c2b6','#d6604d','#9c1f2e']).clamp(true);
+const CATCOL={'Urbano':'#bd5d86','Vallenato':'#1f9aa6','Popular':'#d9962f','Salsa':'#3f9b6e','Pop/Rock':'#7a5ea8','Pacifico':'#a0703a','Champeta':'#c8453a','Plataformas':'#3a6ea5','IA':'#5f6b76'};
+const E=O.entities.slice();
+document.getElementById('counts').textContent=E.length+' terminos';
+
+const M={t:16,r:24,b:52,l:64},W=900,H=520,iw=W-M.l-M.r,ih=H-M.t-M.b;
+const xmax=Math.max(8,Math.ceil(d3.max(E,d=>Math.abs(d.pts)))+1);
+const x=d3.scaleLinear().domain([-xmax,xmax]).range([0,iw]);
+const ext=d3.extent(E,d=>d.size); let logy=true;
+const yS=()=>(logy?d3.scaleLog():d3.scaleLinear()).domain([Math.max(1,ext[0]*0.7),ext[1]*1.3]).range([ih,0]).clamp(true);
+let y=yS();
+const svg=d3.select('#chart').append('svg').attr('viewBox',`0 0 ${W} ${H}`);
+const g=svg.append('g').attr('transform',`translate(${M.l},${M.t})`);
+g.append('rect').attr('width',iw/2).attr('height',ih).attr('fill','#f1f4f9');
+g.append('rect').attr('x',iw/2).attr('width',iw/2).attr('height',ih).attr('fill','#faf2f3');
+const gx=g.append('g').attr('class','axis').attr('transform',`translate(0,${ih})`);
+const gy=g.append('g').attr('class','axis');
+g.append('line').attr('class','zero').attr('x1',x(0)).attr('x2',x(0)).attr('y1',0).attr('y2',ih);
+g.append('text').attr('class','axis-label').attr('x',iw/2).attr('y',ih+42).attr('text-anchor','middle')
+  .text('Lean de audiencia (margen De La Espriella - Cepeda, en puntos)');
+g.append('text').attr('class','axis-label').attr('transform','rotate(-90)').attr('x',-ih/2).attr('y',-48)
+  .attr('text-anchor','middle').text('Interes de busqueda total (escala log)');
+const fmt=v=>(v>0?'+':'')+(+v).toFixed(1);
+const dots=g.append('g').selectAll('circle').data(E).join('circle')
+  .attr('class','dot-c').attr('r',6).attr('cx',d=>x(d.pts)).attr('fill',d=>CATCOL[d.cat]||'#888').attr('fill-opacity',.75);
+const labels=g.append('g').selectAll('text').data(E).join('text')
+  .attr('font-size',10.5).attr('text-anchor','middle').attr('opacity',0).style('font-family',"'Inter',sans-serif").style('font-weight','600')
+  .style('paint-order','stroke').style('stroke','#fff').style('stroke-width','3px').attr('fill',d=>d.pts>0?'#b2182b':'#2166ac').text(d=>d.name);
+function place(){y=yS();
+  gx.call(d3.axisBottom(x).ticks(9).tickFormat(fmt).tickSize(-ih));
+  gy.call(d3.axisLeft(y).ticks(6,'~s').tickSize(-iw));
+  dots.attr('cy',d=>y(d.size)); labels.attr('x',d=>x(d.pts)).attr('y',d=>y(d.size)-9);}
+place();
+const tip=d3.select('#tip');
+dots.on('mousemove',(e,d)=>{tip.style('opacity',1).style('left',(e.clientX+14)+'px').style('top',(e.clientY+12)+'px')
+    .html(`<div class="b">${d.name}</div><div class="m">${d.cat} &middot; ${d.ndept} deptos</div>
+      <div style="margin-top:3px;color:${d.pts>0?'#b2182b':'#2166ac'}">${fmt(d.pts)} pts</div>`);
+    d3.select(e.currentTarget).classed('hi',true).attr('r',8);})
+  .on('mouseleave',(e)=>{tip.style('opacity',0);d3.select(e.currentTarget).classed('hi',false).attr('r',6);});
+let active='',query='';
+function apply(){dots.classed('dim',d=>{const okC=!active||d.cat===active,okQ=!query||d.name.toLowerCase().includes(query);return !(okC&&okQ);});
+  labels.attr('opacity',d=>{const mq=query&&d.name.toLowerCase().includes(query),mc=active&&d.cat===active&&!query;return(mq||mc)?1:0;});}
+const chipBox=d3.select('#chips');
+chipBox.selectAll('.chip').data(O.cats).join('button').attr('class','chip')
+  .html(d=>`<span class="dot" style="background:${CATCOL[d]||'#888'}"></span>${d}`)
+  .on('click',function(e,c){active=active===c?'':c;chipBox.selectAll('.chip').classed('active',d=>d===active);apply();});
+d3.select('#q').on('input',function(){query=this.value.trim().toLowerCase();apply();});
+d3.select('#logy').on('change',function(){logy=this.checked;place();});
+d3.select('#reset').on('click',()=>{active='';query='';d3.select('#q').property('value','');chipBox.selectAll('.chip').classed('active',false);apply();});
+d3.select('#full').on('click',()=>{const el=document.querySelector('.card');if(!document.fullscreenElement)el.requestFullscreen&&el.requestFullscreen();else document.exitFullscreen();});
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+data/raw/muni_boundaries.json
+data/raw/stores_raw.json
+data/processed/muni_polygons.pkl
+__pycache__/
+*.pyc
+.DS_Store
+.claude/

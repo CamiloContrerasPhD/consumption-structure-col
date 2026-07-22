@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>La red de marcas - Colombia</title>
+<link rel="stylesheet" href="styles.css?v=5"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"/>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="i18n.js?v=3"></script>
+<script defer src="nav.js?v=10"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar"></div>
+  <h1 data-en="The brand <em>network</em>">La <em>red</em> de marcas</h1>
+  <p class="byline" data-en="Which brands live together in the territory: co-location graph, its neighborhoods
+    (communities) and their political color.">Qué marcas viven juntas en el territorio: grafo de co-localización,
+    sus barrios (comunidades) y su color político.</p>
+  <p class="intro" data-en="Two brands are connected if they tend to be present in the <b>same municipalities</b>
+    (min-conditional proximity, the same &phi; behind the opportunity page). Community detection then finds the
+    <b>neighborhoods</b> of the market: groups of brands that share territory. The question for this site: do those
+    neighborhoods have a <b>political color</b>, or does every community span both camps?">Dos marcas están
+    conectadas si tienden a estar presentes en los <b>mismos municipios</b> (proximidad min-condicional, la misma
+    &phi; de la página de oportunidad). La detección de comunidades encuentra los <b>barrios</b> del mercado: grupos
+    de marcas que comparten territorio. La pregunta para este sitio: ¿esos barrios tienen <b>color político</b>, o
+    cada comunidad abarca ambos campos?</p>
+  <div class="caveat" style="max-width:none" data-en="<b>Co-location, not co-purchase.</b> An edge means shared
+    territory, not shared customers or baskets. Communities partly reflect urban hierarchy: premium brands cluster
+    because they all live in big cities.">
+    <b>Co-localización, no co-compra.</b> Una arista significa territorio compartido, no clientes ni canastas
+    compartidas. Las comunidades reflejan en parte la jerarquía urbana: las marcas premium se agrupan porque todas
+    viven en las ciudades grandes.
+  </div>
+  <details class="methodbox">
+    <summary data-en="How is the network built? See method and formula">¿Cómo se construye la red? Ver método y fórmula</summary>
+    <div class="mb-body">
+      <p class="src" data-en="Source: product space of <b>Hidalgo, Klinger, Barabási &amp; Hausmann (2007)</b>,
+        <i>Science 317</i>; community detection by greedy modularity (<b>Clauset, Newman &amp; Moore, 2004</b>,
+        <i>Physical Review E</i>).">Origen: espacio de producto de <b>Hidalgo, Klinger, Barabási &amp; Hausmann
+        (2007)</b>, <i>Science 317</i>; detección de comunidades por modularidad voraz (<b>Clauset, Newman &amp;
+        Moore, 2004</b>, <i>Physical Review E</i>).</p>
+      <p class="mb-tech" data-en="Technique: proximity graph + greedy modularity communities">Técnica: grafo de proximidad + comunidades por modularidad voraz</p>
+      <div class="ktx" data-tex="\begin{gathered} \phi(b,b')=\min\{P(M_b{=}1\mid M_{b'}{=}1),\,P(M_{b'}{=}1\mid M_b{=}1)\} \\[4pt] \text{aristas: }\phi\ge 0.35\ \cup\ \text{top-3 por nodo}\qquad Q=\tfrac{1}{2m}\sum_{ij}\Big[A_{ij}-\tfrac{k_ik_j}{2m}\Big]\delta(c_i,c_j) \end{gathered}">phi de co-localizacion; poda; comunidades maximizando modularidad Q.</div>
+      <p style="margin:0;font-size:13px;color:var(--muted)" data-en="Community lean = outlet-weighted average of its
+        brands' footprint leans. Implementation: <i>scripts/15_red.py</i>.">Lean de comunidad = promedio del lean de
+        huella de sus marcas, ponderado por locales. Implementación: <i>scripts/15_red.py</i>.</p>
+    </div>
+  </details>
+  <div class="maptop">
+    <label class="toggle"><span data-en="Color:">Color:</span>
+      <select id="colsel" style="font-family:var(--mono);font-size:12.5px;padding:8px 10px;border:1px solid var(--line);border-radius:3px;background:#fff">
+        <option value="comm" data-en="By community">Por comunidad</option>
+        <option value="lean" data-en="By vote (footprint)">Por voto (huella)</option>
+      </select>
+    </label>
+    <input id="q" type="search" placeholder="Buscar una marca..." data-en-ph="Search a brand..." autocomplete="off" style="max-width:180px"/>
+    <span class="legend" id="leg" style="margin-left:auto;display:inline-flex;gap:10px;flex-wrap:wrap"></span>
+  </div>
+  <div class="geo-grid" style="grid-template-columns:1.5fr 1fr">
+    <div class="card" style="padding:8px;position:relative">
+      <div id="gctrl" style="position:absolute;top:10px;right:10px;display:flex;flex-direction:column;gap:4px;z-index:5">
+        <button class="gbtn" id="zin" title="Zoom +">+</button>
+        <button class="gbtn" id="zout" title="Zoom −">−</button>
+        <button class="gbtn" id="zfit" title="Reset">⌂</button>
+        <button class="gbtn" id="zheat" title="Reorganizar">↻</button>
+      </div>
+      <div id="graph"></div>
+      <style>
+        .gbtn{width:30px;height:30px;border:1px solid var(--line);background:#fff;border-radius:3px;
+          font-family:var(--mono);font-size:15px;line-height:1;color:var(--ink);cursor:pointer;
+          display:flex;align-items:center;justify-content:center;transition:background .12s,color .12s}
+        .gbtn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+        #graph svg{cursor:grab}
+      </style>
+    </div>
+    <div>
+      <div class="bpanel"><h4 id="ct"></h4><ul class="blist" id="commlist"></ul></div>
+      <div class="bpanel" style="margin-top:16px">
+        <h4 data-en="How to read it">Cómo leerlo</h4>
+        <p class="sub" style="margin:0" data-en="Node size = nº of outlets; drag to explore. If communities were
+        politically sorted, each neighborhood would lean strongly to one side; leans near 0 mean the market's
+        neighborhoods are shared infrastructure.">Tamaño del nodo = nº de locales; arrastra para explorar. Si las
+        comunidades estuvieran sorteadas políticamente, cada barrio se inclinaría fuerte a un lado; leans cerca de 0
+        significan que los barrios del mercado son infraestructura compartida.</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot" data-en="Co-location network over the municipality x brand matrix (OpenStreetMap). Vote:
+    Registraduría 2026. Site 2 - consumption structure.">Red de co-localización sobre la matriz municipio x marca
+    (OpenStreetMap). Voto: Registraduría 2026. Sitio 2 - estructura del consumo.</div>
+</div>
+<div id="tip"></div>
+<script defer src="red.js"></script>
+<script defer src="app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+const RD=window.RD;
+const CCOL=['#0f8a8a','#7a5ea8','#d9962f','#3a6ea5','#c8453a','#5f6b76','#8a8f3a','#bd5d86'];
+let mode='comm', q='', openComm=null;
+const W=760,H=640;
+const svg=d3.select('#graph').append('svg').attr('viewBox',`0 0 ${W} ${H}`).attr('width','100%');
+const tip=d3.select('#tip');
+const fmt=v=>(v>0?'+':'')+v.toFixed(0);
+
+const nodes=RD.nodes.map(d=>({...d}));
+const links=RD.links.map(d=>({...d}));
+const r=d3.scaleSqrt().domain([1,d3.max(nodes,d=>d.n)]).range([3,17]);
+
+const sim=d3.forceSimulation(nodes)
+  .force('link',d3.forceLink(links).id(d=>d.id).distance(d=>40-25*d.w).strength(d=>0.3+0.7*d.w))
+  .force('charge',d3.forceManyBody().strength(-55))
+  .force('center',d3.forceCenter(W/2,H/2))
+  .force('collide',d3.forceCollide().radius(d=>r(d.n)+1.5));
+
+const root=svg.append('g');                       // zoomable container
+let curK=1;
+const zoom=d3.zoom().scaleExtent([0.35,7])
+  .filter(e=>e.type==='wheel' || e.type==='dblclick' || e.target.tagName!=='circle')
+  .on('zoom',e=>{curK=e.transform.k;root.attr('transform',e.transform);labelVis();});
+svg.call(zoom).on('dblclick.zoom',null);
+d3.select('#zin').on('click',()=>svg.call(zoom.scaleBy,1.45));
+d3.select('#zout').on('click',()=>svg.call(zoom.scaleBy,1/1.45));
+d3.select('#zfit').on('click',()=>svg.call(zoom.transform,d3.zoomIdentity));
+d3.select('#zheat').on('click',()=>sim.alpha(0.7).restart());
+
+const lk=root.append('g').selectAll('line').data(links).join('line')
+  .attr('stroke','#d8d6d0').attr('stroke-opacity',.55).attr('stroke-width',d=>0.4+d.w*1.6);
+const nd=root.append('g').selectAll('circle').data(nodes).join('circle')
+  .attr('r',d=>r(d.n)).attr('stroke','#fff').attr('stroke-width',1).style('cursor','grab')
+  .call(d3.drag()
+    .on('start',(e,d)=>{if(!e.active)sim.alphaTarget(0.2).restart();d.fx=d.x;d.fy=d.y;})
+    .on('drag',(e,d)=>{d.fx=e.x;d.fy=e.y;})
+    .on('end',(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}))
+  .on('mousemove',(e,d)=>{tip.style('opacity',1).style('left',(e.clientX+14)+'px').style('top',(e.clientY+12)+'px')
+    .html(`<div class="b">${d.id}</div><div class="m">${d.domain} &middot; ${d.n} ${I18N.t('locales','outlets')} &middot; ${I18N.t('comunidad','community')} ${d.comm+1}</div>
+      <div class="m" style="color:${d.lean>0?'#bd2740':'#2c5fb3'}">${fmt(d.lean*100)} pts</div>`);})
+  .on('mouseleave',()=>tip.style('opacity',0));
+const lb=root.append('g').style('pointer-events','none').selectAll('text').data(nodes).join('text')
+  .attr('font-size',10).attr('text-anchor','middle').style('font-family',"'Inter',sans-serif")
+  .style('font-weight','600').style('paint-order','stroke').style('stroke','#fff').style('stroke-width','3px')
+  .attr('fill','#141414').text(d=>d.id);
+function labelVis(){
+  lb.attr('display',d=>(d.n>=60 || curK>=1.7)?null:'none')
+    .attr('font-size',10/Math.max(1,curK*0.75));
+}
+labelVis();
+
+sim.on('tick',()=>{
+  nodes.forEach(d=>{d.x=Math.max(14,Math.min(W-14,d.x));d.y=Math.max(14,Math.min(H-14,d.y));});
+  lk.attr('x1',d=>d.source.x).attr('y1',d=>d.source.y).attr('x2',d=>d.target.x).attr('y2',d=>d.target.y);
+  nd.attr('cx',d=>d.x).attr('cy',d=>d.y);
+  lb.attr('x',d=>d.x).attr('y',d=>d.y-r(d.n)-3);
+});
+
+function paint(){
+  nd.attr('fill',d=>mode==='comm'?CCOL[d.comm%CCOL.length]:leanColor(d.lean*100))
+    .attr('fill-opacity',d=>q&&!d.id.toLowerCase().includes(q)?0.12:0.9);
+  lb.attr('opacity',d=>q&&!d.id.toLowerCase().includes(q)?0.1:1);
+  const L=d3.select('#leg').html('');
+  if(mode==='comm'){
+    RD.comms.forEach(c=>L.append('span')
+      .style('display','inline-flex').style('align-items','center').style('gap','5px')
+      .style('font-size','10px').style('color','var(--muted)')
+      .html(`<span style="width:11px;height:11px;background:${CCOL[c.comm%CCOL.length]};display:inline-block"></span>${I18N.t('comunidad','community')} ${c.comm+1}`));
+  }else{
+    L.html(`<span style="color:#2c5fb3;font-weight:600;font-size:11px">Cepeda</span>
+      <span class="bar" style="width:110px"></span>
+      <span style="color:#bd2740;font-weight:600;font-size:11px">De La Espriella</span>`);
+  }
+  document.getElementById('ct').textContent=I18N.t('Los barrios del mercado y su color político',"The market's neighborhoods and their political color");
+  document.getElementById('commlist').innerHTML=RD.comms.map(c=>{
+    const col=c.lean>0.01?'#bd2740':c.lean<-0.01?'#2c5fb3':'#7c7c78';
+    const open=openComm===c.comm;
+    const members=nodes.filter(n=>n.comm===c.comm).sort((a,b)=>b.n-a.n);
+    const chips=members.map(m=>`<span style="display:inline-block;font-family:var(--mono);font-size:10.5px;
+      padding:2px 7px;margin:2px 3px 2px 0;border:1px solid var(--line);border-radius:2px;background:#fff;
+      color:${m.lean>0.01?'#bd2740':m.lean<-0.01?'#2c5fb3':'#55554f'}">${m.id} <span style="color:var(--soft)">${m.n}</span></span>`).join('');
+    return `<li class="brow commhdr" data-c="${c.comm}" style="cursor:pointer;flex-wrap:wrap">
+      <span class="nm"><span style="display:inline-block;width:9px;height:9px;background:${CCOL[c.comm%CCOL.length]};margin-right:6px"></span>${c.top.slice(0,3).join(', ')}<span style="color:var(--soft)"> +${c.size-3}</span></span>
+      <span class="vol" style="color:${col}">${fmt(c.lean*100)}</span>
+      <span style="font-family:var(--mono);font-size:10px;color:var(--accent);margin-left:8px">${open?'▲':'▼'} ${c.size}</span>
+      ${open?`<div style="flex-basis:100%;padding:8px 0 4px">${chips}</div>`:''}</li>`;}).join('');
+  d3.selectAll('#commlist .commhdr').on('click',function(){
+    const c=+this.getAttribute('data-c');
+    openComm=(openComm===c)?null:c;
+    paint();
+  });
+  // resaltar comunidad abierta en el grafo
+  nd.attr('stroke',d=>openComm!=null&&d.comm===openComm?'#141414':'#fff')
+    .attr('fill-opacity',d=>{
+      const dimQ=q&&!d.id.toLowerCase().includes(q);
+      const dimC=openComm!=null&&d.comm!==openComm;
+      return (dimQ||dimC)?0.12:0.9;});
+  lk.attr('stroke-opacity',l=>openComm!=null&&(l.source.comm!==openComm||l.target.comm!==openComm)?0.08:0.55);
+}
+paint();
+d3.select('#colsel').on('change',function(){mode=this.value;paint();});
+d3.select('#q').on('input',function(){q=this.value.trim().toLowerCase();paint();});
+document.addEventListener('langchange',paint);
+});
+</script>
+</body>
+</html>

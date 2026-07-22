@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>La polarizacion politica del consumo - Colombia</title>
+<link rel="stylesheet" href="styles.css"/>
+<script defer src="nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <span class="l">EL INDICE DE POLARIZACION POLITICA DEL CONSUMO</span>
+    <a href="https://liaukonyte.dyson.cornell.edu/polarization/" target="_blank">ADAPTACION COLOMBIA &middot; basado en Liaukonyte (Cornell) &#8599;</a>
+  </div>
+
+  <header class="hero">
+    <span class="hero-tag">El indice de polarizacion del consumo &middot; Colombia</span>
+    <h1 class="hero-h">Lo que compras, escuchas y buscas <em>te ubica en el mapa politico</em></h1>
+    <p class="hero-lede">Donde una marca, un artista o una cadena concentra su consumo dice por quien voto
+      ese territorio. Cuatro pilares de consumo cotidiano, cruzados con la primera vuelta presidencial 2026,
+      municipio por municipio.</p>
+    <div class="stats">
+      <div class="stat"><b>1.087</b><span>municipios</span></div>
+      <div class="stat"><b>5.334</b><span>locales mapeados</span></div>
+      <div class="stat"><b>31</b><span>terminos online</span></div>
+      <div class="stat"><b>6</b><span>fuentes abiertas</span></div>
+    </div>
+    <p class="src" style="margin-top:22px">Sigue la metodologia de <b>Liaukonyte, Tuchman & Zhu (2023)</b>,
+      adaptada a Colombia. Eje: voto Cepeda vs De La Espriella (Registraduria 2026). Consumo: OpenStreetMap,
+      MinTIC, MEN, Google Trends. <a href="metodologia.html">Ver metodologia y referencias &rarr;</a></p>
+  </header>
+
+  <div class="caveat">
+    <b>Esto no mide la ideologia de los clientes ni de las marcas.</b> El eje horizontal captura la
+    inclinacion politica de los <em>lugares</em> donde una cadena concentra sus locales (su huella territorial),
+    segun como votaron esos municipios. Una cadena puede verse "de derecha" solo porque sus locales estan
+    en zonas que votaron por De La Espriella, no porque sus clientes lo prefieran.
+  </div>
+
+  <div class="section-label">Los cuatro pilares de consumo</div>
+  <div class="cards" id="cards"></div>
+
+  <div class="section-label">Explora el territorio</div>
+  <div class="cards" id="cards2"></div>
+
+  <div class="rel-h">RECURSOS Y NOTAS</div>
+  <div class="rel">
+    <div class="rcard"><a href="https://liaukonyte.dyson.cornell.edu/polarization/" target="_blank">Proyecto original (Cornell)</a><br/>
+      "The Political Polarization of Consumption", J. Liaukonyte. Este sitio es una replica metodologica
+      adaptada a Colombia con fuentes abiertas.</div>
+    <div class="rcard"><a href="https://resultados.registraduria.gov.co/" target="_blank">Registraduria 2026</a> &middot;
+      <a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a><br/>
+      Resultados electorales <b>provisionales</b> (preconteo, no vinculantes). Cobertura de OSM incompleta;
+      resolucion municipal (Bogota cuenta como un solo municipio).</div>
+    <div class="rcard"><b>Sustitutos del estudio original</b><br/>
+      La musica en streaming (Spotify por ciudad, descontinuado) se reemplaza por <b>interes de busqueda</b>
+      (Google Trends). Los paneles de compra CPG se aproximan con la <b>huella de marcas</b> en OpenStreetMap.</div>
+    <div class="rcard"><a href="metodologia.html">Metodologia y referencias →</a><br/>
+      Sigue la metodologia de Liaukonyte, Tuchman & Zhu (2023), adaptada a Colombia. Incluye el respaldo
+      bibliografico de las variables agregadas (busqueda online, internet, educacion).</div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="online.js"></script>
+<script src="app.js"></script>
+<script>
+const box=d3.select('#cards');
+function poles(a){const pl=a.append('div').attr('class','poleline');
+  pl.append('span').attr('class','l').text('◀ CEPEDA');pl.append('span').attr('class','r').text('DE LA ESPRIELLA ▶');}
+SITE.domain_order.filter(k=>SITE.domains[k]).forEach(k=>{
+  const d=SITE.domains[k];
+  const a=box.append('a').attr('class','dcard').attr('href',`analisis.html?d=${k}`);
+  a.append('h3').text(d.label);
+  a.append('div').attr('class','sub').text(`${d.brands.length} marcas · ${d.desc}`);
+  const h=a.append('div').attr('class','hist').node();
+  const xmax=Math.max(20, Math.ceil(d3.max(d.brands,b=>Math.abs(b.index*100))/5)*5);
+  drawHistogram(h, d.brands, xmax);
+  poles(a);
+  a.append('div').attr('class','open').text('ABRIR EL ANALISIS →');
+});
+// 4th pillar: online search interest (Google Trends)
+if(window.ONLINE){
+  const a=box.append('a').attr('class','dcard').attr('href','online.html');
+  a.append('h3').text('Que se busca Online');
+  a.append('div').attr('class','sub').text(`${ONLINE.entities.length} terminos · Artistas, plataformas e IA (Google Trends).`);
+  const h=a.append('div').attr('class','hist').node();
+  const items=ONLINE.entities.map(e=>({index:e.lean}));
+  const xm=Math.max(8,Math.ceil(d3.max(ONLINE.entities,e=>Math.abs(e.pts))));
+  drawHistogram(h, items, xm);
+  poles(a);
+  a.append('div').attr('class','open').text('ABRIR EL ANALISIS →');
+}
+
+// ---- second row: map / analysis cards (same .dcard style, thematic mini-visual) ----
+const MORE=[
+  {href:'regiones.html', title:'El mapa del territorio',
+   sub:'Bastiones extremos y territorios 50/50, por region, departamento y ciudad.', viz:'buckets'},
+  {href:'mapa-consumo.html', title:'El consumo en el mapa',
+   sub:'Cada local de cadena como punto sobre el mapa politico, filtrable por dominio.', viz:'dots'},
+  {href:'centro-periferia.html', title:'Centro y periferia',
+   sub:'Voto x indice de acceso (comercio + internet + educacion): el eje centro-periferia.', viz:'grid'},
+];
+const box2=d3.select('#cards2');
+const VIZ={
+  buckets(svg){ const rows=[['#2166ac',.85],['#857a64',.5],['#b2182b',.95],['#2166ac',.4],['#b2182b',.7]];
+    rows.forEach((r,i)=>{ svg.append('rect').attr('x',6).attr('y',8+i*22).attr('height',13).attr('rx',3)
+      .attr('width',r[1]*270).attr('fill',r[0]).attr('opacity',.85); }); },
+  dots(svg){ const C={0:'#1b7837',1:'#e8730c',2:'#4a3b9a'};
+    const pts=[[40,30,0],[70,55,2],[110,40,1],[95,80,0],[150,60,2],[60,90,1],[180,45,0],[210,75,2],
+      [130,95,1],[240,55,0],[200,100,1],[80,25,2],[160,90,0],[260,85,2],[120,65,0],[225,35,1],[55,70,0],[175,105,2]];
+    pts.forEach(p=>svg.append('circle').attr('cx',p[0]).attr('cy',p[1]).attr('r',4.2).attr('fill',C[p[2]]).attr('opacity',.82)); },
+  grid(svg){ const BI=[['#d2e3f0','#6ea2cd','#1a5a8f'],['#e6e2da','#b3ac9c','#6e6757'],['#f1d3cd','#d68a78','#9c2f1e']];
+    const s=32, ox=105, oy=12; for(let v=0;v<3;v++)for(let a=0;a<3;a++)
+      svg.append('rect').attr('x',ox+a*s).attr('y',oy+v*s).attr('width',s-3).attr('height',s-3).attr('rx',2).attr('fill',BI[v][a]); },
+};
+MORE.forEach(m=>{
+  const a=box2.append('a').attr('class','dcard').attr('href',m.href);
+  a.append('h3').text(m.title);
+  a.append('div').attr('class','sub').text(m.sub);
+  const svg=a.append('div').attr('class','hist').append('svg').attr('viewBox','0 0 300 120').attr('width','100%');
+  VIZ[m.viz](svg);
+  a.append('div').attr('class','open').text('ABRIR →');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>La incertidumbre del mapa - Colombia</title>
+<link rel="stylesheet" href="styles.css?v=5"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"/>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="i18n.js?v=3"></script>
+<script defer src="nav.js?v=10"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/d3-geo@3/dist/d3-geo.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar"></div>
+  <h1 data-en="The <em>uncertainty</em> of the map">La <em>incertidumbre</em> del mapa</h1>
+  <p class="byline" data-en="Not every color on the map carries the same weight: this page corrects the fragile ones
+    and shows which can be trusted.">No todos los colores del mapa pesan lo mismo: esta página corrige los frágiles y
+    señala en cuáles se puede confiar.</p>
+  <p class="intro" data-en="A map can mislead. Where 60,000 people voted, a municipality's color is a fact; where 80
+    voted, it is almost a coin flip, and yet both are painted with the same confident color. This analysis
+    separates one from the other. It does two things: it <b>corrects</b> the exaggerated colors of municipalities with
+    very few votes, pulling them toward what their neighbors say; and it gives every municipality a <b>confidence
+    label</b>: where the political data is solid, and where it is too thin to draw any conclusion.">Un mapa
+    puede engañar. Donde votaron 60.000 personas, el color del municipio es un hecho; donde votaron 80, es casi una
+    moneda al aire, y sin embargo ambos se pintan con el mismo color seguro. Este análisis separa lo uno de lo
+    otro. Hace dos cosas: <b>corrige</b> los colores exagerados de los municipios con muy pocos votos, acercándolos a
+    lo que dice su vecindario; y le pone a cada municipio una <b>etiqueta de confianza</b>: dónde el dato
+    político es sólido y dónde es demasiado débil para concluir algo.</p>
+  <p class="intro" data-en="<b>What is it for?</b> Everything this site says about brands rests on those colors: which
+    territory they live in, which network is exposed to a boycott, where politics slows expansion.
+    Before using them, you need to know whether each one is a fact or an accident of a few votes. The good news:
+    commerce sits where the votes are, so the site's brand verdicts stand on the firm part of the map.">
+    <b>¿Para qué sirve?</b> Todo lo que este sitio dice de las marcas se apoya en esos colores: en qué territorio
+    viven, qué red está expuesta a un boicot, dónde la política frena la expansión. Antes de usarlos hay
+    que saber si cada uno es un hecho o un accidente de pocos votos. La buena noticia: el comercio está donde están
+    los votos, así que los veredictos de marca del sitio descansan sobre la parte firme del mapa.</p>
+  <div class="caveat" style="max-width:none" data-en="<b>Honest statistics.</b> Small municipalities produce noisy
+    shares; the BYM model borrows strength from neighbors and shrinks extremes toward what the neighborhood supports.
+    The share is a two-party approximation from the margin over valid votes, and the count is preliminary.">
+    <b>Estadística honesta.</b> Los municipios pequeños producen proporciones ruidosas; el modelo BYM toma fuerza de
+    los vecinos y encoge los extremos hacia lo que el vecindario respalda. La proporción es una aproximación
+    dos-partidos desde el margen sobre votos válidos, y el conteo es preliminar.
+  </div>
+  <details class="methodbox">
+    <summary data-en="How is uncertainty modeled? See method and formula">¿Cómo se modela la incertidumbre? Ver método y fórmula</summary>
+    <div class="mb-body">
+      <p class="src" data-en="Source: <b>Besag, York &amp; Mollié (1991)</b>, <i>Annals of the Institute of
+        Statistical Mathematics</i> (BYM model); scaling discussion in <b>Riebler et al. (2016)</b>. Estimated by MCMC
+        (NUTS) in PyMC.">Origen: <b>Besag, York &amp; Mollié (1991)</b>, <i>Annals of the Institute of Statistical
+        Mathematics</i> (modelo BYM); discusión de escalado en <b>Riebler et al. (2016)</b>. Estimado por MCMC (NUTS)
+        en PyMC.</p>
+      <p class="mb-tech" data-en="Technique: hierarchical Bayesian spatial model (Binomial + ICAR), full MCMC">Técnica: modelo bayesiano jerárquico espacial (Binomial + ICAR), MCMC completo</p>
+      <div class="ktx" data-tex="\begin{gathered} y_m\sim\mathrm{Binomial}(n_m,\,p_m)\qquad \mathrm{logit}(p_m)=\beta_0+\sigma_t\,\theta_m+\sigma_s\,\phi_m \\[4pt] \theta_m\sim N(0,1)\ \ (\text{heterogeneidad})\qquad \phi\sim\mathrm{ICAR}(W)\ \ (\text{suavizado espacial}) \end{gathered}">Binomial + logit(p) = intercepto + heterogeneidad + campo espacial ICAR.</div>
+      <p style="margin:0;font-size:13px;color:var(--muted)" data-en="W = symmetrized kNN(6) neighborhood over
+        centroids, forced to a single component. ICAR field centered (identifies the intercept). 4 chains x 800
+        draws; r&#770; is reported over p. A handful of tiny municipalities keep r&#770;&gt;1.01, but the p estimates
+        are stable across independent runs (differences &lt;0.005). Implementation: <i>scripts/16_bym.py</i>.">W =
+        vecindario kNN(6) simetrizado sobre centroides, forzado a componente única. Campo ICAR centrado (identifica
+        el intercepto). 4 cadenas x 800 draws; el r&#770; se reporta sobre p. Un puñado de municipios diminutos
+        conserva r&#770;&gt;1.01, pero las estimaciones de p son estables entre corridas independientes (diferencias
+        &lt;0.005). Implementación: <i>scripts/16_bym.py</i>.</p>
+    </div>
+  </details>
+  <div class="stats" id="bystats" style="margin-bottom:18px"></div>
+  <div class="maptop" style="flex-wrap:wrap;row-gap:10px">
+    <label class="toggle"><span data-en="View:">Vista:</span>
+      <select id="viewsel" style="font-family:var(--mono);font-size:12.5px;padding:8px 10px;border:1px solid var(--line);border-radius:3px;background:#fff">
+        <option value="p" data-en="Smoothed estimate (BYM)">Estimación suavizada (BYM)</option>
+        <option value="w" data-en="Uncertainty (95% CI width)">Incertidumbre (ancho del IC 95%)</option>
+        <option value="s" data-en="Correction vs raw data">Corrección vs dato crudo</option>
+      </select>
+    </label>
+    <label class="toggle"><span data-en="Category:">Categoría:</span>
+      <select id="brcat" style="font-family:var(--mono);font-size:12.5px;padding:8px 10px;border:1px solid var(--line);border-radius:3px;background:#fff"></select>
+    </label>
+    <label class="toggle"><span data-en="Brand footprint:">Huella de marca:</span>
+      <select id="brsel" style="font-family:var(--mono);font-size:12.5px;padding:8px 10px;border:1px solid var(--line);border-radius:3px;background:#fff"></select>
+    </label>
+    <span class="legend" id="leg" style="margin-left:auto"></span>
+  </div>
+  <div class="geo-grid">
+    <div class="mapwrap"><div id="map"></div></div>
+    <div>
+      <div class="bpanel">
+        <h4 id="brdt"></h4>
+        <p class="sub" id="brdetail" style="margin:0"></p>
+      </div>
+      <div class="bucket" style="margin-top:16px"><h4 id="byt1"></h4><ul class="blist" id="bywide"></ul></div>
+      <div class="bucket esp" style="margin-top:16px"><h4 id="byt2"></h4><ul class="blist" id="byshr"></ul></div>
+    </div>
+  </div>
+  <h3 style="font-size:22px;margin:34px 0 4px;border-top:1px solid var(--line);padding-top:26px" data-en="The same yardstick, applied to <em style='color:var(--accent);font-style:normal'>brands</em>">La misma vara, aplicada a las <em style="color:var(--accent);font-style:normal">marcas</em></h3>
+  <p class="intro" id="brintro"></p>
+  <div class="geo-grid" style="grid-template-columns:1.5fr 1fr">
+    <div class="card" style="padding:18px">
+      <h4 style="margin:0 0 2px;font-size:14px" id="brt"></h4>
+      <p class="sub" id="brsub" style="margin:0 0 10px"></p>
+      <div id="brchart"></div>
+    </div>
+    <div>
+      <div class="bpanel"><h4 id="brc"></h4><ul class="blist" id="brcats"></ul></div>
+      <div class="bpanel" style="margin-top:16px">
+        <h4 data-en="How to read it">Cómo leerlo</h4>
+        <p class="sub" style="margin:0" data-en="Selecting a brand here also highlights its footprint on the map
+        above, in whichever view is active: smoothed, uncertainty or correction.">Elegir una marca aquí
+        también resalta su huella en el mapa de arriba, en la vista que esté activa: suavizada, incertidumbre
+        o corrección.</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot" data-en="BYM (Besag-York-Mollié) over the 2026 first-round vote (Registraduría, preliminary).
+    Site 2 - consumption structure.">BYM (Besag-York-Mollié) sobre la primera vuelta 2026 (Registraduría, preconteo).
+    Sitio 2 - estructura del consumo.</div>
+</div>
+<div id="tip"></div>
+<script defer src="bym.js?v=2"></script>
+<script defer src="integracion.js"></script>
+<script defer src="complex.js"></script>
+<script defer src="geo.js"></script>
+<script defer src="app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+const BY=window.BY, geo=window.GEO_MUNI, CX=window.CX;
+const rec=new Map(BY.munis.map(m=>[m.id,m]));
+const fmt=v=>(v>0?'+':'')+v.toFixed(0);
+let view='p';
+// ---- estado de marca (comparte mapa principal + grafico de abajo) ----
+const rawLean=new Map((CX?CX.brands:[]).map(b=>[b.brand,b.lean]));
+const brIdx=new Map((CX?CX.muniOrder:[]).map((id,i)=>[id,i]));
+const BR=(BY.brands||[]).slice();
+const brCats=[...new Set(BR.map(b=>b.domain))].sort();
+const brByName=new Map(BR.map(b=>[b.brand,b]));
+let brCat='', brCur='';
+const wMax=d3.quantile(BY.munis.map(m=>m.w).sort((a,b)=>a-b),0.95)||0.1;
+const wScale=d3.scaleSequential(d3.interpolate('#eef6f5','#0a6e6e')).domain([0,wMax]).clamp(true);
+const sMax=d3.quantile(BY.munis.map(m=>Math.abs(m.p-m.raw)).sort((a,b)=>a-b),0.97)||0.05;
+const sScale=d3.scaleSequential(d3.interpolate('#f5f0ea','#7a1e2b')).domain([0,sMax]).clamp(true);
+
+function render(){
+  // % de locales del pais en municipios con dato politico firme (IC < 5 pts)
+  let firmPct=null;
+  if(window.IN){
+    let tot=0, firm=0;
+    IN.munis.forEach(m=>{const b=rec.get(m.id); if(!b) return; tot+=m.loc; if(b.w<0.05) firm+=m.loc;});
+    if(tot>0) firmPct=Math.round(100*firm/tot);
+  }
+  const st=[[''+BY.meta.n,I18N.t('municipios modelados','modeled municipalities')],
+            [(BY.meta.median_width*100).toFixed(1),I18N.t('ancho mediano IC95 (pts)','median 95% CI width (pts)')],
+            [firmPct!=null?firmPct+'%':'N/D',I18N.t('locales sobre dato político firme (IC<5 pts)','outlets on firm political data (CI<5 pts)')],
+            [''+BY.meta.rhat_max,I18N.t('r-hat máximo (convergencia)','max r-hat (convergence)')]];
+  d3.select('#bystats').selectAll('.stat').data(st).join('div').attr('class','stat')
+    .html(d=>`<b>${d[0]}</b><span>${d[1]}</span>`);
+  const L=d3.select('#leg').html('');
+  if(view==='p'){
+    L.append('span').style('color','#2c5fb3').style('font-weight','600').style('font-size','11px').text('Cepeda');
+    L.append('span').attr('class','bar').style('width','130px');
+    L.append('span').style('color','#bd2740').style('font-weight','600').style('font-size','11px').text('De La Espriella');
+  }else if(view==='w'){
+    L.append('span').text(I18N.t('poca','low'));
+    L.append('span').attr('class','bar').style('width','130px').style('background','linear-gradient(90deg,#eef6f5,#0a6e6e)');
+    L.append('span').text(I18N.t('mucha incertidumbre','high uncertainty'));
+  }else{
+    L.append('span').text(I18N.t('sin corrección','no correction'));
+    L.append('span').attr('class','bar').style('width','130px').style('background','linear-gradient(90deg,#f5f0ea,#7a1e2b)');
+    L.append('span').text(I18N.t('corrección fuerte','strong correction'));
+  }
+  const pres=(brCur && CX && CX.brandPresent[brCur]) || null;
+  paths.attr('fill',d=>{const m=rec.get(d.properties.dv);
+    if(!m) return '#efeeea';
+    if(view==='p') return leanColor((2*m.p-1)*100);
+    if(view==='w') return wScale(m.w);
+    return sScale(Math.abs(m.p-m.raw));})
+  .attr('fill-opacity',d=>{
+    if(!pres) return 1;
+    const i=brIdx.get(d.properties.dv);
+    return (i!=null && pres[i]) ? 1 : 0.16;})
+  .attr('stroke',d=>{
+    if(!pres) return '#fff';
+    const i=brIdx.get(d.properties.dv);
+    return (i!=null && pres[i]) ? '#141414' : '#fff';})
+  .attr('stroke-width',d=>{
+    if(!pres) return 0.25;
+    const i=brIdx.get(d.properties.dv);
+    return (i!=null && pres[i]) ? 0.9 : 0.25;});
+  document.getElementById('byt1').textContent=I18N.t('Mayor incertidumbre (IC más ancho)','Highest uncertainty (widest CI)');
+  document.getElementById('byt2').textContent=I18N.t('Mayores correcciones (crudo → suavizado)','Largest corrections (raw → smoothed)');
+  const row1=m=>`<li class="brow"><span class="nm">${m.name}</span>
+      <span class="pts" style="color:var(--accent)">±${(m.w*50).toFixed(1)}</span>
+      <span class="vol" style="color:#7c7c78">${m.n.toLocaleString()}</span></li>`;
+  document.getElementById('bywide').innerHTML=BY.munis.slice().sort((a,b)=>b.w-a.w).slice(0,8).map(row1).join('');
+  const row2=m=>{const d=(m.p-m.raw)*100;const c=d>0?'#bd2740':'#2c5fb3';
+    return `<li class="brow"><span class="nm">${m.name}</span>
+      <span class="pts" style="color:var(--accent)">${(m.raw*100).toFixed(0)}→${(m.p*100).toFixed(0)}</span>
+      <span class="vol" style="color:${c}">${fmt(d)}</span></li>`;};
+  document.getElementById('byshr').innerHTML=BY.munis.slice().sort((a,b)=>Math.abs(b.p-b.raw)-Math.abs(a.p-a.raw)).slice(0,8).map(row2).join('');
+}
+
+const W=720,H=820;
+const svg=d3.select('#map').append('svg').attr('viewBox',`0 0 ${W} ${H}`);
+const proj=d3.geoMercator().fitSize([W,H],geo),path=d3.geoPath(proj);
+const tip=d3.select('#tip');
+const paths=svg.append('g').selectAll('path').data(geo.features).join('path').attr('d',path)
+  .attr('stroke','#fff').attr('stroke-width',0.25).style('cursor','pointer')
+  .on('mousemove',(e,d)=>{const m=rec.get(d.properties.dv);
+    tip.style('opacity',1).style('left',(e.clientX+14)+'px').style('top',(e.clientY+12)+'px')
+      .html(`<div class="b">${d.properties.name}</div><div class="m">${d.properties.dept||''}</div>
+        ${m?`<div style="margin-top:3px">${I18N.t('crudo','raw')} ${(m.raw*100).toFixed(1)}% &rarr; BYM ${(m.p*100).toFixed(1)}%</div>
+             <div class="m">IC95 [${(m.lo*100).toFixed(1)}, ${(m.hi*100).toFixed(1)}] &middot; ${m.n.toLocaleString()} ${I18N.t('votos','votes')}</div>`
+           :`<div class="m">${I18N.t('sin datos','no data')}</div>`}`);
+    d3.select(e.currentTarget).attr('stroke','#222').attr('stroke-width',1.2).raise();})
+  .on('mouseleave',(e,d)=>{
+    tip.style('opacity',0);
+    const pres=(brCur && CX && CX.brandPresent[brCur]) || null;
+    const i=brIdx.get(d.properties.dv);
+    const inFoot=pres && i!=null && pres[i];
+    d3.select(e.currentTarget)
+      .attr('stroke', pres ? (inFoot?'#141414':'#fff') : '#fff')
+      .attr('stroke-width', pres ? (inFoot?0.9:0.25) : 0.25);
+  });
+if(BR.length) brCur=BR.slice().sort((a,b)=>b.n-a.n)[0].brand;
+
+// ---- marcas y categorias: propagacion del posterior, filtrable e interconectada ----
+function brFor(){return BR.filter(b=>!brCat||b.domain===brCat);}
+function fillBrSelects(){
+  const cs=d3.select('#brcat');
+  cs.selectAll('option').data(['' ].concat(brCats)).join('option')
+    .attr('value',d=>d).text(d=>d||I18N.t('Todas','All'));
+  cs.property('value',brCat);
+  const bs=d3.select('#brsel');
+  const list=brFor().map(b=>b.brand).sort((a,b)=>a.localeCompare(b));
+  bs.selectAll('option').data(['' ].concat(list),d=>d).join('option')
+    .attr('value',d=>d).text(d=>d||I18N.t('(ninguna: ver mapa base)','(none: base map)'));
+  if(brCur && !list.includes(brCur)) brCur=brFor().sort((a,b)=>b.n-a.n)[0]?.brand||'';
+  bs.property('value',brCur);
+}
+function renderBrDetail(){
+  const b=brByName.get(brCur);
+  if(!b){
+    document.getElementById('brdt').textContent=I18N.t('Sin marca seleccionada','No brand selected');
+    document.getElementById('brdetail').innerHTML=I18N.t(
+      'Elige una marca arriba (o haz clic en el gráfico de abajo) para ver, sobre el mapa, cuáles de sus municipios '+
+      'son su huella y si su color político es afirmable.',
+      "Pick a brand above (or click the chart below) to see, on the map, which municipalities are its footprint "+
+      "and whether its political color is assertable.");
+    return;
+  }
+  document.getElementById('brdt').textContent=I18N.t('La corrección, marca por marca: ','The correction, brand by brand: ')+brCur;
+  const raw=(rawLean.get(brCur)||0)*100, sm=b.lean*100, d=sm-raw;
+  const col=b.cross0?'#7c7c78':(b.lean>0?'#bd2740':'#2c5fb3');
+  document.getElementById('brdetail').innerHTML=I18N.t(
+    `Huella cruda (dato electoral tal cual): <b>${raw>0?'+':''}${raw.toFixed(1)} pts</b>. Recalculada sobre el mapa
+     corregido (resaltado arriba): <b style="color:${col}">${sm>0?'+':''}${sm.toFixed(1)} pts</b>
+     (corrección: ${d>0?'+':''}${d.toFixed(1)}), con rango creíble
+     <b>[${(b.lo*100).toFixed(1)}, ${(b.hi*100).toFixed(1)}]</b> sobre sus <b>${b.n}</b> municipios.
+     ${b.cross0?'<b>El rango cruza el cero:</b> no se puede afirmar su color político.'
+               :'El rango no cruza el cero: su color político <b>es afirmable</b>.'}`,
+    `Raw footprint (electoral data as-is): <b>${raw>0?'+':''}${raw.toFixed(1)} pts</b>. Recomputed on the corrected
+     map (highlighted above): <b style="color:${col}">${sm>0?'+':''}${sm.toFixed(1)} pts</b>
+     (correction: ${d>0?'+':''}${d.toFixed(1)}), with credible range
+     <b>[${(b.lo*100).toFixed(1)}, ${(b.hi*100).toFixed(1)}]</b> over its <b>${b.n}</b> municipalities.
+     ${b.cross0?'<b>The range crosses zero:</b> its political color cannot be asserted.'
+               :'The range does not cross zero: its political color <b>is assertable</b>.'}`);
+}
+function renderBrands(){
+  if(!BR.length) return;
+  const nb=BY.meta.n_brands, na=BY.meta.n_afirmable;
+  document.getElementById('brintro').innerHTML=I18N.t(
+    `Si corregimos el mapa, hay que corregir también lo que se calcula con él. Aquí <b>recalculamos la huella
+     política de cada marca sobre el mapa corregido</b> y le damos su propio rango creíble. El resultado: de las
+     <b>${nb}</b> cadenas, <b>${na}</b> tienen color político <b>afirmable</b>; la corrección resulta pequeña
+     porque el comercio vive en municipios de dato firme. Elige una marca en el selector de arriba (o haz clic en el
+     gráfico de abajo): su huella se resalta sobre el mismo mapa corregido. <span style="color:var(--muted)">(El
+     rango refleja la incertidumbre del dato electoral, no la de la cobertura OSM.)</span>`,
+    `If we correct the map, we must also correct what is computed from it. Here we <b>recompute each brand's
+     political footprint on the corrected map</b> and give it its own credible range. The result: of the
+     <b>${nb}</b> chains, <b>${na}</b> have an <b>assertable</b> political color; the correction turns out small
+     because commerce lives in firm-data municipalities. Pick a brand in the selector above (or click the chart
+     below): its footprint highlights on the same corrected map. <span style="color:var(--muted)">(The range
+     reflects the uncertainty of the electoral data, not of OSM coverage.)</span>`);
+  fillBrSelects();
+  const list=brFor();
+  const D=list.sort((a,b)=>b.n-a.n).slice(0,28).sort((a,b)=>a.lean-b.lean);
+  document.getElementById('brt').textContent=I18N.t('La huella de cada marca, con su rango creíble',"Each brand's footprint, with its credible range");
+  document.getElementById('brsub').textContent=I18N.t(
+    (brCat?`Cadenas de ${brCat}`:'Las 28 cadenas con más locales')+'. Punto = estimación; línea = rango creíble del 95%; clic para resaltar su huella arriba.',
+    (brCat?`${brCat} chains`:'The 28 chains with most outlets')+'. Dot = estimate; line = 95% credible range; click to highlight its footprint above.');
+  const el=d3.select('#brchart'); el.selectAll('*').remove();
+  const M2={t:8,r:16,b:34,l:150},W2=640,rowH=19,H2=M2.t+M2.b+D.length*rowH;
+  const svg2=el.append('svg').attr('viewBox',`0 0 ${W2} ${H2}`).attr('width','100%');
+  const g2=svg2.append('g').attr('transform',`translate(${M2.l},${M2.t})`);
+  const iw2=W2-M2.l-M2.r;
+  const xmax=Math.max(10,Math.ceil(d3.max(D,d=>Math.max(Math.abs(d.lo),Math.abs(d.hi))*100)/5)*5);
+  const x=d3.scaleLinear().domain([-xmax,xmax]).range([0,iw2]);
+  g2.append('rect').attr('width',x(0)).attr('height',D.length*rowH).attr('fill','#f1f4f9');
+  g2.append('rect').attr('x',x(0)).attr('width',iw2-x(0)).attr('height',D.length*rowH).attr('fill','#faf2f3');
+  g2.append('line').attr('x1',x(0)).attr('x2',x(0)).attr('y1',0).attr('y2',D.length*rowH).attr('stroke','#141414');
+  g2.append('g').attr('class','axis').attr('transform',`translate(0,${D.length*rowH})`)
+    .call(d3.axisBottom(x).ticks(7).tickFormat(v=>(v>0?'+':'')+v));
+  const rows=g2.selectAll('.brrow').data(D).join('g').attr('transform',(d,i)=>`translate(0,${i*rowH+rowH/2})`)
+    .style('cursor','pointer')
+    .on('click',(e,d)=>{brCur=d.brand;d3.select('#brsel').property('value',brCur);render();renderBrands();renderBrDetail();});
+  rows.append('rect').attr('x',-M2.l).attr('y',-rowH/2).attr('width',W2-M2.r).attr('height',rowH)
+    .attr('fill',d=>d.brand===brCur?'var(--accent-tint)':'transparent');
+  rows.append('line').attr('x1',d=>x(d.lo*100)).attr('x2',d=>x(d.hi*100))
+    .attr('stroke',d=>d.cross0?'#9a9a96':(d.lean>0?'#bd2740':'#2c5fb3')).attr('stroke-width',2);
+  rows.append('circle').attr('cx',d=>x(d.lean*100)).attr('r',3.6)
+    .attr('fill',d=>d.cross0?'#9a9a96':(d.lean>0?'#bd2740':'#2c5fb3'));
+  rows.append('text').attr('x',-8).attr('text-anchor','end').attr('dy','.32em')
+    .attr('font-size',10.5).style('font-family',"'Inter',sans-serif")
+    .attr('fill',d=>d.cross0?'#9a9a96':'#141414').attr('font-weight',d=>d.brand===brCur?700:(d.cross0?400:600))
+    .text(d=>d.brand);
+  document.getElementById('brc').textContent=I18N.t('Categorías, con la misma vara','Categories, same yardstick');
+  document.getElementById('brcats').innerHTML=(BY.cats||[]).map(c=>{
+    const col=c.cross0?'#7c7c78':(c.lean>0?'#bd2740':'#2c5fb3');
+    return `<li class="brow"><span class="nm">${c.domain}</span>
+      <span class="pts" style="color:${col}">${(c.lean>0?'+':'')+(c.lean*100).toFixed(1)}</span>
+      <span class="vol" style="color:var(--soft)">[${(c.lo*100).toFixed(1)}, ${(c.hi*100).toFixed(1)}]</span></li>`;}).join('');
+}
+d3.select('#brcat').on('change',function(){brCat=this.value;render();renderBrands();renderBrDetail();});
+d3.select('#brsel').on('change',function(){brCur=this.value;render();renderBrands();renderBrDetail();});
+d3.select('#viewsel').on('change',function(){view=this.value;render();});
+render(); renderBrands(); renderBrDetail();
+document.addEventListener('langchange',()=>{render();renderBrands();renderBrDetail();});
+});
+</script>
+</body>
+</html>

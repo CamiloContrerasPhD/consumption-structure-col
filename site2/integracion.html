@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Integración del mercado - Colombia</title>
+<link rel="stylesheet" href="styles.css?v=5"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"/>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="i18n.js?v=3"></script>
+<script defer src="nav.js?v=10"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/d3-geo@3/dist/d3-geo.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar"></div>
+  <h1 data-en="Does the market <em>integrate</em> or divide?">¿El mercado <em>integra</em> o divide?</h1>
+  <p class="byline" data-en="Measures how politically segregated consumption infrastructure is, compared with the
+    electorate itself. Method: variance-ratio segregation index.">Mide qué tan segregada políticamente está la
+    infraestructura de consumo, comparada con el electorado mismo. Método: índice de segregación de razón de varianza.</p>
+  <p class="intro" id="inintro"></p>
+  <div class="caveat" style="max-width:none" data-en="<b>Infrastructure, not customers.</b> We measure where each
+    chain's outlets are (their political territory), not who actually shops there. A &quot;bubble&quot; brand may
+    simply be a regional chain: geographic concentration also produces one-sided footprints. OSM coverage bias
+    applies (mostly urban).">
+    <b>Infraestructura, no clientes.</b> Medimos dónde están los locales de cada cadena (su territorio político),
+    no quién compra realmente allí. Una marca "burbuja" puede ser simplemente una cadena regional: la concentración
+    geográfica también produce huellas de un solo lado. Aplica el sesgo de cobertura de OSM (sobre todo urbano).
+  </div>
+  <details class="methodbox">
+    <summary data-en="How is segregation measured? See method and formula">¿Cómo se mide la segregación? Ver método y fórmula</summary>
+    <div class="mb-body">
+      <p class="src" data-en="Source: variance-ratio segregation index (eta&sup2;; <b>Massey &amp; Denton, 1988</b>,
+        <i>Social Forces</i>); consumption vs residential segregation from <b>Davis, Dingel, Monras &amp; Morales
+        (2019)</b>, &quot;How Segregated Is Urban Consumption?&quot;, <i>J. of Political Economy</i>; partisan
+        isolation from <b>Brown &amp; Enos (2021)</b>, <i>Nature Human Behaviour</i>; bridging hubs from
+        <b>Nilforoshan et al. (2023)</b>, <i>Nature</i>.">Origen: índice de segregación de razón de varianza
+        (eta&sup2;; <b>Massey &amp; Denton, 1988</b>, <i>Social Forces</i>); segregación de consumo vs residencial de
+        <b>Davis, Dingel, Monras &amp; Morales (2019)</b>, "How Segregated Is Urban Consumption?", <i>J. of Political
+        Economy</i>; aislamiento partidista de <b>Brown &amp; Enos (2021)</b>, <i>Nature Human Behaviour</i>; hubs
+        puente de <b>Nilforoshan et al. (2023)</b>, <i>Nature</i>.</p>
+      <p class="mb-tech" data-en="Technique: variance-ratio index (eta&sup2;) over two unit systems">Técnica: índice de razón de varianza (eta&sup2;) sobre dos sistemas de unidades</p>
+      <div class="ktx" data-tex="\begin{gathered} S=\frac{\sum_u w_u\,(p_u-\bar P)^2}{\bar P\,(1-\bar P)} \\[4pt] S_{elect}:\ u=\text{municipios},\ w=\text{votos} \qquad S_{cons}:\ u=\text{cadenas},\ w=\text{locales} \\[4pt] \text{ratio}=S_{cons}/S_{elect} \end{gathered}">S = razon de varianza; ratio = segregacion del consumo relativa al electorado.</div>
+      <p style="margin:0;font-size:13px;color:var(--muted)" data-en="p_u = De La Espriella share of unit u
+        (approx. (1+lean)/2). Bridge index per brand = 2&middot;min(share of outlets in Cepeda territory, share in
+        De La Espriella territory). Implementation: <i>scripts/12_integracion.py</i>.">p_u = proporción De La
+        Espriella de la unidad u (aprox. (1+lean)/2). Índice puente por marca = 2&middot;min(share de locales en
+        territorio Cepeda, share en territorio De La Espriella). Implementación: <i>scripts/12_integracion.py</i>.</p>
+    </div>
+  </details>
+  <div class="stats" id="instats" style="margin-bottom:22px"></div>
+  <div class="geo-grid">
+    <div>
+      <div class="mapwrap"><div id="map"></div></div>
+      <p class="src" id="maplegend" style="margin-top:8px"></p>
+    </div>
+    <div>
+      <div class="bucket esp"><h4 id="int1"></h4><ul class="blist" id="inbridge"></ul></div>
+      <div class="bucket" style="margin-top:16px"><h4 id="int2"></h4><ul class="blist" id="inbubble"></ul></div>
+      <div class="bpanel" style="margin-top:16px">
+        <h4 id="int3"></h4><ul class="blist" id="inenc"></ul>
+      </div>
+    </div>
+  </div>
+  <div class="panels">
+    <div class="panel"><h4 data-en="How to read it">Cómo leerlo</h4>
+      <p data-en="If the ratio is low, knowing which chain someone shops at reveals much less about their politics
+      than knowing where they live: shared chains act as common infrastructure across camps. <b>Bridge</b> brands
+      split their outlets between both territories; <b>bubble</b> brands live on one side only.">Si el ratio es bajo,
+      saber en qué cadena compra alguien revela mucho menos de su política que saber dónde vive: las cadenas
+      compartidas funcionan como infraestructura común entre campos. Las marcas <b>puente</b> reparten sus locales
+      entre ambos territorios; las <b>burbuja</b> viven en un solo lado.</p></div>
+    <div class="panel"><h4 data-en="Why it matters">Por qué importa</h4>
+      <p data-en="Physical partisan exposure predicts political outcomes better than online exposure (Tonin et al.,
+      2024, PNAS Nexus), and commercial hubs that bridge diverse neighborhoods reduce experienced segregation
+      (Nilforoshan et al., 2023, Nature). Encounter municipalities (politically split, commercially dense)
+      are where the marketplace mixes both camps.">La exposición partidista física predice resultados
+      políticos mejor que la online (Tonin et al., 2024, PNAS Nexus), y los hubs comerciales que conectan barrios
+      diversos reducen la segregación vivida (Nilforoshan et al., 2023, Nature). Los municipios de encuentro
+      (divididos políticamente y densos comercialmente) son donde el mercado mezcla a los dos campos.</p></div>
+  </div>
+  <div class="foot" data-en="Variance-ratio segregation over municipality x brand matrix (OpenStreetMap). Vote:
+    Registraduría 2026. Site 2 - consumption structure.">Segregación por razón de varianza sobre matriz municipio x
+    marca (OpenStreetMap). Voto: Registraduría 2026. Sitio 2 - estructura del consumo.</div>
+</div>
+<div id="tip"></div>
+<script defer src="integracion.js"></script>
+<script defer src="geo.js"></script>
+<script defer src="app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+const IN=window.IN, geo=window.GEO_MUNI;
+const rec=new Map(IN.munis.map(m=>[m.id,m]));
+const fmt=v=>(v>0?'+':'')+v.toFixed(0);
+
+function renderAll(){
+  const r=IN.meta.ratio;
+  document.getElementById('inintro').innerHTML=I18N.t(
+    `Con los mismos municipios y votos, el electorado colombiano tiene una segregación de
+     <b>${IN.meta.S_res.toFixed(3)}</b> (saber dónde vives dice mucho de tu voto). Las cadenas de consumo,
+     de <b>${IN.meta.S_cons.toFixed(3)}</b>: <b>el consumo está un ${(r*100).toFixed(0)}% tan segregado como el
+     electorado</b>. En otras palabras, el mercado es una de las pocas infraestructuras que ambos campos
+     comparten: la mayoría de cadenas grandes atiende territorio Cepeda y De La Espriella a la vez.`,
+    `Using the same municipalities and votes, the Colombian electorate has a segregation of
+     <b>${IN.meta.S_res.toFixed(3)}</b> (where you live says a lot about your vote). Consumption chains sit at
+     <b>${IN.meta.S_cons.toFixed(3)}</b>: <b>consumption is only ${(r*100).toFixed(0)}% as segregated as the
+     electorate</b>. In other words, the market is one of the few infrastructures both camps share: most large
+     chains serve Cepeda and De La Espriella territory at once.`);
+  // stats pills
+  const st=[[IN.meta.S_res.toFixed(3),I18N.t('segregación del electorado','electorate segregation')],
+            [IN.meta.S_cons.toFixed(3),I18N.t('segregación del consumo','consumption segregation')],
+            [(r*100).toFixed(0)+'%',I18N.t('ratio consumo/electorado','consumption/electorate ratio')],
+            [''+IN.meta.n_encounter,I18N.t('municipios de encuentro','encounter municipalities')]];
+  d3.select('#instats').selectAll('.stat').data(st).join('div').attr('class','stat')
+    .html(d=>`<b>${d[0]}</b><span>${d[1]}</span>`);
+  document.getElementById('maplegend').textContent=I18N.t(
+    'Teal = municipios de encuentro (voto 50/50 y comercio presente; intensidad = nº de locales). Azul/rojo pálido = territorio de un campo. Gris = sin dato de consumo.',
+    'Teal = encounter municipalities (50/50 vote with commerce; intensity = nº of outlets). Pale blue/red = one camp\'s territory. Gray = no consumption data.');
+  document.getElementById('int1').textContent=I18N.t('Marcas puente (reparten entre ambos campos)','Bridge brands (split across both camps)');
+  document.getElementById('int2').textContent=I18N.t('Marcas burbuja (un solo territorio)','Bubble brands (one territory only)');
+  document.getElementById('int3').textContent=I18N.t('Municipios de encuentro (50/50 con comercio)','Encounter municipalities (50/50 with commerce)');
+  const row=b=>{const c=b.lean>0?'#bd2740':'#2c5fb3';
+    return `<li class="brow"><span class="nm">${b.brand}</span>
+      <span class="pts" style="color:var(--accent)">${(b.bridge*100).toFixed(0)}%</span>
+      <span class="vol" style="color:${c}">${fmt(b.lean*100)}</span></li>`;};
+  const big=IN.brands.filter(b=>b.n>=15);
+  document.getElementById('inbridge').innerHTML=big.slice(0,8).map(row).join('');
+  document.getElementById('inbubble').innerHTML=big.slice(-8).reverse().map(row).join('');
+  document.getElementById('inenc').innerHTML=IN.encounter.slice(0,8).map(e=>{
+    return `<li class="brow"><span class="nm">${e.name}</span>
+      <span class="pts" style="color:var(--accent)">${e.loc} ${I18N.t('locales','outlets')}</span>
+      <span class="vol" style="color:#7c7c78">${fmt(e.lean*100)}</span></li>`;}).join('');
+}
+renderAll();
+document.addEventListener('langchange',renderAll);
+
+// ---- map ----
+const W=720,H=820;
+const svg=d3.select('#map').append('svg').attr('viewBox',`0 0 ${W} ${H}`);
+const proj=d3.geoMercator().fitSize([W,H],geo),path=d3.geoPath(proj);
+const tip=d3.select('#tip');
+const locMax=d3.max(IN.munis,m=>m.loc)||1;
+const teal=d3.scaleSequential(d3.interpolate('#d4ecea','#0a6e6e')).domain([0,Math.log10(locMax)]);
+svg.append('g').selectAll('path').data(geo.features).join('path').attr('d',path)
+  .attr('fill',d=>{const m=rec.get(d.properties.dv);
+    if(!m) return '#efeeea';
+    if(Math.abs(m.lean)<0.05) return teal(Math.log10(m.loc+1));
+    return d3.interpolateRgb(leanColor(m.lean*100),'#ffffff')(0.72);})
+  .attr('stroke','#fff').attr('stroke-width',0.25).style('cursor','pointer')
+  .on('mousemove',(e,d)=>{const m=rec.get(d.properties.dv);
+    tip.style('opacity',1).style('left',(e.clientX+14)+'px').style('top',(e.clientY+12)+'px')
+      .html(`<div class="b">${d.properties.name}</div><div class="m">${d.properties.dept||''}</div>
+        ${m?`<div style="margin-top:3px">${m.loc} ${I18N.t('locales','outlets')} &middot;
+          <span style="color:${m.lean>0?'#bd2740':'#2c5fb3'}">${fmt(m.lean*100)} pts</span>
+          ${Math.abs(m.lean)<0.05?'<b> · '+I18N.t('encuentro','encounter')+'</b>':''}</div>`
+        :`<div class="m">${I18N.t('sin dato de consumo','no consumption data')}</div>`}`);
+    d3.select(e.currentTarget).attr('stroke','#222').attr('stroke-width',1).raise();})
+  .on('mouseleave',(e)=>{tip.style('opacity',0);d3.select(e.currentTarget).attr('stroke','#fff').attr('stroke-width',0.25);});
+});
+</script>
+</body>
+</html>

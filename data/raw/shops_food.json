@@ -1,0 +1,3200 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-26T01:11:58Z",
+    "timestamp_areas_base": "2026-06-25T23:08:40Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 281869979,
+  "lat": 10.4019406,
+  "lon": -75.5561252,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Jeno's Pizza",
+    "brand:wikidata": "Q4269128",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 356120486,
+  "lat": 4.7043979,
+  "lon": -74.0425077,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Pan Pa' Ya!",
+    "brand:wikidata": "Q131744932",
+    "name": "Pan Pa' Ya!",
+    "shop": "bakery"
+  }
+},
+{
+  "type": "node",
+  "id": 356132087,
+  "lat": 4.6789491,
+  "lon": -74.0450987,
+  "tags": {
+    "addr:street": "Carrera 11",
+    "amenity": "fast_food",
+    "brand": "Pan Pa' Ya!",
+    "brand:wikidata": "Q131744932",
+    "name": "Pan Pa' Ya!",
+    "shop": "bakery",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "node",
+  "id": 405236743,
+  "lat": 4.7070904,
+  "lon": -74.0581185,
+  "tags": {
+    "amenity": "cafe",
+    "brand": "Pan Pa' Ya!",
+    "brand:wikidata": "Q131744932",
+    "level": "0",
+    "name": "Pan Pa' Ya!",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "service:electricity": "no",
+    "shop": "bakery",
+    "smoking": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 497401405,
+  "lat": 11.2037760,
+  "lon": -74.2268867,
+  "tags": {
+    "amenity": "restaurant",
+    "brand": "Pizza Hut",
+    "brand:wikidata": "Q191615",
+    "brand:wikipedia": "en:Pizza Hut",
+    "cuisine": "pizza",
+    "name": "Pizza Hut"
+  }
+},
+{
+  "type": "node",
+  "id": 506542813,
+  "lat": 4.7290096,
+  "lon": -74.0408665,
+  "tags": {
+    "addr:street": "Avenida Cedritos",
+    "amenity": "cafe",
+    "brand": "Pan Pa' Ya!",
+    "brand:wikidata": "Q131744932",
+    "name": "Pan Pa' Ya!",
+    "shop": "bakery",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "node",
+  "id": 567074462,
+  "lat": 6.2167681,
+  "lon": -75.5982786,
+  "tags": {
+    "addr:street": "Diagonal 75B",
+    "amenity": "fast_food",
+    "brand:wikipedia": "en:Burger King",
+    "name": "Papa John's",
+    "source": "Kaart Ground Survey 2018"
+  }
+},
+{
+  "type": "node",
+  "id": 568912653,
+  "lat": 4.6693251,
+  "lon": -74.1084268,
+  "tags": {
+    "addr:street": "Carrera 72",
+    "amenity": "fast_food",
+    "brand": "Jeno's Pizza",
+    "brand:wikidata": "Q4269128",
+    "brand:wikipedia": "en:Jeno's Pizza (Colombia)",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "node",
+  "id": 593858905,
+  "lat": 4.6965578,
+  "lon": -74.0683600,
+  "tags": {
+    "addr:city": "Bogotá",
+    "addr:housenumber": "56-20",
+    "addr:street": "Calle 114",
+    "amenity": "fast_food",
+    "cuisine": "burger;chicken",
+    "drive_through": "no",
+    "name": "Buffalo Wings",
+    "operator": "Buffalo Wings",
+    "phone": "(1) 6576643"
+  }
+},
+{
+  "type": "node",
+  "id": 600238726,
+  "lat": 4.7011108,
+  "lon": -74.1150793,
+  "tags": {
+    "addr:postcode": "111041",
+    "amenity": "fast_food",
+    "brand": "Jeno's Pizza",
+    "brand:wikidata": "Q4269128",
+    "brand:wikipedia": "en:Jeno's Pizza (Colombia)",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 935260524,
+  "lat": 7.8809549,
+  "lon": -72.4967433,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Mimos"
+  }
+},
+{
+  "type": "node",
+  "id": 935260541,
+  "lat": 7.8832656,
+  "lon": -72.4973424,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Pan Pa' Ya!",
+    "brand:wikidata": "Q131744932",
+    "name": "Pan Pa' Ya!",
+    "shop": "bakery"
+  }
+},
+{
+  "type": "node",
+  "id": 1062657439,
+  "lat": 4.6686867,
+  "lon": -74.1194019,
+  "tags": {
+    "addr:postcode": "110931",
+    "amenity": "fast_food",
+    "brand": "Jeno's Pizza",
+    "brand:wikidata": "Q4269128",
+    "brand:wikipedia": "en:Jeno's Pizza (Colombia)",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1193304543,
+  "lat": 4.7503184,
+  "lon": -74.0954389,
+  "tags": {
+    "addr:postcode": "111161",
+    "amenity": "fast_food",
+    "brand": "Jeno's Pizza",
+    "brand:wikidata": "Q4269128",
+    "brand:wikipedia": "en:Jeno's Pizza (Colombia)",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza"
+  }
+},
+{
+  "type": "node",
+  "id": 1395953027,
+  "lat": 4.5597497,
+  "lon": -75.6552939,
+  "tags": {
+    "addr:city": "Armenia",
+    "amenity": "fast_food",
+    "brand": "Sándwich Qbano",
+    "brand:wikidata": "Q20022286",
+    "cuisine": "sandwich",
+    "name": "Sándwich Qbano",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1412610307,
+  "lat": 7.8950245,
+  "lon": -72.4959979,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza"
+  }
+},
+{
+  "type": "node",
+  "id": 1598391450,
+  "lat": 4.6433595,
+  "lon": -74.0740572,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Pizza Hut"
+  }
+},
+{
+  "type": "node",
+  "id": 1598391455,
+  "lat": 4.6419581,
+  "lon": -74.0758472,
+  "tags": {
+    "addr:street": "Calle 53",
+    "amenity": "fast_food",
+    "brand": "Jeno's Pizza",
+    "brand:wikidata": "Q4269128",
+    "brand:wikipedia": "en:Jeno's Pizza (Colombia)",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza",
+    "source": "Kaart Ground Survey 2017",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1647981566,
+  "lat": 5.3492577,
+  "lon": -72.4013185,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "chicken",
+    "name": "Brasa Roja"
+  }
+},
+{
+  "type": "node",
+  "id": 1908195259,
+  "lat": 7.1301764,
+  "lon": -73.1116712,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Sándwich Qbano",
+    "brand:wikidata": "Q20022286",
+    "cuisine": "sandwich",
+    "name": "Sándwich Qbano",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1927563910,
+  "lat": 4.7169034,
+  "lon": -74.0309525,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Jeno's Pizza",
+    "brand:wikidata": "Q4269128",
+    "brand:wikipedia": "en:Jeno's Pizza (Colombia)",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1927735454,
+  "lat": 6.1905075,
+  "lon": -75.5771183,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Jeno's Pizza",
+    "brand:wikidata": "Q4269128",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1975919650,
+  "lat": 7.0600274,
+  "lon": -73.8537998,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "ice_cream",
+    "name": "Heladeria Mimos"
+  }
+},
+{
+  "type": "node",
+  "id": 2024927503,
+  "lat": 4.6006708,
+  "lon": -74.0651698,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "pizza",
+    "name": "Papa John's"
+  }
+},
+{
+  "type": "node",
+  "id": 2152614671,
+  "lat": 7.8842600,
+  "lon": -76.6345783,
+  "tags": {
+    "amenity": "ice_cream",
+    "name": "Mimo's"
+  }
+},
+{
+  "type": "node",
+  "id": 2178816612,
+  "lat": 4.6437694,
+  "lon": -74.0648176,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Sándwich Qbano",
+    "brand:wikidata": "Q20022286",
+    "cuisine": "sandwich",
+    "name": "Sándwich Qbano",
+    "source": "Mapillary",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2334074818,
+  "lat": 4.6971308,
+  "lon": -74.0296498,
+  "tags": {
+    "addr:street": "Carrera 6",
+    "amenity": "fast_food",
+    "brand": "Papa John's",
+    "brand:wikidata": "Q2759586",
+    "brand:wikipedia": "en:Papa John's Pizza",
+    "cuisine": "pizza",
+    "name": "Papa John's",
+    "source": "Kaart Ground Survey 2017",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2504586155,
+  "lat": 4.6967364,
+  "lon": -74.0693042,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "chicken",
+    "name": "La Brasa Roja"
+  }
+},
+{
+  "type": "node",
+  "id": 2609931174,
+  "lat": 4.6301018,
+  "lon": -74.0882254,
+  "tags": {
+    "addr:postcode": "111321",
+    "addr:street": "Calle 25",
+    "amenity": "fast_food",
+    "brand": "Jeno's Pizza",
+    "brand:wikidata": "Q4269128",
+    "brand:wikipedia": "en:Jeno's Pizza (Colombia)",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza",
+    "opening_hours": "Mo-Sa 00:00-22:30",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "node",
+  "id": 2693081903,
+  "lat": 4.7615100,
+  "lon": -74.0438968,
+  "tags": {
+    "addr:street": "Avenida Carrera 45",
+    "amenity": "fast_food",
+    "brand": "Papa John's",
+    "brand:wikidata": "Q2759586",
+    "brand:wikipedia": "en:Papa John's Pizza",
+    "cuisine": "pizza",
+    "name": "Papa John's",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "node",
+  "id": 2892190173,
+  "lat": 4.7126404,
+  "lon": -74.0340361,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Mimos"
+  }
+},
+{
+  "type": "node",
+  "id": 3168649264,
+  "lat": 12.5855846,
+  "lon": -81.6952933,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Sandwich Qbano",
+    "not:brand:wikidata": "Q20022286"
+  }
+},
+{
+  "type": "node",
+  "id": 3788667922,
+  "lat": 4.3048663,
+  "lon": -74.8035233,
+  "tags": {
+    "addr:city": "Girardot",
+    "addr:postcode": "252432",
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "cuisine": "ice_cream",
+    "drive_through": "no",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "smoking": "no",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3830580628,
+  "lat": 6.2006720,
+  "lon": -75.5730611,
+  "tags": {
+    "amenity": "fast_food",
+    "disused:shop": "fast_food",
+    "name": "Cosechas"
+  }
+},
+{
+  "type": "node",
+  "id": 3891188404,
+  "lat": 4.6643849,
+  "lon": -74.0515073,
+  "tags": {
+    "amenity": "fast_food",
+    "branch": "Calle 81",
+    "brand": "Home Burgers",
+    "brand:wikidata": "Q133522137",
+    "check_date": "2026-06-21",
+    "contact:facebook": "https://www.facebook.com/homeburgerscolombia/",
+    "contact:instagram": "https://www.instagram.com/homeburgers_/",
+    "cuisine": "burger",
+    "level": "0",
+    "name": "Home Burgers",
+    "opening_hours": "Mo-Su 12:00-21:00",
+    "operator": "Home Burgers",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "takeaway": "yes",
+    "website": "https://www.homeburgers.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4095270071,
+  "lat": 11.2062052,
+  "lon": -74.2271923,
+  "tags": {
+    "amenity": "ice_cream",
+    "name": "Mimos"
+  }
+},
+{
+  "type": "node",
+  "id": 4115263642,
+  "lat": 4.6582704,
+  "lon": -74.1120037,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Papa John's",
+    "brand:wikidata": "Q2759586",
+    "cuisine": "pizza",
+    "name": "Papa John's",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4240183090,
+  "lat": 4.7039045,
+  "lon": -74.0430971,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Sandwich Qbano"
+  }
+},
+{
+  "type": "node",
+  "id": 4341602190,
+  "lat": 3.3917629,
+  "lon": -76.5381049,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2026-01-25",
+    "name": "La Brasa Roja"
+  }
+},
+{
+  "type": "node",
+  "id": 4341725789,
+  "lat": 3.3954828,
+  "lon": -76.5382759,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Sandwich Cubano"
+  }
+},
+{
+  "type": "node",
+  "id": 4382699391,
+  "lat": 4.5915025,
+  "lon": -74.1248901,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Papa John's",
+    "brand:wikidata": "Q2759586",
+    "brand:wikipedia": "en:Papa John's Pizza",
+    "cuisine": "pizza",
+    "name": "Papa John's",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4387172189,
+  "lat": 4.7158849,
+  "lon": -74.0293232,
+  "tags": {
+    "amenity": "cafe",
+    "cuisine": "ice_cream",
+    "name": "Helados Mimo's"
+  }
+},
+{
+  "type": "node",
+  "id": 4425446489,
+  "lat": 3.4833591,
+  "lon": -76.5017098,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Sandwichqbano Calima",
+    "name:es": "Sandwichqbano Calima"
+  }
+},
+{
+  "type": "node",
+  "id": 4536718791,
+  "lat": 3.4195600,
+  "lon": -76.5181840,
+  "tags": {
+    "addr:housenumber": "26D-07",
+    "addr:street": "Carrera 39",
+    "amenity": "fast_food",
+    "name": "Sándwich Qbano",
+    "name:es": "Sándwich Qbano",
+    "phone": "+57 2 3253225",
+    "website": "https://www.qbano.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 4868936548,
+  "lat": 12.5846283,
+  "lon": -81.6965221,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "pizza",
+    "delivery": "yes",
+    "drive_through": "no",
+    "name": "Jeno's Pizza",
+    "not:brand:wikidata": "Q4269128",
+    "outdoor_seating": "no",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5040022239,
+  "lat": 6.5550381,
+  "lon": -73.1329844,
+  "tags": {
+    "addr:city": "San Gil",
+    "addr:street": "Carrera 9",
+    "amenity": "ice_cream",
+    "name": "Heladeria Mimos"
+  }
+},
+{
+  "type": "node",
+  "id": 5110276121,
+  "lat": 1.2120643,
+  "lon": -77.2776437,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Sabropan Panaderia"
+  }
+},
+{
+  "type": "node",
+  "id": 5122405094,
+  "lat": 4.7547990,
+  "lon": -74.0633619,
+  "tags": {
+    "addr:street": "Calle 169B",
+    "amenity": "restaurant",
+    "brand": "Pizza Hut",
+    "brand:wikidata": "Q191615",
+    "brand:wikipedia": "en:Pizza Hut",
+    "check_date": "2024-05-18",
+    "cuisine": "pizza",
+    "name": "Pizza Hut",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "node",
+  "id": 5128789713,
+  "lat": 4.6987368,
+  "lon": -74.0489288,
+  "tags": {
+    "addr:street": "Avenida Pepe Sierra - Calle 116",
+    "amenity": "fast_food",
+    "brand": "Papa John's",
+    "brand:wikidata": "Q2759586",
+    "brand:wikipedia": "en:Papa John's Pizza",
+    "cuisine": "pizza",
+    "name": "Papa John's",
+    "name:es": "Papa John's Lozano hector",
+    "source": "Kaart Ground Survey 2017",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5131891096,
+  "lat": 4.6917070,
+  "lon": -74.0449930,
+  "tags": {
+    "addr:street": "Avenida Carrera 15",
+    "amenity": "restaurant",
+    "brand": "Pizza Hut",
+    "brand:wikidata": "Q191615",
+    "brand:wikipedia": "en:Pizza Hut",
+    "cuisine": "pizza",
+    "name": "Pizza Hut",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "node",
+  "id": 5132051027,
+  "lat": 4.6583512,
+  "lon": -74.0578507,
+  "tags": {
+    "addr:housenumber": "73-12",
+    "addr:street": "Carrera 11",
+    "amenity": "restaurant",
+    "brand": "Pizza Hut",
+    "brand:wikidata": "Q191615",
+    "cuisine": "pizza",
+    "name": "Pizza Hut",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "node",
+  "id": 5133392959,
+  "lat": 4.6614435,
+  "lon": -74.0500264,
+  "tags": {
+    "addr:street": "Avenida Carrera 7",
+    "amenity": "fast_food",
+    "brand": "Papa John's",
+    "brand:wikidata": "Q2759586",
+    "brand:wikipedia": "en:Papa John's Pizza",
+    "check_date:opening_hours": "2024-08-10",
+    "cuisine": "pizza",
+    "diet:vegan": "no",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "Papa John's",
+    "opening_hours": "Mo-Su 11:00-23:00",
+    "outdoor_seating": "no",
+    "phone": "+57 601 7050505",
+    "source": "Kaart Ground Survey 2017",
+    "takeaway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5133753017,
+  "lat": 4.6440328,
+  "lon": -74.0615122,
+  "tags": {
+    "addr:street": "Avenida Carrera 7",
+    "amenity": "restaurant",
+    "brand": "Pizza Hut",
+    "brand:wikidata": "Q191615",
+    "check_date": "2025-09-06",
+    "cuisine": "pizza",
+    "name": "Pizza Hut",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "node",
+  "id": 5133754139,
+  "lat": 4.6424162,
+  "lon": -74.0619878,
+  "tags": {
+    "addr:street": "Avenida Carrera 7",
+    "amenity": "restaurant",
+    "brand": "Buffalo Grill",
+    "brand:wikidata": "Q944655",
+    "brand:wikipedia": "en:Buffalo Grill",
+    "cuisine": "steak_house",
+    "name": "Buffalo Grill",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "node",
+  "id": 5135445957,
+  "lat": 4.6587923,
+  "lon": -74.0616735,
+  "tags": {
+    "addr:street": "Avenida Carrera 15",
+    "amenity": "ice_cream",
+    "name": "Kokoriko Mimo's",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "node",
+  "id": 5137992143,
+  "lat": 4.6858958,
+  "lon": -74.0932605,
+  "tags": {
+    "addr:street": "Avenida Calle 72",
+    "amenity": "fast_food",
+    "name": "Qbano",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "node",
+  "id": 5146089987,
+  "lat": 4.7106636,
+  "lon": -74.0726444,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Papa John's",
+    "brand:wikidata": "Q2759586",
+    "brand:wikipedia": "en:Papa John's Pizza",
+    "cuisine": "pizza",
+    "name": "Papa John's",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5150160381,
+  "lat": 4.6841804,
+  "lon": -74.0521227,
+  "tags": {
+    "addr:street": "Avenida Carrera 19",
+    "amenity": "restaurant",
+    "cuisine": "pizza",
+    "name": "Pizza Hut",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "node",
+  "id": 5159493356,
+  "lat": 4.7262847,
+  "lon": -74.0601031,
+  "tags": {
+    "addr:street": "Calle 138",
+    "amenity": "fast_food",
+    "brand": "Jeno's Pizza",
+    "brand:wikidata": "Q4269128",
+    "brand:wikipedia": "en:Jeno's Pizza (Colombia)",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza",
+    "source": "Kaart Ground Survey 2017",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5161322401,
+  "lat": 4.6937054,
+  "lon": -74.0671073,
+  "tags": {
+    "addr:city": "Bogotá",
+    "addr:housenumber": "100-85",
+    "addr:street": "Avenida Suba",
+    "amenity": "fast_food",
+    "brand": "Jeno's Pizza",
+    "brand:wikidata": "Q4269128",
+    "brand:wikipedia": "en:Jeno's Pizza (Colombia)",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza",
+    "source": "Kaart Ground Survey 2017",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5184167557,
+  "lat": 4.7060075,
+  "lon": -74.1187859,
+  "tags": {
+    "addr:street": "Avenida Carrera 104",
+    "amenity": "restaurant",
+    "name": "La Brasa Roja",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "node",
+  "id": 5229109397,
+  "lat": 4.5842790,
+  "lon": -74.0996434,
+  "tags": {
+    "addr:housenumber": "16-23",
+    "addr:street": "Ciclovia Calle 17 Sur",
+    "amenity": "restaurant",
+    "name": "Sandwich Qbano Delicioso!",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "node",
+  "id": 5229113795,
+  "lat": 4.6527237,
+  "lon": -74.0616126,
+  "tags": {
+    "addr:housenumber": "66-75",
+    "addr:street": "Avenida Carrera 11",
+    "amenity": "restaurant",
+    "name": "La Brasa Roja",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "node",
+  "id": 5229135851,
+  "lat": 4.5853270,
+  "lon": -74.1006830,
+  "tags": {
+    "addr:street": "Carrera 18",
+    "amenity": "fast_food",
+    "brand": "Jeno's Pizza",
+    "brand:wikidata": "Q4269128",
+    "brand:wikipedia": "en:Jeno's Pizza (Colombia)",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza",
+    "source": "Kaart Ground Survey 2017",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5230803411,
+  "lat": 4.6325930,
+  "lon": -74.0938569,
+  "tags": {
+    "addr:street": "Avenida Calle 24",
+    "amenity": "fast_food",
+    "brand": "Papa John's",
+    "brand:wikidata": "Q2759586",
+    "brand:wikipedia": "en:Papa John's Pizza",
+    "cuisine": "pizza",
+    "name": "Papa John's",
+    "source": "Kaart Ground Survey 2017",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5233333218,
+  "lat": 4.6591741,
+  "lon": -74.1082077,
+  "tags": {
+    "addr:city": "Bogotá D.C.",
+    "addr:street": "Carrera 69B",
+    "amenity": "fast_food",
+    "cuisine": "wings",
+    "name": "Buffalo Wings",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "node",
+  "id": 5235463797,
+  "lat": 4.6295103,
+  "lon": -74.1350376,
+  "tags": {
+    "addr:country": "CO",
+    "addr:housenumber": "71B-07",
+    "addr:street": "Avenida Las Américas",
+    "amenity": "fast_food",
+    "brand": "Cosechas",
+    "cuisine": "juice",
+    "delivery": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Cosechas",
+    "name:es": "Cosechas",
+    "source": "Kaart Ground Survey 2017",
+    "takeaway": "yes",
+    "website": "https://www.cosechasexpress.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 5240145422,
+  "lat": 4.6197579,
+  "lon": -74.1194274,
+  "tags": {
+    "addr:street": "Calle 3",
+    "amenity": "restaurant",
+    "name": "Sandwich Qbano",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "node",
+  "id": 5273978925,
+  "lat": 3.4834345,
+  "lon": -76.5019513,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Sandwich cubano de calima"
+  }
+},
+{
+  "type": "node",
+  "id": 5294269526,
+  "lat": 4.1342207,
+  "lon": -73.6396326,
+  "tags": {
+    "amenity": "ice_cream",
+    "name": "Popsy"
+  }
+},
+{
+  "type": "node",
+  "id": 5319308647,
+  "lat": 10.3777021,
+  "lon": -75.4840735,
+  "tags": {
+    "addr:city": "cartagena",
+    "addr:street": "Carrera 72",
+    "amenity": "fast_food",
+    "capacity": "50",
+    "cuisine": "pizza",
+    "description": "restaurante  de comidas rápidas, las mejores del barrio, con alta calidad y la mejor atención posible",
+    "name": "Pan Panes",
+    "outdoor_seating": "no",
+    "smoking": "no",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5323106323,
+  "lat": -4.2128732,
+  "lon": -69.9422833,
+  "tags": {
+    "amenity": "ice_cream",
+    "name": "Mimos"
+  }
+},
+{
+  "type": "node",
+  "id": 5532221722,
+  "lat": 3.4697847,
+  "lon": -76.5281082,
+  "tags": {
+    "addr:street": "Avenida 6 Norte",
+    "amenity": "fast_food",
+    "name": "Sandwich cubano",
+    "name:es": "Sandwich cubano 6 norte"
+  }
+},
+{
+  "type": "node",
+  "id": 5891392657,
+  "lat": 6.2452905,
+  "lon": -75.5952242,
+  "tags": {
+    "addr:city": "Medellín",
+    "addr:housenumber": "74-20",
+    "addr:street": "Transversal 39B",
+    "amenity": "fast_food",
+    "brand": "Home Burgers",
+    "brand:wikidata": "Q133522137",
+    "cuisine": "burger",
+    "delivery": "yes",
+    "name": "Home Burgers",
+    "outdoor_seating": "yes",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6034972584,
+  "lat": 4.6344155,
+  "lon": -74.0751509,
+  "tags": {
+    "addr:city": "Bogotá",
+    "addr:street": "Carrera 24",
+    "amenity": "fast_food",
+    "cuisine": "sandwich",
+    "name": "QBano"
+  }
+},
+{
+  "type": "node",
+  "id": 6084438301,
+  "lat": 4.7457103,
+  "lon": -74.0963516,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Sándwich Qbano",
+    "brand:wikidata": "Q20022286",
+    "cuisine": "sandwich",
+    "name": "Sándwich Qbano",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6129018786,
+  "lat": 6.2711103,
+  "lon": -75.5766046,
+  "tags": {
+    "addr:housenumber": "65-150",
+    "addr:street": "Calle 71",
+    "amenity": "fast_food",
+    "branch": "Florida",
+    "brand": "Sándwich Qbano",
+    "brand:wikidata": "Q20022286",
+    "cuisine": "sandwich",
+    "name": "Sándwich Qbano",
+    "name:en": "Sandwich Qbano (C.C. Florida)",
+    "name:es": "Sandwich Qbano (C.C. Florida)",
+    "opening_hours": "Mo-Su 12:00-22:00",
+    "takeaway": "yes",
+    "website": "https://www.qbano.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 6172168685,
+  "lat": 10.4154632,
+  "lon": -75.5419577,
+  "tags": {
+    "amenity": "ice_cream",
+    "name": "Mimo's"
+  }
+},
+{
+  "type": "node",
+  "id": 6321905508,
+  "lat": 4.6419199,
+  "lon": -74.0649817,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Papa John's",
+    "brand:wikidata": "Q2759586",
+    "brand:wikipedia": "en:Papa John's Pizza",
+    "check_date:opening_hours": "2024-01-30",
+    "cuisine": "pizza",
+    "name": "Papa John's",
+    "opening_hours:signed": "no",
+    "phone": "+57 1 705 0505"
+  }
+},
+{
+  "type": "node",
+  "id": 6332282285,
+  "lat": 12.5817396,
+  "lon": -81.6968312,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Cosechas"
+  }
+},
+{
+  "type": "node",
+  "id": 6339924030,
+  "lat": 4.6185094,
+  "lon": -74.0680757,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "wings",
+    "name": "Buffalo Wings"
+  }
+},
+{
+  "type": "node",
+  "id": 6564214051,
+  "lat": 11.0186042,
+  "lon": -74.8645769,
+  "tags": {
+    "amenity": "restaurant",
+    "brand": "Buffalo Grill",
+    "brand:wikidata": "Q944655",
+    "brand:wikipedia": "en:Buffalo Grill",
+    "cuisine": "steak_house",
+    "level": "2",
+    "name": "Buffalo Grill"
+  }
+},
+{
+  "type": "node",
+  "id": 6694852985,
+  "lat": 4.6451338,
+  "lon": -74.1296734,
+  "tags": {
+    "amenity": "ice_cream",
+    "name": "Mimo's"
+  }
+},
+{
+  "type": "node",
+  "id": 6695740406,
+  "lat": 6.2070719,
+  "lon": -75.5718835,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2023-10-17",
+    "cuisine": "burger",
+    "name": "Home Burgers"
+  }
+},
+{
+  "type": "node",
+  "id": 6707813731,
+  "lat": 4.5909275,
+  "lon": -74.1246643,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Sándwich Qbano",
+    "brand:wikidata": "Q20022286",
+    "brand:wikipedia": "es:Sándwich Qbano",
+    "cuisine": "sandwich",
+    "name": "Sándwich Qbano",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6781504535,
+  "lat": 4.6753461,
+  "lon": -74.0551135,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "pizza",
+    "name": "Papa John's"
+  }
+},
+{
+  "type": "node",
+  "id": 6788969152,
+  "lat": 4.6759134,
+  "lon": -74.0473021,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Buffalo wings"
+  }
+},
+{
+  "type": "node",
+  "id": 6825853569,
+  "lat": 4.6749078,
+  "lon": -74.0526860,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2024-05-24",
+    "cuisine": "sandwich",
+    "name": "Qbano"
+  }
+},
+{
+  "type": "node",
+  "id": 6883838231,
+  "lat": 4.6530354,
+  "lon": -74.0542526,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Home Burgers",
+    "brand:wikidata": "Q133522137",
+    "cuisine": "burger",
+    "name": "Home Burgers",
+    "takeaway": "yes",
+    "website": "https://www.homeburgers.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 6883838234,
+  "lat": 4.6532349,
+  "lon": -74.0543319,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Pan Pa' Ya!",
+    "brand:wikidata": "Q131744932",
+    "name": "Pan Pa' Ya!",
+    "shop": "bakery"
+  }
+},
+{
+  "type": "node",
+  "id": 6988339186,
+  "lat": 12.5859139,
+  "lon": -81.6972220,
+  "tags": {
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "cuisine": "ice_cream",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7483040684,
+  "lat": 4.7533444,
+  "lon": -74.0586581,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Jeno's Pizza",
+    "brand:wikidata": "Q4269128",
+    "brand:wikipedia": "en:Jeno's Pizza (Colombia)",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7610890179,
+  "lat": 11.0134373,
+  "lon": -74.8277892,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Sándwich Qbano",
+    "brand:wikidata": "Q20022286",
+    "cuisine": "sandwich",
+    "name": "Sándwich Qbano",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7647327025,
+  "lat": 4.8353918,
+  "lon": -75.6690799,
+  "tags": {
+    "Direccion": "37 #16- a 16-, Cra. 7 #851, Dosquebradas, Risaralda, Colombia",
+    "addr:city": "Dosquebradas",
+    "addr:country": "CO",
+    "addr:place": "Omnes-Olimpica",
+    "addr:postcode": "661001",
+    "amenity": "fast_food",
+    "brand": "Sándwich Qbano",
+    "brand:wikidata": "Q20022286",
+    "comuna": "Comuna 7",
+    "cuisine": "sandwich",
+    "editor": "opengislab, dosquebradas, restaurantes",
+    "name": "Sándwich Qbano",
+    "phone": "+57 6 3326868",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7667648159,
+  "lat": 4.3319335,
+  "lon": -75.8280447,
+  "tags": {
+    "addr:city": "Caicedonia",
+    "addr:country": "CO",
+    "addr:full": "Cra. 14 ##8-29, Caicedonia, Valle del Cauca, Colombia",
+    "addr:place": "Las Américas",
+    "addr:postcode": "762540",
+    "amenity": "fast_food",
+    "cuisine": "burger",
+    "name": "Buffalos Burger",
+    "phone": "+57 312 7113495",
+    "source": "Codigo postal 4-72, Colombia, 2017, CC4.0, , restaurantes en campo"
+  }
+},
+{
+  "type": "node",
+  "id": 8016931134,
+  "lat": 4.6716470,
+  "lon": -74.1530129,
+  "tags": {
+    "amenity": "ice_cream",
+    "name": "Mimos"
+  }
+},
+{
+  "type": "node",
+  "id": 8016932751,
+  "lat": 4.6717374,
+  "lon": -74.1530125,
+  "tags": {
+    "amenity": "ice_cream",
+    "name": "Cosechas"
+  }
+},
+{
+  "type": "node",
+  "id": 8758265219,
+  "lat": 5.0590003,
+  "lon": -75.4870296,
+  "tags": {
+    "addr:city": "Manizales",
+    "amenity": "fast_food",
+    "brand": "Sándwich Qbano",
+    "brand:wikidata": "Q20022286",
+    "cuisine": "sandwich",
+    "name": "Sándwich Qbano",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8901041558,
+  "lat": 4.5500282,
+  "lon": -74.5345702,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "juice",
+    "name": "Cosechas"
+  }
+},
+{
+  "type": "node",
+  "id": 9078375443,
+  "lat": 4.6469310,
+  "lon": -74.1013678,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Jeno's Pizza",
+    "brand:wikidata": "Q4269128",
+    "brand:wikipedia": "en:Jeno's Pizza (Colombia)",
+    "check_date": "2026-02-28",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9164983817,
+  "lat": 11.0007101,
+  "lon": -74.8252299,
+  "tags": {
+    "addr:housenumber": "87-112",
+    "addr:street": "Carrera 43",
+    "amenity": "restaurant",
+    "name": "Buffalos's white"
+  }
+},
+{
+  "type": "node",
+  "id": 9223816558,
+  "lat": 6.2018726,
+  "lon": -75.5719820,
+  "tags": {
+    "air_conditioning": "yes",
+    "amenity": "fast_food",
+    "brand": "Papa John's",
+    "brand:wikidata": "Q2759586",
+    "brand:wikipedia": "en:Papa John's Pizza",
+    "cuisine": "pizza",
+    "delivery": "yes",
+    "internet_access": "wlan",
+    "name": "Papa John's",
+    "outdoor_seating": "yes",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9254806577,
+  "lat": 4.7142763,
+  "lon": -74.2221966,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Sándwich Qbano",
+    "brand:wikidata": "Q20022286",
+    "brand:wikipedia": "es:Sándwich Qbano",
+    "cuisine": "sandwich",
+    "name": "Sándwich Qbano",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9254806580,
+  "lat": 4.7141418,
+  "lon": -74.2222831,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "juice",
+    "name": "Cosechas"
+  }
+},
+{
+  "type": "node",
+  "id": 9254806581,
+  "lat": 4.7141912,
+  "lon": -74.2221345,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "chicken",
+    "name": "La Brasa Roja"
+  }
+},
+{
+  "type": "node",
+  "id": 9355821869,
+  "lat": 6.2460710,
+  "lon": -75.5965363,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2025-08-31",
+    "cuisine": "chicken",
+    "level": "0",
+    "name": "La Brasa Roja"
+  }
+},
+{
+  "type": "node",
+  "id": 9364123690,
+  "lat": 7.1168327,
+  "lon": -73.1109376,
+  "tags": {
+    "addr:city": "Bucaramanga",
+    "addr:street": "Carrera 33",
+    "amenity": "fast_food",
+    "brand": "Sándwich Qbano",
+    "brand:wikidata": "Q20022286",
+    "brand:wikipedia": "es:Sándwich Qbano",
+    "cuisine": "sandwich",
+    "drive_through": "no",
+    "name": "Sándwich Qbano",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9364125571,
+  "lat": 7.1172719,
+  "lon": -73.1112996,
+  "tags": {
+    "addr:city": "Bucaramanga",
+    "addr:street": "Carrera 33",
+    "amenity": "restaurant",
+    "brand": "Pizza Hut",
+    "brand:wikidata": "Q191615",
+    "brand:wikipedia": "en:Pizza Hut",
+    "cuisine": "pizza",
+    "name": "Pizza Hut"
+  }
+},
+{
+  "type": "node",
+  "id": 9373421471,
+  "lat": 4.5931983,
+  "lon": -74.1251468,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Sándwich Qbano",
+    "brand:wikidata": "Q20022286",
+    "brand:wikipedia": "es:Sándwich Qbano",
+    "cuisine": "sandwich",
+    "name": "Sándwich Qbano",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9415646483,
+  "lat": 4.7301056,
+  "lon": -74.0325733,
+  "tags": {
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "cuisine": "ice_cream",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9415646485,
+  "lat": 4.7303585,
+  "lon": -74.0325994,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "juice",
+    "name": "Cosechas"
+  }
+},
+{
+  "type": "node",
+  "id": 9484527189,
+  "lat": 4.7233764,
+  "lon": -74.0281520,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "juice",
+    "name": "Cosechas"
+  }
+},
+{
+  "type": "node",
+  "id": 9672757642,
+  "lat": 4.5586418,
+  "lon": -75.6550415,
+  "tags": {
+    "addr:city": "Armenia",
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "cuisine": "ice_cream",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9672757644,
+  "lat": 4.5406432,
+  "lon": -75.6654714,
+  "tags": {
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "cuisine": "ice_cream",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9721787875,
+  "lat": 4.7001002,
+  "lon": -74.0499330,
+  "tags": {
+    "amenity": "fast_food",
+    "contact:facebook": "https://www.facebook.com/homeburgerscolombia/",
+    "contact:instagram": "https://www.instagram.com/homeburgers_/",
+    "cuisine": "burger",
+    "name": "Home Burgers Av Cra 19 con 118",
+    "operator": "Home Burgers",
+    "website": "https://www.homeburgers.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 9763029620,
+  "lat": 7.9172236,
+  "lon": -72.4932614,
+  "tags": {
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "check_date": "2022-05-22",
+    "cuisine": "ice_cream",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9828790719,
+  "lat": 4.6554797,
+  "lon": -74.0572430,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Papa John's",
+    "brand:wikidata": "Q2759586",
+    "check_date": "2025-09-15",
+    "cuisine": "pizza",
+    "name": "Papa John's",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9951213748,
+  "lat": 4.5570284,
+  "lon": -75.6563542,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Papa John's",
+    "brand:wikidata": "Q2759586",
+    "cuisine": "pizza",
+    "name": "Papa John's",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10031911730,
+  "lat": 5.8307110,
+  "lon": -73.0325353,
+  "tags": {
+    "amenity": "ice_cream",
+    "name": "Popsy"
+  }
+},
+{
+  "type": "node",
+  "id": 10052682848,
+  "lat": 4.6478257,
+  "lon": -74.1008388,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Sándwich Qbano",
+    "brand:wikidata": "Q20022286",
+    "cuisine": "sandwich",
+    "name": "Sándwich Qbano",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10052730027,
+  "lat": 4.6688360,
+  "lon": -74.1220506,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Papa John's",
+    "brand:wikidata": "Q2759586",
+    "check_date": "2024-12-12",
+    "cuisine": "pizza",
+    "name": "Papa John's",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10059553830,
+  "lat": 4.3439269,
+  "lon": -74.3749468,
+  "tags": {
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "cuisine": "ice_cream",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10073915631,
+  "lat": 4.5977971,
+  "lon": -74.0742461,
+  "tags": {
+    "addr:city": "Bogotá D.C.",
+    "addr:postcode": "111711",
+    "addr:street": "Carrera 6",
+    "amenity": "fast_food",
+    "brand": "Home Burgers",
+    "brand:wikidata": "Q133522137",
+    "cuisine": "burger",
+    "diet:meat": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Home Burgers",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10147888635,
+  "lat": 4.6834025,
+  "lon": -74.1207194,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2022-11-01",
+    "cuisine": "sandwich",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Qbano",
+    "opening_hours": "Mo-Su 10:30-21:00",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10238242429,
+  "lat": 4.6831555,
+  "lon": -74.0487616,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Jeno's Pizza",
+    "brand:wikidata": "Q4269128",
+    "brand:wikipedia": "en:Jeno's Pizza (Colombia)",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10283955810,
+  "lat": 4.6328061,
+  "lon": -74.0641448,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Little Caesars",
+    "brand:wikidata": "Q1393809",
+    "check_date": "2026-04-09",
+    "cuisine": "pizza",
+    "name": "Little Caesars",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10341809812,
+  "lat": 7.8831231,
+  "lon": -72.4887076,
+  "tags": {
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "check_date": "2023-01-09",
+    "cuisine": "ice_cream",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10595240905,
+  "lat": 4.6144737,
+  "lon": -74.0687006,
+  "tags": {
+    "addr:housenumber": "27-50",
+    "addr:street": "Carrera 6",
+    "amenity": "fast_food",
+    "brand": "Home Burgers",
+    "brand:wikidata": "Q133522137",
+    "cuisine": "burger",
+    "name": "Home Burgers",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10689051532,
+  "lat": 4.7189788,
+  "lon": -74.0358965,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "wings",
+    "delivery": "yes",
+    "name": "Buffalo Wings",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10809777790,
+  "lat": 4.6394913,
+  "lon": -74.0978725,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Sándwich Qbano",
+    "brand:wikidata": "Q20022286",
+    "cuisine": "sandwich",
+    "name": "Sándwich Qbano",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10983307005,
+  "lat": 3.4820625,
+  "lon": -76.5143782,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "La brasa roja"
+  }
+},
+{
+  "type": "node",
+  "id": 11047412382,
+  "lat": 3.5369820,
+  "lon": -76.3878512,
+  "tags": {
+    "amenity": "restaurant",
+    "brand": "Pan Pa' Ya!",
+    "brand:wikidata": "Q131744932",
+    "check_date": "2023-07-14",
+    "name": "Pan Pa' Ya!",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "shop": "bakery"
+  }
+},
+{
+  "type": "node",
+  "id": 11047418402,
+  "lat": 3.5368609,
+  "lon": -76.3883726,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Qbano",
+    "check_date": "2023-07-14",
+    "cuisine": "sandwich",
+    "name": "Qbano",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11062405382,
+  "lat": 4.8154942,
+  "lon": -75.6931588,
+  "tags": {
+    "addr:city": "Pereira",
+    "addr:postcode": "660002",
+    "addr:street": "Calle 18",
+    "amenity": "fast_food",
+    "cuisine": "juice",
+    "name": "Cosechas"
+  }
+},
+{
+  "type": "node",
+  "id": 11163512903,
+  "lat": 4.8043151,
+  "lon": -75.6879896,
+  "tags": {
+    "addr:city": "Pereira",
+    "addr:postcode": "660003",
+    "addr:street": "Carrera 17",
+    "amenity": "fast_food",
+    "brand": "Papa John's",
+    "brand:wikidata": "Q2759586",
+    "cuisine": "pizza",
+    "name": "Papa John's",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11440015156,
+  "lat": 5.0555986,
+  "lon": -75.4873007,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Papa John's",
+    "brand:wikidata": "Q2759586",
+    "cuisine": "pizza",
+    "name": "Papa John's",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11518811230,
+  "lat": 3.3583112,
+  "lon": -76.5299722,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Papa John's"
+  }
+},
+{
+  "type": "node",
+  "id": 11541680044,
+  "lat": 6.3388564,
+  "lon": -75.5447293,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Sandiwich Qbano Estacion Niquia"
+  }
+},
+{
+  "type": "node",
+  "id": 11659988446,
+  "lat": 11.1167858,
+  "lon": -74.2332210,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-04-08",
+    "cuisine": "juice",
+    "name": "Cosechas"
+  }
+},
+{
+  "type": "node",
+  "id": 11670581120,
+  "lat": 7.9157737,
+  "lon": -72.4942770,
+  "tags": {
+    "amenity": "ice_cream",
+    "check_date": "2024-02-27",
+    "name": "Mimo's"
+  }
+},
+{
+  "type": "node",
+  "id": 11682993769,
+  "lat": 11.2421626,
+  "lon": -74.2118017,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Buffalo Grill"
+  }
+},
+{
+  "type": "node",
+  "id": 11845397330,
+  "lat": 6.2570780,
+  "lon": -75.6131163,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2025-09-04",
+    "cuisine": "juice",
+    "name": "Cosechas"
+  }
+},
+{
+  "type": "node",
+  "id": 11950620258,
+  "lat": 4.6932214,
+  "lon": -74.0465691,
+  "tags": {
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "cuisine": "ice_cream",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12023727501,
+  "lat": 7.8879536,
+  "lon": -72.4971181,
+  "tags": {
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "check_date": "2024-06-30",
+    "cuisine": "ice_cream",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12023759413,
+  "lat": 6.0608407,
+  "lon": -75.5025902,
+  "tags": {
+    "amenity": "ice_cream",
+    "check_date": "2024-06-30",
+    "name": "Mimo's"
+  }
+},
+{
+  "type": "node",
+  "id": 12081574902,
+  "lat": 3.2584909,
+  "lon": -76.5563196,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Sándwich Qbano",
+    "brand:wikidata": "Q20022286",
+    "cuisine": "sandwich",
+    "name": "Sándwich Qbano",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12081574906,
+  "lat": 3.2586410,
+  "lon": -76.5562417,
+  "tags": {
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "cuisine": "ice_cream",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12083751473,
+  "lat": 6.1478585,
+  "lon": -75.3782365,
+  "tags": {
+    "amenity": "ice_cream",
+    "name": "Popsy"
+  }
+},
+{
+  "type": "node",
+  "id": 12084033876,
+  "lat": 3.2633820,
+  "lon": -76.5384063,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Sándwich Qbano",
+    "brand:wikidata": "Q20022286",
+    "cuisine": "sandwich",
+    "name": "Sándwich Qbano",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12084046009,
+  "lat": 3.3328810,
+  "lon": -76.5329994,
+  "tags": {
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "cuisine": "ice_cream",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12084046038,
+  "lat": 3.3427938,
+  "lon": -76.5345785,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "wings",
+    "name": "Mr Wings pance"
+  }
+},
+{
+  "type": "node",
+  "id": 12095938638,
+  "lat": 3.8899745,
+  "lon": -77.0786329,
+  "tags": {
+    "addr:city": "Buenaventura",
+    "addr:housenumber": "2-08",
+    "addr:street": "Calle 3",
+    "amenity": "fast_food",
+    "cuisine": "juice",
+    "name": "COSECHAS"
+  }
+},
+{
+  "type": "node",
+  "id": 12095938666,
+  "lat": 3.8893130,
+  "lon": -77.0784931,
+  "tags": {
+    "addr:city": "Buenaventura",
+    "addr:housenumber": "1-24",
+    "addr:street": "Carrera 2A",
+    "amenity": "fast_food",
+    "name": "QBANO"
+  }
+},
+{
+  "type": "node",
+  "id": 12096326744,
+  "lat": 6.1731582,
+  "lon": -75.3344541,
+  "tags": {
+    "amenity": "ice_cream",
+    "name": "Mimos"
+  }
+},
+{
+  "type": "node",
+  "id": 12106713434,
+  "lat": 3.8872619,
+  "lon": -77.0771476,
+  "tags": {
+    "addr:city": "Buenaventura",
+    "addr:street": "Calle 1",
+    "amenity": "fast_food",
+    "cuisine": "juice",
+    "name": "COSECHAS"
+  }
+},
+{
+  "type": "node",
+  "id": 12310871510,
+  "lat": 7.9213194,
+  "lon": -72.4795290,
+  "tags": {
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "check_date": "2024-11-03",
+    "cuisine": "ice_cream",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12351626785,
+  "lat": 7.0710099,
+  "lon": -73.1067886,
+  "tags": {
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "cuisine": "ice_cream",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12385311190,
+  "lat": 7.8861301,
+  "lon": -72.4933374,
+  "tags": {
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "check_date": "2024-11-29",
+    "cuisine": "ice_cream",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12400641221,
+  "lat": 4.9093245,
+  "lon": -73.9405574,
+  "tags": {
+    "amenity": "fast_food",
+    "fast_food": "cafeteria",
+    "name": "Krispan Panadería y Pastelería"
+  }
+},
+{
+  "type": "node",
+  "id": 12434218435,
+  "lat": 3.4647754,
+  "lon": -76.5014147,
+  "tags": {
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "cuisine": "ice_cream",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12559543546,
+  "lat": 3.4829454,
+  "lon": -76.4984708,
+  "tags": {
+    "amenity": "ice_cream",
+    "cuisine": "frozen_yogurt",
+    "name": "Mimos",
+    "outdoor_seating": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12571686152,
+  "lat": 7.1200310,
+  "lon": -73.1125814,
+  "tags": {
+    "addr:city": "Bucaramanga",
+    "addr:street": "Calle 44",
+    "amenity": "restaurant",
+    "brand": "Pan Pa' Ya!",
+    "brand:wikidata": "Q131744932",
+    "contact:facebook": "https://www.facebook.com/Panpaya",
+    "contact:instagram": "https://www.instagram.com/panpayacol/",
+    "contact:website": "https://www.panpaya.com.co",
+    "name": "Pan Pa' Ya!",
+    "shop": "bakery"
+  }
+},
+{
+  "type": "node",
+  "id": 12648600002,
+  "lat": 6.1929617,
+  "lon": -75.5813609,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "breakfast",
+    "name": "mimo’s"
+  }
+},
+{
+  "type": "node",
+  "id": 12729259023,
+  "lat": 4.7527877,
+  "lon": -74.0558283,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Little Caesars",
+    "brand:wikidata": "Q1393809",
+    "cuisine": "pizza",
+    "name": "Little Caesars",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12959626421,
+  "lat": 7.0856863,
+  "lon": -73.1118312,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "burger;regional;barbecue",
+    "name": "Buffalo's & Co",
+    "phone": "+5776913596"
+  }
+},
+{
+  "type": "node",
+  "id": 13025655159,
+  "lat": 7.1157943,
+  "lon": -73.1207016,
+  "tags": {
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13062660002,
+  "lat": 4.2056764,
+  "lon": -74.6391312,
+  "tags": {
+    "amenity": "ice_cream",
+    "name": "Popsy"
+  }
+},
+{
+  "type": "node",
+  "id": 13062664803,
+  "lat": 4.2065703,
+  "lon": -74.6400645,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Sándwich Qbano"
+  }
+},
+{
+  "type": "node",
+  "id": 13092935845,
+  "lat": 6.2169331,
+  "lon": -75.5985538,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "pizza",
+    "name": "Pizza Hut"
+  }
+},
+{
+  "type": "node",
+  "id": 13115591215,
+  "lat": 6.2461886,
+  "lon": -75.5952903,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Papa John's",
+    "brand:wikidata": "Q2759586",
+    "check_date": "2025-09-02",
+    "cuisine": "pizza",
+    "name": "Papa John's",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13116984547,
+  "lat": 6.2402760,
+  "lon": -75.5870412,
+  "tags": {
+    "amenity": "ice_cream",
+    "check_date": "2025-09-03",
+    "name": "Mimo's",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13153332914,
+  "lat": 6.1989285,
+  "lon": -75.5566816,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Home Burgers",
+    "cuisine": "burger",
+    "drive_through": "no",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Home Burgers",
+    "outdoor_seating": "yes",
+    "takeaway": "yes",
+    "toilets": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13154069488,
+  "lat": 6.1707862,
+  "lon": -75.4277871,
+  "tags": {
+    "addr:unit": "L2062",
+    "amenity": "ice_cream",
+    "check_date": "2025-09-07",
+    "level": "1",
+    "name": "Mimo’s"
+  }
+},
+{
+  "type": "node",
+  "id": 13168119937,
+  "lat": 7.1206417,
+  "lon": -73.1153673,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "juice",
+    "name": "Cosechas"
+  }
+},
+{
+  "type": "node",
+  "id": 13322920504,
+  "lat": 4.6837483,
+  "lon": -74.0482603,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Qbano"
+  }
+},
+{
+  "type": "node",
+  "id": 13604464901,
+  "lat": 4.7128622,
+  "lon": -74.0701193,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-02-26",
+    "name": "La Brasa Roja"
+  }
+},
+{
+  "type": "node",
+  "id": 13610666843,
+  "lat": 3.3421463,
+  "lon": -76.5359129,
+  "tags": {
+    "amenity": "ice_cream",
+    "name": "Mimos"
+  }
+},
+{
+  "type": "node",
+  "id": 13707125306,
+  "lat": 5.3478979,
+  "lon": -72.3900477,
+  "tags": {
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "loc_name": "Popsy Unicentro Yopal",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13714547202,
+  "lat": 4.6969107,
+  "lon": -74.1432657,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Home Burger"
+  }
+},
+{
+  "type": "node",
+  "id": 13746088808,
+  "lat": 4.7230682,
+  "lon": -74.0625370,
+  "tags": {
+    "amenity": "ice_cream",
+    "check_date": "2026-04-17",
+    "name": "Popsy"
+  }
+},
+{
+  "type": "node",
+  "id": 13860792098,
+  "lat": 5.0457840,
+  "lon": -75.4815701,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "burger;international",
+    "name": "Buffalo Republic"
+  }
+},
+{
+  "type": "way",
+  "id": 305085420,
+  "center": {
+    "lat": 7.8812615,
+    "lon": -72.4968860
+  },
+  "tags": {
+    "addr:city": "CUCUTA",
+    "addr:street": "Avenida 1E",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza"
+  }
+},
+{
+  "type": "way",
+  "id": 371547377,
+  "center": {
+    "lat": 4.6329708,
+    "lon": -74.0636499
+  },
+  "tags": {
+    "addr:city": "Bogotá D.C.",
+    "addr:housenumber": "46-40",
+    "addr:postcode": "110231",
+    "addr:street": "Avenida Carrera 7",
+    "amenity": "fast_food",
+    "building": "yes",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza",
+    "phone": "425 95 25",
+    "source": "Kaart Ground Survey 2017",
+    "website": "https://jenospizza.com"
+  }
+},
+{
+  "type": "way",
+  "id": 386060445,
+  "center": {
+    "lat": 3.4125203,
+    "lon": -76.5475917
+  },
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Little Caesars",
+    "brand:wikidata": "Q1393809",
+    "building": "yes",
+    "cuisine": "pizza",
+    "name": "Little Caesars",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 408344494,
+  "center": {
+    "lat": 4.6302319,
+    "lon": -74.0666011
+  },
+  "tags": {
+    "addr:street": "Carrera 13",
+    "amenity": "restaurant",
+    "building": "yes",
+    "name": "Kokoriko Mimo's",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "way",
+  "id": 428999900,
+  "center": {
+    "lat": 4.6762938,
+    "lon": -74.1418632
+  },
+  "tags": {
+    "addr:housenumber": "20-59",
+    "addr:street": "Carrera 100",
+    "amenity": "restaurant",
+    "building": "commercial",
+    "name": "La Brasa Roja",
+    "opening_hours": "Mo-Su 11:00-22:00",
+    "phone": "0316004300"
+  }
+},
+{
+  "type": "way",
+  "id": 440691829,
+  "center": {
+    "lat": 4.4369629,
+    "lon": -75.1991319
+  },
+  "tags": {
+    "addr:city": "Ibagué",
+    "amenity": "ice_cream",
+    "building": "yes",
+    "name": "Popsy",
+    "not:brand:wikidata": "Q100156171"
+  }
+},
+{
+  "type": "way",
+  "id": 462777912,
+  "center": {
+    "lat": 4.6988508,
+    "lon": -74.0494506
+  },
+  "tags": {
+    "amenity": "fast_food",
+    "building": "yes",
+    "building:levels": "2",
+    "cuisine": "sandwich",
+    "delivery": "yes",
+    "name": "Sandwich Qbano Pepe Sierra",
+    "operator": "Sandwich Qbano",
+    "outdoor_seating": "yes",
+    "smoking": "no",
+    "takeaway": "yes",
+    "website": "https://www.sandwichqbano.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 526840403,
+  "center": {
+    "lat": 4.7271746,
+    "lon": -74.0626065
+  },
+  "tags": {
+    "addr:street": "Calle 138",
+    "amenity": "fast_food",
+    "building": "yes",
+    "cuisine": "pizza",
+    "name": "Pizza Hut",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "way",
+  "id": 527577210,
+  "center": {
+    "lat": 4.6985072,
+    "lon": -74.0481172
+  },
+  "tags": {
+    "addr:street": "Avenida Pepe Sierra - Calle 116",
+    "amenity": "restaurant",
+    "brand": "Pizza Hut",
+    "brand:wikidata": "Q191615",
+    "brand:wikipedia": "en:Pizza Hut",
+    "building": "yes",
+    "cuisine": "pizza",
+    "name": "Pizza Hut",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "way",
+  "id": 527671174,
+  "center": {
+    "lat": 4.7345371,
+    "lon": -74.0440392
+  },
+  "tags": {
+    "addr:street": "Avenida Carrera 19",
+    "amenity": "restaurant",
+    "brand": "Pizza Hut",
+    "brand:wikidata": "Q191615",
+    "building": "yes",
+    "cuisine": "pizza",
+    "name": "Pizza Hut",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "way",
+  "id": 528845002,
+  "center": {
+    "lat": 4.6991488,
+    "lon": -74.0495813
+  },
+  "tags": {
+    "addr:street": "Avenida Carrera 19",
+    "amenity": "restaurant",
+    "building": "yes",
+    "name": "La Brasa Roja",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "way",
+  "id": 530091286,
+  "center": {
+    "lat": 4.7233784,
+    "lon": -74.0662246
+  },
+  "tags": {
+    "addr:street": "Avenida Carrera 58",
+    "amenity": "fast_food",
+    "building": "yes",
+    "cuisine": "pizza",
+    "name": "Papa John's",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "way",
+  "id": 531335377,
+  "center": {
+    "lat": 4.7188984,
+    "lon": -74.0348234
+  },
+  "tags": {
+    "addr:housenumber": "10A-76",
+    "addr:postcode": "110121",
+    "addr:street": "Calle 140",
+    "amenity": "fast_food",
+    "brand": "Home Burgers",
+    "brand:wikidata": "Q133522137",
+    "building": "yes",
+    "cuisine": "burger",
+    "name": "Home Burgers",
+    "source": "Kaart Ground Survey 2017",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 531756397,
+  "center": {
+    "lat": 4.7064668,
+    "lon": -74.1073341
+  },
+  "tags": {
+    "addr:street": "Transversal 94",
+    "amenity": "restaurant",
+    "building": "yes",
+    "name": "La Brasa Roja",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "way",
+  "id": 532326866,
+  "center": {
+    "lat": 4.6922465,
+    "lon": -74.1016260
+  },
+  "tags": {
+    "addr:street": "Carrera 80",
+    "amenity": "restaurant",
+    "building": "yes",
+    "name": "La Brasa Roja",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "way",
+  "id": 533685280,
+  "center": {
+    "lat": 4.6408393,
+    "lon": -74.0737509
+  },
+  "tags": {
+    "addr:street": "Calle 52",
+    "amenity": "fast_food",
+    "brand": "Papa John's",
+    "brand:wikidata": "Q2759586",
+    "brand:wikipedia": "en:Papa John's Pizza",
+    "building": "yes",
+    "cuisine": "pizza",
+    "name": "Papa John's",
+    "source": "Kaart Ground Survey 2017",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 534602453,
+  "center": {
+    "lat": 4.6004261,
+    "lon": -74.1050305
+  },
+  "tags": {
+    "addr:city": "Bogotá D.C.",
+    "addr:street": "Avenida Carrera 30",
+    "amenity": "restaurant",
+    "building": "yes",
+    "name": "La Brasa Roja",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "way",
+  "id": 537009009,
+  "center": {
+    "lat": 4.5984015,
+    "lon": -74.1007582
+  },
+  "tags": {
+    "addr:city": "Bogotá D.C.",
+    "addr:street": "Calle 1F",
+    "amenity": "fast_food",
+    "brand": "Jeno's Pizza",
+    "brand:wikidata": "Q4269128",
+    "building": "yes",
+    "cuisine": "pizza",
+    "name": "Jeno's Pizza",
+    "source": "Kaart Ground Survey 2017",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 541096643,
+  "center": {
+    "lat": 4.5658582,
+    "lon": -74.1476608
+  },
+  "tags": {
+    "addr:housenumber": "65-03",
+    "addr:street": "Calle 65 Sur",
+    "amenity": "cafe",
+    "building": "yes",
+    "name": "Yobipan Panaderia Cafateria",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "way",
+  "id": 541141699,
+  "center": {
+    "lat": 4.6650747,
+    "lon": -74.1186782
+  },
+  "tags": {
+    "addr:street": "Carrera 74",
+    "amenity": "restaurant",
+    "brand": "Pizza Hut",
+    "brand:wikidata": "Q191615",
+    "brand:wikipedia": "en:Pizza Hut",
+    "building": "yes",
+    "cuisine": "pizza",
+    "name": "Pizza Hut",
+    "phone": "6000 906",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "way",
+  "id": 542134477,
+  "center": {
+    "lat": 4.6223370,
+    "lon": -74.1171476
+  },
+  "tags": {
+    "addr:housenumber": "4-2",
+    "addr:street": "Carrera 56",
+    "amenity": "restaurant",
+    "building": "yes",
+    "name": "La Brasa Roja",
+    "opening_hours": "Mo-Su 11:30-22:00",
+    "phone": "0316004565",
+    "source": "Kaart Ground Survey 2017"
+  }
+},
+{
+  "type": "way",
+  "id": 543944495,
+  "center": {
+    "lat": 4.7527858,
+    "lon": -74.0558275
+  },
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Little Caesars",
+    "brand:wikidata": "Q1393809",
+    "building": "yes",
+    "cuisine": "pizza",
+    "level": "1",
+    "name": "Little Caesars",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 694363314,
+  "center": {
+    "lat": 4.5607099,
+    "lon": -75.6532604
+  },
+  "tags": {
+    "addr:city": "Armenia",
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "building": "yes",
+    "cuisine": "ice_cream",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 697747493,
+  "center": {
+    "lat": 11.0040857,
+    "lon": -74.8274133
+  },
+  "tags": {
+    "amenity": "ice_cream",
+    "building": "yes",
+    "name": "Popsy"
+  }
+},
+{
+  "type": "way",
+  "id": 982103018,
+  "center": {
+    "lat": 4.6972784,
+    "lon": -74.0847574
+  },
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Little Caesars",
+    "brand:wikidata": "Q1393809",
+    "brand:wikipedia": "en:Little Caesars",
+    "building": "yes",
+    "cuisine": "pizza",
+    "name": "Little Caesars",
+    "takeaway": "yes",
+    "website": "https://co.littlecaesars.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 1002373119,
+  "center": {
+    "lat": 4.5922310,
+    "lon": -74.1067493
+  },
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Little Caesars",
+    "brand:wikidata": "Q1393809",
+    "brand:wikipedia": "en:Little Caesars",
+    "building": "yes",
+    "cuisine": "pizza",
+    "drive_through": "no",
+    "name": "Little Caesars",
+    "opening_hours": "Mo-Su 10:00-21:00",
+    "operator": "Little Caesars Pizza",
+    "takeaway": "yes",
+    "website": "https://co.littlecaesars.com/es-co/sucursales/?gclid=Cj0KCQiAhMOMBhDhARIsAPVml-FjoWkLKk9POvRK5YcJwY3t5r51N-mneWNG5q1pRq8A3dGJ2Pxtt2MaAgBDEALw_wcB"
+  }
+},
+{
+  "type": "way",
+  "id": 1020316104,
+  "center": {
+    "lat": 7.1277059,
+    "lon": -73.1805841
+  },
+  "tags": {
+    "amenity": "cafe",
+    "brand": "Pan Pa' Ya!",
+    "brand:wikidata": "Q131744932",
+    "cuisine": "coffee_shop",
+    "name": "Pan Pa' Ya!",
+    "shop": "bakery"
+  }
+},
+{
+  "type": "way",
+  "id": 1204070148,
+  "center": {
+    "lat": 10.3872796,
+    "lon": -75.4924127
+  },
+  "tags": {
+    "amenity": "restaurant",
+    "building": "house",
+    "building:levels": "1",
+    "cuisine": "chicken",
+    "name": "Asadero Restaurante Super Brasa Roja"
+  }
+},
+{
+  "type": "way",
+  "id": 1204418672,
+  "center": {
+    "lat": 4.6041786,
+    "lon": -74.1007531
+  },
+  "tags": {
+    "addr:city": "Bogotá",
+    "addr:street": "Avenida Norte-Quito-Sur",
+    "alt_name": "Little Caesars Comuneros",
+    "amenity": "fast_food",
+    "brand": "Little Caesars",
+    "brand:wikidata": "Q1393809",
+    "building": "yes",
+    "cuisine": "pizza",
+    "name": "Little Caesars",
+    "official_name": "Little Caesars Pizza",
+    "official_name:en": "Little Caesars Pizza",
+    "official_name:es": "Little Caesars Pizza",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1265903115,
+  "center": {
+    "lat": 10.3881799,
+    "lon": -75.5021077
+  },
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Cosechas",
+    "brand:wikidata": "Q128305751",
+    "cuisine": "juice",
+    "level": "1",
+    "name": "Cosechas",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1286621176,
+  "center": {
+    "lat": 1.6244077,
+    "lon": -75.6069875
+  },
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Sándwich Qbano",
+    "brand:wikidata": "Q20022286",
+    "building": "yes",
+    "cuisine": "sandwich",
+    "name": "Sándwich Qbano",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1301023986,
+  "center": {
+    "lat": 4.4453686,
+    "lon": -75.2421931
+  },
+  "tags": {
+    "amenity": "fast_food",
+    "building": "yes",
+    "cuisine": "juice",
+    "name": "Cosechas"
+  }
+},
+{
+  "type": "way",
+  "id": 1315791843,
+  "center": {
+    "lat": 4.7159642,
+    "lon": -74.0729323
+  },
+  "tags": {
+    "amenity": "restaurant",
+    "building": "yes",
+    "name": "La Brasa Roja"
+  }
+},
+{
+  "type": "way",
+  "id": 1361236350,
+  "center": {
+    "lat": 10.4039214,
+    "lon": -75.5542064
+  },
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Sándwich Qbano",
+    "brand:wikidata": "Q20022286",
+    "cuisine": "sandwich",
+    "name": "Sándwich Qbano",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1385636112,
+  "center": {
+    "lat": 4.8639791,
+    "lon": -74.0421175
+  },
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Little Caesars",
+    "brand:wikidata": "Q1393809",
+    "building": "yes",
+    "cuisine": "pizza",
+    "name": "Little Caesars",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1410099076,
+  "center": {
+    "lat": 6.2876170,
+    "lon": -73.1475734
+  },
+  "tags": {
+    "amenity": "cafe",
+    "building": "yes",
+    "name": "Mimosa"
+  }
+},
+{
+  "type": "way",
+  "id": 1432619034,
+  "center": {
+    "lat": 7.1043366,
+    "lon": -73.1225107
+  },
+  "tags": {
+    "amenity": "ice_cream",
+    "brand": "Popsy",
+    "brand:wikidata": "Q100156171",
+    "building:part": "yes",
+    "name": "Popsy",
+    "official_name": "Helados Gourmet Popsy",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1475273669,
+  "center": {
+    "lat": 4.6735479,
+    "lon": -74.0878546
+  },
+  "tags": {
+    "addr:housenumber": "# 66C-90",
+    "addr:street": "Avenida Carrera 68",
+    "amenity": "ice_cream",
+    "highchair": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "no",
+    "name": "Helados Popsy",
+    "opening_hours": "Mo-Th 10:00-19:00; Fr-Su 10:00-20:00",
+    "operator": "Helados Popsy",
+    "outdoor_seating": "yes",
+    "smoking": "no",
+    "takeaway": "yes",
+    "toilets": "yes",
+    "toilets:access": "customers",
+    "toilets:wheelchair": "limited",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "relation",
+  "id": 19163385,
+  "center": {
+    "lat": 4.5888043,
+    "lon": -74.1614725
+  },
+  "tags": {
+    "addr:city": "Bogotá",
+    "addr:street": "Avenida Carrera 70C",
+    "alt_name": "Little Caesars Madelena",
+    "amenity": "fast_food",
+    "brand": "Little Caesars",
+    "brand:wikidata": "Q1393809",
+    "building": "yes",
+    "cuisine": "pizza",
+    "name": "Little Caesars",
+    "official_name": "Little Caesars Pizza",
+    "operator": "Little Caesars Pizza",
+    "takeaway": "yes",
+    "type": "multipolygon"
+  }
+}
+
+  ]
+}

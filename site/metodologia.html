@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Metodologia - Polarizacion del consumo Colombia</title>
+<link rel="stylesheet" href="styles.css"/>
+<script defer src="nav.js"></script>
+<style>
+  .mwrap{max-width:820px}
+  .sec{margin:26px 0}
+  .sec h2{font-family:var(--ui);font-size:25px;font-weight:700;letter-spacing:-.02em;margin:0 0 10px}
+  .sec h2 em{color:var(--accent);font-style:normal}
+  .sec p{font-size:15.5px;margin:0 0 12px}
+  .vtable{width:100%;border-collapse:collapse;font-size:14px;margin:14px 0}
+  .vtable th{text-align:left;vertical-align:bottom;font-family:var(--mono);font-size:11px;letter-spacing:.05em;
+    color:var(--ink);text-transform:uppercase;font-weight:500;border-bottom:1.5px solid var(--rule);padding:0 16px 9px 0}
+  .vtable td{text-align:left;vertical-align:top;padding:11px 16px 11px 0;border-bottom:1px solid var(--line);line-height:1.45}
+  .vtable td:first-child{white-space:nowrap}
+  .vtable td b{color:var(--ink);font-weight:600}
+  .refs{list-style:none;padding:0;margin:10px 0;font-size:13.5px}
+  .refs li{padding:11px 0;border-bottom:1px solid var(--line);color:#3c3c3a;line-height:1.5}
+  .refs b{color:var(--ink)}
+  .refs a{color:var(--accent)}
+  .tag{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+    background:var(--accent-tint);color:var(--accent-deep);padding:3px 8px;border-radius:0;margin-right:7px;vertical-align:middle}
+</style>
+</head>
+<body>
+<div class="wrap mwrap">
+  <div class="topbar">
+    <a class="crumb" href="index.html">← La polarizacion politica del consumo cotidiano</a>
+    <a href="https://liaukonyte.dyson.cornell.edu/polarization/" target="_blank">PROYECTO ORIGINAL &#8599;</a>
+  </div>
+
+  <h1>Metodologia</h1>
+  <p class="byline">Replica metodologica adaptada a Colombia del proyecto
+     <b>"The Political Polarization of Consumption"</b> de Jura Liaukonyte (Cornell, SC Johnson College of Business).</p>
+
+  <div class="sec">
+    <h2>La <em>base</em></h2>
+    <p>Este sitio sigue la misma metodologia del proyecto original: relaciona el consumo dentro de cada
+      geografia con como voto esa geografia, y ubica a cada entidad (tienda, marca, artista) en un eje de
+      izquierda a derecha. Como en el original, <b>los indices siguen a Liaukonyte, Tuchman y Zhu (2023)</b>
+      y su nota de investigacion. Lo unico que cambia son las fuentes y el contexto: el voto presidencial de
+      EE.UU. 2020 se reemplaza por la primera vuelta presidencial de Colombia 2026, y los datos propietarios
+      (Numerator, SafeGraph, Luminate) por fuentes abiertas y reproducibles.</p>
+    <p>Tampoco cambia la advertencia central, que se mantiene igual que en el original: el eje
+      <b>no mide la ideologia</b> de los clientes ni de las marcas. Mide la inclinacion politica de los
+      <em>lugares</em> donde una entidad concentra su consumo (su huella territorial).</p>
+  </div>
+
+  <div class="sec">
+    <h2>El <em>indice</em></h2>
+    <p>El Indice de Polarizacion mide como el consumo de una entidad varia entre lugares con distintas
+      preferencias politicas. Valores cerca de cero significan que la entidad se consume por igual en zonas
+      pro-Cepeda y pro-De La Espriella; valores mas a la izquierda o a la derecha significan que su consumo
+      esta mas concentrado en un lado del mapa politico. El procedimiento, identico al del original:</p>
+    <p>1. Se parte el pais en geografias (en Colombia: los 1.087 municipios con resultado).<br/>
+       2. Para cada geografia se calcula el margen partidista: (voto De La Espriella - voto Cepeda) / votos validos.<br/>
+       3. Se vincula la participacion del consumo de cada entidad en cada geografia con ese margen.<br/>
+       4. Se agrega en un indice por entidad = promedio del margen de las geografias donde se consume,
+          ponderado por consumo. El eje vertical es el tamano (log).</p>
+  </div>
+
+  <div class="sec">
+    <h2>Fuentes y <em>variables</em></h2>
+    <p>Cada pilar del original se adapta a la fuente abierta colombiana mas cercana:</p>
+    <table class="vtable">
+      <tr><th>Pilar</th><th>Original</th><th>Colombia (esta replica)</th></tr>
+      <tr><td><b>Eje politico</b></td><td>Voto presidencial EE.UU. 2020 (condado)</td>
+        <td>Primera vuelta 2026, Cepeda vs De La Espriella, por municipio (Registraduria)</td></tr>
+      <tr><td><b>Donde compras</b></td><td>SafeGraph/Advan (visitas y gasto)</td>
+        <td>Huella de locales de cadena en OpenStreetMap, asignados por geolocalizacion al municipio</td></tr>
+      <tr><td><b>Que consumes</b></td><td>Numerator (panel de compras CPG)</td>
+        <td>Huella de marcas de comida y servicios (OSM) -- sin equivalente de panel abierto</td></tr>
+      <tr><td><b>Que escuchas/buscas</b></td><td>Luminate (streaming musical por ciudad)</td>
+        <td>Google Trends: interes de busqueda por departamento (los charts de Spotify por ciudad estan descontinuados)</td></tr>
+      <tr><td><b>Acceso (agregado)</b></td><td>--</td>
+        <td>Indice centro-periferia: internet fijo (MinTIC) + cobertura educativa (MEN) + densidad de comercio</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2>Respaldo de las <em>variables agregadas</em></h2>
+    <p>Las variables que este sitio agrega o sustituye respecto al original no son arbitrarias: cada una se
+      apoya en literatura que valida ese <em>tipo</em> de medida. (Estas referencias respaldan la decision
+      metodologica, no hallazgos especificos para Colombia.)</p>
+
+    <p><span class="tag">CONSUMO ~ POLITICA</span> La premisa de que el consumo cotidiano esta sorteado
+      politicamente es el aporte del proyecto base (<b>Liaukonyte, Tuchman & Zhu, 2023</b>) y de la literatura
+      de consumo polarizado (<b>Guler & Singh, 2026</b>, referenciada en el original). El vinculo entre gusto
+      cultural e identidad politica esta documentado en sociologia: <b>DellaPosta, Shi & Macy (2015)</b>,
+      "Why Do Liberals Drink Lattes?".</p>
+
+    <p><span class="tag">BUSQUEDA ONLINE</span> Usar el interes de busqueda como proxy de atencion/consumo
+      tiene base establecida: <b>Choi & Varian (2012)</b> ("Predicting the Present with Google Trends"),
+      <b>Stephens-Davidowitz (2014)</b> (datos de busqueda y comportamiento politico) y <b>Mellon (2014)</b>
+      (Google Trends como medida de saliencia). Es el sustituto mas defendible del streaming musical cuando
+      no hay datos de reproduccion por geografia.</p>
+
+    <p><span class="tag">CENTRO-PERIFERIA</span> El eje de acceso (comercio + internet + educacion) se apoya
+      en la teoria de clivajes <b>centro-periferia</b> y urbano-rural (<b>Lipset & Rokkan, 1967</b>) y en la
+      literatura de brecha digital y participacion (<b>Norris, 2001</b>, "Digital Divide"). Justifica leer la
+      ausencia de comercio y conexion como una frontera estructural, no como preferencia del consumidor.</p>
+  </div>
+
+  <div class="sec">
+    <h2>Referencias</h2>
+    <ul class="refs">
+      <li><b>Liaukonyte, J., Tuchman, A., & Zhu, X. (2023).</b> Frontiers: Spilling the Beans on Political
+        Consumerism: Do Social Media Boycotts and Buycotts Translate to Real Sales Impact? <i>Marketing
+        Science, 42(1)</i>. Base metodologica del proyecto original.</li>
+      <li><b>Liaukonyte, J., Tuchman, A., & Zhu, X. (2024).</b> Lessons from the Bud Light Boycott, One Year
+        Later. <i>Harvard Business Review</i>.</li>
+      <li><b>Guler, A. & Singh, S. (2026).</b> Polarized consumption. <i>Quantitative Marketing and Economics</i>.
+        (Referenciado en el proyecto original.)</li>
+      <li><b>DellaPosta, D., Shi, Y., & Macy, M. (2015).</b> Why Do Liberals Drink Lattes? <i>American Journal
+        of Sociology, 120(5)</i>, 1473-1511.</li>
+      <li><b>Choi, H., & Varian, H. (2012).</b> Predicting the Present with Google Trends. <i>Economic Record,
+        88(s1)</i>, 2-9.</li>
+      <li><b>Stephens-Davidowitz, S. (2014).</b> The cost of racial animus on a black candidate: Evidence using
+        Google search data. <i>Journal of Public Economics, 118</i>, 26-40.</li>
+      <li><b>Mellon, J. (2014).</b> Internet Search Data and Issue Salience: The Properties of Google Trends as
+        a Measure of Issue Salience. <i>Journal of Elections, Public Opinion and Parties, 24(1)</i>, 45-72.</li>
+      <li><b>Lipset, S. M., & Rokkan, S. (1967).</b> Cleavage Structures, Party Systems, and Voter Alignments:
+        An Introduction. En <i>Party Systems and Voter Alignments</i>. Free Press.</li>
+      <li><b>Norris, P. (2001).</b> Digital Divide: Civic Engagement, Information Poverty, and the Internet
+        Worldwide. <i>Cambridge University Press</i>.</li>
+      <li>Proyecto original: <a href="https://liaukonyte.dyson.cornell.edu/polarization/" target="_blank">The
+        Political Polarization of Consumption</a> (J. Liaukonyte, Cornell).</li>
+    </ul>
+  </div>
+
+  <div class="sec">
+    <h2>Limitaciones</h2>
+    <p>Resultados electorales <b>provisionales</b> (preconteo de la Registraduria, no vinculantes).
+      Resolucion <b>municipal</b> para consumo y voto (Bogota cuenta como un solo municipio); resolucion
+      <b>departamental</b> para busqueda online (Google no publica nivel ciudad para Colombia). La cobertura
+      de OpenStreetMap es incompleta y desigual. El interes de Trends es un indice relativo (0-100) y un
+      snapshot no reproducible identico en el tiempo. Todos los indices son <b>descriptivos/correlacionales</b>,
+      no causales.</p>
+  </div>
+
+  <div class="foot">
+    Replica con fines academicos. Eje politico: Registraduria 2026. Consumo: OpenStreetMap, MinTIC, MEN,
+    Google Trends. Codigo y datos: repositorio del proyecto.
+  </div>
+</div>
+</body>
+</html>

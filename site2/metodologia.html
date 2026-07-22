@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Metodología y referencias - Estructura del consumo</title>
+<link rel="stylesheet" href="styles.css?v=5"/>
+<script src="i18n.js?v=3"></script>
+<script defer src="nav.js?v=10"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<style>
+  .mwrap{max-width:820px}
+  .sec{margin:26px 0}
+  .sec h2{font-family:var(--ui);font-size:25px;font-weight:700;letter-spacing:-.02em;margin:0 0 10px}
+  .sec h2 em{color:var(--accent);font-style:normal}
+  .sec p{font-size:15.5px;margin:0 0 12px}
+  .vtable{width:100%;border-collapse:collapse;font-size:14px;margin:14px 0}
+  .vtable th{text-align:left;vertical-align:bottom;font-family:var(--mono);font-size:11px;letter-spacing:.05em;
+    color:var(--ink);text-transform:uppercase;font-weight:500;border-bottom:1.5px solid var(--rule);padding:0 16px 9px 0}
+  .vtable td{text-align:left;vertical-align:top;padding:11px 16px 11px 0;border-bottom:1px solid var(--line);line-height:1.45}
+  .vtable td:first-child{white-space:nowrap}
+  .vtable td b{color:var(--ink);font-weight:600}
+  .refs{list-style:none;padding:0;margin:10px 0;font-size:13.5px}
+  .refs li{padding:11px 0;border-bottom:1px solid var(--line);color:#3c3c3a;line-height:1.5}
+  .refs b{color:var(--ink)}
+  .refs a{color:var(--accent)}
+  .tag{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+    background:var(--accent-tint);color:var(--accent-deep);padding:3px 8px;border-radius:0;margin-right:7px;vertical-align:middle}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar"></div>
+  <h1 data-en="Methodology and <em>references</em>">Metodología y <em>referencias</em></h1>
+  <p class="byline" data-en="What this site measures, with which data, which methods, and on which literature each
+    decision rests.">Qué mide este sitio, con qué datos, con qué métodos y en qué literatura se apoya cada decisión.</p>
+
+  <div class="sec">
+    <h2 data-en="The <em>idea</em>">La <em>idea</em></h2>
+    <p data-en="This site treats Colombian consumption as a territorial structure and asks whether that structure is
+      politically sorted. It draws on two research programs: <b>economic complexity</b> (Hidalgo &amp; Hausmann and
+      the Atlas of Economic Complexity), whose methods for export matrices are applied here to a municipality x brand
+      consumption matrix; and the <b>political polarization of consumption</b> (Liaukonyte, Cornell), from which it
+      takes the political axis as a cross-cutting layer. Unlike both, the focus here is structural and predictive:
+      what supply exists, where it should exist and does not, and whether politics distorts that map.">Este sitio
+      trata el consumo colombiano como una estructura territorial y pregunta si esa estructura está sorteada
+      políticamente. Se apoya en dos programas de investigación: la <b>complejidad económica</b> (Hidalgo &amp;
+      Hausmann y el Atlas de Complejidad Económica), cuyos métodos para matrices de exportación se aplican aquí a una
+      matriz municipio x marca de consumo; y la <b>polarización política del consumo</b> (Liaukonyte, Cornell), de la
+      que toma el eje político como capa transversal. A diferencia de ambos, el foco aquí es estructural y
+      predictivo: qué oferta existe, dónde debería existir y no existe, y si la política distorsiona ese mapa.</p>
+  </div>
+
+  <div class="sec">
+    <h2 data-en="Data and <em>sources</em>">Datos y <em>fuentes</em></h2>
+    <table class="vtable">
+      <tr><th data-en="Piece">Pieza</th><th data-en="Source">Fuente</th><th data-en="Role">Papel</th></tr>
+      <tr><td><b data-en="Outlets">Locales</b></td><td>OpenStreetMap / Overpass (8.121 locales, 145 marcas, 5 dominios)</td>
+        <td data-en="Municipality x brand matrix: the consumption footprint">Matriz municipio x marca: la huella de consumo</td></tr>
+      <tr><td><b data-en="Vote">Voto</b></td><td data-en="Registraduría, 2026 presidential first round (preliminary count), 1,087 municipalities">Registraduría, primera vuelta presidencial 2026 (preconteo), 1.087 municipios</td>
+        <td data-en="Political axis: margin De La Espriella - Cepeda over valid votes">Eje político: margen De La Espriella - Cepeda sobre votos válidos</td></tr>
+      <tr><td><b data-en="Population">Población</b></td><td data-en="DANE, municipal projections CNPV 2018, year 2025 (1,122 municipalities)">DANE, proyecciones municipales CNPV 2018, año 2025 (1.122 municipios)</td>
+        <td data-en="Per-capita access and deserts">Acceso per cápita y desiertos</td></tr>
+      <tr><td><b data-en="Boundaries">Fronteras</b></td><td>OpenStreetMap admin_level=6 (1.129 polígonos DIVIPOLA)</td>
+        <td data-en="Choropleth maps and distances">Mapas coropléticos y distancias</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2 data-en="The <em>methods</em>, page by page">Los <em>métodos</em>, página por página</h2>
+    <p class="src" style="margin-bottom:14px" data-en="Each page includes its own &quot;method and formula&quot; box
+      with the exact equations; this is the map of which method answers which question.">Cada página incluye su propia
+      caja de "método y fórmula" con las ecuaciones exactas; esto es el mapa de qué método responde qué pregunta.</p>
+    <p><span class="tag" data-en="COMPLEXITY">COMPLEJIDAD</span> <span data-en="ECI via the eigenvector method over
+      the specialization matrix (Balassa RCA). Measures how diverse and sophisticated each municipality's brand
+      basket is. Origin: Hidalgo &amp; Hausmann (2009); Balassa (1965).">ECI por método de autovector sobre la matriz
+      de especialización (RCA de Balassa). Mide qué tan diversa y sofisticada es la canasta de marcas de cada
+      municipio. Origen: Hidalgo &amp; Hausmann (2009); Balassa (1965).</span></p>
+    <p><span class="tag" data-en="BRAND SPACE">ESPACIO DE MARCAS</span> <span data-en="PCI and ubiquity: which brands
+      are rare/sophisticated vs ubiquitous. Origin: Hidalgo &amp; Hausmann (2009); product space of Hidalgo, Klinger,
+      Barabási &amp; Hausmann (2007).">PCI y ubicuidad: qué marcas son raras/sofisticadas vs ubicuas. Origen: Hidalgo
+      &amp; Hausmann (2009); espacio de producto de Hidalgo, Klinger, Barabási &amp; Hausmann (2007).</span></p>
+    <p><span class="tag" data-en="OPPORTUNITY">OPORTUNIDAD</span> <span data-en="Relatedness density (min-conditional
+      proximity): where each brand &quot;should&quot; be and is not: the predictive piece. Electoral link: lean of
+      the opportunity space weighted by density and votes. Origin: Hidalgo et al. (2007); political axis per
+      Liaukonyte, Tuchman &amp; Zhu (2023).">Densidad de relatedness (proximidad min-condicional): dónde "debería"
+      estar cada marca y no está: la pieza predictiva. Vínculo electoral: lean del espacio de oportunidad ponderado
+      por densidad y votos. Origen: Hidalgo et al. (2007); eje político según Liaukonyte, Tuchman &amp; Zhu (2023).</span></p>
+    <p><span class="tag" data-en="FRICTION">FRICCIÓN</span> <span data-en="Linear probability model over 75,545
+      (brand, municipality) pairs: presence ~ density + political distance + geographic distance + size, bootstrap CI
+      by municipality. Finding: -0.22 pp of presence per +10 pts of political distance. Motivation: McConnell et al.
+      (2017); Panagopoulos et al. (2020). Correlational, not causal.">Modelo de probabilidad lineal sobre 75.545 pares
+      (marca, municipio): presencia ~ densidad + distancia política + distancia geográfica + tamaño, IC bootstrap por
+      municipio. Hallazgo: -0.22 pp de presencia por +10 pts de distancia política. Motivación: McConnell et al.
+      (2017); Panagopoulos et al. (2020). Correlacional, no causal.</span></p>
+    <p><span class="tag" data-en="ACCESS">ACCESO</span> <span data-en="Per-capita supply density (1-step form of the
+      2SFCA family) + deficit vs the median of covered municipalities. Origin: Luo &amp; Wang (2003).">Densidad de
+      oferta per cápita (forma de 1 paso de la familia 2SFCA) + déficit vs la mediana de municipios cubiertos.
+      Origen: Luo &amp; Wang (2003).</span></p>
+    <p><span class="tag" data-en="INTEGRATION">INTEGRACIÓN</span> <span data-en="Variance-ratio segregation index
+      (eta&sup2;, Massey &amp; Denton 1988) over two unit systems: municipalities (electorate) vs chains (consumption).
+      Finding: consumption is ~4% as segregated as the electorate. Template: Davis et al. (2019); partisan isolation:
+      Brown &amp; Enos (2021); bridging hubs: Nilforoshan et al. (2023).">Índice de segregación de razón de varianza
+      (eta&sup2;, Massey &amp; Denton 1988) sobre dos sistemas de unidades: municipios (electorado) vs cadenas
+      (consumo). Hallazgo: el consumo está ~4% tan segregado como el electorado. Plantilla: Davis et al. (2019);
+      aislamiento partidista: Brown &amp; Enos (2021); hubs puente: Nilforoshan et al. (2023).</span></p>
+    <p><span class="tag" data-en="RISK">RIESGO</span> <span data-en="Footprint decomposition per brand (aligned /
+      50-50 / opposing / extreme territory) + benchmark effect sizes from the brand-activism literature: net effect
+      sorted by market share (Hydock et al. 2020) and visit drop in opposed territory (Hou &amp; Poliquin 2022).
+      Presented as illustration, not forecast.">Descomposición de la huella por marca (territorio alineado / 50-50 /
+      opuesto / extremo) + tamaños de efecto de referencia de la literatura de activismo de marca: efecto neto
+      ordenado por market share (Hydock et al. 2020) y caída de visitas en territorio opuesto (Hou &amp; Poliquin
+      2022). Se presenta como ilustración, no pronóstico.</span></p>
+    <p><span class="tag" data-en="CLUSTERS">CLUSTERS</span> <span data-en="Local Moran (LISA, Anselin 1995), univariate
+      on ECI and bivariate vote &rarr; spatial lag of ECI, with kNN(6) weights and conditional permutation (199).
+      Findings: vote strongly clustered (I=0.68), negative vote x environment crossing (-0.16), 61 significant
+      anomalies (municipalities voting one way in the other camp's consumption environment).">Moran local (LISA,
+      Anselin 1995), univariado sobre el ECI y bivariado voto &rarr; rezago espacial del ECI, con pesos kNN(6) y
+      permutación condicional (199). Hallazgos: voto fuertemente agrupado (I=0.68), cruce voto x entorno negativo
+      (-0.16), 61 anomalías significativas (municipios que votan de un lado en el entorno de consumo del otro).</span></p>
+    <p><span class="tag" data-en="NETWORK">RED</span> <span data-en="Co-location graph (min-conditional proximity
+      &phi;, pruned at &phi;&ge;0.35 plus top-3 per node) and greedy-modularity communities (Clauset, Newman &amp;
+      Moore 2004): 6 market &quot;neighborhoods&quot; whose outlet-weighted leans range only from 0 to +7;
+      the neighborhoods are not strongly politically sorted.">Grafo de co-localización (proximidad min-condicional
+      &phi;, podado en &phi;&ge;0.35 más top-3 por nodo) y comunidades por modularidad voraz (Clauset, Newman &amp;
+      Moore 2004): 6 "barrios" del mercado cuyos leans ponderados van solo de 0 a +7; los barrios no están
+      fuertemente sorteados políticamente.</span></p>
+    <p><span class="tag" data-en="UNCERTAINTY">INCERTIDUMBRE</span> <span data-en="Full Bayesian BYM model (Besag,
+      York &amp; Mollié 1991): Binomial vote counts with logit(p) = intercept + heterogeneity + centered ICAR spatial
+      field, sampled by MCMC (PyMC, 4 chains). Yields a smoothed political margin and a 95% credible interval per
+      municipality: the foundation under every brand index on the site. Median interval: 2.3 pts; wide
+      intervals concentrate in the sparse Amazon/Orinoquia periphery.">Modelo bayesiano BYM completo (Besag, York
+      &amp; Mollié 1991): conteos binomiales de voto con logit(p) = intercepto + heterogeneidad + campo espacial ICAR
+      centrado, muestreado por MCMC (PyMC, 4 cadenas). Entrega un margen político suavizado y un intervalo de
+      credibilidad del 95% por municipio: el piso sobre el que se paran todos los índices de marca del sitio.
+      Intervalo mediano: 2.3 pts; los intervalos anchos se concentran en la periferia rala de Amazonia/Orinoquia.</span></p>
+  </div>
+
+  <div class="sec">
+    <h2 data-en="<em>Limitations</em> (read before citing)"><em>Limitaciones</em> (leer antes de citar)</h2>
+    <p data-en="<b>Ecological level.</b> Everything is measured at the municipality level (footprints and votes), not
+      individuals: no claim about any person's behavior follows (ecological fallacy). <b>OSM coverage.</b> OpenStreetMap
+      records chains in 522 of 1,085 municipalities (84% of the population); rural absence may be missing data, not
+      missing commerce. <b>Proxies.</b> Outlets are not sales; footprint is not customers; share by outlet count is not
+      market share. <b>Correlational.</b> No opening dates, no panel: friction and all crossings are associations with
+      controls, not causal effects. <b>Preliminary vote.</b> 2026 first-round preliminary count, not final results.">
+      <b>Nivel ecológico.</b> Todo se mide a nivel municipio (huellas y votos), no individuos: no se sigue ninguna
+      afirmación sobre el comportamiento de una persona (falacia ecológica). <b>Cobertura OSM.</b> OpenStreetMap
+      registra cadenas en 522 de 1.085 municipios (84% de la población); la ausencia rural puede ser dato faltante, no
+      comercio faltante. <b>Proxies.</b> Locales no son ventas; huella no son clientes; share por locales no es market
+      share. <b>Correlacional.</b> Sin fechas de apertura ni panel: la fricción y todos los cruces son asociaciones con
+      controles, no efectos causales. <b>Voto provisional.</b> Preconteo de primera vuelta 2026, no resultados
+      definitivos.</p>
+  </div>
+
+  <div class="sec">
+    <h2 data-en="References">Referencias</h2>
+    <p class="src" data-en="Structural methods">Métodos estructurales</p>
+    <ul class="refs">
+      <li><b>Balassa, B. (1965).</b> Trade Liberalisation and "Revealed" Comparative Advantage. <i>The Manchester School, 33(2)</i>.</li>
+      <li><b>Hidalgo, C. &amp; Hausmann, R. (2009).</b> The building blocks of economic complexity. <i>PNAS, 106(26)</i>.</li>
+      <li><b>Hidalgo, C., Klinger, B., Barabási, A.-L. &amp; Hausmann, R. (2007).</b> The Product Space Conditions the Development of Nations. <i>Science, 317</i>.</li>
+      <li><b>Massey, D. &amp; Denton, N. (1988).</b> The Dimensions of Residential Segregation. <i>Social Forces, 67(2)</i>.</li>
+      <li><b>Luo, W. &amp; Wang, F. (2003).</b> Measures of spatial accessibility to health care in a GIS environment (2SFCA). <i>Environment and Planning B, 30(6)</i>.</li>
+      <li><b>Anselin, L. (1995).</b> Local Indicators of Spatial Association - LISA. <i>Geographical Analysis, 27(2)</i>.</li>
+      <li><b>Clauset, A., Newman, M. &amp; Moore, C. (2004).</b> Finding community structure in very large networks. <i>Physical Review E, 70</i>.</li>
+      <li><b>Besag, J., York, J. &amp; Mollié, A. (1991).</b> Bayesian image restoration, with two applications in spatial statistics. <i>Annals of the Institute of Statistical Mathematics, 43</i>.</li>
+      <li><b>Riebler, A., S&oslash;rbye, S., Simpson, D. &amp; Rue, H. (2016).</b> An intuitive Bayesian spatial model for disease mapping that accounts for scaling. <i>Statistical Methods in Medical Research, 25(4)</i>.</li>
+    </ul>
+    <p class="src" style="margin-top:14px" data-en="Polarization and consumption">Polarización y consumo</p>
+    <ul class="refs">
+      <li><b>Liaukonyte, J., Tuchman, A. &amp; Zhu, X. (2023).</b> Frontiers: Spilling the Beans on Political Consumerism. <i>Marketing Science, 42(1)</i>.</li>
+      <li><b>McConnell, C., Margalit, Y., Malhotra, N. &amp; Levendusky, M. (2017).</b> The Economic Consequences of Partisanship in a Polarized Era. <i>AJPS, 62(1)</i>.</li>
+      <li><b>Panagopoulos, C., Green, D., Krasno, J., Schwam-Baird, M. &amp; Endres, K. (2020).</b> Partisan Consumerism: Experimental Tests of Consumer Reactions to Corporate Political Activity. <i>The Journal of Politics, 82(3)</i>.</li>
+      <li><b>Hydock, C., Paharia, N. &amp; Blair, S. (2020).</b> Should Your Brand Pick a Side? How Market Share Determines the Impact of Corporate Political Advocacy. <i>Journal of Marketing Research, 57(6)</i>.</li>
+      <li><b>Hou, Y. &amp; Poliquin, C. (2022).</b> The Effects of CEO Activism: Partisan Consumer Behavior and Its Duration. <i>Strategic Management Journal, 44(3)</i>.</li>
+      <li><b>Neureiter, M. &amp; Bhattacharya, C.B. (2021).</b> Why Do Boycotts Sometimes Increase Sales? Consumer Activism in the Age of Political Polarization. <i>Business Horizons, 64(5)</i>.</li>
+      <li><b>Schoenmueller, V., Netzer, O. &amp; Stahl, F. (2022).</b> Frontiers: Polarized America: From Political Polarization to Preference Polarization. <i>Marketing Science, 42(1)</i>.</li>
+      <li><b>Weber, T., Hydock, C., Ding, W., Gardner, M., Jacob, P., Mandel, N., Sprott, D. &amp; Van Steenburg, E. (2021).</b> Political Polarization: Challenges, Opportunities, and Hope for Consumer Welfare, Marketers, and Public Policy. <i>J. of Public Policy &amp; Marketing, 40(2)</i>.</li>
+      <li><b>DellaPosta, D., Shi, Y. &amp; Macy, M. (2015).</b> Why Do Liberals Drink Lattes? <i>American Journal of Sociology, 120(5)</i>.</li>
+      <li><b>Jost, J. (2017).</b> The marketplace of ideology. <i>Journal of Consumer Psychology, 27(4)</i>.</li>
+    </ul>
+    <p class="src" style="margin-top:14px" data-en="Segregation and shared spaces">Segregación y espacios compartidos</p>
+    <ul class="refs">
+      <li><b>Davis, D., Dingel, J., Monras, J. &amp; Morales, E. (2019).</b> How Segregated Is Urban Consumption? <i>Journal of Political Economy, 127(4)</i>.</li>
+      <li><b>Brown, J. &amp; Enos, R. (2021).</b> The measurement of partisan sorting for 180 million voters. <i>Nature Human Behaviour, 5</i>.</li>
+      <li><b>Nilforoshan, H. et al. (2023).</b> Human mobility networks reveal increased segregation in large cities. <i>Nature, 624</i>.</li>
+      <li><b>Athey, S., Ferguson, B., Gentzkow, M. &amp; Schmidt, T. (2021).</b> Estimating experienced racial segregation in US cities using large-scale GPS data. <i>PNAS, 118(46)</i>.</li>
+      <li><b>Tonin, M. et al. (2024).</b> Physical partisan proximity outweighs online ties in predicting US voting outcomes. <i>PNAS Nexus</i>.</li>
+    </ul>
+    <p class="src" style="margin-top:16px" data-en="Note: verify DOIs and retraction status before any formal
+      citation of this site's findings.">Nota: verificar DOIs y estado de retracción antes de cualquier cita formal
+      de los hallazgos de este sitio.</p>
+  </div>
+
+  <div class="foot" data-en="Site 2 - consumption structure. Sister project: the political polarization of everyday
+    consumption (Site 1).">Sitio 2 - estructura del consumo. Proyecto hermano: la polarización política del consumo
+    cotidiano (Sitio 1).</div>
+</div>
+</body>
+</html>

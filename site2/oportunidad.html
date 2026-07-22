@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oportunidad de mercado y fricción política - Colombia</title>
+<link rel="stylesheet" href="styles.css?v=5"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"/>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="i18n.js?v=3"></script>
+<script defer src="nav.js?v=10"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/d3-geo@3/dist/d3-geo.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="crumb" href="marcas.html">← El espacio de marcas</a>
+    <a class="crumb" href="index.html">La estructura del consumo →</a>
+  </div>
+  <h1 data-en="Market <em>opportunity</em> and political friction">Oportunidad de <em>mercado</em> y fricción política</h1>
+  <p class="byline" data-en="Two analyses: where each brand &quot;should&quot; be given the local structure (relatedness
+    density), and whether politics distorts that expansion (friction test).">Dos análisis: dónde "debería" estar cada
+    marca según la estructura local (densidad de relatedness), y si la política distorsiona esa expansión (test de fricción).</p>
+
+  <h3 style="font-size:22px;margin:22px 0 4px" data-en="1. The structural <em style='color:var(--accent);font-style:normal'>opportunity</em>">1. La <em style="color:var(--accent);font-style:normal">oportunidad</em> estructural</h3>
+  <p class="intro" data-en="<b>Relatedness density</b> measures how surrounded a brand is by other related brands
+    already present in a municipality. <b>High</b> density where the brand is <b>absent</b>
+    = a market coherent with the local basket, still uncovered. It is the <b>predictive</b> piece of the study.
+    <b>The link with the elections:</b> is that uncovered space politically sorted? The right-hand panel weights
+    the opportunities by the municipality's vote and says which candidate the brand's potential market leans
+    toward, and whether expanding would move it closer to or away from its current political footprint.">La <b>densidad de relatedness</b> mide qué tan rodeada está una marca por otras marcas
+    relacionadas que ya están presentes en un municipio. Densidad <b>alta</b> donde la marca <b>está ausente</b>
+    = mercado coherente con la canasta local todavia sin cubrir. Es la pieza <b>predictiva</b> del estudio.
+    <b>El vínculo con las elecciones:</b> ¿ese espacio sin cubrir está políticamente sorteado? El panel de la
+    derecha pondera las oportunidades por el voto del municipio y dice hacia qué candidato se inclina el
+    mercado potencial de la marca, y si expandirse la acercaría o alejaría de su huella política actual.</p>
+  <div class="caveat" style="max-width:none" data-en="<b>Predictive, not causal.</b> &quot;Opportunity&quot; = the residual between expected presence (by structure) and
+    observed. Dark gray = the brand is already there; light gray = no consumption data.">
+    <b>Predictivo, no causal.</b> "Oportunidad" = el residuo entre presencia esperada (por estructura) y
+    observada. Gris oscuro = la marca ya está; gris claro = sin datos de consumo.
+  </div>
+  <details class="methodbox">
+    <summary data-en="How is opportunity computed? See method and formula">¿Cómo se calcula la oportunidad? Ver método y fórmula</summary>
+    <div class="mb-body">
+      <p class="src" data-en="Source: <i>relatedness</i> density over the product space of
+        <b>Hidalgo, Klinger, Barabasi &amp; Hausmann (2007)</b>, <i>Science 317</i>; political axis from
+        <b>Liaukonyte, Tuchman &amp; Zhu (2023)</b>.">Origen: densidad de <i>relatedness</i> sobre el espacio de producto de
+        <b>Hidalgo, Klinger, Barabasi &amp; Hausmann (2007)</b>, <i>Science 317</i>; eje político segun
+        <b>Liaukonyte, Tuchman &amp; Zhu (2023)</b>.</p>
+      <p class="mb-tech" data-en="Technique: relatedness density in the product space (min-conditional proximity)">Técnica: densidad de relatedness en el espacio de producto (proximidad min-condicional)</p>
+      <div class="ktx" data-tex="\begin{gathered} \phi(b,b')=\min\{\,P(M_b{=}1\mid M_{b'}{=}1),\ P(M_{b'}{=}1\mid M_b{=}1)\,\} \\[4pt] \omega(m,b)=\dfrac{\sum_{b'} M(m,b')\,\phi(b,b')}{\sum_{b'}\phi(b,b')} \\[4pt] \text{oportunidad}=\omega(m,b)\ \ \text{si}\ \ M(m,b)=0 \end{gathered}">Densidad de relatedness; oportunidad = densidad donde la marca está ausente.</div>
+      <p class="src" style="margin-top:12px" data-en="Electoral link: lean of the opportunity space,
+        weighted by density and valid votes over the municipalities where the brand is absent.">Vínculo electoral: inclinación del espacio de oportunidad,
+        ponderada por densidad y votos válidos sobre los municipios donde la marca está ausente.</p>
+      <div class="ktx" data-tex="\begin{gathered} \text{lean}_{op}(b)=\dfrac{\sum_{m:\,M=0}\omega(m,b)\,\mathrm{votval}(m)\,\mathrm{margen}(m)}{\sum_{m:\,M=0}\omega(m,b)\,\mathrm{votval}(m)} \\[4pt] \mathrm{margen}(m)=\dfrac{\text{voto}_{DLE}(m)-\text{voto}_{Cep}(m)}{\mathrm{votval}(m)} \end{gathered}">lean del espacio de oportunidad, ponderado por densidad y votos.</div>
+      <p style="margin:0;font-size:13px;color:var(--muted)" data-en="Compared to the brand's current footprint (lean of
+        the municipalities where it already is). Implementation: <i>scripts/06_complejidad.py</i>.">Se compara con la huella actual de la marca (lean de
+        los municipios donde ya está). Implementación: <i>scripts/06_complejidad.py</i>.</p>
+    </div>
+  </details>
+  <div class="maptop">
+    <label class="toggle"><span data-en="Category:">Categoria:</span>
+      <select id="catsel" style="font-family:var(--mono);font-size:13px;padding:8px 10px;border:1px solid var(--ink);border-radius:3px;background:#fff"></select>
+    </label>
+    <label class="toggle"><span data-en="Brand:">Marca:</span>
+      <select id="sel" style="font-family:var(--mono);font-size:13px;padding:8px 10px;border:1px solid var(--ink);border-radius:3px;background:#fff"></select>
+    </label>
+    <span class="legend" style="margin-left:auto"><span data-en="low">baja</span>
+      <span class="bar" style="width:150px;background:linear-gradient(90deg,#eef6f5,#0f8a8a)"></span> <span data-en="high opportunity">alta oportunidad</span></span>
+  </div>
+  <div class="geo-grid">
+    <div class="mapwrap"><div id="map"></div></div>
+    <div>
+      <div class="bpanel" style="margin-bottom:16px">
+        <h4 data-en="Link with the elections">Vínculo con las elecciones</h4>
+        <p class="sub" id="elsum" style="margin:0 0 10px"></p>
+        <div id="elbars"></div>
+      </div>
+      <div class="bucket esp"><h4 id="rtitle">Mayor oportunidad</h4><ul class="blist" id="rank"></ul></div>
+      <div class="bpanel" style="margin-top:16px">
+        <h4 data-en="How to read it">Cómo leerlo</h4>
+        <p class="sub" style="margin:0" data-en="Municipalities in intense teal have a basket that &quot;asks for&quot; this brand
+        but don't have it. Cross the list with the vote (dot color) to see whether the opportunities are in
+        one candidate's territory or the other's.">Los municipios en teal intenso tienen una canasta que "pide" esta marca
+        pero no la tienen. Cruza la lista con el voto (color del punto) para ver si las oportunidades están en
+        territorio de un candidato u otro.</p>
+      </div>
+    </div>
+  </div>
+  <h3 style="font-size:22px;margin:34px 0 4px;border-top:1px solid var(--line);padding-top:26px" data-en="2. The political <em style='color:var(--accent);font-style:normal'>friction</em> of expansion">2. La <em style="color:var(--accent);font-style:normal">fricción</em> política de la expansión</h3>
+  <p class="intro" id="frintro" style="margin-bottom:14px"></p>
+  <details class="methodbox">
+    <summary data-en="How is friction measured? See method and formula">¿Cómo se mide la fricción? Ver método y fórmula</summary>
+    <div class="mb-body">
+      <p class="src" data-en="Motivation: partisanship spills over into everyday economic behavior (<b>McConnell, Margalit,
+        Malhotra &amp; Levendusky, 2017</b>, <i>AJPS</i>; <b>Panagopoulos et al., 2020</b>, <i>J. of Politics</i>).
+        Test on all (brand, municipality) pairs.">Motivación: el partidismo permea el comportamiento económico
+        cotidiano (<b>McConnell, Margalit, Malhotra &amp; Levendusky, 2017</b>, <i>AJPS</i>; <b>Panagopoulos et al.,
+        2020</b>, <i>J. of Politics</i>). Test sobre todos los pares (marca, municipio).</p>
+      <p class="mb-tech" data-en="Technique: linear probability model + bootstrap CI (200 reps, resampling municipalities)">Técnica: modelo de probabilidad lineal + IC bootstrap (200 reps, remuestreo de municipios)</p>
+      <div class="ktx" data-tex="\begin{gathered} \Pr[M(m,b)=1]=\alpha+\beta_1\,\omega(m,b)+\beta_2\,\underbrace{|\mathrm{lean}(m)-\mathrm{lean}(b)|}_{\text{dist. politica}}+\beta_3\,d_{geo}(m,b)+\beta_4\log v(m) \end{gathered}">Presencia ~ densidad + distancia politica + distancia geografica + tamaño.</div>
+      <p style="margin:0;font-size:13px;color:var(--muted)" data-en="Correlational, not causal: no store opening dates
+        (OSM), so this tests presence levels, not entry decisions. Political distance also proxies cultural/regional
+        distance beyond the included controls. Implementation: <i>scripts/11_friccion.py</i>.">Correlacional, no causal:
+        sin fechas de apertura (OSM), el test es sobre niveles de presencia, no decisiones de entrada. La distancia
+        política también recoge distancia cultural/regional más allá de los controles incluidos. Implementación:
+        <i>scripts/11_friccion.py</i>.</p>
+    </div>
+  </details>
+  <div class="geo-grid" style="grid-template-columns:1.4fr 1fr">
+    <div class="card" style="padding:18px">
+      <h4 style="margin:0 0 2px;font-size:14px" id="frchartt"></h4>
+      <p class="sub" id="frchartsub" style="margin:0 0 10px"></p>
+      <div id="frchart"></div>
+    </div>
+    <div>
+      <div class="bucket esp"><h4 id="frt1"></h4><ul class="blist" id="frtop"></ul></div>
+      <div class="bucket" style="margin-top:16px"><h4 id="frt2"></h4><ul class="blist" id="frblind"></ul></div>
+    </div>
+  </div>
+  <div class="foot" data-en="Relatedness density over municipality x brand matrix (OpenStreetMap). Vote: Registraduría
+    2026. Site 2 - consumption structure.">Densidad de relatedness sobre matriz municipio x marca (OpenStreetMap). Voto: Registraduría
+    2026. Sitio 2 - estructura del consumo.</div>
+</div>
+<div id="tip"></div>
+<script defer src="complex.js"></script>
+<script defer src="friccion.js"></script>
+<script defer src="geo.js"></script>
+<script defer src="app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+const CX=window.CX, geo=window.GEO_MUNI;
+const idx=new Map(CX.muniOrder.map((d,i)=>[d,i]));
+const muniById=new Map(CX.munis.map(m=>[m.id,m]));
+const brandLean=new Map(CX.brands.map(b=>[b.brand,b.lean]));
+const brandDom=new Map(CX.brands.map(b=>[b.brand,b.domain]));
+const allBrands=CX.brands.map(b=>b.brand).sort((a,b)=>a.localeCompare(b));
+const cats=[...new Set(CX.brands.map(b=>b.domain))].sort();
+const dens=d3.scaleLinear().domain([0,1]).range(['#eef6f5','#0f8a8a']).clamp(true);
+let cur=allBrands.includes('Crepes & Waffles')?'Crepes & Waffles':allBrands[0];
+let catCur='';
+
+// filtro de categoria
+const catsel=d3.select('#catsel');
+function fillCat(){catsel.selectAll('option').data([''].concat(cats)).join('option')
+  .attr('value',d=>d).text(d=>d||I18N.t('Todas','All'));}
+fillCat();
+catsel.property('value',catCur).on('change',function(){
+  catCur=this.value; fillBrands();
+  if(brandDom.get(cur)!==catCur && catCur) cur=brandsFor()[0];
+  sel.property('value',cur); render();
+});
+
+// selector de marca
+const sel=d3.select('#sel');
+function brandsFor(){return catCur?allBrands.filter(b=>brandDom.get(b)===catCur):allBrands;}
+function fillBrands(){sel.selectAll('option').data(brandsFor(),d=>d).join('option').attr('value',d=>d).text(d=>d);}
+fillBrands();
+sel.property('value',cur).on('change',function(){cur=this.value;render();});
+
+// map
+const W=720,H=820;
+const svg=d3.select('#map').append('svg').attr('viewBox',`0 0 ${W} ${H}`);
+const proj=d3.geoMercator().fitSize([W,H],geo),path=d3.geoPath(proj);
+const tip=d3.select('#tip');
+const paths=svg.append('g').selectAll('path').data(geo.features).join('path').attr('d',path)
+  .attr('stroke','#fff').attr('stroke-width',0.25).style('cursor','pointer')
+  .on('mousemove',(e,d)=>{const i=idx.get(d.properties.dv);const m=muniById.get(d.properties.dv);
+    const de=i==null?null:CX.brandDensity[cur][i],pr=i==null?null:CX.brandPresent[cur][i];
+    tip.style('opacity',1).style('left',(e.clientX+14)+'px').style('top',(e.clientY+12)+'px')
+      .html(`<div class="b">${d.properties.name}</div><div class="m">${d.properties.dept||''}</div>
+        ${i==null?`<div class="m">${I18N.t('sin datos de consumo','no consumption data')}</div>`:
+          `<div style="margin-top:3px">${I18N.t('densidad','density')} ${de.toFixed(2)} ${pr?'<b>'+I18N.t('(ya presente)','(already present)')+'</b>':''}</div>`}`);
+    d3.select(e.currentTarget).attr('stroke','#222').attr('stroke-width',1).raise();})
+  .on('mouseleave',(e)=>{tip.style('opacity',0);d3.select(e.currentTarget).attr('stroke','#fff').attr('stroke-width',0.25);});
+
+function render(){
+  paths.attr('fill',d=>{const i=idx.get(d.properties.dv);
+    if(i==null)return '#efeeea';
+    if(CX.brandPresent[cur][i])return '#d3d1c9';
+    return dens(CX.brandDensity[cur][i]);});
+  // ranking: ausentes con mayor densidad
+  const rows=CX.muniOrder.map((id,i)=>({id,de:CX.brandDensity[cur][i],pr:CX.brandPresent[cur][i]}))
+    .filter(r=>!r.pr).sort((a,b)=>b.de-a.de).slice(0,12);
+  d3.select('#rtitle').text(`${I18N.t('Mayor oportunidad para','Top opportunity for')} ${cur}`);
+  d3.select('#rank').html(rows.map(r=>{const m=muniById.get(r.id);const pts=m?m.lean*100:0;
+    const c=pts>0?'#bd2740':'#2c5fb3';
+    return `<li class="brow"><span class="nm">${m?m.name:r.id}</span>
+      <span class="pts" style="color:var(--accent)">${r.de.toFixed(2)}</span>
+      <span class="vol" style="color:${c}">${(pts>0?'+':'')+pts.toFixed(0)}</span></li>`;}).join(''));
+
+  // ---- vínculo electoral: inclinación del espacio de oportunidad (ponderado por densidad x votos) ----
+  let num=0,den=0,wc=0,wf=0,we=0;
+  CX.muniOrder.forEach((id,i)=>{
+    if(CX.brandPresent[cur][i]) return;
+    const de=CX.brandDensity[cur][i]; const m=muniById.get(id); if(!m||de<=0) return;
+    const w=de*m.votval; num+=w*m.lean; den+=w;
+    if(m.lean<-0.05) wc+=w; else if(m.lean>0.05) we+=w; else wf+=w;
+  });
+  const oppLean=den?num/den*100:0;
+  const foot=(brandLean.get(cur)||0)*100;
+  const side=v=>v>1?'De La Espriella':v<-1?'Cepeda':I18N.t('equilibrado','balanced');
+  const col=v=>v>1?'#bd2740':v<-1?'#2c5fb3':'#7c7c78';
+  const shift=oppLean-foot;
+  const dir=Math.abs(shift)<0.5?I18N.t('mantendría su perfil político','would keep its political profile'):
+            (shift>0?I18N.t('la acercaría a territorio De La Espriella','would move it toward De La Espriella territory')
+                    :I18N.t('la acercaría a territorio Cepeda','would move it toward Cepeda territory'));
+  document.getElementById('elsum').innerHTML= I18N.t(
+    `El mercado potencial de <b>${cur}</b> se inclina hacia <b style="color:${col(oppLean)}">${side(oppLean)}</b> `+
+    `(<span style="color:${col(oppLean)}">${oppLean>0?'+':''}${oppLean.toFixed(1)} pts</span>). `+
+    `Su huella actual: <span style="color:${col(foot)}">${foot>0?'+':''}${foot.toFixed(1)} pts</span>. `+
+    `Expandirse <b>${dir}</b>.`,
+    `<b>${cur}</b>'s potential market leans toward <b style="color:${col(oppLean)}">${side(oppLean)}</b> `+
+    `(<span style="color:${col(oppLean)}">${oppLean>0?'+':''}${oppLean.toFixed(1)} pts</span>). `+
+    `Current footprint: <span style="color:${col(foot)}">${foot>0?'+':''}${foot.toFixed(1)} pts</span>. `+
+    `Expanding <b>${dir}</b>.`);
+  const tot=wc+wf+we||1, seg=[['Cepeda',wc/tot,'#2c5fb3'],['50/50',wf/tot,'#7c7c78'],['De La Espriella',we/tot,'#bd2740']];
+  document.getElementById('elbars').innerHTML=
+    `<div style="display:flex;height:14px;border-radius:2px;overflow:hidden;margin-bottom:5px">`+
+    seg.map(s=>`<div title="${s[0]} ${(s[1]*100).toFixed(0)}%" style="width:${s[1]*100}%;background:${s[2]}"></div>`).join('')+`</div>`+
+    `<div style="display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;color:var(--muted)">`+
+    seg.map(s=>`<span style="color:${s[2]}">${s[0]} ${(s[1]*100).toFixed(0)}%</span>`).join('')+`</div>`;
+}
+render();
+document.addEventListener('langchange',()=>{fillCat();catsel.property('value',catCur);render();});
+
+// ---- friccion politica de la expansion ----
+const FR=window.FR;
+function renderFriccion(){
+  if(!FR) return;
+  const c=FR.meta.coef_pp_per10pts, lo=FR.meta.ci_lo, hi=FR.meta.ci_hi;
+  document.getElementById('frintro').innerHTML=I18N.t(
+    `¿La política distorsiona la expansión de las marcas? Sobre <b>${FR.meta.n_pairs.toLocaleString('es')}</b> pares
+     (marca, municipio), y controlando por la densidad de relatedness (lo que la estructura predice), la distancia
+     geográfica y el tamaño del mercado, la probabilidad de presencia cae <b>${Math.abs(c).toFixed(2)} puntos
+     porcentuales por cada 10 puntos de distancia política</b> entre el municipio y la base de la marca
+     (IC 95% bootstrap: ${lo} a ${hi}). Es decir: <b>a igual oportunidad estructural, las marcas están
+     menos presentes en territorio políticamente lejano a su huella</b>.`,
+    `Does politics distort brand expansion? Over <b>${FR.meta.n_pairs.toLocaleString('en')}</b> (brand, municipality)
+     pairs, controlling for relatedness density (what the structure predicts), geographic distance and market size,
+     the probability of presence falls by <b>${Math.abs(c).toFixed(2)} percentage points per 10 points of political
+     distance</b> between the municipality and the brand's base (95% bootstrap CI: ${lo} to ${hi}). That is:
+     <b>given equal structural opportunity, brands are less present in territory politically distant from their
+     footprint</b>.`);
+  document.getElementById('frchartt').textContent=I18N.t('Presencia vs distancia política','Presence vs political distance');
+  document.getElementById('frchartsub').textContent=I18N.t(
+    'Desviación de la tasa de presencia (pp) por tramo de distancia política, dentro de deciles de densidad.',
+    'Deviation of presence rate (pp) by political-distance bin, within density deciles.');
+  // bar chart
+  const el=d3.select('#frchart'); el.selectAll('*').remove();
+  const M2={t:14,r:14,b:40,l:46},W2=560,H2=260,iw2=W2-M2.l-M2.r,ih2=H2-M2.t-M2.b;
+  const svg2=el.append('svg').attr('viewBox',`0 0 ${W2} ${H2}`).attr('width','100%');
+  const g2=svg2.append('g').attr('transform',`translate(${M2.l},${M2.t})`);
+  const xs=d3.scaleBand().domain(FR.curve.map(d=>d.bin)).range([0,iw2]).padding(0.25);
+  const ext2=d3.extent(FR.curve,d=>d.gap);
+  const ys=d3.scaleLinear().domain([Math.min(ext2[0],0)-0.1,Math.max(ext2[1],0)+0.1]).nice().range([ih2,0]);
+  g2.append('g').attr('class','axis').attr('transform',`translate(0,${ih2})`).call(d3.axisBottom(xs));
+  g2.append('g').attr('class','axis').call(d3.axisLeft(ys).ticks(5));
+  g2.append('line').attr('x1',0).attr('x2',iw2).attr('y1',ys(0)).attr('y2',ys(0)).attr('stroke','#141414');
+  g2.selectAll('rect').data(FR.curve).join('rect')
+    .attr('x',d=>xs(d.bin)).attr('width',xs.bandwidth())
+    .attr('y',d=>Math.min(ys(0),ys(d.gap))).attr('height',d=>Math.abs(ys(d.gap)-ys(0)))
+    .attr('fill',d=>d.gap>=0?'#0f8a8a':'#bd2740').attr('opacity',.85);
+  g2.append('text').attr('class','axis-label').attr('x',iw2/2).attr('y',ih2+34).attr('text-anchor','middle')
+    .text(I18N.t('Distancia política (pts, |lean municipio - lean marca|)','Political distance (pts, |muni lean - brand lean|)'));
+  g2.append('text').attr('class','axis-label').attr('transform','rotate(-90)').attr('x',-ih2/2).attr('y',-34)
+    .attr('text-anchor','middle').text(I18N.t('Desviación de presencia (pp)','Presence deviation (pp)'));
+  // rankings
+  document.getElementById('frt1').textContent=I18N.t('Mayor fricción (siguen su mapa político)','Highest friction (follow their political map)');
+  document.getElementById('frt2').textContent=I18N.t('Sin fricción ("ciegas" a la política)','No friction ("politically blind")');
+  const row=b=>{const c2=b.lean>0?'#bd2740':'#2c5fb3';
+    return `<li class="brow"><span class="nm">${b.brand}</span>
+      <span class="pts" style="color:var(--accent)">${b.fric.toFixed(1)}</span>
+      <span class="vol" style="color:${c2}">${(b.lean>0?'+':'')+(b.lean*100).toFixed(0)}</span></li>`;};
+  document.getElementById('frtop').innerHTML=FR.brands.slice(0,7).map(row).join('');
+  document.getElementById('frblind').innerHTML=FR.brands.slice(-7).reverse().map(row).join('');
+}
+renderFriccion();
+document.addEventListener('langchange',renderFriccion);
+});
+</script>
+</body>
+</html>

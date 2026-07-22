@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Analisis - Polarizacion del consumo Colombia</title>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"/>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="crumb" href="index.html">← La polarizacion politica del consumo cotidiano</a>
+    <a href="https://liaukonyte.dyson.cornell.edu/polarization/" target="_blank">ADAPTACION COLOMBIA &#8599;</a>
+  </div>
+
+  <h1 id="title"></h1>
+  <p class="byline">Eje: voto <b>Cepeda</b> vs <b>De La Espriella</b> por municipio (Registraduria 2026)
+     &middot; Locales: <b>OpenStreetMap</b> &middot; <span id="counts"></span></p>
+
+  <p class="intro" id="intro"></p>
+
+  <div class="caveat">
+    <b>Esto no mide la ideologia de los clientes ni de las marcas.</b> El eje horizontal refleja la inclinacion
+    politica de los municipios donde la marca concentra sus locales (su huella territorial), no la preferencia
+    de sus clientes.
+  </div>
+
+  <details class="methodbox">
+    <summary>Metodo y formula</summary>
+    <div class="mb-body">
+      <p class="src">Origen: <b>Liaukonyte, Tuchman &amp; Zhu (2023)</b>, "Spilling the Beans on Political
+        Consumerism", <i>Marketing Science 42(1)</i>. g = municipio; n(b,g) = nº de locales de la marca b en g.</p>
+      <p class="mb-tech">Tecnica: indice de exposicion ponderada (media del margen ponderada por presencia)</p>
+      <div class="ktx" data-tex="\begin{gathered} \mathrm{margen}(g)=\dfrac{\text{voto}_{DLE}(g)-\text{voto}_{Cep}(g)}{\text{votos validos}(g)} \\[4pt] \mathrm{Indice}(b)=\dfrac{\sum_g n(b,g)\,\mathrm{margen}(g)}{\sum_g n(b,g)} \end{gathered}">Indice(b) = media del margen municipal ponderada por nº de locales.</div>
+      <p style="margin:0;font-size:13px;color:var(--muted)">Eje X = Indice(b) en puntos; eje Y = nº de locales
+        (log). Implementacion: <i>scripts/02_join_and_index.py</i> / <i>02b_brands_v2.py</i>.</p>
+    </div>
+  </details>
+
+  <div class="card">
+    <div class="controls">
+      <input id="q" type="search" placeholder="Buscar una marca..." autocomplete="off"/>
+      <label class="toggle"><input type="checkbox" id="logy" checked/> Escala log</label>
+      <button class="btn" id="reset">Reiniciar</button>
+      <button class="btn primary" id="full">Pantalla completa</button>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="chiphint">Haz clic en una categoria para resaltarla &middot; clic de nuevo (o Reiniciar) para limpiar</div>
+    <div class="poles"><span class="l">◀ MAS CEPEDA (izquierda)</span><span class="r">MAS DE LA ESPRIELLA (derecha) ▶</span></div>
+    <div id="chart"></div>
+  </div>
+
+  <div class="panels">
+    <div class="panel"><h4>Como leerlo</h4>
+      <p>La posicion <b>horizontal</b> es el margen promedio <b>De La Espriella menos Cepeda</b> (en puntos)
+      de los municipios donde estan los locales de la marca, ponderado por numero de locales. Cerca de 0 = los
+      locales estan, en promedio, en municipios donde ambos empataron. La posicion <b>vertical</b> es el numero
+      de locales (escala log): mas arriba = cadena mas grande.</p></div>
+    <div class="panel"><h4>Metodologia</h4>
+      <p>Para cada municipio se calcula (voto De La Espriella - voto Cepeda) / votos validos. Cada local de
+      OpenStreetMap se asigna por geolocalizacion (point-in-polygon) a su municipio y la marca hereda el
+      promedio. Solo cadenas con 5+ locales geolocalizados.</p></div>
+  </div>
+
+  <div class="foot">
+    Replica metodologica con fines academicos del proyecto
+    <a href="https://liaukonyte.dyson.cornell.edu/polarization/" target="_blank">"The Political Polarization of Consumption"</a>
+    (J. Liaukonyte, Cornell), siguiendo la metodologia de Liaukonyte, Tuchman & Zhu (2023). Resultados
+    electorales <b>provisionales</b>. Resolucion municipal: las grandes ciudades cuentan como un solo
+    municipio, por lo que no se observa la variacion interna.
+    <a href="metodologia.html">Metodologia y referencias →</a>
+  </div>
+</div>
+<div id="tip"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script>
+const key=new URLSearchParams(location.search).get('d')||SITE.domain_order[0];
+const dom=SITE.domains[key];
+if(!dom){document.getElementById('title').textContent='Dominio no encontrado';}
+else{
+  document.title=dom.label+' - Polarizacion del consumo';
+  document.getElementById('title').innerHTML='La polarizacion politica de <em>'+dom.label+'</em>';
+  document.getElementById('intro').textContent=
+    'Cada punto es '+dom.noun+' de '+dom.label.toLowerCase()+' con presencia nacional. '+dom.desc+
+    ' Pasa el cursor sobre un punto o busca una marca. Mejor en computador.';
+  document.getElementById('counts').textContent=dom.brands.length+' marcas, '+SITE.meta.n_municipios+' municipios.';
+  const ctrl=drawScatter('#chart', key);
+  d3.select('#q').on('input',function(){ctrl.search(this.value);});
+  d3.select('#logy').on('change',function(){ctrl.toggleLog(this.checked);});
+  d3.select('#reset').on('click',()=>{ctrl.reset();d3.select('#q').property('value','');});
+  d3.select('#full').on('click',()=>{const el=document.querySelector('.card');
+    if(!document.fullscreenElement)el.requestFullscreen&&el.requestFullscreen();else document.exitFullscreen();});
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,1117 @@
+[{"cod_municipio":"11001","municipio":"BOGOTÁ, D.C.","acc":"2251960"}
+,{"cod_municipio":"05001","municipio":"MEDELLÍN","acc":"761781"}
+,{"cod_municipio":"76001","municipio":"CALI","acc":"539632"}
+,{"cod_municipio":"08001","municipio":"BARRANQUILLA","acc":"303559"}
+,{"cod_municipio":"13001","municipio":"CARTAGENA","acc":"199070"}
+,{"cod_municipio":"25754","municipio":"SOACHA","acc":"173824"}
+,{"cod_municipio":"68001","municipio":"BUCARAMANGA","acc":"166745"}
+,{"cod_municipio":"73001","municipio":"IBAGUÉ","acc":"160058"}
+,{"cod_municipio":"05088","municipio":"BELLO","acc":"146673"}
+,{"cod_municipio":"66001","municipio":"PEREIRA","acc":"136509"}
+,{"cod_municipio":"50001","municipio":"VILLAVICENCIO","acc":"135769"}
+,{"cod_municipio":"54001","municipio":"SAN JOSÉ DE CÚCUTA","acc":"128355"}
+,{"cod_municipio":"08758","municipio":"SOLEDAD","acc":"111019"}
+,{"cod_municipio":"47001","municipio":"SANTA MARTA","acc":"108042"}
+,{"cod_municipio":"17001","municipio":"MANIZALES","acc":"103014"}
+,{"cod_municipio":"41001","municipio":"NEIVA","acc":"94886"}
+,{"cod_municipio":"20001","municipio":"VALLEDUPAR","acc":"93499"}
+,{"cod_municipio":"63001","municipio":"ARMENIA","acc":"91279"}
+,{"cod_municipio":"05360","municipio":"ITAGUI","acc":"87042"}
+,{"cod_municipio":"52001","municipio":"PASTO","acc":"86092"}
+,{"cod_municipio":"05266","municipio":"ENVIGADO","acc":"84236"}
+,{"cod_municipio":"76520","municipio":"PALMIRA","acc":"83750"}
+,{"cod_municipio":"68276","municipio":"FLORIDABLANCA","acc":"80106"}
+,{"cod_municipio":"19001","municipio":"POPAYÁN","acc":"73089"}
+,{"cod_municipio":"23001","municipio":"MONTERÍA","acc":"68140"}
+,{"cod_municipio":"66170","municipio":"DOSQUEBRADAS","acc":"57787"}
+,{"cod_municipio":"25175","municipio":"CHÍA","acc":"49325"}
+,{"cod_municipio":"15001","municipio":"TUNJA","acc":"49282"}
+,{"cod_municipio":"76364","municipio":"JAMUNDÍ","acc":"47927"}
+,{"cod_municipio":"68081","municipio":"BARRANCABERMEJA","acc":"46585"}
+,{"cod_municipio":"05615","municipio":"RIONEGRO","acc":"43980"}
+,{"cod_municipio":"68547","municipio":"PIEDECUESTA","acc":"43974"}
+,{"cod_municipio":"76834","municipio":"TULUÁ","acc":"43791"}
+,{"cod_municipio":"70001","municipio":"SINCELEJO","acc":"42824"}
+,{"cod_municipio":"68307","municipio":"GIRÓN","acc":"41972"}
+,{"cod_municipio":"25473","municipio":"MOSQUERA","acc":"41479"}
+,{"cod_municipio":"05631","municipio":"SABANETA","acc":"41401"}
+,{"cod_municipio":"25430","municipio":"MADRID","acc":"39475"}
+,{"cod_municipio":"25290","municipio":"FUSAGASUGÁ","acc":"37788"}
+,{"cod_municipio":"25899","municipio":"ZIPAQUIRÁ","acc":"37048"}
+,{"cod_municipio":"85001","municipio":"YOPAL","acc":"36391"}
+,{"cod_municipio":"25126","municipio":"CAJICÁ","acc":"36327"}
+,{"cod_municipio":"05440","municipio":"MARINILLA","acc":"35636"}
+,{"cod_municipio":"15759","municipio":"SOGAMOSO","acc":"32493"}
+,{"cod_municipio":"15238","municipio":"DUITAMA","acc":"30279"}
+,{"cod_municipio":"76111","municipio":"GUADALAJARA DE BUGA","acc":"29937"}
+,{"cod_municipio":"44001","municipio":"RIOHACHA","acc":"28510"}
+,{"cod_municipio":"25269","municipio":"FACATATIVÁ","acc":"28451"}
+,{"cod_municipio":"18001","municipio":"FLORENCIA","acc":"26236"}
+,{"cod_municipio":"76147","municipio":"CARTAGO","acc":"25072"}
+,{"cod_municipio":"25286","municipio":"FUNZA","acc":"24890"}
+,{"cod_municipio":"25307","municipio":"GIRARDOT","acc":"23925"}
+,{"cod_municipio":"05380","municipio":"LA ESTRELLA","acc":"23745"}
+,{"cod_municipio":"05376","municipio":"LA CEJA","acc":"23118"}
+,{"cod_municipio":"05212","municipio":"COPACABANA","acc":"22971"}
+,{"cod_municipio":"05129","municipio":"CALDAS","acc":"22121"}
+,{"cod_municipio":"76109","municipio":"BUENAVENTURA","acc":"21251"}
+,{"cod_municipio":"05045","municipio":"APARTADÓ","acc":"20816"}
+,{"cod_municipio":"50006","municipio":"ACACÍAS","acc":"20552"}
+,{"cod_municipio":"76892","municipio":"YUMBO","acc":"19678"}
+,{"cod_municipio":"13836","municipio":"TURBACO","acc":"18727"}
+,{"cod_municipio":"54405","municipio":"LOS PATIOS","acc":"18524"}
+,{"cod_municipio":"54874","municipio":"VILLA DEL ROSARIO","acc":"18169"}
+,{"cod_municipio":"76130","municipio":"CANDELARIA","acc":"17124"}
+,{"cod_municipio":"73268","municipio":"ESPINAL","acc":"16383"}
+,{"cod_municipio":"17380","municipio":"LA DORADA","acc":"16096"}
+,{"cod_municipio":"05148","municipio":"EL CARMEN DE VIBORAL","acc":"15944"}
+,{"cod_municipio":"05318","municipio":"GUARNE","acc":"15411"}
+,{"cod_municipio":"25817","municipio":"TOCANCIPÁ","acc":"14981"}
+,{"cod_municipio":"41551","municipio":"PITALITO","acc":"14918"}
+,{"cod_municipio":"05697","municipio":"EL SANTUARIO","acc":"14114"}
+,{"cod_municipio":"66682","municipio":"SANTA ROSA DE CABAL","acc":"14053"}
+,{"cod_municipio":"17873","municipio":"VILLAMARÍA","acc":"14030"}
+,{"cod_municipio":"27001","municipio":"QUIBDÓ","acc":"13751"}
+,{"cod_municipio":"05837","municipio":"TURBO","acc":"12716"}
+,{"cod_municipio":"68679","municipio":"SAN GIL","acc":"12468"}
+,{"cod_municipio":"05308","municipio":"GIRARDOTA","acc":"12195"}
+,{"cod_municipio":"08433","municipio":"MALAMBO","acc":"12132"}
+,{"cod_municipio":"20011","municipio":"AGUACHICA","acc":"11947"}
+,{"cod_municipio":"63130","municipio":"CALARCA","acc":"11895"}
+,{"cod_municipio":"47189","municipio":"CIÉNAGA","acc":"11666"}
+,{"cod_municipio":"05541","municipio":"PEÑOL","acc":"11453"}
+,{"cod_municipio":"88001","municipio":"SAN ANDRÉS","acc":"11425"}
+,{"cod_municipio":"05154","municipio":"CAUCASIA","acc":"11315"}
+,{"cod_municipio":"44430","municipio":"MAICAO","acc":"11035"}
+,{"cod_municipio":"19698","municipio":"SANTANDER DE QUILICHAO","acc":"10601"}
+,{"cod_municipio":"25843","municipio":"VILLA DE SAN DIEGO DE UBATE","acc":"10270"}
+,{"cod_municipio":"05250","municipio":"EL BAGRE","acc":"10194"}
+,{"cod_municipio":"73449","municipio":"MELGAR","acc":"10187"}
+,{"cod_municipio":"08296","municipio":"GALAPA","acc":"10155"}
+,{"cod_municipio":"81001","municipio":"ARAUCA","acc":"9919"}
+,{"cod_municipio":"25214","municipio":"COTA","acc":"9817"}
+,{"cod_municipio":"76248","municipio":"EL CERRITO","acc":"9572"}
+,{"cod_municipio":"20400","municipio":"LA JAGUA DE IBIRICO","acc":"9300"}
+,{"cod_municipio":"41298","municipio":"GARZÓN","acc":"9171"}
+,{"cod_municipio":"76233","municipio":"DAGUA","acc":"8909"}
+,{"cod_municipio":"05079","municipio":"BARBOSA","acc":"8725"}
+,{"cod_municipio":"25377","municipio":"LA CALERA","acc":"8718"}
+,{"cod_municipio":"05172","municipio":"CHIGORODÓ","acc":"8365"}
+,{"cod_municipio":"52356","municipio":"IPIALES","acc":"8259"}
+,{"cod_municipio":"05607","municipio":"RETIRO","acc":"8083"}
+,{"cod_municipio":"17174","municipio":"CHINCHINÁ","acc":"8012"}
+,{"cod_municipio":"15516","municipio":"PAIPA","acc":"7975"}
+,{"cod_municipio":"25740","municipio":"SIBATÉ","acc":"7970"}
+,{"cod_municipio":"23162","municipio":"CERETÉ","acc":"7822"}
+,{"cod_municipio":"05579","municipio":"PUERTO BERRÍO","acc":"7807"}
+,{"cod_municipio":"05736","municipio":"SEGOVIA","acc":"7787"}
+,{"cod_municipio":"08573","municipio":"PUERTO COLOMBIA","acc":"7551"}
+,{"cod_municipio":"52835","municipio":"TUMACO - SAN ANDRES DE TUMACO","acc":"7232"}
+,{"cod_municipio":"54518","municipio":"PAMPLONA","acc":"7134"}
+,{"cod_municipio":"47288","municipio":"FUNDACIÓN","acc":"7006"}
+,{"cod_municipio":"25785","municipio":"TABIO","acc":"6768"}
+,{"cod_municipio":"86568","municipio":"PUERTO ASÍS","acc":"6738"}
+,{"cod_municipio":"81736","municipio":"SARAVENA","acc":"6544"}
+,{"cod_municipio":"05887","municipio":"YARUMAL","acc":"6442"}
+,{"cod_municipio":"81794","municipio":"TAME","acc":"6432"}
+,{"cod_municipio":"76563","municipio":"PRADERA","acc":"6397"}
+,{"cod_municipio":"76622","municipio":"ROLDANILLO","acc":"6132"}
+,{"cod_municipio":"63470","municipio":"MONTENEGRO","acc":"6088"}
+,{"cod_municipio":"73275","municipio":"FLANDES","acc":"6084"}
+,{"cod_municipio":"54498","municipio":"OCAÑA","acc":"6069"}
+,{"cod_municipio":"70215","municipio":"COROZAL","acc":"6025"}
+,{"cod_municipio":"76895","municipio":"ZARZAL","acc":"6005"}
+,{"cod_municipio":"05197","municipio":"COCORNÁ","acc":"5808"}
+,{"cod_municipio":"15572","municipio":"PUERTO BOYACÁ","acc":"5706"}
+,{"cod_municipio":"76400","municipio":"LA UNIÓN","acc":"5672"}
+,{"cod_municipio":"73349","municipio":"HONDA","acc":"5616"}
+,{"cod_municipio":"08078","municipio":"BARANOA","acc":"5615"}
+,{"cod_municipio":"15176","municipio":"CHIQUINQUIRÁ","acc":"5567"}
+,{"cod_municipio":"25875","municipio":"VILLETA","acc":"5531"}
+,{"cod_municipio":"05147","municipio":"CAREPA","acc":"5522"}
+,{"cod_municipio":"76275","municipio":"FLORIDA","acc":"5496"}
+,{"cod_municipio":"47555","municipio":"PLATO","acc":"5476"}
+,{"cod_municipio":"73443","municipio":"MARIQUITA - SAN SEBASTIÁN DE MARIQUITA","acc":"5432"}
+,{"cod_municipio":"63401","municipio":"LA TEBAIDA","acc":"5410"}
+,{"cod_municipio":"63190","municipio":"CIRCASIA","acc":"5328"}
+,{"cod_municipio":"13430","municipio":"MAGANGUÉ","acc":"5256"}
+,{"cod_municipio":"05664","municipio":"SAN PEDRO DE LOS MILAGROS","acc":"5246"}
+,{"cod_municipio":"08685","municipio":"SANTO TOMÁS","acc":"5106"}
+,{"cod_municipio":"05656","municipio":"SAN JERÓNIMO","acc":"5045"}
+,{"cod_municipio":"68406","municipio":"LEBRIJA","acc":"4946"}
+,{"cod_municipio":"13052","municipio":"ARJONA","acc":"4937"}
+,{"cod_municipio":"23555","municipio":"PLANETA RICA","acc":"4920"}
+,{"cod_municipio":"85010","municipio":"AGUAZUL","acc":"4880"}
+,{"cod_municipio":"25386","municipio":"LA MESA","acc":"4874"}
+,{"cod_municipio":"63594","municipio":"QUIMBAYA","acc":"4847"}
+,{"cod_municipio":"68077","municipio":"BARBOSA","acc":"4827"}
+,{"cod_municipio":"05756","municipio":"SONSON","acc":"4754"}
+,{"cod_municipio":"20013","municipio":"AGUSTÍN CODAZZI","acc":"4608"}
+,{"cod_municipio":"76318","municipio":"GUACARÍ","acc":"4603"}
+,{"cod_municipio":"76736","municipio":"SEVILLA","acc":"4570"}
+,{"cod_municipio":"68755","municipio":"SOCORRO","acc":"4529"}
+,{"cod_municipio":"86865","municipio":"VALLE DEL GUAMUEZ","acc":"4523"}
+,{"cod_municipio":"19548","municipio":"PIENDAMÓ - TUNÍA","acc":"4511"}
+,{"cod_municipio":"25758","municipio":"SOPÓ","acc":"4465"}
+,{"cod_municipio":"18753","municipio":"SAN VICENTE DEL CAGUÁN","acc":"4385"}
+,{"cod_municipio":"23807","municipio":"TIERRALTA","acc":"4331"}
+,{"cod_municipio":"66400","municipio":"LA VIRGINIA","acc":"4321"}
+,{"cod_municipio":"25799","municipio":"TENJO","acc":"4316"}
+,{"cod_municipio":"17042","municipio":"ANSERMA","acc":"4312"}
+,{"cod_municipio":"25513","municipio":"PACHO","acc":"4303"}
+,{"cod_municipio":"25612","municipio":"RICAURTE","acc":"4291"}
+,{"cod_municipio":"23660","municipio":"SAHAGÚN","acc":"4263"}
+,{"cod_municipio":"05368","municipio":"JERICÓ","acc":"4230"}
+,{"cod_municipio":"15407","municipio":"VILLA DE LEYVA","acc":"4207"}
+,{"cod_municipio":"08638","municipio":"SABANALARGA","acc":"4168"}
+,{"cod_municipio":"17614","municipio":"RIOSUCIO","acc":"4153"}
+,{"cod_municipio":"73168","municipio":"CHAPARRAL","acc":"4141"}
+,{"cod_municipio":"05761","municipio":"SOPETRÁN","acc":"4126"}
+,{"cod_municipio":"05237","municipio":"DONMATÍAS","acc":"4108"}
+,{"cod_municipio":"13468","municipio":"SANTA CRUZ DE MOMPOX","acc":"4040"}
+,{"cod_municipio":"50568","municipio":"PUERTO GAITÁN","acc":"3994"}
+,{"cod_municipio":"50606","municipio":"RESTREPO","acc":"3954"}
+,{"cod_municipio":"86001","municipio":"MOCOA","acc":"3931"}
+,{"cod_municipio":"73319","municipio":"GUAMO","acc":"3907"}
+,{"cod_municipio":"08520","municipio":"PALMAR DE VARELA","acc":"3905"}
+,{"cod_municipio":"19573","municipio":"PUERTO TEJADA","acc":"3812"}
+,{"cod_municipio":"05313","municipio":"GRANADA","acc":"3739"}
+,{"cod_municipio":"05660","municipio":"SAN LUIS","acc":"3739"}
+,{"cod_municipio":"05665","municipio":"SAN PEDRO DE URABA","acc":"3700"}
+,{"cod_municipio":"41396","municipio":"LA PLATA","acc":"3686"}
+,{"cod_municipio":"25295","municipio":"GACHANCIPÁ","acc":"3670"}
+,{"cod_municipio":"20060","municipio":"BOSCONIA","acc":"3650"}
+,{"cod_municipio":"25260","municipio":"EL ROSAL","acc":"3645"}
+,{"cod_municipio":"23417","municipio":"LORICA","acc":"3572"}
+,{"cod_municipio":"44279","municipio":"FONSECA","acc":"3532"}
+,{"cod_municipio":"85440","municipio":"VILLANUEVA","acc":"3510"}
+,{"cod_municipio":"05034","municipio":"ANDES","acc":"3486"}
+,{"cod_municipio":"50226","municipio":"CUMARAL","acc":"3479"}
+,{"cod_municipio":"25200","municipio":"COGUA","acc":"3470"}
+,{"cod_municipio":"76306","municipio":"GINEBRA","acc":"3442"}
+,{"cod_municipio":"05042","municipio":"SANTAFÉ DE ANTIOQUIA","acc":"3416"}
+,{"cod_municipio":"05604","municipio":"REMEDIOS","acc":"3392"}
+,{"cod_municipio":"05030","municipio":"AMAGÁ","acc":"3272"}
+,{"cod_municipio":"05679","municipio":"SANTA BÁRBARA","acc":"3164"}
+,{"cod_municipio":"17777","municipio":"SUPÍA","acc":"3120"}
+,{"cod_municipio":"25035","municipio":"ANAPOIMA","acc":"3023"}
+,{"cod_municipio":"52838","municipio":"TÚQUERRES","acc":"2925"}
+,{"cod_municipio":"76377","municipio":"LA CUMBRE","acc":"2920"}
+,{"cod_municipio":"76122","municipio":"CAICEDONIA","acc":"2898"}
+,{"cod_municipio":"47551","municipio":"PIVIJAY","acc":"2884"}
+,{"cod_municipio":"25245","municipio":"EL COLEGIO","acc":"2863"}
+,{"cod_municipio":"41132","municipio":"CAMPOALEGRE","acc":"2833"}
+,{"cod_municipio":"85410","municipio":"TAURAMENA","acc":"2812"}
+,{"cod_municipio":"50313","municipio":"GRANADA","acc":"2779"}
+,{"cod_municipio":"17877","municipio":"VITERBO","acc":"2768"}
+,{"cod_municipio":"25718","municipio":"SASAIMA","acc":"2735"}
+,{"cod_municipio":"41006","municipio":"ACEVEDO","acc":"2730"}
+,{"cod_municipio":"73411","municipio":"LÍBANO","acc":"2719"}
+,{"cod_municipio":"08634","municipio":"SABANAGRANDE","acc":"2711"}
+,{"cod_municipio":"76126","municipio":"CALIMA","acc":"2634"}
+,{"cod_municipio":"19807","municipio":"TIMBÍO","acc":"2614"}
+,{"cod_municipio":"85250","municipio":"PAZ DE ARIPORO","acc":"2606"}
+,{"cod_municipio":"23182","municipio":"CHINÚ","acc":"2602"}
+,{"cod_municipio":"41668","municipio":"SAN AGUSTÍN","acc":"2583"}
+,{"cod_municipio":"05789","municipio":"TÁMESIS","acc":"2573"}
+,{"cod_municipio":"86320","municipio":"ORITO","acc":"2555"}
+,{"cod_municipio":"50573","municipio":"PUERTO LÓPEZ","acc":"2485"}
+,{"cod_municipio":"76113","municipio":"BUGALAGRANDE","acc":"2484"}
+,{"cod_municipio":"27361","municipio":"ISTMINA","acc":"2479"}
+,{"cod_municipio":"05674","municipio":"SAN VICENTE FERRER","acc":"2467"}
+,{"cod_municipio":"05649","municipio":"SAN CARLOS","acc":"2446"}
+,{"cod_municipio":"13670","municipio":"SAN PABLO","acc":"2434"}
+,{"cod_municipio":"13244","municipio":"EL CARMEN DE BOLÍVAR","acc":"2417"}
+,{"cod_municipio":"44650","municipio":"SAN JUAN DEL CESAR","acc":"2393"}
+,{"cod_municipio":"13688","municipio":"SANTA ROSA DEL SUR","acc":"2369"}
+,{"cod_municipio":"25320","municipio":"GUADUAS","acc":"2365"}
+,{"cod_municipio":"66088","municipio":"BELÉN DE UMBRÍA","acc":"2363"}
+,{"cod_municipio":"73055","municipio":"ARMERO","acc":"2362"}
+,{"cod_municipio":"05490","municipio":"NECOCLÍ","acc":"2361"}
+,{"cod_municipio":"05686","municipio":"SANTA ROSA DE OSOS","acc":"2336"}
+,{"cod_municipio":"05264","municipio":"ENTRERRIOS","acc":"2332"}
+,{"cod_municipio":"68615","municipio":"RIONEGRO","acc":"2330"}
+,{"cod_municipio":"25486","municipio":"NEMOCÓN","acc":"2310"}
+,{"cod_municipio":"19455","municipio":"MIRANDA","acc":"2306"}
+,{"cod_municipio":"23466","municipio":"MONTELÍBANO","acc":"2298"}
+,{"cod_municipio":"41306","municipio":"GIGANTE","acc":"2295"}
+,{"cod_municipio":"68229","municipio":"CURITÍ","acc":"2293"}
+,{"cod_municipio":"05670","municipio":"SAN ROQUE","acc":"2270"}
+,{"cod_municipio":"47245","municipio":"EL BANCO","acc":"2266"}
+,{"cod_municipio":"25736","municipio":"SESQUILÉ","acc":"2253"}
+,{"cod_municipio":"15491","municipio":"NOBSA","acc":"2241"}
+,{"cod_municipio":"68190","municipio":"CIMITARRA","acc":"2225"}
+,{"cod_municipio":"20710","municipio":"SAN ALBERTO","acc":"2223"}
+,{"cod_municipio":"25402","municipio":"LA VEGA","acc":"2222"}
+,{"cod_municipio":"25745","municipio":"SIMIJACA","acc":"2181"}
+,{"cod_municipio":"52378","municipio":"LA CRUZ","acc":"2162"}
+,{"cod_municipio":"25151","municipio":"CAQUEZA","acc":"2161"}
+,{"cod_municipio":"05364","municipio":"JARDÍN","acc":"2159"}
+,{"cod_municipio":"25572","municipio":"PUERTO SALGAR","acc":"2142"}
+,{"cod_municipio":"17013","municipio":"AGUADAS","acc":"2129"}
+,{"cod_municipio":"05321","municipio":"GUATAPE","acc":"2091"}
+,{"cod_municipio":"68689","municipio":"SAN VICENTE DE CHUCURÍ","acc":"2081"}
+,{"cod_municipio":"23580","municipio":"PUERTO LIBERTADOR","acc":"2043"}
+,{"cod_municipio":"05847","municipio":"URRAO","acc":"2027"}
+,{"cod_municipio":"25769","municipio":"SUBACHOQUE","acc":"2027"}
+,{"cod_municipio":"15806","municipio":"TIBASOSA","acc":"2025"}
+,{"cod_municipio":"05190","municipio":"CISNEROS","acc":"1994"}
+,{"cod_municipio":"73585","municipio":"PURIFICACIÓN","acc":"1941"}
+,{"cod_municipio":"70221","municipio":"COVEÑAS","acc":"1936"}
+,{"cod_municipio":"25772","municipio":"SUESCA","acc":"1929"}
+,{"cod_municipio":"41020","municipio":"ALGECIRAS","acc":"1929"}
+,{"cod_municipio":"05284","municipio":"FRONTINO","acc":"1927"}
+,{"cod_municipio":"44078","municipio":"BARRANCAS","acc":"1927"}
+,{"cod_municipio":"68079","municipio":"BARICHARA","acc":"1907"}
+,{"cod_municipio":"05234","municipio":"DABEIBA","acc":"1905"}
+,{"cod_municipio":"05040","municipio":"ANORÍ","acc":"1871"}
+,{"cod_municipio":"81065","municipio":"ARAUQUITA","acc":"1868"}
+,{"cod_municipio":"68575","municipio":"PUERTO WILCHES","acc":"1853"}
+,{"cod_municipio":"05895","municipio":"ZARAGOZA","acc":"1848"}
+,{"cod_municipio":"13442","municipio":"MARÍA LA BAJA","acc":"1840"}
+,{"cod_municipio":"20770","municipio":"SAN MARTÍN","acc":"1836"}
+,{"cod_municipio":"70713","municipio":"SAN ONOFRE","acc":"1815"}
+,{"cod_municipio":"05790","municipio":"TARAZÁ","acc":"1791"}
+,{"cod_municipio":"05809","municipio":"TITIRIBÍ","acc":"1783"}
+,{"cod_municipio":"41518","municipio":"PAICOL","acc":"1780"}
+,{"cod_municipio":"23672","municipio":"SAN ANTERO","acc":"1780"}
+,{"cod_municipio":"76041","municipio":"ANSERMANUEVO","acc":"1779"}
+,{"cod_municipio":"05282","municipio":"FREDONIA","acc":"1748"}
+,{"cod_municipio":"76823","municipio":"TORO","acc":"1730"}
+,{"cod_municipio":"76403","municipio":"LA VICTORIA","acc":"1705"}
+,{"cod_municipio":"25183","municipio":"CHOCONTÁ","acc":"1695"}
+,{"cod_municipio":"44847","municipio":"URIBIA","acc":"1693"}
+,{"cod_municipio":"76036","municipio":"ANDALUCÍA","acc":"1682"}
+,{"cod_municipio":"68655","municipio":"SABANA DE TORRES","acc":"1671"}
+,{"cod_municipio":"25322","municipio":"GUASCA","acc":"1669"}
+,{"cod_municipio":"05101","municipio":"CIUDAD BOLÍVAR","acc":"1664"}
+,{"cod_municipio":"70820","municipio":"SANTIAGO DE TOLÚ","acc":"1662"}
+,{"cod_municipio":"05240","municipio":"EBÉJICO","acc":"1639"}
+,{"cod_municipio":"70670","municipio":"SAMPUÉS","acc":"1635"}
+,{"cod_municipio":"05858","municipio":"VEGACHÍ","acc":"1612"}
+,{"cod_municipio":"05209","municipio":"CONCORDIA","acc":"1598"}
+,{"cod_municipio":"17541","municipio":"PENSILVANIA","acc":"1588"}
+,{"cod_municipio":"70708","municipio":"SAN MARCOS","acc":"1583"}
+,{"cod_municipio":"41319","municipio":"GUADALUPE","acc":"1550"}
+,{"cod_municipio":"76020","municipio":"ALCALÁ","acc":"1549"}
+,{"cod_municipio":"50318","municipio":"GUAMAL","acc":"1536"}
+,{"cod_municipio":"05642","municipio":"SALGAR","acc":"1512"}
+,{"cod_municipio":"52240","municipio":"CHACHAGÜÍ","acc":"1503"}
+,{"cod_municipio":"54810","municipio":"TIBÚ","acc":"1500"}
+,{"cod_municipio":"17433","municipio":"MANZANARES","acc":"1495"}
+,{"cod_municipio":"25317","municipio":"GUACHETÁ","acc":"1493"}
+,{"cod_municipio":"73283","municipio":"FRESNO","acc":"1474"}
+,{"cod_municipio":"23189","municipio":"CIÉNAGA DE ORO","acc":"1472"}
+,{"cod_municipio":"23068","municipio":"AYAPEL","acc":"1457"}
+,{"cod_municipio":"17486","municipio":"NEIRA","acc":"1446"}
+,{"cod_municipio":"25743","municipio":"SILVANIA","acc":"1439"}
+,{"cod_municipio":"70742","municipio":"SAN LUIS DE SINCÉ","acc":"1427"}
+,{"cod_municipio":"68432","municipio":"MÁLAGA","acc":"1427"}
+,{"cod_municipio":"05093","municipio":"BETULIA","acc":"1413"}
+,{"cod_municipio":"25658","municipio":"SAN FRANCISCO","acc":"1397"}
+,{"cod_municipio":"41807","municipio":"TIMANÁ","acc":"1384"}
+,{"cod_municipio":"25040","municipio":"ANOLAIMA","acc":"1384"}
+,{"cod_municipio":"23855","municipio":"VALENCIA","acc":"1380"}
+,{"cod_municipio":"44035","municipio":"ALBANIA","acc":"1377"}
+,{"cod_municipio":"81300","municipio":"FORTUL","acc":"1375"}
+,{"cod_municipio":"20228","municipio":"CURUMANÍ","acc":"1370"}
+,{"cod_municipio":"52260","municipio":"EL TAMBO","acc":"1365"}
+,{"cod_municipio":"05585","municipio":"PUERTO NARE","acc":"1357"}
+,{"cod_municipio":"05667","municipio":"SAN RAFAEL","acc":"1338"}
+,{"cod_municipio":"25436","municipio":"MANTA","acc":"1331"}
+,{"cod_municipio":"76497","municipio":"OBANDO","acc":"1331"}
+,{"cod_municipio":"15837","municipio":"TUTA","acc":"1326"}
+,{"cod_municipio":"68861","municipio":"VÉLEZ","acc":"1294"}
+,{"cod_municipio":"68167","municipio":"CHARALÁ","acc":"1284"}
+,{"cod_municipio":"05861","municipio":"VENECIA","acc":"1276"}
+,{"cod_municipio":"25878","municipio":"VIOTÁ","acc":"1269"}
+,{"cod_municipio":"25099","municipio":"BOJACÁ","acc":"1264"}
+,{"cod_municipio":"17653","municipio":"SALAMINA","acc":"1253"}
+,{"cod_municipio":"41524","municipio":"PALERMO","acc":"1252"}
+,{"cod_municipio":"47318","municipio":"GUAMAL","acc":"1236"}
+,{"cod_municipio":"17867","municipio":"VICTORIA","acc":"1234"}
+,{"cod_municipio":"17524","municipio":"PALESTINA","acc":"1213"}
+,{"cod_municipio":"25001","municipio":"AGUA DE DIOS","acc":"1205"}
+,{"cod_municipio":"05495","municipio":"NECHÍ","acc":"1193"}
+,{"cod_municipio":"05113","municipio":"BURITICÁ","acc":"1185"}
+,{"cod_municipio":"85162","municipio":"MONTERREY","acc":"1181"}
+,{"cod_municipio":"76890","municipio":"YOTOCO","acc":"1180"}
+,{"cod_municipio":"52678","municipio":"SAMANIEGO","acc":"1173"}
+,{"cod_municipio":"54172","municipio":"CHINÁCOTA","acc":"1169"}
+,{"cod_municipio":"05400","municipio":"LA UNIÓN","acc":"1145"}
+,{"cod_municipio":"20238","municipio":"EL COPEY","acc":"1124"}
+,{"cod_municipio":"50689","municipio":"SAN MARTÍN","acc":"1123"}
+,{"cod_municipio":"20178","municipio":"CHIRIGUANÁ","acc":"1119"}
+,{"cod_municipio":"15599","municipio":"RAMIRIQUÍ","acc":"1117"}
+,{"cod_municipio":"17513","municipio":"PÁCORA","acc":"1114"}
+,{"cod_municipio":"05138","municipio":"CAÑASGORDAS","acc":"1111"}
+,{"cod_municipio":"05051","municipio":"ARBOLETES","acc":"1103"}
+,{"cod_municipio":"25873","municipio":"VILLAPINZÓN","acc":"1086"}
+,{"cod_municipio":"20383","municipio":"LA GLORIA","acc":"1077"}
+,{"cod_municipio":"54003","municipio":"ABREGO","acc":"1072"}
+,{"cod_municipio":"41359","municipio":"ISNOS","acc":"1066"}
+,{"cod_municipio":"17662","municipio":"SAMANÁ","acc":"1064"}
+,{"cod_municipio":"05893","municipio":"YONDÓ","acc":"1062"}
+,{"cod_municipio":"47053","municipio":"ARACATACA","acc":"1062"}
+,{"cod_municipio":"66687","municipio":"SANTUARIO","acc":"1059"}
+,{"cod_municipio":"54720","municipio":"SARDINATA","acc":"1050"}
+,{"cod_municipio":"05031","municipio":"AMALFI","acc":"1050"}
+,{"cod_municipio":"05591","municipio":"PUERTO TRIUNFO","acc":"1044"}
+,{"cod_municipio":"05347","municipio":"HELICONIA","acc":"1034"}
+,{"cod_municipio":"41378","municipio":"LA ARGENTINA","acc":"1030"}
+,{"cod_municipio":"52540","municipio":"POLICARPA","acc":"1028"}
+,{"cod_municipio":"18247","municipio":"EL DONCELLO","acc":"1025"}
+,{"cod_municipio":"95001","municipio":"SAN JOSÉ DEL GUAVIARE","acc":"1024"}
+,{"cod_municipio":"13654","municipio":"SAN JACINTO","acc":"1009"}
+,{"cod_municipio":"15646","municipio":"SAMACÁ","acc":"1001"}
+,{"cod_municipio":"23570","municipio":"PUEBLO NUEVO","acc":"1000"}
+,{"cod_municipio":"52110","municipio":"BUESACO","acc":"996"}
+,{"cod_municipio":"76606","municipio":"RESTREPO","acc":"991"}
+,{"cod_municipio":"76670","municipio":"SAN PEDRO","acc":"978"}
+,{"cod_municipio":"05361","municipio":"ITUANGO","acc":"973"}
+,{"cod_municipio":"05002","municipio":"ABEJORRAL","acc":"967"}
+,{"cod_municipio":"20621","municipio":"LA PAZ","acc":"954"}
+,{"cod_municipio":"52683","municipio":"SANDONÁ","acc":"940"}
+,{"cod_municipio":"47058","municipio":"ARIGUANÍ","acc":"931"}
+,{"cod_municipio":"41503","municipio":"OPORAPA","acc":"929"}
+,{"cod_municipio":"70717","municipio":"SAN PEDRO","acc":"928"}
+,{"cod_municipio":"05652","municipio":"SAN FRANCISCO","acc":"922"}
+,{"cod_municipio":"19212","municipio":"CORINTO","acc":"921"}
+,{"cod_municipio":"08849","municipio":"USIACURÍ","acc":"920"}
+,{"cod_municipio":"15047","municipio":"AQUITANIA","acc":"915"}
+,{"cod_municipio":"85139","municipio":"MANÍ","acc":"914"}
+,{"cod_municipio":"63272","municipio":"FILANDIA","acc":"913"}
+,{"cod_municipio":"15299","municipio":"GARAGOA","acc":"910"}
+,{"cod_municipio":"15455","municipio":"MIRAFLORES","acc":"903"}
+,{"cod_municipio":"44560","municipio":"MANAURE","acc":"889"}
+,{"cod_municipio":"17444","municipio":"MARQUETALIA","acc":"888"}
+,{"cod_municipio":"05044","municipio":"ANZA","acc":"885"}
+,{"cod_municipio":"25407","municipio":"LENGUAZAQUE","acc":"880"}
+,{"cod_municipio":"13873","municipio":"VILLANUEVA","acc":"877"}
+,{"cod_municipio":"27600","municipio":"RÍO QUITO","acc":"872"}
+,{"cod_municipio":"68500","municipio":"OIBA","acc":"869"}
+,{"cod_municipio":"47030","municipio":"ALGARROBO","acc":"868"}
+,{"cod_municipio":"05091","municipio":"BETANIA","acc":"865"}
+,{"cod_municipio":"91001","municipio":"LETICIA","acc":"865"}
+,{"cod_municipio":"05890","municipio":"YOLOMBÓ","acc":"852"}
+,{"cod_municipio":"25599","municipio":"APULO","acc":"850"}
+,{"cod_municipio":"68318","municipio":"GUACA","acc":"849"}
+,{"cod_municipio":"19100","municipio":"BOLÍVAR","acc":"847"}
+,{"cod_municipio":"68855","municipio":"VALLE DE SAN JOSÉ","acc":"847"}
+,{"cod_municipio":"05480","municipio":"MUTATÁ","acc":"847"}
+,{"cod_municipio":"19532","municipio":"PATÍA","acc":"846"}
+,{"cod_municipio":"18256","municipio":"EL PAUJIL","acc":"844"}
+,{"cod_municipio":"25297","municipio":"GACHETÁ","acc":"839"}
+,{"cod_municipio":"25815","municipio":"TOCAIMA","acc":"837"}
+,{"cod_municipio":"68872","municipio":"VILLANUEVA","acc":"836"}
+,{"cod_municipio":"70702","municipio":"SAN JUAN DE BETULIA","acc":"828"}
+,{"cod_municipio":"52885","municipio":"YACUANQUER","acc":"828"}
+,{"cod_municipio":"13838","municipio":"TURBANÁ","acc":"818"}
+,{"cod_municipio":"19743","municipio":"SILVIA","acc":"812"}
+,{"cod_municipio":"19290","municipio":"FLORENCIA","acc":"802"}
+,{"cod_municipio":"52693","municipio":"SAN PABLO","acc":"798"}
+,{"cod_municipio":"17442","municipio":"MARMATO","acc":"797"}
+,{"cod_municipio":"85125","municipio":"HATO COROZAL","acc":"793"}
+,{"cod_municipio":"44378","municipio":"HATONUEVO","acc":"777"}
+,{"cod_municipio":"15776","municipio":"SUTAMARCHÁN","acc":"771"}
+,{"cod_municipio":"05120","municipio":"CÁCERES","acc":"770"}
+,{"cod_municipio":"85300","municipio":"SABANALARGA","acc":"769"}
+,{"cod_municipio":"50150","municipio":"CASTILLA LA NUEVA","acc":"768"}
+,{"cod_municipio":"20550","municipio":"PELAYA","acc":"767"}
+,{"cod_municipio":"63690","municipio":"SALENTO","acc":"766"}
+,{"cod_municipio":"70508","municipio":"OVEJAS","acc":"764"}
+,{"cod_municipio":"52786","municipio":"TAMINANGO","acc":"763"}
+,{"cod_municipio":"52418","municipio":"LOS ANDES","acc":"756"}
+,{"cod_municipio":"73861","municipio":"VENADILLO","acc":"751"}
+,{"cod_municipio":"99001","municipio":"PUERTO CARREÑO","acc":"746"}
+,{"cod_municipio":"05390","municipio":"LA PINTADA","acc":"742"}
+,{"cod_municipio":"05059","municipio":"ARMENIA","acc":"740"}
+,{"cod_municipio":"15087","municipio":"BELÉN","acc":"732"}
+,{"cod_municipio":"66045","municipio":"APÍA","acc":"730"}
+,{"cod_municipio":"23686","municipio":"SAN PELAYO","acc":"720"}
+,{"cod_municipio":"08436","municipio":"MANATÍ","acc":"718"}
+,{"cod_municipio":"25224","municipio":"CUCUNUBÁ","acc":"714"}
+,{"cod_municipio":"05576","municipio":"PUEBLORRICO","acc":"712"}
+,{"cod_municipio":"20045","municipio":"BECERRIL","acc":"697"}
+,{"cod_municipio":"05310","municipio":"GÓMEZ PLATA","acc":"692"}
+,{"cod_municipio":"15757","municipio":"SOCHA","acc":"691"}
+,{"cod_municipio":"13744","municipio":"SIMITÍ","acc":"674"}
+,{"cod_municipio":"54261","municipio":"EL ZULIA","acc":"674"}
+,{"cod_municipio":"73408","municipio":"LÉRIDA","acc":"674"}
+,{"cod_municipio":"41791","municipio":"TARQUI","acc":"672"}
+,{"cod_municipio":"17088","municipio":"BELALCÁZAR","acc":"667"}
+,{"cod_municipio":"25781","municipio":"SUTATAUSA","acc":"661"}
+,{"cod_municipio":"41885","municipio":"YAGUARÁ","acc":"657"}
+,{"cod_municipio":"41615","municipio":"RIVERA","acc":"655"}
+,{"cod_municipio":"70429","municipio":"MAJAGUAL","acc":"653"}
+,{"cod_municipio":"52399","municipio":"LA UNIÓN","acc":"648"}
+,{"cod_municipio":"13657","municipio":"SAN JUAN NEPOMUCENO","acc":"648"}
+,{"cod_municipio":"17495","municipio":"NORCASIA","acc":"645"}
+,{"cod_municipio":"05021","municipio":"ALEJANDRÍA","acc":"635"}
+,{"cod_municipio":"68051","municipio":"ARATOCA","acc":"634"}
+,{"cod_municipio":"05306","municipio":"GIRALDO","acc":"632"}
+,{"cod_municipio":"23350","municipio":"LA APARTADA","acc":"627"}
+,{"cod_municipio":"70235","municipio":"GALERAS","acc":"620"}
+,{"cod_municipio":"25148","municipio":"CAPARRAPÍ","acc":"619"}
+,{"cod_municipio":"76100","municipio":"BOLÍVAR","acc":"618"}
+,{"cod_municipio":"73624","municipio":"ROVIRA","acc":"617"}
+,{"cod_municipio":"54553","municipio":"PUERTO SANTANDER","acc":"617"}
+,{"cod_municipio":"52385","municipio":"LA LLANADA","acc":"608"}
+,{"cod_municipio":"23670","municipio":"SAN ANDRÉS DE SOTAVENTO","acc":"606"}
+,{"cod_municipio":"25019","municipio":"ALBÁN","acc":"606"}
+,{"cod_municipio":"47268","municipio":"EL RETÉN","acc":"603"}
+,{"cod_municipio":"73217","municipio":"COYAIMA","acc":"596"}
+,{"cod_municipio":"52381","municipio":"LA FLORIDA","acc":"594"}
+,{"cod_municipio":"19473","municipio":"MORALES","acc":"594"}
+,{"cod_municipio":"73067","municipio":"ATACO","acc":"593"}
+,{"cod_municipio":"41660","municipio":"SALADOBLANCO","acc":"587"}
+,{"cod_municipio":"44874","municipio":"VILLANUEVA","acc":"583"}
+,{"cod_municipio":"41357","municipio":"IQUIRA","acc":"583"}
+,{"cod_municipio":"68895","municipio":"ZAPATOCA","acc":"582"}
+,{"cod_municipio":"76863","municipio":"VERSALLES","acc":"574"}
+,{"cod_municipio":"73124","municipio":"CAJAMARCA","acc":"573"}
+,{"cod_municipio":"19256","municipio":"EL TAMBO","acc":"572"}
+,{"cod_municipio":"25645","municipio":"SAN ANTONIO DEL TEQUENDAMA","acc":"569"}
+,{"cod_municipio":"73483","municipio":"NATAGAIMA","acc":"567"}
+,{"cod_municipio":"15600","municipio":"RÁQUIRA","acc":"566"}
+,{"cod_municipio":"50350","municipio":"LA MACARENA","acc":"566"}
+,{"cod_municipio":"05086","municipio":"BELMIRA","acc":"565"}
+,{"cod_municipio":"19130","municipio":"CAJIBÍO","acc":"565"}
+,{"cod_municipio":"41801","municipio":"TERUEL","acc":"565"}
+,{"cod_municipio":"47692","municipio":"SAN SEBASTIÁN DE BUENAVISTA","acc":"558"}
+,{"cod_municipio":"73352","municipio":"ICONONZO","acc":"557"}
+,{"cod_municipio":"73678","municipio":"SAN LUIS","acc":"554"}
+,{"cod_municipio":"05467","municipio":"MONTEBELLO","acc":"552"}
+,{"cod_municipio":"05647","municipio":"SAN ANDRÉS DE CUERQUÍA","acc":"547"}
+,{"cod_municipio":"54820","municipio":"TOLEDO","acc":"546"}
+,{"cod_municipio":"47745","municipio":"SITIONUEVO","acc":"541"}
+,{"cod_municipio":"63212","municipio":"CÓRDOBA","acc":"534"}
+,{"cod_municipio":"52079","municipio":"BARBACOAS","acc":"534"}
+,{"cod_municipio":"44855","municipio":"URUMITA","acc":"529"}
+,{"cod_municipio":"05690","municipio":"SANTO DOMINGO","acc":"526"}
+,{"cod_municipio":"94001","municipio":"INÍRIDA","acc":"524"}
+,{"cod_municipio":"19450","municipio":"MERCADERES","acc":"523"}
+,{"cod_municipio":"73026","municipio":"ALVARADO","acc":"523"}
+,{"cod_municipio":"66440","municipio":"MARSELLA","acc":"523"}
+,{"cod_municipio":"25154","municipio":"CARMEN DE CARUPA","acc":"521"}
+,{"cod_municipio":"05856","municipio":"VALPARAÍSO","acc":"519"}
+,{"cod_municipio":"76828","municipio":"TRUJILLO","acc":"517"}
+,{"cod_municipio":"15272","municipio":"FIRAVITOBA","acc":"516"}
+,{"cod_municipio":"25797","municipio":"TENA","acc":"516"}
+,{"cod_municipio":"15814","municipio":"TOCA","acc":"514"}
+,{"cod_municipio":"73555","municipio":"PLANADAS","acc":"513"}
+,{"cod_municipio":"41026","municipio":"ALTAMIRA","acc":"512"}
+,{"cod_municipio":"15638","municipio":"SÁCHICA","acc":"511"}
+,{"cod_municipio":"05885","municipio":"YALÍ","acc":"508"}
+,{"cod_municipio":"66594","municipio":"QUINCHÍA","acc":"504"}
+,{"cod_municipio":"17050","municipio":"ARANZAZU","acc":"502"}
+,{"cod_municipio":"17616","municipio":"RISARALDA","acc":"501"}
+,{"cod_municipio":"73504","municipio":"ORTEGA","acc":"499"}
+,{"cod_municipio":"23300","municipio":"COTORRA","acc":"499"}
+,{"cod_municipio":"20517","municipio":"PAILITAS","acc":"499"}
+,{"cod_municipio":"52317","municipio":"GUACHUCAL","acc":"496"}
+,{"cod_municipio":"47980","municipio":"ZONA BANANERA","acc":"495"}
+,{"cod_municipio":"05659","municipio":"SAN JUAN DE URABÁ","acc":"493"}
+,{"cod_municipio":"76250","municipio":"EL DOVIO","acc":"491"}
+,{"cod_municipio":"52585","municipio":"PUPIALES","acc":"488"}
+,{"cod_municipio":"47675","municipio":"SALAMINA","acc":"486"}
+,{"cod_municipio":"50330","municipio":"MESETAS","acc":"484"}
+,{"cod_municipio":"47460","municipio":"NUEVA GRANADA","acc":"483"}
+,{"cod_municipio":"68255","municipio":"EL PLAYÓN","acc":"479"}
+,{"cod_municipio":"25178","municipio":"CHIPAQUE","acc":"476"}
+,{"cod_municipio":"05145","municipio":"CARAMANTA","acc":"475"}
+,{"cod_municipio":"66383","municipio":"LA CELIA","acc":"475"}
+,{"cod_municipio":"85230","municipio":"OROCUÉ","acc":"473"}
+,{"cod_municipio":"05483","municipio":"NARIÑO","acc":"473"}
+,{"cod_municipio":"68549","municipio":"PINCHOTE","acc":"471"}
+,{"cod_municipio":"52254","municipio":"EL PEÑOL","acc":"470"}
+,{"cod_municipio":"08137","municipio":"CAMPO DE LA CRUZ","acc":"469"}
+,{"cod_municipio":"52256","municipio":"EL ROSARIO","acc":"466"}
+,{"cod_municipio":"20750","municipio":"SAN DIEGO","acc":"466"}
+,{"cod_municipio":"25488","municipio":"NILO","acc":"461"}
+,{"cod_municipio":"05353","municipio":"HISPANIA","acc":"458"}
+,{"cod_municipio":"76869","municipio":"VIJES","acc":"456"}
+,{"cod_municipio":"08606","municipio":"REPELÓN","acc":"456"}
+,{"cod_municipio":"52699","municipio":"SANTACRUZ","acc":"455"}
+,{"cod_municipio":"13140","municipio":"CALAMAR","acc":"452"}
+,{"cod_municipio":"13473","municipio":"MORALES","acc":"451"}
+,{"cod_municipio":"25524","municipio":"PANDI","acc":"451"}
+,{"cod_municipio":"54051","municipio":"ARBOLEDAS","acc":"450"}
+,{"cod_municipio":"25123","municipio":"CACHIPAY","acc":"446"}
+,{"cod_municipio":"15537","municipio":"PAZ DE RÍO","acc":"443"}
+,{"cod_municipio":"52207","municipio":"CONSACÁ","acc":"441"}
+,{"cod_municipio":"86573","municipio":"PUERTO LEGUÍZAMO","acc":"436"}
+,{"cod_municipio":"86757","municipio":"SAN MIGUEL","acc":"435"}
+,{"cod_municipio":"25288","municipio":"FÚQUENE","acc":"434"}
+,{"cod_municipio":"19364","municipio":"JAMBALÓ","acc":"433"}
+,{"cod_municipio":"52685","municipio":"SAN BERNARDO","acc":"432"}
+,{"cod_municipio":"15204","municipio":"CÓMBITA","acc":"431"}
+,{"cod_municipio":"47660","municipio":"SABANAS DE SAN ANGEL","acc":"431"}
+,{"cod_municipio":"18592","municipio":"PUERTO RICO","acc":"431"}
+,{"cod_municipio":"68207","municipio":"CONCEPCIÓN","acc":"430"}
+,{"cod_municipio":"25394","municipio":"LA PALMA","acc":"429"}
+,{"cod_municipio":"27075","municipio":"BAHÍA SOLANO","acc":"422"}
+,{"cod_municipio":"13074","municipio":"BARRANCO DE LOBA","acc":"421"}
+,{"cod_municipio":"05543","municipio":"PEQUE","acc":"420"}
+,{"cod_municipio":"52258","municipio":"EL TABLÓN DE GÓMEZ","acc":"419"}
+,{"cod_municipio":"05134","municipio":"CAMPAMENTO","acc":"418"}
+,{"cod_municipio":"05036","municipio":"ANGELÓPOLIS","acc":"418"}
+,{"cod_municipio":"52435","municipio":"MALLAMA","acc":"417"}
+,{"cod_municipio":"05125","municipio":"CAICEDO","acc":"416"}
+,{"cod_municipio":"20250","municipio":"EL PASO","acc":"416"}
+,{"cod_municipio":"15808","municipio":"TINJACÁ","acc":"415"}
+,{"cod_municipio":"15367","municipio":"JENESANO","acc":"415"}
+,{"cod_municipio":"41797","municipio":"TESALIA","acc":"413"}
+,{"cod_municipio":"52480","municipio":"NARIÑO","acc":"412"}
+,{"cod_municipio":"41548","municipio":"PITAL","acc":"412"}
+,{"cod_municipio":"41483","municipio":"NÁTAGA","acc":"411"}
+,{"cod_municipio":"15507","municipio":"OTANCHE","acc":"411"}
+,{"cod_municipio":"52687","municipio":"SAN LORENZO","acc":"411"}
+,{"cod_municipio":"05315","municipio":"GUADALUPE","acc":"408"}
+,{"cod_municipio":"08372","municipio":"JUAN DE ACOSTA","acc":"406"}
+,{"cod_municipio":"05411","municipio":"LIBORINA","acc":"406"}
+,{"cod_municipio":"68770","municipio":"SUAITA","acc":"404"}
+,{"cod_municipio":"85430","municipio":"TRINIDAD","acc":"404"}
+,{"cod_municipio":"13600","municipio":"RÍO VIEJO","acc":"395"}
+,{"cod_municipio":"19845","municipio":"VILLA RICA","acc":"394"}
+,{"cod_municipio":"68209","municipio":"CONFINES","acc":"387"}
+,{"cod_municipio":"70110","municipio":"BUENAVISTA","acc":"387"}
+,{"cod_municipio":"15835","municipio":"TURMEQUÉ","acc":"387"}
+,{"cod_municipio":"08832","municipio":"TUBARÁ","acc":"386"}
+,{"cod_municipio":"25793","municipio":"TAUSA","acc":"386"}
+,{"cod_municipio":"86885","municipio":"VILLAGARZÓN","acc":"385"}
+,{"cod_municipio":"52354","municipio":"IMUÉS","acc":"383"}
+,{"cod_municipio":"47798","municipio":"TENERIFE","acc":"382"}
+,{"cod_municipio":"15466","municipio":"MONGUÍ","acc":"382"}
+,{"cod_municipio":"13894","municipio":"ZAMBRANO","acc":"377"}
+,{"cod_municipio":"54099","municipio":"BOCHALEMA","acc":"375"}
+,{"cod_municipio":"86749","municipio":"SIBUNDOY","acc":"373"}
+,{"cod_municipio":"05142","municipio":"CARACOLÍ","acc":"373"}
+,{"cod_municipio":"47707","municipio":"SANTA ANA","acc":"373"}
+,{"cod_municipio":"27495","municipio":"NUQUÍ","acc":"371"}
+,{"cod_municipio":"05150","municipio":"CAROLINA","acc":"370"}
+,{"cod_municipio":"13647","municipio":"SAN ESTANISLAO","acc":"368"}
+,{"cod_municipio":"27006","municipio":"ACANDÍ","acc":"368"}
+,{"cod_municipio":"13458","municipio":"MONTECRISTO","acc":"367"}
+,{"cod_municipio":"70418","municipio":"LOS PALMITOS","acc":"363"}
+,{"cod_municipio":"18150","municipio":"CARTAGENA DEL CHAIRÁ","acc":"358"}
+,{"cod_municipio":"05792","municipio":"TARSO","acc":"357"}
+,{"cod_municipio":"15480","municipio":"MUZO","acc":"356"}
+,{"cod_municipio":"13433","municipio":"MAHATES","acc":"356"}
+,{"cod_municipio":"68572","municipio":"PUENTE NACIONAL","acc":"355"}
+,{"cod_municipio":"41676","municipio":"SANTA MARÍA","acc":"355"}
+,{"cod_municipio":"52320","municipio":"GUAITARILLA","acc":"354"}
+,{"cod_municipio":"05501","municipio":"OLAYA","acc":"354"}
+,{"cod_municipio":"27077","municipio":"BAJO BAUDÓ","acc":"354"}
+,{"cod_municipio":"08141","municipio":"CANDELARIA","acc":"351"}
+,{"cod_municipio":"18410","municipio":"LA MONTAÑITA","acc":"351"}
+,{"cod_municipio":"27205","municipio":"CONDOTO","acc":"350"}
+,{"cod_municipio":"70400","municipio":"LA UNIÓN","acc":"350"}
+,{"cod_municipio":"15693","municipio":"SANTA ROSA DE VITERBO","acc":"347"}
+,{"cod_municipio":"50287","municipio":"FUENTE DE ORO","acc":"347"}
+,{"cod_municipio":"18094","municipio":"BELÉN DE LOS ANDAQUÍES","acc":"346"}
+,{"cod_municipio":"73547","municipio":"PIEDRAS","acc":"344"}
+,{"cod_municipio":"05038","municipio":"ANGOSTURA","acc":"343"}
+,{"cod_municipio":"52506","municipio":"OSPINA","acc":"338"}
+,{"cod_municipio":"17665","municipio":"SAN JOSÉ","acc":"338"}
+,{"cod_municipio":"23464","municipio":"MOMIL","acc":"337"}
+,{"cod_municipio":"52720","municipio":"SAPUYES","acc":"336"}
+,{"cod_municipio":"13222","municipio":"CLEMENCIA","acc":"336"}
+,{"cod_municipio":"23079","municipio":"BUENAVISTA","acc":"334"}
+,{"cod_municipio":"54313","municipio":"GRAMALOTE","acc":"333"}
+,{"cod_municipio":"20443","municipio":"MANAURE","acc":"332"}
+,{"cod_municipio":"81220","municipio":"CRAVO NORTE","acc":"332"}
+,{"cod_municipio":"19050","municipio":"ARGELIA","acc":"331"}
+,{"cod_municipio":"17388","municipio":"LA MERCED","acc":"328"}
+,{"cod_municipio":"25779","municipio":"SUSA","acc":"326"}
+,{"cod_municipio":"15763","municipio":"SOTAQUIRÁ","acc":"324"}
+,{"cod_municipio":"63548","municipio":"PIJAO","acc":"322"}
+,{"cod_municipio":"05628","municipio":"SABANALARGA","acc":"320"}
+,{"cod_municipio":"70265","municipio":"GUARANDA","acc":"319"}
+,{"cod_municipio":"27615","municipio":"RIOSUCIO","acc":"317"}
+,{"cod_municipio":"13683","municipio":"SANTA ROSA","acc":"316"}
+,{"cod_municipio":"70823","municipio":"SAN JOSÉ DE TOLUVIEJO","acc":"316"}
+,{"cod_municipio":"08421","municipio":"LURUACO","acc":"311"}
+,{"cod_municipio":"25312","municipio":"GRANADA","acc":"309"}
+,{"cod_municipio":"68211","municipio":"CONTRATACIÓN","acc":"309"}
+,{"cod_municipio":"05425","municipio":"MACEO","acc":"308"}
+,{"cod_municipio":"25326","municipio":"GUATAVITA","acc":"307"}
+,{"cod_municipio":"47570","municipio":"PUEBLOVIEJO","acc":"307"}
+,{"cod_municipio":"52210","municipio":"CONTADERO","acc":"304"}
+,{"cod_municipio":"05658","municipio":"SAN JOSÉ DE LA MONTAÑA","acc":"302"}
+,{"cod_municipio":"20570","municipio":"PUEBLO BELLO","acc":"299"}
+,{"cod_municipio":"68418","municipio":"LOS SANTOS","acc":"298"}
+,{"cod_municipio":"68533","municipio":"PÁRAMO","acc":"297"}
+,{"cod_municipio":"41770","municipio":"SUAZA","acc":"297"}
+,{"cod_municipio":"52083","municipio":"BELÉN","acc":"296"}
+,{"cod_municipio":"73148","municipio":"CARMEN DE APICALÁ","acc":"295"}
+,{"cod_municipio":"73520","municipio":"PALOCABILDO","acc":"295"}
+,{"cod_municipio":"52019","municipio":"ALBÁN","acc":"291"}
+,{"cod_municipio":"15804","municipio":"TIBANÁ","acc":"289"}
+,{"cod_municipio":"52788","municipio":"TANGUA","acc":"286"}
+,{"cod_municipio":"52203","municipio":"COLÓN","acc":"284"}
+,{"cod_municipio":"52352","municipio":"ILES","acc":"282"}
+,{"cod_municipio":"25181","municipio":"CHOACHÍ","acc":"277"}
+,{"cod_municipio":"23815","municipio":"TUCHÍN","acc":"275"}
+,{"cod_municipio":"70523","municipio":"PALMITO","acc":"275"}
+,{"cod_municipio":"15362","municipio":"IZA","acc":"274"}
+,{"cod_municipio":"41016","municipio":"AIPE","acc":"271"}
+,{"cod_municipio":"52411","municipio":"LINARES","acc":"269"}
+,{"cod_municipio":"15425","municipio":"MACANAL","acc":"268"}
+,{"cod_municipio":"25335","municipio":"GUAYABETAL","acc":"265"}
+,{"cod_municipio":"17272","municipio":"FILADELFIA","acc":"265"}
+,{"cod_municipio":"13760","municipio":"SOPLAVIENTO","acc":"264"}
+,{"cod_municipio":"68320","municipio":"GUADALUPE","acc":"264"}
+,{"cod_municipio":"25299","municipio":"GAMA","acc":"263"}
+,{"cod_municipio":"25845","municipio":"UNE","acc":"262"}
+,{"cod_municipio":"15531","municipio":"PAUNA","acc":"262"}
+,{"cod_municipio":"19137","municipio":"CALDONO","acc":"262"}
+,{"cod_municipio":"41013","municipio":"AGRADO","acc":"260"}
+,{"cod_municipio":"41530","municipio":"PALESTINA","acc":"259"}
+,{"cod_municipio":"15476","municipio":"MOTAVITA","acc":"259"}
+,{"cod_municipio":"68780","municipio":"SURATÁ","acc":"258"}
+,{"cod_municipio":"85263","municipio":"PORE","acc":"257"}
+,{"cod_municipio":"50680","municipio":"SAN CARLOS DE GUAROA","acc":"257"}
+,{"cod_municipio":"44098","municipio":"DISTRACCIÓN","acc":"254"}
+,{"cod_municipio":"52427","municipio":"MAGÜI","acc":"253"}
+,{"cod_municipio":"73770","municipio":"SUÁREZ","acc":"253"}
+,{"cod_municipio":"15753","municipio":"SOATÁ","acc":"253"}
+,{"cod_municipio":"27245","municipio":"EL CARMEN DE ATRATO","acc":"253"}
+,{"cod_municipio":"50370","municipio":"URIBE","acc":"252"}
+,{"cod_municipio":"25777","municipio":"SUPATÁ","acc":"251"}
+,{"cod_municipio":"15162","municipio":"CERINZA","acc":"247"}
+,{"cod_municipio":"23500","municipio":"MOÑITOS","acc":"243"}
+,{"cod_municipio":"86760","municipio":"SANTIAGO","acc":"242"}
+,{"cod_municipio":"52233","municipio":"CUMBITARA","acc":"242"}
+,{"cod_municipio":"50223","municipio":"SAN LUIS DE CUBARRAL","acc":"242"}
+,{"cod_municipio":"68162","municipio":"CERRITO","acc":"239"}
+,{"cod_municipio":"76616","municipio":"RIOFRÍO","acc":"238"}
+,{"cod_municipio":"08770","municipio":"SUAN","acc":"238"}
+,{"cod_municipio":"15861","municipio":"VENTAQUEMADA","acc":"236"}
+,{"cod_municipio":"95015","municipio":"CALAMAR","acc":"232"}
+,{"cod_municipio":"18860","municipio":"VALPARAÍSO","acc":"232"}
+,{"cod_municipio":"52036","municipio":"ANCUYA","acc":"231"}
+,{"cod_municipio":"70473","municipio":"MORROA","acc":"230"}
+,{"cod_municipio":"20787","municipio":"TAMALAMEQUE","acc":"229"}
+,{"cod_municipio":"05842","municipio":"URAMITA","acc":"229"}
+,{"cod_municipio":"54520","municipio":"PAMPLONITA","acc":"229"}
+,{"cod_municipio":"13667","municipio":"SAN MARTÍN DE LOBA","acc":"228"}
+,{"cod_municipio":"23090","municipio":"CANALETE","acc":"228"}
+,{"cod_municipio":"73622","municipio":"RONCESVALLES","acc":"228"}
+,{"cod_municipio":"73200","municipio":"COELLO","acc":"227"}
+,{"cod_municipio":"19318","municipio":"GUAPI","acc":"227"}
+,{"cod_municipio":"08560","municipio":"PONEDERA","acc":"226"}
+,{"cod_municipio":"18460","municipio":"MILÁN","acc":"225"}
+,{"cod_municipio":"81591","municipio":"PUERTO RONDÓN","acc":"223"}
+,{"cod_municipio":"15215","municipio":"CORRALES","acc":"223"}
+,{"cod_municipio":"13062","municipio":"ARROYOHONDO","acc":"223"}
+,{"cod_municipio":"47170","municipio":"CHIVOLO","acc":"221"}
+,{"cod_municipio":"70771","municipio":"SUCRE","acc":"220"}
+,{"cod_municipio":"25281","municipio":"FOSCA","acc":"217"}
+,{"cod_municipio":"54174","municipio":"CHITAGÁ","acc":"217"}
+,{"cod_municipio":"54239","municipio":"DURANIA","acc":"217"}
+,{"cod_municipio":"13810","municipio":"TIQUISIO","acc":"216"}
+,{"cod_municipio":"15189","municipio":"CIÉNEGA","acc":"213"}
+,{"cod_municipio":"05055","municipio":"ARGELIA","acc":"209"}
+,{"cod_municipio":"15842","municipio":"UMBITA","acc":"208"}
+,{"cod_municipio":"05206","municipio":"CONCEPCIÓN","acc":"206"}
+,{"cod_municipio":"23675","municipio":"SAN BERNARDO DEL VIENTO","acc":"206"}
+,{"cod_municipio":"19075","municipio":"BALBOA","acc":"206"}
+,{"cod_municipio":"15740","municipio":"SIACHOQUE","acc":"204"}
+,{"cod_municipio":"23682","municipio":"SAN JOSÉ DE URÉ","acc":"201"}
+,{"cod_municipio":"68235","municipio":"EL CARMEN DE CHUCURÍ","acc":"199"}
+,{"cod_municipio":"19142","municipio":"CALOTO","acc":"198"}
+,{"cod_municipio":"41349","municipio":"HOBO","acc":"197"}
+,{"cod_municipio":"25662","municipio":"SAN JUAN DE RÍO SECO","acc":"196"}
+,{"cod_municipio":"25653","municipio":"SAN CAYETANO","acc":"196"}
+,{"cod_municipio":"05854","municipio":"VALDIVIA","acc":"191"}
+,{"cod_municipio":"13042","municipio":"ARENAL","acc":"190"}
+,{"cod_municipio":"15542","municipio":"PESCA","acc":"190"}
+,{"cod_municipio":"76054","municipio":"ARGELIA","acc":"188"}
+,{"cod_municipio":"25851","municipio":"ÚTICA","acc":"188"}
+,{"cod_municipio":"13006","municipio":"ACHÍ","acc":"187"}
+,{"cod_municipio":"54245","municipio":"EL CARMEN","acc":"187"}
+,{"cod_municipio":"68684","municipio":"SAN JOSÉ DE MIRANDA","acc":"184"}
+,{"cod_municipio":"52227","municipio":"CUMBAL","acc":"183"}
+,{"cod_municipio":"25279","municipio":"FOMEQUE","acc":"182"}
+,{"cod_municipio":"15764","municipio":"SORACÁ","acc":"181"}
+,{"cod_municipio":"52621","municipio":"ROBERTO PAYÁN","acc":"181"}
+,{"cod_municipio":"73030","municipio":"AMBALEMA","acc":"180"}
+,{"cod_municipio":"52215","municipio":"CÓRDOBA","acc":"179"}
+,{"cod_municipio":"13030","municipio":"ALTOS DEL ROSARIO","acc":"178"}
+,{"cod_municipio":"15276","municipio":"FLORESTA","acc":"178"}
+,{"cod_municipio":"25898","municipio":"ZIPACÓN","acc":"177"}
+,{"cod_municipio":"19809","municipio":"TIMBIQUÍ","acc":"175"}
+,{"cod_municipio":"54223","municipio":"CUCUTILLA","acc":"175"}
+,{"cod_municipio":"66572","municipio":"PUEBLO RICO","acc":"174"}
+,{"cod_municipio":"05819","municipio":"TOLEDO","acc":"173"}
+,{"cod_municipio":"52405","municipio":"LEIVA","acc":"173"}
+,{"cod_municipio":"70678","municipio":"SAN BENITO ABAD","acc":"172"}
+,{"cod_municipio":"73671","municipio":"SALDAÑA","acc":"171"}
+,{"cod_municipio":"27099","municipio":"BOJAYA","acc":"170"}
+,{"cod_municipio":"15224","municipio":"CUCAITA","acc":"169"}
+,{"cod_municipio":"66075","municipio":"BALBOA","acc":"168"}
+,{"cod_municipio":"76845","municipio":"ULLOA","acc":"168"}
+,{"cod_municipio":"50110","municipio":"BARRANCA DE UPÍA","acc":"167"}
+,{"cod_municipio":"13490","municipio":"NOROSÍ","acc":"166"}
+,{"cod_municipio":"15293","municipio":"GACHANTIVÁ","acc":"165"}
+,{"cod_municipio":"50711","municipio":"VISTAHERMOSA","acc":"165"}
+,{"cod_municipio":"15494","municipio":"NUEVO COLÓN","acc":"162"}
+,{"cod_municipio":"54418","municipio":"LOURDES","acc":"162"}
+,{"cod_municipio":"15051","municipio":"ARCABUCO","acc":"160"}
+,{"cod_municipio":"68464","municipio":"MOGOTES","acc":"159"}
+,{"cod_municipio":"13188","municipio":"CICUCO","acc":"157"}
+,{"cod_municipio":"47545","municipio":"PIJIÑO DEL CARMEN","acc":"156"}
+,{"cod_municipio":"13620","municipio":"SAN CRISTÓBAL","acc":"155"}
+,{"cod_municipio":"08675","municipio":"SANTA LUCÍA","acc":"155"}
+,{"cod_municipio":"47720","municipio":"SANTA BÁRBARA DE PINTO","acc":"155"}
+,{"cod_municipio":"68444","municipio":"MATANZA","acc":"154"}
+,{"cod_municipio":"08558","municipio":"POLONUEVO","acc":"153"}
+,{"cod_municipio":"25053","municipio":"ARBELÁEZ","acc":"153"}
+,{"cod_municipio":"25438","municipio":"MEDINA","acc":"153"}
+,{"cod_municipio":"15897","municipio":"ZETAQUIRA","acc":"152"}
+,{"cod_municipio":"05004","municipio":"ABRIAQUÍ","acc":"151"}
+,{"cod_municipio":"15296","municipio":"GAMEZA","acc":"151"}
+,{"cod_municipio":"27787","municipio":"TADÓ","acc":"150"}
+,{"cod_municipio":"44110","municipio":"EL MOLINO","acc":"149"}
+,{"cod_municipio":"15790","municipio":"TASCO","acc":"147"}
+,{"cod_municipio":"50400","municipio":"LEJANÍAS","acc":"147"}
+,{"cod_municipio":"25594","municipio":"QUETAME","acc":"145"}
+,{"cod_municipio":"41078","municipio":"BARAYA","acc":"144"}
+,{"cod_municipio":"19517","municipio":"PAEZ","acc":"142"}
+,{"cod_municipio":"23419","municipio":"LOS CÓRDOBAS","acc":"142"}
+,{"cod_municipio":"47605","municipio":"REMOLINO","acc":"142"}
+,{"cod_municipio":"23586","municipio":"PURÍSIMA","acc":"141"}
+,{"cod_municipio":"15223","municipio":"CUBARÁ","acc":"140"}
+,{"cod_municipio":"85315","municipio":"SÁCAMA","acc":"139"}
+,{"cod_municipio":"41244","municipio":"ELÍAS","acc":"135"}
+,{"cod_municipio":"23678","municipio":"SAN CARLOS","acc":"134"}
+,{"cod_municipio":"52323","municipio":"GUALMATÁN","acc":"133"}
+,{"cod_municipio":"15104","municipio":"BOYACÁ","acc":"133"}
+,{"cod_municipio":"25258","municipio":"EL PEÑÓN","acc":"133"}
+,{"cod_municipio":"73870","municipio":"VILLAHERMOSA","acc":"133"}
+,{"cod_municipio":"86219","municipio":"COLÓN","acc":"132"}
+,{"cod_municipio":"05873","municipio":"VIGÍA DEL FUERTE","acc":"131"}
+,{"cod_municipio":"19355","municipio":"INZÁ","acc":"131"}
+,{"cod_municipio":"54385","municipio":"LA ESPERANZA","acc":"130"}
+,{"cod_municipio":"15660","municipio":"SAN EDUARDO","acc":"129"}
+,{"cod_municipio":"15500","municipio":"OICATÁ","acc":"128"}
+,{"cod_municipio":"27150","municipio":"CARMEN DEL DARIÉN","acc":"128"}
+,{"cod_municipio":"15322","municipio":"GUATEQUE","acc":"126"}
+,{"cod_municipio":"15187","municipio":"CHIVATÁ","acc":"126"}
+,{"cod_municipio":"25823","municipio":"TOPAIPÍ","acc":"126"}
+,{"cod_municipio":"86755","municipio":"SAN FRANCISCO","acc":"125"}
+,{"cod_municipio":"73563","municipio":"PRADO","acc":"125"}
+,{"cod_municipio":"47258","municipio":"EL PIÑON","acc":"124"}
+,{"cod_municipio":"13212","municipio":"CÓRDOBA","acc":"124"}
+,{"cod_municipio":"68502","municipio":"ONZAGA","acc":"119"}
+,{"cod_municipio":"52565","municipio":"PROVIDENCIA","acc":"116"}
+,{"cod_municipio":"95025","municipio":"EL RETORNO","acc":"115"}
+,{"cod_municipio":"15673","municipio":"SAN MATEO","acc":"115"}
+,{"cod_municipio":"52250","municipio":"EL CHARCO","acc":"113"}
+,{"cod_municipio":"25871","municipio":"VILLAGÓMEZ","acc":"113"}
+,{"cod_municipio":"15676","municipio":"SAN MIGUEL DE SEMA","acc":"113"}
+,{"cod_municipio":"25841","municipio":"UBAQUE","acc":"112"}
+,{"cod_municipio":"25592","municipio":"QUEBRADANEGRA","acc":"112"}
+,{"cod_municipio":"20295","municipio":"GAMARRA","acc":"112"}
+,{"cod_municipio":"27372","municipio":"JURADÓ","acc":"112"}
+,{"cod_municipio":"68327","municipio":"GÜEPSA","acc":"111"}
+,{"cod_municipio":"23574","municipio":"PUERTO ESCONDIDO","acc":"109"}
+,{"cod_municipio":"54377","municipio":"LABATECA","acc":"108"}
+,{"cod_municipio":"54599","municipio":"RAGONVALIA","acc":"107"}
+,{"cod_municipio":"20032","municipio":"ASTREA","acc":"106"}
+,{"cod_municipio":"19418","municipio":"LÓPEZ","acc":"106"}
+,{"cod_municipio":"52224","municipio":"CUASPUD CARLOSAMA","acc":"105"}
+,{"cod_municipio":"19110","municipio":"BUENOS AIRES","acc":"105"}
+,{"cod_municipio":"20175","municipio":"CHIMICHAGUA","acc":"104"}
+,{"cod_municipio":"23168","municipio":"CHIMÁ","acc":"104"}
+,{"cod_municipio":"18785","municipio":"SOLITA","acc":"104"}
+,{"cod_municipio":"15325","municipio":"GUAYATÁ","acc":"103"}
+,{"cod_municipio":"68296","municipio":"GALÁN","acc":"102"}
+,{"cod_municipio":"73347","municipio":"HERVEO","acc":"102"}
+,{"cod_municipio":"68132","municipio":"CALIFORNIA","acc":"99"}
+,{"cod_municipio":"15244","municipio":"EL COCUY","acc":"99"}
+,{"cod_municipio":"54250","municipio":"EL TARRA","acc":"99"}
+,{"cod_municipio":"13580","municipio":"REGIDOR","acc":"97"}
+,{"cod_municipio":"15469","municipio":"MONIQUIRÁ","acc":"97"}
+,{"cod_municipio":"18479","municipio":"MORELIA","acc":"96"}
+,{"cod_municipio":"68147","municipio":"CAPITANEJO","acc":"96"}
+,{"cod_municipio":"68820","municipio":"TONA","acc":"96"}
+,{"cod_municipio":"68867","municipio":"VETAS","acc":"95"}
+,{"cod_municipio":"25807","municipio":"TIBIRITA","acc":"95"}
+,{"cod_municipio":"76246","municipio":"EL CAIRO","acc":"95"}
+,{"cod_municipio":"05475","municipio":"MURINDÓ","acc":"93"}
+,{"cod_municipio":"25491","municipio":"NOCAIMA","acc":"93"}
+,{"cod_municipio":"15097","municipio":"BOAVITA","acc":"92"}
+,{"cod_municipio":"13650","municipio":"SAN FERNANDO","acc":"91"}
+,{"cod_municipio":"25535","municipio":"PASCA","acc":"91"}
+,{"cod_municipio":"19821","municipio":"TORIBIO","acc":"90"}
+,{"cod_municipio":"52696","municipio":"SANTA BÁRBARA","acc":"90"}
+,{"cod_municipio":"73270","municipio":"FALAN","acc":"90"}
+,{"cod_municipio":"15664","municipio":"SAN JOSÉ DE PARE","acc":"90"}
+,{"cod_municipio":"15879","municipio":"VIRACACHÁ","acc":"89"}
+,{"cod_municipio":"25596","municipio":"QUIPILE","acc":"89"}
+,{"cod_municipio":"27250","municipio":"EL LITORAL DEL SAN JUAN","acc":"89"}
+,{"cod_municipio":"13780","municipio":"TALAIGUA NUEVO","acc":"88"}
+,{"cod_municipio":"15109","municipio":"BUENAVISTA","acc":"87"}
+,{"cod_municipio":"25867","municipio":"VIANÍ","acc":"87"}
+,{"cod_municipio":"27800","municipio":"UNGUÍA","acc":"86"}
+,{"cod_municipio":"25086","municipio":"BELTRÁN","acc":"85"}
+,{"cod_municipio":"41799","municipio":"TELLO","acc":"85"}
+,{"cod_municipio":"68322","municipio":"GUAPOTÁ","acc":"85"}
+,{"cod_municipio":"54673","municipio":"SAN CAYETANO","acc":"85"}
+,{"cod_municipio":"76243","municipio":"EL ÁGUILA","acc":"84"}
+,{"cod_municipio":"50124","municipio":"CABUYARO","acc":"83"}
+,{"cod_municipio":"13440","municipio":"MARGARITA","acc":"83"}
+,{"cod_municipio":"15183","municipio":"CHITA","acc":"82"}
+,{"cod_municipio":"68298","municipio":"GAMBITA","acc":"80"}
+,{"cod_municipio":"68498","municipio":"OCAMONTE","acc":"80"}
+,{"cod_municipio":"15820","municipio":"TÓPAGA","acc":"80"}
+,{"cod_municipio":"52287","municipio":"FUNES","acc":"80"}
+,{"cod_municipio":"18756","municipio":"SOLANO","acc":"78"}
+,{"cod_municipio":"19824","municipio":"TOTORÓ","acc":"78"}
+,{"cod_municipio":"15686","municipio":"SANTANA","acc":"77"}
+,{"cod_municipio":"15690","municipio":"SANTA MARÍA","acc":"76"}
+,{"cod_municipio":"13160","municipio":"CANTAGALLO","acc":"76"}
+,{"cod_municipio":"86571","municipio":"PUERTO GUZMÁN","acc":"76"}
+,{"cod_municipio":"85225","municipio":"NUNCHÍA","acc":"75"}
+,{"cod_municipio":"41872","municipio":"VILLAVIEJA","acc":"75"}
+,{"cod_municipio":"15755","municipio":"SOCOTÁ","acc":"75"}
+,{"cod_municipio":"05107","municipio":"BRICEÑO","acc":"74"}
+,{"cod_municipio":"15696","municipio":"SANTA SOFÍA","acc":"74"}
+,{"cod_municipio":"85136","municipio":"LA SALINA","acc":"73"}
+,{"cod_municipio":"73226","municipio":"CUNDAY","acc":"73"}
+,{"cod_municipio":"52573","municipio":"PUERRES","acc":"73"}
+,{"cod_municipio":"68092","municipio":"BETULIA","acc":"73"}
+,{"cod_municipio":"52051","municipio":"ARBOLEDA","acc":"73"}
+,{"cod_municipio":"85325","municipio":"SAN LUIS DE PALENQUE","acc":"71"}
+,{"cod_municipio":"19622","municipio":"ROSAS","acc":"71"}
+,{"cod_municipio":"68169","municipio":"CHARTA","acc":"71"}
+,{"cod_municipio":"15762","municipio":"SORA","acc":"70"}
+,{"cod_municipio":"68160","municipio":"CEPITÁ","acc":"69"}
+,{"cod_municipio":"54125","municipio":"CÁCOTA","acc":"69"}
+,{"cod_municipio":"13248","municipio":"EL GUAMO","acc":"69"}
+,{"cod_municipio":"54347","municipio":"HERRÁN","acc":"68"}
+,{"cod_municipio":"68468","municipio":"MOLAGAVITA","acc":"67"}
+,{"cod_municipio":"47703","municipio":"SAN ZENÓN","acc":"67"}
+,{"cod_municipio":"54206","municipio":"CONVENCIÓN","acc":"67"}
+,{"cod_municipio":"54480","municipio":"MUTISCUA","acc":"66"}
+,{"cod_municipio":"68217","municipio":"COROMORO","acc":"66"}
+,{"cod_municipio":"25805","municipio":"TIBACUY","acc":"65"}
+,{"cod_municipio":"25483","municipio":"NARIÑO","acc":"65"}
+,{"cod_municipio":"25368","municipio":"JERUSALÉN","acc":"65"}
+,{"cod_municipio":"15218","municipio":"COVARACHÍA","acc":"64"}
+,{"cod_municipio":"15226","municipio":"CUÍTIVA","acc":"63"}
+,{"cod_municipio":"68179","municipio":"CHIPATÁ","acc":"63"}
+,{"cod_municipio":"15464","municipio":"MONGUA","acc":"61"}
+,{"cod_municipio":"15518","municipio":"PAJARITO","acc":"61"}
+,{"cod_municipio":"97001","municipio":"MITÚ","acc":"60"}
+,{"cod_municipio":"66456","municipio":"MISTRATÓ","acc":"60"}
+,{"cod_municipio":"50590","municipio":"PUERTO RICO","acc":"58"}
+,{"cod_municipio":"68573","municipio":"PUERTO PARRA","acc":"57"}
+,{"cod_municipio":"27450","municipio":"MEDIO SAN JUAN","acc":"57"}
+,{"cod_municipio":"54398","municipio":"LA PLAYA","acc":"56"}
+,{"cod_municipio":"25885","municipio":"YACOPÍ","acc":"56"}
+,{"cod_municipio":"44090","municipio":"DIBULLA","acc":"55"}
+,{"cod_municipio":"68101","municipio":"BOLÍVAR","acc":"55"}
+,{"cod_municipio":"15681","municipio":"SAN PABLO DE BORBUR","acc":"54"}
+,{"cod_municipio":"73616","municipio":"RIOBLANCO","acc":"54"}
+,{"cod_municipio":"27025","municipio":"ALTO BAUDÓ","acc":"53"}
+,{"cod_municipio":"85015","municipio":"CHAMEZA","acc":"53"}
+,{"cod_municipio":"54743","municipio":"SILOS","acc":"51"}
+,{"cod_municipio":"68266","municipio":"ENCISO","acc":"51"}
+,{"cod_municipio":"52490","municipio":"OLAYA HERRERA","acc":"51"}
+,{"cod_municipio":"86569","municipio":"PUERTO CAICEDO","acc":"51"}
+,{"cod_municipio":"17446","municipio":"MARULANDA","acc":"51"}
+,{"cod_municipio":"68176","municipio":"CHIMA","acc":"51"}
+,{"cod_municipio":"50683","municipio":"SAN JUAN DE ARAMA","acc":"50"}
+,{"cod_municipio":"52473","municipio":"MOSQUERA","acc":"50"}
+,{"cod_municipio":"25328","municipio":"GUAYABAL DE SIQUIMA","acc":"48"}
+,{"cod_municipio":"15114","municipio":"BUSBANZÁ","acc":"48"}
+,{"cod_municipio":"15180","municipio":"CHISCAS","acc":"48"}
+,{"cod_municipio":"15822","municipio":"TOTA","acc":"48"}
+,{"cod_municipio":"27491","municipio":"NÓVITA","acc":"48"}
+,{"cod_municipio":"63302","municipio":"GÉNOVA","acc":"48"}
+,{"cod_municipio":"15090","municipio":"BERBEO","acc":"47"}
+,{"cod_municipio":"25426","municipio":"MACHETA","acc":"47"}
+,{"cod_municipio":"73236","municipio":"DOLORES","acc":"47"}
+,{"cod_municipio":"20614","municipio":"RÍO DE ORO","acc":"45"}
+,{"cod_municipio":"68245","municipio":"EL GUACAMAYO","acc":"45"}
+,{"cod_municipio":"73152","municipio":"CASABIANCA","acc":"44"}
+,{"cod_municipio":"25324","municipio":"GUATAQUÍ","acc":"44"}
+,{"cod_municipio":"68686","municipio":"SAN MIGUEL","acc":"44"}
+,{"cod_municipio":"25839","municipio":"UBALÁ","acc":"44"}
+,{"cod_municipio":"27430","municipio":"MEDIO BAUDÓ","acc":"44"}
+,{"cod_municipio":"25580","municipio":"PULÍ","acc":"43"}
+,{"cod_municipio":"50325","municipio":"MAPIRIPÁN","acc":"43"}
+,{"cod_municipio":"19513","municipio":"PADILLA","acc":"43"}
+,{"cod_municipio":"85400","municipio":"TÁMARA","acc":"42"}
+,{"cod_municipio":"70124","municipio":"CAIMITO","acc":"42"}
+,{"cod_municipio":"68385","municipio":"LANDÁZURI","acc":"39"}
+,{"cod_municipio":"15377","municipio":"LABRANZAGRANDE","acc":"39"}
+,{"cod_municipio":"25489","municipio":"NIMAIMA","acc":"39"}
+,{"cod_municipio":"25120","municipio":"CABRERA","acc":"38"}
+,{"cod_municipio":"99773","municipio":"CUMARIBO","acc":"38"}
+,{"cod_municipio":"68121","municipio":"CABRERA","acc":"38"}
+,{"cod_municipio":"52612","municipio":"RICAURTE","acc":"37"}
+,{"cod_municipio":"15368","municipio":"JERICÓ","acc":"37"}
+,{"cod_municipio":"54660","municipio":"SALAZAR","acc":"36"}
+,{"cod_municipio":"19701","municipio":"SANTA ROSA","acc":"36"}
+,{"cod_municipio":"73024","municipio":"ALPUJARRA","acc":"35"}
+,{"cod_municipio":"15135","municipio":"CAMPOHERMOSO","acc":"35"}
+,{"cod_municipio":"27073","municipio":"BAGADÓ","acc":"35"}
+,{"cod_municipio":"66318","municipio":"GUÁTICA","acc":"35"}
+,{"cod_municipio":"19392","municipio":"LA SIERRA","acc":"34"}
+,{"cod_municipio":"54871","municipio":"VILLA CARO","acc":"34"}
+,{"cod_municipio":"73675","municipio":"SAN ANTONIO","acc":"33"}
+,{"cod_municipio":"27425","municipio":"MEDIO ATRATO","acc":"33"}
+,{"cod_municipio":"27745","municipio":"SIPÍ","acc":"32"}
+,{"cod_municipio":"15839","municipio":"TUTAZÁ","acc":"31"}
+,{"cod_municipio":"91405","municipio":"LA CHORRERA","acc":"31"}
+,{"cod_municipio":"68773","municipio":"SUCRE","acc":"30"}
+,{"cod_municipio":"15092","municipio":"BETÉITIVA","acc":"30"}
+,{"cod_municipio":"68250","municipio":"EL PEÑÓN","acc":"29"}
+,{"cod_municipio":"15232","municipio":"CHÍQUIZA","acc":"29"}
+,{"cod_municipio":"25862","municipio":"VERGARA","acc":"27"}
+,{"cod_municipio":"13549","municipio":"PINILLOS","acc":"27"}
+,{"cod_municipio":"15632","municipio":"SABOYÁ","acc":"27"}
+,{"cod_municipio":"73686","municipio":"SANTA ISABEL","acc":"26"}
+,{"cod_municipio":"68368","municipio":"JESÚS MARÍA","acc":"26"}
+,{"cod_municipio":"54109","municipio":"BUCARASICA","acc":"25"}
+,{"cod_municipio":"25372","municipio":"JUNÍN","acc":"25"}
+,{"cod_municipio":"50577","municipio":"PUERTO LLERAS","acc":"25"}
+,{"cod_municipio":"19780","municipio":"SUÁREZ","acc":"25"}
+,{"cod_municipio":"54800","municipio":"TEORAMA","acc":"25"}
+,{"cod_municipio":"63111","municipio":"BUENAVISTA","acc":"25"}
+,{"cod_municipio":"41206","municipio":"COLOMBIA","acc":"25"}
+,{"cod_municipio":"68397","municipio":"LA PAZ","acc":"24"}
+,{"cod_municipio":"85279","municipio":"RECETOR","acc":"24"}
+,{"cod_municipio":"52560","municipio":"POTOSÍ","acc":"24"}
+,{"cod_municipio":"19585","municipio":"PURACÉ","acc":"23"}
+,{"cod_municipio":"50450","municipio":"PUERTO CONCORDIA","acc":"23"}
+,{"cod_municipio":"68745","municipio":"SIMACOTA","acc":"23"}
+,{"cod_municipio":"18610","municipio":"SAN JOSÉ DEL FRAGUA","acc":"23"}
+,{"cod_municipio":"73043","municipio":"ANZOÁTEGUI","acc":"22"}
+,{"cod_municipio":"13300","municipio":"HATILLO DE LOBA","acc":"22"}
+,{"cod_municipio":"25293","municipio":"GACHALA","acc":"22"}
+,{"cod_municipio":"70233","municipio":"EL ROBLE","acc":"22"}
+,{"cod_municipio":"68669","municipio":"SAN ANDRÉS","acc":"21"}
+,{"cod_municipio":"54344","municipio":"HACARÍ","acc":"20"}
+,{"cod_municipio":"54128","municipio":"CACHIRÁ","acc":"20"}
+,{"cod_municipio":"27050","municipio":"ATRATO","acc":"20"}
+,{"cod_municipio":"27810","municipio":"UNIÓN PANAMERICANA","acc":"20"}
+,{"cod_municipio":"25530","municipio":"PARATEBUENO","acc":"20"}
+,{"cod_municipio":"91798","municipio":"TARAPACÁ","acc":"20"}
+,{"cod_municipio":"68271","municipio":"FLORIÁN","acc":"19"}
+,{"cod_municipio":"99524","municipio":"LA PRIMAVERA","acc":"19"}
+,{"cod_municipio":"25398","municipio":"LA PEÑA","acc":"19"}
+,{"cod_municipio":"15723","municipio":"SATIVASUR","acc":"19"}
+,{"cod_municipio":"19760","municipio":"SOTARÁ PAISPAMBA","acc":"19"}
+,{"cod_municipio":"27135","municipio":"EL CANTÓN DEL SAN PABLO","acc":"19"}
+,{"cod_municipio":"19693","municipio":"SAN SEBASTIÁN","acc":"18"}
+,{"cod_municipio":"27413","municipio":"LLORÓ","acc":"17"}
+,{"cod_municipio":"68377","municipio":"LA BELLEZA","acc":"17"}
+,{"cod_municipio":"15172","municipio":"CHINAVITA","acc":"17"}
+,{"cod_municipio":"68370","municipio":"JORDÁN","acc":"17"}
+,{"cod_municipio":"68152","municipio":"CARCASÍ","acc":"17"}
+,{"cod_municipio":"25168","municipio":"CHAGUANÍ","acc":"17"}
+,{"cod_municipio":"18029","municipio":"ALBANIA","acc":"17"}
+,{"cod_municipio":"68013","municipio":"AGUADA","acc":"16"}
+,{"cod_municipio":"19300","municipio":"GUACHENÉ","acc":"16"}
+,{"cod_municipio":"52390","municipio":"LA TOLA","acc":"16"}
+,{"cod_municipio":"15514","municipio":"PÁEZ","acc":"16"}
+,{"cod_municipio":"18205","municipio":"CURILLO","acc":"16"}
+,{"cod_municipio":"94883","municipio":"SAN FELIPE","acc":"15"}
+,{"cod_municipio":"68324","municipio":"GUAVATÁ","acc":"15"}
+,{"cod_municipio":"13268","municipio":"EL PEÑÓN","acc":"15"}
+,{"cod_municipio":"88564","municipio":"PROVIDENCIA","acc":"15"}
+,{"cod_municipio":"68524","municipio":"PALMAS DEL SOCORRO","acc":"15"}
+,{"cod_municipio":"19533","municipio":"PIAMONTE","acc":"15"}
+,{"cod_municipio":"68682","municipio":"SAN JOAQUÍN","acc":"15"}
+,{"cod_municipio":"25518","municipio":"PAIME","acc":"15"}
+,{"cod_municipio":"54670","municipio":"SAN CALIXTO","acc":"15"}
+,{"cod_municipio":"25339","municipio":"GUTIÉRREZ","acc":"15"}
+,{"cod_municipio":"15442","municipio":"MARIPÍ","acc":"15"}
+,{"cod_municipio":"68425","municipio":"MACARAVITA","acc":"15"}
+,{"cod_municipio":"15667","municipio":"SAN LUIS DE GACENO","acc":"15"}
+,{"cod_municipio":"68720","municipio":"SANTA HELENA DEL OPÓN","acc":"14"}
+,{"cod_municipio":"13673","municipio":"SANTA CATALINA","acc":"14"}
+,{"cod_municipio":"15816","municipio":"TOGÜÍ","acc":"14"}
+,{"cod_municipio":"15332","municipio":"GÜICÁN","acc":"14"}
+,{"cod_municipio":"15720","municipio":"SATIVANORTE","acc":"14"}
+,{"cod_municipio":"27660","municipio":"SAN JOSÉ DEL PALMAR","acc":"14"}
+,{"cod_municipio":"54680","municipio":"SANTIAGO","acc":"14"}
+,{"cod_municipio":"15621","municipio":"RONDÓN","acc":"14"}
+,{"cod_municipio":"73873","municipio":"VILLARRICA","acc":"14"}
+,{"cod_municipio":"94886","municipio":"CACAHUAL","acc":"14"}
+,{"cod_municipio":"15798","municipio":"TENZA","acc":"13"}
+,{"cod_municipio":"50245","municipio":"EL CALVARIO","acc":"13"}
+,{"cod_municipio":"15236","municipio":"CHIVOR","acc":"13"}
+,{"cod_municipio":"73854","municipio":"VALLE DE SAN JUAN","acc":"13"}
+,{"cod_municipio":"68522","municipio":"PALMAR","acc":"13"}
+,{"cod_municipio":"25649","municipio":"SAN BERNARDO","acc":"13"}
+,{"cod_municipio":"50251","municipio":"EL CASTILLO","acc":"13"}
+,{"cod_municipio":"19022","municipio":"ALMAGUER","acc":"13"}
+,{"cod_municipio":"73461","municipio":"MURILLO","acc":"13"}
+,{"cod_municipio":"15580","municipio":"QUÍPAMA","acc":"12"}
+,{"cod_municipio":"50686","municipio":"SAN JUANITO","acc":"12"}
+,{"cod_municipio":"68344","municipio":"HATO","acc":"12"}
+,{"cod_municipio":"68020","municipio":"ALBANIA","acc":"12"}
+,{"cod_municipio":"15185","municipio":"CHITARAQUE","acc":"12"}
+,{"cod_municipio":"68264","municipio":"ENCINO","acc":"12"}
+,{"cod_municipio":"15778","municipio":"SUTATENZA","acc":"12"}
+,{"cod_municipio":"52022","municipio":"ALDANA","acc":"12"}
+,{"cod_municipio":"15401","municipio":"LA VICTORIA","acc":"11"}
+,{"cod_municipio":"08549","municipio":"PIOJÓ","acc":"11"}
+,{"cod_municipio":"91540","municipio":"PUERTO NARIÑO","acc":"11"}
+,{"cod_municipio":"52520","municipio":"FRANCISCO PIZARRO","acc":"11"}
+,{"cod_municipio":"15810","municipio":"TIPACOQUE","acc":"11"}
+,{"cod_municipio":"68705","municipio":"SANTA BÁRBARA","acc":"11"}
+,{"cod_municipio":"27160","municipio":"CÉRTEGUI","acc":"11"}
+,{"cod_municipio":"15403","municipio":"LA UVITA","acc":"11"}
+,{"cod_municipio":"19397","municipio":"LA VEGA","acc":"11"}
+,{"cod_municipio":"25095","municipio":"BITUIMA","acc":"11"}
+,{"cod_municipio":"95200","municipio":"MIRAFLORES","acc":"11"}
+,{"cod_municipio":"91263","municipio":"EL ENCANTO","acc":"10"}
+,{"cod_municipio":"97666","municipio":"TARAIRA","acc":"10"}
+,{"cod_municipio":"19785","municipio":"SUCRE","acc":"10"}
+,{"cod_municipio":"99624","municipio":"SANTA ROSALÍA","acc":"10"}
+,{"cod_municipio":"15248","municipio":"EL ESPINO","acc":"10"}
+,{"cod_municipio":"13655","municipio":"SAN JACINTO DEL CAUCA","acc":"10"}
+,{"cod_municipio":"15761","municipio":"SOMONDOCO","acc":"9"}
+,{"cod_municipio":"15380","municipio":"LA CAPILLA","acc":"9"}
+,{"cod_municipio":"50270","municipio":"EL DORADO","acc":"9"}
+,{"cod_municipio":"15212","municipio":"COPER","acc":"9"}
+,{"cod_municipio":"44420","municipio":"LA JAGUA DEL PILAR","acc":"9"}
+,{"cod_municipio":"68673","municipio":"SAN BENITO","acc":"9"}
+,{"cod_municipio":"15106","municipio":"BRICEÑO","acc":"9"}
+,{"cod_municipio":"15550","municipio":"PISBA","acc":"9"}
+,{"cod_municipio":"15774","municipio":"SUSACÓN","acc":"9"}
+,{"cod_municipio":"15522","municipio":"PANQUEBA","acc":"8"}
+,{"cod_municipio":"15533","municipio":"PAYA","acc":"8"}
+,{"cod_municipio":"25506","municipio":"VENECIA","acc":"8"}
+,{"cod_municipio":"97161","municipio":"CARURU","acc":"8"}
+,{"cod_municipio":"15131","municipio":"CALDAS","acc":"8"}
+,{"cod_municipio":"94343","municipio":"BARRANCOMINAS","acc":"8"}
+,{"cod_municipio":"27580","municipio":"RÍO IRÓ","acc":"8"}
+,{"cod_municipio":"20310","municipio":"GONZÁLEZ","acc":"8"}
+,{"cod_municipio":"52694","municipio":"SAN PEDRO DE CARTAGO","acc":"7"}
+,{"cod_municipio":"15511","municipio":"PACHAVITA","acc":"6"}
+,{"cod_municipio":"15317","municipio":"GUACAMAYAS","acc":"6"}
+,{"cod_municipio":"70204","municipio":"COLOSO","acc":"5"}
+,{"cod_municipio":"15832","municipio":"TUNUNGUÁ","acc":"5"}
+,{"cod_municipio":"15022","municipio":"ALMEIDA","acc":"5"}
+,{"cod_municipio":"47205","municipio":"CONCORDIA","acc":"3"}
+,{"cod_municipio":"97777","municipio":"PAPUNAHUA","acc":"3"}
+,{"cod_municipio":"47161","municipio":"CERRO SAN ANTONIO","acc":"3"}
+,{"cod_municipio":"47541","municipio":"PEDRAZA","acc":"3"}
+,{"cod_municipio":"94888","municipio":"MORICHAL","acc":"2"}
+,{"cod_municipio":"97889","municipio":"YAVARATÉ","acc":"2"}
+,{"cod_municipio":"70230","municipio":"CHALÁN","acc":"2"}
+,{"cod_municipio":"91536","municipio":"PUERTO ARICA","acc":"2"}
+,{"cod_municipio":"47960","municipio":"ZAPAYÁN","acc":"2"}
+,{"cod_municipio":"94884","municipio":"PUERTO COLOMBIA","acc":"1"}
+,{"cod_municipio":"97511","municipio":"PACOA","acc":"1"}
+,{"cod_municipio":"94885","municipio":"LA GUADALUPE","acc":"1"}
+,{"cod_municipio":"91530","municipio":"PUERTO ALEGRÍA","acc":"1"}
+,{"cod_municipio":"91407","municipio":"LA PEDRERA","acc":"1"}]

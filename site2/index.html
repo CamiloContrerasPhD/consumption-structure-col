@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>La estructura del consumo en el territorio - Colombia</title>
+<link rel="stylesheet" href="styles.css?v=5"/>
+<script src="i18n.js?v=3"></script>
+<script defer src="nav.js?v=10"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <span class="l">LA ESTRUCTURA DEL CONSUMO EN EL TERRITORIO</span>
+    <a href="https://camilocontrerasphd.github.io/political-polarization-consumption-col/" target="_blank" rel="noopener">PROYECTO HERMANO: POLARIZACION DEL CONSUMO ↗</a>
+  </div>
+
+  <header class="hero">
+    <span class="hero-tag" data-en="Complexity, access and opportunity &middot; Colombia">Complejidad, acceso y oportunidad &middot; Colombia</span>
+    <h1 class="hero-h" data-en="Not just <em>who consumes what</em>, but how consumption is <em>structured</em>">No solo <em>quién consume qué</em>, sino cómo se <em>estructura</em> el consumo</h1>
+    <p class="hero-lede" data-en="Does consumption in Colombia have a political color? This site puts
+      <b>8,121 outlets of 145 chains</b> on the map and crosses them, municipality by municipality, with the
+      <b>2026 presidential vote</b>. Four questions guide it:">¿El consumo en Colombia tiene color político? Este
+      sitio pone en el mapa <b>8.121 locales de 145 cadenas</b> y los cruza, municipio a municipio, con el
+      <b>voto presidencial de 2026</b>. Lo guían cuatro preguntas:</p>
+    <ul class="hero-points">
+      <li data-en="<b>How complete is each municipality's market?</b> Where you can find everything and where almost
+        everything is missing: who has access to what, for consumers and public policy."><b>¿Qué tan completo es
+        el mercado de cada municipio?</b> Dónde se consigue de todo y dónde falta casi todo: quién tiene acceso
+        a qué, para consumidores y política pública.</li>
+      <li data-en="<b>Where is each brand missing?</b> Municipalities that &quot;ask for&quot; a chain that hasn't
+        arrived: expansion opportunities, for companies."><b>¿Dónde le falta mercado a cada marca?</b>
+        Municipios que "piden" una cadena que aún no llega: oportunidades de expansión, para las empresas.</li>
+      <li data-en="<b>Does politics hold that expansion back?</b> Whether brands avoid territory that votes unlike
+        their home turf: the silent cost of polarization, for companies and society."><b>¿La política frena esa
+        expansión?</b> Si las marcas evitan el territorio que vota distinto a su base: el costo silencioso de
+        la polarización, para empresas y sociedad.</li>
+      <li data-en="<b>Does the market unite or divide?</b> Whether shopping is one of the few things both camps still
+        do in the same places, for society."><b>¿El mercado une o divide?</b> Si comprar es de las pocas cosas
+        que ambos bandos todavía hacen en los mismos lugares, para la sociedad.</li>
+    </ul>
+    <p class="hero-lede" style="margin-top:14px" data-en="A preview of the answers, in plain words: the big chains
+      serve both camps almost equally: <b>the market unites far more than the vote divides</b>. But when
+      brands grow, they tend to stay in politically familiar territory. <b>Polarization also moves storefronts.</b>">
+      Un adelanto de las respuestas, en palabras simples: las grandes cadenas atienden a ambos bandos casi por igual:
+      <b>el mercado une mucho más de lo que el voto divide</b>. Pero al crecer, las marcas tienden a
+      quedarse en territorio políticamente afín. <b>La polarización también mueve vitrinas.</b></p>
+    <div class="stats" id="stats"></div>
+    <p class="src" style="margin-top:22px" data-en="Method: economic complexity (ECI/PCI via eigenvector) and
+      <i>relatedness</i> density over the municipality x brand matrix (OpenStreetMap). Cross-cutting political axis:
+      Cepeda vs De La Espriella vote, 2026.">Método: complejidad económica (ECI/PCI por eigenvector) y densidad
+      de <i>relatedness</i> sobre la matriz municipio x marca (OpenStreetMap). Eje político transversal:
+      voto Cepeda vs De La Espriella 2026.</p>
+  </header>
+
+  <div class="caveat" style="max-width:none" data-en="<b>This is a structural reading, not a demand one.</b> &quot;Complexity&quot; describes how rare/diverse the
+    supply present in each place is (OpenStreetMap footprint), not individual preferences. The political
+    color is included only to contrast structure with the geography of the vote.">
+    <b>Es una lectura estructural, no de demanda.</b> La "complejidad" describe qué tan rara/diversa es la
+    oferta presente en cada lugar (huella de OpenStreetMap), no las preferencias individuales. El color
+    político se incluye solo para contrastar estructura y geografía del voto.
+  </div>
+
+  <div class="section-label" data-en="The analyses">Los análisis</div>
+  <div class="cards" id="cards"></div>
+
+  <div class="rel-h" data-en="RESOURCES AND NOTES">RECURSOS Y NOTAS</div>
+  <div class="rel">
+    <div class="rcard" data-en="<a href='https://camilocontrerasphd.github.io/political-polarization-consumption-col/' target='_blank' rel='noopener'>Site 1: Polarization of consumption ↗</a><br/>
+      Same data (vote, brands), different question: not structure and prediction, but sorting and extremes by
+      region.">
+      <a href="https://camilocontrerasphd.github.io/political-polarization-consumption-col/" target="_blank" rel="noopener">Sitio 1: Polarización del consumo ↗</a><br/>
+      Mismos datos (voto, marcas), otra pregunta: no estructura y predicción, sino sorteo y extremos por región.
+    </div>
+    <div class="rcard" data-en="<a href='https://resultados.registraduria.gov.co/' target='_blank'>Registraduría 2026</a>
+      &middot; <a href='https://www.openstreetmap.org' target='_blank'>OpenStreetMap</a> &middot;
+      <a href='https://www.dane.gov.co' target='_blank'>DANE</a><br/>
+      Resultados electorales <b>provisionales</b> (preconteo, no vinculantes). Cobertura de OSM incompleta y sesgada
+      a lo urbano (522/1.085 municipios, 84% de la población). Población: proyecciones CNPV 2018, año 2025.">
+      <a href="https://resultados.registraduria.gov.co/" target="_blank">Registraduría 2026</a> &middot;
+      <a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a> &middot;
+      <a href="https://www.dane.gov.co" target="_blank">DANE</a><br/>
+      Resultados electorales <b>provisionales</b> (preconteo, no vinculantes). Cobertura de OSM incompleta y sesgada
+      a lo urbano (522/1.085 municipios, 84% de la población). Población: proyecciones CNPV 2018, año 2025.
+    </div>
+    <div class="rcard" data-en="<b>Methods borrowed from other fields</b><br/>
+      Economic complexity (Hidalgo &amp; Hausmann) applied to consumption instead of exports; spatial statistics
+      (LISA, Anselin) and Bayesian disease-mapping (BYM, Besag-York-Mollié) applied to the vote instead of health
+      data; network science (product space, greedy modularity) applied to brands instead of goods.">
+      <b>Métodos prestados de otros campos</b><br/>
+      Complejidad económica (Hidalgo &amp; Hausmann) aplicada al consumo en vez de exportaciones; estadística
+      espacial (LISA, Anselin) y mapeo bayesiano de enfermedades (BYM, Besag-York-Mollié) aplicados al voto en vez
+      de datos de salud; ciencia de redes (espacio de producto, modularidad voraz) aplicada a marcas en vez de bienes.
+    </div>
+    <div class="rcard" data-en="<a href='metodologia.html'>Methodology and references →</a><br/>
+      Data, methods page by page, honest limitations (ecological level, OSM coverage, correlational findings) and
+      the full bibliography behind each decision.">
+      <a href="metodologia.html">Metodología y referencias →</a><br/>
+      Datos, métodos página por página, limitaciones honestas (nivel ecológico, cobertura OSM, hallazgos
+      correlacionales) y la bibliografía completa detrás de cada decisión.
+    </div>
+  </div>
+</div>
+
+<script defer src="complex.js"></script>
+<script defer src="acceso.js"></script>
+<script defer src="integracion.js"></script>
+<script defer src="riesgo.js"></script>
+<script defer src="clusters.js"></script>
+<script defer src="red.js"></script>
+<script defer src="bym.js?v=2"></script>
+<script defer src="app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+const CX=window.CX, B=CX.brands, Mu=CX.munis;
+const premium=B.filter(b=>b.pci!=null && b.pci>0).length;
+const conOpp=Mu.filter(m=>m.opp && m.opp.length>0).length;
+const eciVals=Mu.filter(m=>m.eci!=null).map(m=>m.eci);
+// stat pills
+function buildStats(){
+  const stats=[[''+Mu.length,I18N.t('municipios','municipalities')],[''+B.length,I18N.t('marcas','brands')],
+    [''+premium,I18N.t('marcas premium (PCI>0)','premium brands (PCI>0)')],
+    [''+conOpp,I18N.t('municipios con oportunidades','municipalities with opportunities')]];
+  d3.select('#stats').selectAll('.stat').data(stats).join('div').attr('class','stat')
+    .html(d=>`<b>${d[0]}</b><span>${d[1]}</span>`);
+}
+buildStats();
+
+const box=d3.select('#cards');
+function poles(a){const pl=a.append('div').attr('class','poleline');
+  pl.append('span').attr('class','l').text('◀ CEPEDA');pl.append('span').attr('class','r').text('DE LA ESPRIELLA ▶');}
+
+// 1) Complejidad: histograma de ECI coloreado por voto promedio del bin
+const c1=box.append('a').attr('class','dcard').attr('href','complejidad.html');
+c1.append('h3').text('Complejidad del consumo');
+c1.append('div').attr('class','sub').text('Qué tan diversa y sofisticada es la canasta de cada municipio (ECI).');
+(function(){const svg=c1.append('div').attr('class','hist').append('svg').attr('viewBox','0 0 300 120').attr('width','100%');
+  const xmax=2.6,nb=19,bins=new Array(nb).fill(0),lsum=new Array(nb).fill(0);const step=2*xmax/nb;
+  Mu.forEach(m=>{if(m.eci==null)return;let i=Math.max(0,Math.min(nb-1,Math.floor((m.eci+xmax)/step)));bins[i]++;lsum[i]+=m.lean*100;});
+  const mx=Math.max(...bins),bw=300/nb;
+  svg.selectAll('rect').data(bins).join('rect').attr('x',(d,i)=>i*bw+1).attr('width',bw-1.6)
+    .attr('y',d=>110-(d/mx)*100).attr('height',d=>(d/mx)*100)
+    .attr('fill',(d,i)=>d?leanColor(lsum[i]/d):'#eee');})();
+poles(c1); c1.append('div').attr('class','open').text('ABRIR EL ANÁLISIS →');
+
+// 2) Espacio de marcas: mini scatter ubicuidad vs PCI
+const c2=box.append('a').attr('class','dcard').attr('href','marcas.html');
+c2.append('h3').text('El espacio de marcas');
+c2.append('div').attr('class','sub').text('Marcas raras y sofisticadas (PCI alto) vs ubicuas, y su color político.');
+(function(){const svg=c2.append('div').attr('class','hist').append('svg').attr('viewBox','0 0 300 120').attr('width','100%');
+  const ub=B.map(b=>b.ubiq),pc=B.filter(b=>b.pci!=null);
+  const x=d3.scaleLog().domain([1,Math.max(...ub)]).range([8,292]);
+  const y=d3.scaleLinear().domain([d3.min(pc,b=>b.pci),d3.max(pc,b=>b.pci)]).range([112,8]);
+  svg.selectAll('circle').data(pc).join('circle').attr('cx',b=>x(b.ubiq)).attr('cy',b=>y(b.pci)).attr('r',3.2)
+    .attr('fill',b=>leanColor(b.lean*100)).attr('opacity',.8);})();
+poles(c2); c2.append('div').attr('class','open').text('ABRIR EL ANÁLISIS →');
+
+// 3) Oportunidad: barras de nº de oportunidades por marca (top)
+const c3=box.append('a').attr('class','dcard').attr('href','oportunidad.html');
+c3.append('h3').text('Oportunidad de mercado');
+c3.append('div').attr('class','sub').text('Dónde una marca "debería" estar pero falta (densidad de relatedness).');
+(function(){const svg=c3.append('div').attr('class','hist').append('svg').attr('viewBox','0 0 300 120').attr('width','100%');
+  // count opportunities per brand (present=0 & high density) using brandPresent/brandDensity
+  const cnt=B.map(b=>{const pr=CX.brandPresent[b.brand],de=CX.brandDensity[b.brand];
+    let c=0;for(let i=0;i<pr.length;i++)if(!pr[i]&&de[i]>0.5)c++;return c;}).sort((a,b)=>b-a).slice(0,12);
+  const mx=Math.max(...cnt,1),bw=300/cnt.length;
+  svg.selectAll('rect').data(cnt).join('rect').attr('x',(d,i)=>i*bw+1).attr('width',bw-2)
+    .attr('y',d=>110-(d/mx)*100).attr('height',d=>(d/mx)*100).attr('fill','var(--accent)').attr('opacity',.85);})();
+c3.append('div').attr('class','open').text('ABRIR EL ANÁLISIS →');
+
+const c4=box.append('a').attr('class','dcard').attr('href','acceso.html');
+c4.append('h3').text('Acceso y desiertos');
+c4.append('div').attr('class','sub').text('Locales de cadena por habitante (DANE 2025): dónde falta oferta formal.');
+(function(){if(!window.ACC)return;const cov=window.ACC.munis.filter(m=>m.loc>0).map(m=>m.acc).sort((a,b)=>a-b);
+  const nb=12,mxv=d3.quantile(cov,0.92)||1,bins=new Array(nb).fill(0);
+  cov.forEach(v=>{let i=Math.min(nb-1,Math.floor(v/mxv*nb));bins[i]++;});
+  const svg=c4.append('div').attr('class','hist').append('svg').attr('viewBox','0 0 300 120').attr('width','100%');
+  const mx=Math.max(...bins,1),bw=300/nb;
+  svg.selectAll('rect').data(bins).join('rect').attr('x',(d,i)=>i*bw+1).attr('width',bw-2)
+    .attr('y',d=>110-(d/mx)*100).attr('height',d=>(d/mx)*100).attr('fill','var(--accent)').attr('opacity',.85);})();
+c4.append('div').attr('class','open').text('ABRIR EL ANÁLISIS →');
+
+const c5=box.append('a').attr('class','dcard').attr('href','integracion.html');
+c5.append('h3').text('Integración del mercado');
+c5.append('div').attr('class','sub').text('¿El consumo está tan segregado como el electorado?');
+(function(){if(!window.IN)return;
+  const svg=c5.append('div').attr('class','hist').append('svg').attr('viewBox','0 0 300 120').attr('width','100%');
+  const S=[['electorado',window.IN.meta.S_res,'#141414'],['consumo',window.IN.meta.S_cons,'#0f8a8a']];
+  const mx=Math.max(S[0][1],S[1][1]);
+  svg.selectAll('rect').data(S).join('rect')
+    .attr('x',(d,i)=>60+i*110).attr('width',70)
+    .attr('y',d=>104-(d[1]/mx)*90).attr('height',d=>(d[1]/mx)*90)
+    .attr('fill',d=>d[2]).attr('opacity',.85);
+  svg.selectAll('text').data(S).join('text')
+    .attr('x',(d,i)=>95+i*110).attr('y',116).attr('text-anchor','middle')
+    .attr('font-size',9).attr('font-family','IBM Plex Mono').attr('fill','#6b6b69')
+    .text(d=>d[0]);})();
+c5.append('div').attr('class','open').text('ABRIR EL ANÁLISIS →');
+
+const c6=box.append('a').attr('class','dcard').attr('href','riesgo.html');
+c6.append('h3').text('¿Y si tu marca toma partido?');
+c6.append('div').attr('class','sub').text('Simulador: exposición de cada red al activismo de marca.');
+(function(){if(!window.RK)return;
+  const svg=c6.append('div').attr('class','hist').append('svg').attr('viewBox','0 0 300 120').attr('width','100%');
+  const bb=window.RK.brands;
+  const xs=d3.scaleLinear().domain([-30,30]).range([8,292]);
+  const ys=d3.scaleLog().domain([0.001,0.35]).range([112,8]).clamp(true);
+  svg.selectAll('circle').data(bb).join('circle')
+    .attr('cx',b=>xs(Math.max(-30,Math.min(30,b.lean*100)))).attr('cy',b=>ys(Math.max(b.share,0.001)))
+    .attr('r',2.6).attr('fill',b=>leanColor(b.lean*100)).attr('opacity',.75);})();
+c6.append('div').attr('class','open').text('ABRIR EL ANÁLISIS →');
+
+// 7) Clusters: barras por cuadrante bivariado
+const c7=box.append('a').attr('class','dcard').attr('href','clusters.html');
+c7.append('h3').text('Clusters y anomalías');
+c7.append('div').attr('class','sub').text('Municipios que votan de un lado pero consumen como el otro (LISA).');
+(function(){if(!window.CL)return;
+  const QC={HH:'#9c1f2e',LL:'#1a4a82',HL:'#e8a598',LH:'#8fb8dd'};
+  const cnt=['HH','LL','HL','LH'].map(q=>({q,n:window.CL.munis.filter(m=>m.qb===q).length}));
+  const svg=c7.append('div').attr('class','hist').append('svg').attr('viewBox','0 0 300 120').attr('width','100%');
+  const mx=Math.max(...cnt.map(d=>d.n),1),bw=300/4;
+  svg.selectAll('rect').data(cnt).join('rect').attr('x',(d,i)=>i*bw+14).attr('width',bw-28)
+    .attr('y',d=>104-(d.n/mx)*92).attr('height',d=>(d.n/mx)*92).attr('fill',d=>QC[d.q]).attr('opacity',.9);
+  svg.selectAll('text').data(cnt).join('text').attr('x',(d,i)=>i*bw+bw/2).attr('y',116)
+    .attr('text-anchor','middle').attr('font-size',9).attr('font-family','IBM Plex Mono').attr('fill','#6b6b69')
+    .text(d=>d.q);})();
+c7.append('div').attr('class','open').text('ABRIR EL ANÁLISIS →');
+
+// 8) Red: barra apilada de tamanos de comunidad
+const c8=box.append('a').attr('class','dcard').attr('href','red.html');
+c8.append('h3').text('La red de marcas');
+c8.append('div').attr('class','sub').text('Los barrios del mercado: comunidades de co-localización y su color.');
+(function(){if(!window.RD)return;
+  const CC=['#0f8a8a','#7a5ea8','#d9962f','#3a6ea5','#c8453a','#5f6b76'];
+  const svg=c8.append('div').attr('class','hist').append('svg').attr('viewBox','0 0 300 120').attr('width','100%');
+  const tot=d3.sum(window.RD.comms,c=>c.size); let x0=6;
+  window.RD.comms.forEach((c,i)=>{const w=(c.size/tot)*288;
+    svg.append('rect').attr('x',x0).attr('y',40).attr('width',Math.max(w-2,1)).attr('height',40)
+      .attr('fill',CC[i%CC.length]).attr('opacity',.9);
+    if(w>30) svg.append('text').attr('x',x0+w/2).attr('y',64).attr('text-anchor','middle')
+      .attr('font-size',10).attr('font-family','IBM Plex Mono').attr('fill','#fff').text(c.size);
+    x0+=w;});})();
+c8.append('div').attr('class','open').text('ABRIR EL ANÁLISIS →');
+
+// 9) Incertidumbre: histograma de anchos de IC
+const c9=box.append('a').attr('class','dcard').attr('href','incertidumbre.html');
+c9.append('h3').text('La incertidumbre del mapa');
+c9.append('div').attr('class','sub').text('Qué tan firme es el dato político que sostiene todos los índices (BYM).');
+(function(){if(!window.BY)return;
+  const ws=window.BY.munis.map(m=>Math.min(m.w,0.12));
+  const nb=14,bins=new Array(nb).fill(0);
+  ws.forEach(v=>{bins[Math.min(nb-1,Math.floor(v/0.12*nb))]++;});
+  const svg=c9.append('div').attr('class','hist').append('svg').attr('viewBox','0 0 300 120').attr('width','100%');
+  const mx=Math.max(...bins,1),bw=300/nb;
+  svg.selectAll('rect').data(bins).join('rect').attr('x',(d,i)=>i*bw+1).attr('width',bw-2)
+    .attr('y',d=>110-(d/mx)*100).attr('height',d=>(d/mx)*100).attr('fill','#0a6e6e').attr('opacity',.85);})();
+c9.append('div').attr('class','open').text('ABRIR EL ANÁLISIS →');
+
+// bilingual card labels (text only; histograms stay)
+const CARDT=[
+  {h:['Complejidad del consumo','Consumption complexity'],
+   s:['Qué tan diversa y sofisticada es la canasta de cada municipio (ECI).',"How diverse and sophisticated each municipality's basket is (ECI)."]},
+  {h:['El espacio de marcas','The brand space'],
+   s:['Marcas raras y sofisticadas (PCI alto) vs ubicuas, y su color político.','Rare, sophisticated brands (high PCI) vs ubiquitous ones, and their political color.']},
+  {h:['Oportunidad de mercado','Market opportunity'],
+   s:['Dónde una marca "debería" estar pero falta (densidad de relatedness).','Where a brand "should" be but is missing (relatedness density).']},
+  {h:['Acceso y desiertos','Access and deserts'],
+   s:['Locales de cadena por habitante (DANE 2025): dónde falta oferta formal.','Chain outlets per inhabitant (DANE 2025): where formal supply is missing.']},
+  {h:['Integración del mercado','Market integration'],
+   s:['¿El consumo está tan segregado como el electorado?','Is consumption as segregated as the electorate?']},
+  {h:['¿Y si tu marca toma partido?','What if your brand takes a side?'],
+   s:['Simulador: exposición de cada red al activismo de marca.','Simulator: each network\'s exposure to brand activism.']},
+  {h:['Clusters y anomalías','Clusters and anomalies'],
+   s:['Municipios que votan de un lado pero consumen como el otro (LISA).','Municipalities that vote one way but consume like the other (LISA).']},
+  {h:['La red de marcas','The brand network'],
+   s:['Los barrios del mercado: comunidades de co-localización y su color.','The market\'s neighborhoods: co-location communities and their color.']},
+  {h:['La incertidumbre del mapa','The uncertainty of the map'],
+   s:['Qué tan firme es el dato político que sostiene todos los índices (BYM).','How firm the political data behind every index is (BYM).']}
+];
+function relabelCards(){
+  box.selectAll('.dcard').each(function(_,i){const c=d3.select(this);if(!CARDT[i])return;
+    c.select('h3').text(I18N.t(CARDT[i].h[0],CARDT[i].h[1]));
+    c.select('.sub').text(I18N.t(CARDT[i].s[0],CARDT[i].s[1]));
+    c.select('.open').text(I18N.t('ABRIR EL ANÁLISIS →','OPEN THE ANALYSIS →'));});
+}
+relabelCards();
+document.addEventListener('langchange',()=>{buildStats();relabelCards();});
+});
+</script>
+</body>
+</html>
