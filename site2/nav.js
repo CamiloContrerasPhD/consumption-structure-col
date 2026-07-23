@@ -14,7 +14,7 @@
     {href:'incertidumbre.html', es:'Incertidumbre', en:'Uncertainty'},
     {href:'metodologia.html', es:'Metodología', en:'Methodology'},
     {href:'https://camilocontrerasphd.github.io/political-polarization-consumption-col/',
-     es:'Sitio 1 ↗', en:'Site 1 ↗', match:'__ext__', ext:true}
+     es:'Proyecto 1 ↗', en:'Project 1 ↗', match:'__ext__', ext:true}
   ];
   function L(){ return (window.I18N && I18N.lang==='en') ? 'en' : 'es'; }
   function build(){
